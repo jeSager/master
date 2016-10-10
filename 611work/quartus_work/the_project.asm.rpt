@@ -1,5 +1,5 @@
 Assembler report for the_project
-Fri Sep 30 17:30:11 2016
+Mon Oct 10 16:17:21 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -9,9 +9,10 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Generated Files
-  5. Assembler Device Options: the_project.sof
-  6. Assembler Messages
+  4. Assembler Encrypted IP Cores Summary
+  5. Assembler Generated Files
+  6. Assembler Device Options: the_project.sof
+  7. Assembler Messages
 
 
 
@@ -37,9 +38,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 30 17:30:11 2016 ;
+; Assembler Status      ; Successful - Mon Oct 10 16:17:21 2016 ;
 ; Revision Name         ; the_project                           ;
-; Top-level Entity Name ; alu_reg                               ;
+; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -147,6 +148,20 @@ Default Value : On
 
 
 
++--------------------------------------------------------------------------------+
+; Assembler Encrypted IP Cores Summary                                           ;
++--------------------------------------------------------------------------------+
+Vendor       : Altera
+IP Core Name : Signal Tap (6AF7 BCE1)
+License Type : Licensed
+
+Vendor       : Altera
+IP Core Name : Signal Tap (6AF7 BCEC)
+License Type : Licensed
++--------------------------------------------------------------------------------+
+
+
+
 +---------------------------+
 ; Assembler Generated Files ;
 +---------------------------+
@@ -163,7 +178,7 @@ Default Value : On
 +----------------+--------------------------+
 ; Device         ; EP4CE115F29C7            ;
 ; JTAG usercode  ; 0xFFFFFFFF               ;
-; Checksum       ; 0x0060E260               ;
+; Checksum       ; 0x0068281B               ;
 +----------------+--------------------------+
 
 
@@ -173,6 +188,6 @@ Default Value : On
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Fri Sep 30 17:30:06 2016
+    Info: Processing started: Mon Oct 10 16:17:16 2016
 
 

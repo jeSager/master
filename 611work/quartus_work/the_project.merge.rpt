@@ -1,0 +1,3629 @@
+Partition Merge report for the_project
+Mon Oct 10 16:16:58 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Summary                                                        ;
++------------------------------------+-------------------------------------------+
+; Partition Merge Status             ; Successful - Mon Oct 10 16:16:58 2016     ;
+; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
+; Revision Name                      ; the_project                               ;
+; Top-level Entity Name              ; top                                       ;
+; Family                             ; Cyclone IV E                              ;
+; Total logic elements               ; 2,590                                     ;
+;     Total combinational functions  ; 1,192                                     ;
+;     Dedicated logic registers      ; 2,129                                     ;
+; Total registers                    ; 2129                                      ;
+; Total pins                         ; 1                                         ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 15,744                                    ;
+; Embedded Multiplier 9-bit elements ; 0                                         ;
+; Total PLLs                         ; 0                                         ;
++------------------------------------+-------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                             ;
++--------------------------------------------------------------------------------+
+Partition Name         : Top
+Partition Type         : User-created
+Netlist Type Used      : Source File
+Netlist Type Requested : Post-Fit
+Partition Contents     : 
+
+Partition Name         : sld_hub:auto_hub
+Partition Type         : Auto-generated
+Netlist Type Used      : Post-Synthesis
+Netlist Type Requested : Post-Synthesis
+Partition Contents     : sld_hub:auto_hub
+
+Partition Name         : sld_signaltap:auto_signaltap_0
+Partition Type         : Auto-generated
+Netlist Type Used      : Post-Synthesis
+Netlist Type Requested : Post-Synthesis
+Partition Contents     : sld_signaltap:auto_signaltap_0
+
+Partition Name         : hard_block:auto_generated_inst
+Partition Type         : Auto-generated
+Netlist Type Used      : Source File
+Netlist Type Requested : Source File
+Partition Contents     : hard_block:auto_generated_inst
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                 ;
++--------------------------------------------------------------------------------+
+Name              : clk
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[10]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[10]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[11]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[11]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[12]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[12]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[13]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[13]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[14]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[14]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[15]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[15]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[15]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[15]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[16]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[16]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[17]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[17]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[18]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[18]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[19]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[19]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[1]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[1]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[1]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[1]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[20]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[20]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[21]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[21]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[21]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[21]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[22]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[22]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[23]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[23]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[24]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[24]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[25]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[25]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[25]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[25]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[26]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[26]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[26]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[26]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[27]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[27]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[28]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[28]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[29]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[29]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[2]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[2]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[2]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[2]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[30]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[30]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[30]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[30]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[31]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[31]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[31]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[31]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[3]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[3]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[4]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[4]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[4]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[4]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[5]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[5]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[6]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[6]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[7]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[7]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[8]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[8]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[9]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_a|q[9]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[0]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[0]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[10]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[10]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[10]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[10]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[11]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[11]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[12]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[12]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[13]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[13]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[14]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[14]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[15]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[15]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[16]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[16]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[17]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[17]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[17]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[17]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[18]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[18]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[18]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[18]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[19]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[19]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[19]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[19]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[1]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[1]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[1]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[1]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[20]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[20]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[21]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[21]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[21]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[21]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[22]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[22]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[22]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[22]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[23]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[23]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[23]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[23]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[24]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[24]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[24]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[24]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[25]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[25]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[26]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[26]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[26]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[26]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[27]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[27]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[28]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[28]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[28]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[28]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[29]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[29]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[29]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[29]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[2]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[2]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[2]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[2]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[30]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[30]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[31]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[31]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[31]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[31]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[3]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[3]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[4]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[4]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[4]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[4]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[5]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[5]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[6]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[6]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[7]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[7]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[8]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[8]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[8]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[8]~feeder
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[9]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:input_reg_b|q[9]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_cout|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_cout|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[0]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[10]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[10]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[11]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[11]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[12]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[12]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[13]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[13]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[14]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[14]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[15]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[15]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[16]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[16]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[17]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[17]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[18]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[18]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[19]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[19]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[1]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[1]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[20]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[20]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[21]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[21]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[22]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[22]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[23]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[23]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[24]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[24]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[25]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[25]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[26]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[26]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[27]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[27]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[28]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[28]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[29]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[29]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[2]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[2]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[30]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[30]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[31]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[31]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[3]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[3]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[4]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[4]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[5]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[5]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[6]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[6]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[7]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[7]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[8]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[8]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[9]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
+
+Name              : regn:output_reg_s|q[9]
+Type              : post-fitting
+Status            : missing
+Partition Name    : Top
+Netlist Type Used : post-synthesis
+Actual Connection : GND
+Details           : A newer post-synthesis netlist was used.  Recompile again after fitting to succesfully tap the signal.
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                           ;
++--------------------------------------------------------------------------------+
+Statistic                      : Estimated Total logic elements
+Top                            : 420
+sld_hub:auto_hub               : 242
+sld_signaltap:auto_signaltap_0 : 1929
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Total combinational functions
+Top                            : 352
+sld_hub:auto_hub               : 230
+sld_signaltap:auto_signaltap_0 : 610
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Logic element usage by number of LUT inputs
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- 4 input functions
+Top                            : 135
+sld_hub:auto_hub               : 86
+sld_signaltap:auto_signaltap_0 : 371
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- 3 input functions
+Top                            : 183
+sld_hub:auto_hub               : 121
+sld_signaltap:auto_signaltap_0 : 168
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- <=2 input functions
+Top                            : 34
+sld_hub:auto_hub               : 23
+sld_signaltap:auto_signaltap_0 : 71
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Logic elements by mode
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- normal mode
+Top                            : 352
+sld_hub:auto_hub               : 225
+sld_signaltap:auto_signaltap_0 : 573
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- arithmetic mode
+Top                            : 0
+sld_hub:auto_hub               : 5
+sld_signaltap:auto_signaltap_0 : 37
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Total registers
+Top                            : 296
+sld_hub:auto_hub               : 144
+sld_signaltap:auto_signaltap_0 : 1689
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Dedicated logic registers
+Top                            : 296
+sld_hub:auto_hub               : 144
+sld_signaltap:auto_signaltap_0 : 1689
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- I/O registers
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Virtual pins
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : I/O pins
+Top                            : 1
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Embedded Multiplier 9-bit elements
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Total memory bits
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 15744
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Total RAM block bits
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : JTAG
+Top                            : 1
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Connections
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Input Connections
+Top                            : 459
+sld_hub:auto_hub               : 226
+sld_signaltap:auto_signaltap_0 : 2401
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Input Connections
+Top                            : 304
+sld_hub:auto_hub               : 152
+sld_signaltap:auto_signaltap_0 : 1952
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Connections
+Top                            : 2613
+sld_hub:auto_hub               : 472
+sld_signaltap:auto_signaltap_0 : 1
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Output Connections
+Top                            : 0
+sld_hub:auto_hub               : 366
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Internal Connections
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Total Connections
+Top                            : 4389
+sld_hub:auto_hub               : 1753
+sld_signaltap:auto_signaltap_0 : 9093
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Connections
+Top                            : 800
+sld_hub:auto_hub               : 1163
+sld_signaltap:auto_signaltap_0 : 7093
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : External Connections
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Top
+Top                            : 422
+sld_hub:auto_hub               : 465
+sld_signaltap:auto_signaltap_0 : 2185
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- sld_hub:auto_hub
+Top                            : 465
+sld_hub:auto_hub               : 16
+sld_signaltap:auto_signaltap_0 : 217
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- sld_signaltap:auto_signaltap_0
+Top                            : 2185
+sld_hub:auto_hub               : 217
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- hard_block:auto_generated_inst
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Partition Interface
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Input Ports
+Top                            : 68
+sld_hub:auto_hub               : 58
+sld_signaltap:auto_signaltap_0 : 303
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports
+Top                            : 21
+sld_hub:auto_hub               : 72
+sld_signaltap:auto_signaltap_0 : 256
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Bidir Ports
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Registered Ports
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Registered Input Ports
+Top                            : 0
+sld_hub:auto_hub               : 3
+sld_signaltap:auto_signaltap_0 : 251
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Output Ports
+Top                            : 0
+sld_hub:auto_hub               : 62
+sld_signaltap:auto_signaltap_0 : 1
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Port Connectivity
+Top                            : 
+sld_hub:auto_hub               : 
+sld_signaltap:auto_signaltap_0 : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Input Ports driven by GND
+Top                            : 0
+sld_hub:auto_hub               : 37
+sld_signaltap:auto_signaltap_0 : 247
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports driven by GND
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Input Ports driven by VCC
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports driven by VCC
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Input Ports with no Source
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 35
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports with no Source
+Top                            : 0
+sld_hub:auto_hub               : 0
+sld_signaltap:auto_signaltap_0 : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Input Ports with no Fanout
+Top                            : 0
+sld_hub:auto_hub               : 1
+sld_signaltap:auto_signaltap_0 : 40
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports with no Fanout
+Top                            : 0
+sld_hub:auto_hub               : 29
+sld_signaltap:auto_signaltap_0 : 247
+hard_block:auto_generated_inst : 0
++--------------------------------------------------------------------------------+
+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                       ;
++--------------------------------------------------------------------------------+
+Name      : CLOCK_50
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      :     -- CLOCK_50
+Partition : Top
+Type      : Input Pad
+Location  : Unplaced
+Status    : Synthesized
+
+Name      :     -- CLOCK_50~input
+Partition : Top
+Type      : Input Buffer
+Location  : Unplaced
+Status    : Synthesized
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : altera_reserved_tck
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      :     -- altera_reserved_tck
+Partition : Top
+Type      : Input Pad
+Location  : Unplaced
+Status    : Synthesized
+
+Name      :     -- altera_reserved_tck~input
+Partition : Top
+Type      : Input Buffer
+Location  : Unplaced
+Status    : Synthesized
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : altera_reserved_tdi
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      :     -- altera_reserved_tdi
+Partition : Top
+Type      : Input Pad
+Location  : Unplaced
+Status    : Synthesized
+
+Name      :     -- altera_reserved_tdi~input
+Partition : Top
+Type      : Input Buffer
+Location  : Unplaced
+Status    : Synthesized
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : altera_reserved_tdo
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      :     -- altera_reserved_tdo
+Partition : Top
+Type      : Output Pad
+Location  : Unplaced
+Status    : Synthesized
+
+Name      :     -- altera_reserved_tdo~output
+Partition : Top
+Type      : Output Buffer
+Location  : Unplaced
+Status    : Synthesized
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : altera_reserved_tms
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      :     -- altera_reserved_tms
+Partition : Top
+Type      : Input Pad
+Location  : Unplaced
+Status    : Synthesized
+
+Name      :     -- altera_reserved_tms~input
+Partition : Top
+Type      : Input Buffer
+Location  : Unplaced
+Status    : Synthesized
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_clrn
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ena
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_in_0_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_in_1_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_in_2_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_in_3_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_out_0_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_out_1_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_out_2_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_ir_out_3_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_cdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_cir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_e1dr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_sdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_tlr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_udr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_jtag_state_uir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_raw_tck
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_tdi
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_tdo
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_a_usr1
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_clrn
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ena
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_in_0_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_in_1_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_in_2_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_in_3_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_out_0_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_out_1_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_out_2_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_ir_out_3_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_cdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_cir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_e1dr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_sdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_tlr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_udr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_jtag_state_uir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_raw_tck
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_tdi
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_tdo
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.input_b_usr1
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_clrn
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ena
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_in_0_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_in_1_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_in_2_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_in_3_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_out_0_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_out_1_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_out_2_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_ir_out_3_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_cdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_cir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_e1dr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_sdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_tlr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_udr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_jtag_state_uir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_raw_tck
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_tdi
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_tdo
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_cout_usr1
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_clrn
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ena
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_in_0_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_in_1_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_in_2_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_in_3_
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_out_0_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_out_1_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_out_2_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_ir_out_3_
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_cdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_cir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_e1dr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_sdr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_tlr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_udr
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_jtag_state_uir
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_raw_tck
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_tdi
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_tdo
+Partition : Top
+Type      : Output Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
+
+Name      : jtag.bp.output_s_usr1
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
++--------------------------------------------------------------------------------+
+
+
+
++-----------------------------------------------------+
+; Partition Merge Resource Usage Summary              ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 2,590 ;
+;                                             ;       ;
+; Total combinational functions               ; 1192  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 592   ;
+;     -- 3 input functions                    ; 472   ;
+;     -- <=2 input functions                  ; 128   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 1150  ;
+;     -- arithmetic mode                      ; 42    ;
+;                                             ;       ;
+; Total registers                             ; 2129  ;
+;     -- Dedicated logic registers            ; 2129  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+; Total memory bits                           ; 15744 ;
+; Maximum fan-out node                        ; ~GND  ;
+; Maximum fan-out                             ; 1233  ;
+; Total fan-out                               ; 11975 ;
+; Average fan-out                             ; 3.47  ;
++---------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                    ;
++--------------------------------------------------------------------------------+
+Name         : sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_c124:auto_generated|ALTSYNCRAM
+Type         : AUTO
+Mode         : Simple Dual Port
+Port A Depth : 128
+Port A Width : 123
+Port B Depth : 128
+Port B Width : 123
+Size         : 15744
+MIF          : None
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Partition Merge
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Mon Oct 10 16:16:56 2016
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off the_project -c the_project --merge=on
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 0 of its 247 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 247 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2732 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 2603 logic cells
+    Info (21064): Implemented 123 RAM segments
+Info: Quartus II 32-bit Partition Merge was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 331 megabytes
+    Info: Processing ended: Mon Oct 10 16:16:58 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for the_project
-Fri Sep 30 17:29:42 2016
+Mon Oct 10 16:16:54 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -11,23 +11,34 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: regn:input_reg_a
- 12. Parameter Settings for User Entity Instance: regn:input_reg_b
- 13. Parameter Settings for User Entity Instance: regn:input_reg_op
- 14. Parameter Settings for User Entity Instance: regn:input_reg_shamt
- 15. Parameter Settings for User Entity Instance: regn:output_reg_hi
- 16. Parameter Settings for User Entity Instance: regn:output_reg_lo
- 17. Parameter Settings for User Entity Instance: regn:output_reg_zero
- 18. Parameter Settings for Inferred Entity Instance: alu:my_alu|lpm_mult:Mult0
- 19. Parameter Settings for Inferred Entity Instance: alu:my_alu|lpm_mult:Mult1
- 20. lpm_mult Parameter Settings by Entity Instance
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  6. Partition Status Summary
+  7. Child Partition Changes for Partition Top
+  8. Partition for Top-Level Resource Utilization by Entity
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Source assignments for altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst
+ 11. Source assignments for altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst
+ 12. Source assignments for altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst
+ 13. Source assignments for altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst
+ 14. Parameter Settings for User Entity Instance: adder_reg:comb_3
+ 15. Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:input_reg_a
+ 16. Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:input_reg_b
+ 17. Parameter Settings for User Entity Instance: adder_reg:comb_3|adder:my_adder
+ 18. Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:output_reg_s
+ 19. Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:output_reg_cout
+ 20. Parameter Settings for User Entity Instance: altsource_probe:input_a
+ 21. Parameter Settings for User Entity Instance: altsource_probe:input_b
+ 22. Parameter Settings for User Entity Instance: altsource_probe:output_s
+ 23. Parameter Settings for User Entity Instance: altsource_probe:output_cout
+ 24. Partition Dependent Files
+ 25. Port Connectivity Checks: "altsource_probe:output_cout"
+ 26. Port Connectivity Checks: "altsource_probe:output_s"
+ 27. Port Connectivity Checks: "altsource_probe:input_b"
+ 28. Port Connectivity Checks: "altsource_probe:input_a"
+ 29. Port Connectivity Checks: "adder_reg:comb_3|adder:my_adder|full_adder:adder_array[0].add"
+ 30. SignalTap II Logic Analyzer Settings
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+ 33. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,20 +64,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 30 17:29:42 2016     ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 10 16:16:54 2016     ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; the_project                               ;
-; Top-level Entity Name              ; alu_reg                                   ;
+; Top-level Entity Name              ; top                                       ;
 ; Family                             ; Cyclone IV E                              ;
-; Total logic elements               ; 959                                       ;
-;     Total combinational functions  ; 886                                       ;
-;     Dedicated logic registers      ; 138                                       ;
-; Total registers                    ; 138                                       ;
-; Total pins                         ; 139                                       ;
-; Total virtual pins                 ; 0                                         ;
-; Total memory bits                  ; 0                                         ;
-; Embedded Multiplier 9-bit elements ; 16                                        ;
-; Total PLLs                         ; 0                                         ;
+; Total logic elements               ; N/A until Partition Merge                 ;
+;     Total combinational functions  ; N/A until Partition Merge                 ;
+;     Dedicated logic registers      ; N/A until Partition Merge                 ;
+; Total registers                    ; N/A until Partition Merge                 ;
+; Total pins                         ; N/A until Partition Merge                 ;
+; Total virtual pins                 ; N/A until Partition Merge                 ;
+; Total memory bits                  ; N/A until Partition Merge                 ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                 ;
+; Total PLLs                         ; N/A until Partition Merge                 ;
 +------------------------------------+-------------------------------------------+
 
 
@@ -78,7 +89,7 @@ Setting       : EP4CE115F29C7
 Default Value : 
 
 Option        : Top-level entity name
-Setting       : alu_reg
+Setting       : top
 Default Value : the_project
 
 Option        : Family name
@@ -396,41 +407,95 @@ Default Value : 1
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Average used               ; 2.50        ;
+; Maximum used               ; 3           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2-4 processors         ; < 0.1%      ;
-;     5-8 processors         ;   0.0%      ;
+;     2-3 processors         ;  50.0%      ;
+;     4-8 processors         ;   0.0%      ;
 +----------------------------+-------------+
 
 
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                         ;
 +--------------------------------------------------------------------------------+
-File Name with User-Entered Path : alu_reg.v
+File Name with User-Entered Path : top.v
 Used in Netlist                  : yes
 File Type                        : User Verilog HDL File 
-File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/alu_reg.v
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/top.v
 Library                          : 
 
-File Name with User-Entered Path : alu.v
+File Name with User-Entered Path : full_adder.v
 Used in Netlist                  : yes
 File Type                        : User Verilog HDL File 
-File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/alu.v
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/full_adder.v
+Library                          : 
+
+File Name with User-Entered Path : adder_reg.v
+Used in Netlist                  : yes
+File Type                        : User Verilog HDL File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/adder_reg.v
+Library                          : 
+
+File Name with User-Entered Path : adder.v
+Used in Netlist                  : yes
+File Type                        : User Verilog HDL File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/adder.v
 Library                          : 
 
 File Name with User-Entered Path : regn.v
 Used in Netlist                  : yes
 File Type                        : Auto-Found Verilog HDL File 
-File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/regn.v
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/regn.v
 Library                          : 
 
-File Name with User-Entered Path : lpm_mult.tdf
+File Name with User-Entered Path : altsource_probe.v
 Used in Netlist                  : yes
 File Type                        : Megafunction 
-File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_mult.tdf
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altsource_probe.v
+Library                          : 
+
+File Name with User-Entered Path : altsource_probe_body.vhd
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altsource_probe_body.vhd
+Library                          : 
+
+File Name with User-Entered Path : sld_rom_sr.vhd
+Used in Netlist                  : yes
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_rom_sr.vhd
+Library                          : 
+
+File Name with User-Entered Path : sld_signaltap.vhd
+Used in Netlist                  : yes
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_signaltap.vhd
+Library                          : 
+
+File Name with User-Entered Path : sld_ela_control.vhd
+Used in Netlist                  : yes
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_ela_control.vhd
+Library                          : 
+
+File Name with User-Entered Path : lpm_shiftreg.tdf
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_shiftreg.tdf
+Library                          : 
+
+File Name with User-Entered Path : lpm_constant.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_constant.inc
+Library                          : 
+
+File Name with User-Entered Path : dffeea.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/dffeea.inc
 Library                          : 
 
 File Name with User-Entered Path : aglobal120.inc
@@ -439,16 +504,118 @@ File Type                        : Megafunction
 File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/aglobal120.inc
 Library                          : 
 
-File Name with User-Entered Path : lpm_add_sub.inc
+File Name with User-Entered Path : sld_mbpmg.vhd
 Used in Netlist                  : yes
-File Type                        : Megafunction 
-File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_add_sub.inc
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_mbpmg.vhd
 Library                          : 
 
-File Name with User-Entered Path : multcore.inc
+File Name with User-Entered Path : sld_ela_trigger_flow_mgr.vhd
+Used in Netlist                  : yes
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd
+Library                          : 
+
+File Name with User-Entered Path : sld_buffer_manager.vhd
+Used in Netlist                  : yes
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_buffer_manager.vhd
+Library                          : 
+
+File Name with User-Entered Path : altsyncram.tdf
 Used in Netlist                  : yes
 File Type                        : Megafunction 
-File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/multcore.inc
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altsyncram.tdf
+Library                          : 
+
+File Name with User-Entered Path : stratix_ram_block.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/stratix_ram_block.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_mux.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_mux.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_decode.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_decode.inc
+Library                          : 
+
+File Name with User-Entered Path : a_rdenreg.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/a_rdenreg.inc
+Library                          : 
+
+File Name with User-Entered Path : altrom.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altrom.inc
+Library                          : 
+
+File Name with User-Entered Path : altram.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altram.inc
+Library                          : 
+
+File Name with User-Entered Path : altdpram.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altdpram.inc
+Library                          : 
+
+File Name with User-Entered Path : db/altsyncram_c124.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/altsyncram_c124.tdf
+Library                          : 
+
+File Name with User-Entered Path : altdpram.tdf
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altdpram.tdf
+Library                          : 
+
+File Name with User-Entered Path : memmodes.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/others/maxplus2/memmodes.inc
+Library                          : 
+
+File Name with User-Entered Path : a_hdffe.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/a_hdffe.inc
+Library                          : 
+
+File Name with User-Entered Path : alt_le_rden_reg.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/alt_le_rden_reg.inc
+Library                          : 
+
+File Name with User-Entered Path : altsyncram.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altsyncram.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_mux.tdf
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_mux.tdf
+Library                          : 
+
+File Name with User-Entered Path : muxlut.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/muxlut.inc
 Library                          : 
 
 File Name with User-Entered Path : bypassff.inc
@@ -463,187 +630,568 @@ File Type                        : Megafunction
 File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altshift.inc
 Library                          : 
 
-File Name with User-Entered Path : db/mult_46t.tdf
+File Name with User-Entered Path : db/mux_ssc.tdf
 Used in Netlist                  : yes
 File Type                        : Auto-Generated Megafunction 
-File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/db/mult_46t.tdf
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/mux_ssc.tdf
 Library                          : 
 
-File Name with User-Entered Path : db/mult_7dt.tdf
+File Name with User-Entered Path : lpm_decode.tdf
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_decode.tdf
+Library                          : 
+
+File Name with User-Entered Path : declut.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/declut.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_compare.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_compare.inc
+Library                          : 
+
+File Name with User-Entered Path : db/decode_dvf.tdf
 Used in Netlist                  : yes
 File Type                        : Auto-Generated Megafunction 
-File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/db/mult_7dt.tdf
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/decode_dvf.tdf
+Library                          : 
+
+File Name with User-Entered Path : lpm_counter.tdf
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_counter.tdf
+Library                          : 
+
+File Name with User-Entered Path : lpm_add_sub.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_add_sub.inc
+Library                          : 
+
+File Name with User-Entered Path : cmpconst.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/cmpconst.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_counter.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_counter.inc
+Library                          : 
+
+File Name with User-Entered Path : alt_counter_stratix.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/alt_counter_stratix.inc
+Library                          : 
+
+File Name with User-Entered Path : db/cntr_1ii.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cntr_1ii.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/cmpr_tgc.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cmpr_tgc.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/cntr_i6j.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cntr_i6j.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/cntr_egi.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cntr_egi.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/cmpr_qgc.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cmpr_qgc.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/cntr_23j.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cntr_23j.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/cmpr_ngc.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/cmpr_ngc.tdf
+Library                          : 
+
+File Name with User-Entered Path : sld_hub.vhd
+Used in Netlist                  : yes
+File Type                        : Encrypted Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/sld_hub.vhd
 Library                          : 
 +--------------------------------------------------------------------------------+
 
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 959       ;
-;                                             ;           ;
-; Total combinational functions               ; 886       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 386       ;
-;     -- 3 input functions                    ; 411       ;
-;     -- <=2 input functions                  ; 89        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 594       ;
-;     -- arithmetic mode                      ; 292       ;
-;                                             ;           ;
-; Total registers                             ; 138       ;
-;     -- Dedicated logic registers            ; 138       ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 139       ;
-; Embedded Multiplier 9-bit elements          ; 16        ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 138       ;
-; Total fan-out                               ; 3691      ;
-; Average fan-out                             ; 2.80      ;
-+---------------------------------------------+-----------+
++--------------------------------------------------------------------------------+
+; Partition Status Summary                                                       ;
++--------------------------------------------------------------------------------+
+Partition Name : Top
+Synthesized    : yes
+Reason         : New sub-partitions
+
+Partition Name : sld_hub:auto_hub
+Synthesized    : yes
+Reason         : No netlist in project database
+
+Partition Name : sld_signaltap:auto_signaltap_0
+Synthesized    : yes
+Reason         : No netlist in project database
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Child Partition Changes for Partition Top                                                                                            ;
++------------------+-------------------------------------------------------------------------------------------------------------------+
+; Child Partition  ; Change                                                                                                            ;
++------------------+-------------------------------------------------------------------------------------------------------------------+
+; sld_hub:auto_hub ; The HUB was not present in the last compilation and is required to share the JTAG port among nodes in your design ;
++------------------+-------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                            ;
+; Partition for Top-Level Resource Utilization by Entity                         ;
 +--------------------------------------------------------------------------------+
-Compilation Hierarchy Node : |alu_reg
-LC Combinationals          : 886 (0)
-LC Registers               : 138 (0)
-Memory Bits                : 0
-DSP Elements               : 16
-DSP 9x9                    : 0
-DSP 18x18                  : 8
-Pins                       : 139
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg
-Library Name               : 
-
-Compilation Hierarchy Node :    |alu:my_alu|
-LC Combinationals          : 885 (714)
-LC Registers               : 0 (0)
-Memory Bits                : 0
-DSP Elements               : 16
-DSP 9x9                    : 0
-DSP 18x18                  : 8
-Pins                       : 0
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|alu:my_alu
-Library Name               : 
-
-Compilation Hierarchy Node :       |lpm_mult:Mult0|
-LC Combinationals          : 92 (0)
-LC Registers               : 0 (0)
-Memory Bits                : 0
-DSP Elements               : 8
-DSP 9x9                    : 0
-DSP 18x18                  : 4
-Pins                       : 0
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|alu:my_alu|lpm_mult:Mult0
-Library Name               : 
-
-Compilation Hierarchy Node :          |mult_46t:auto_generated|
-LC Combinationals          : 92 (92)
-LC Registers               : 0 (0)
-Memory Bits                : 0
-DSP Elements               : 8
-DSP 9x9                    : 0
-DSP 18x18                  : 4
-Pins                       : 0
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|alu:my_alu|lpm_mult:Mult0|mult_46t:auto_generated
-Library Name               : 
-
-Compilation Hierarchy Node :       |lpm_mult:Mult1|
-LC Combinationals          : 79 (0)
-LC Registers               : 0 (0)
-Memory Bits                : 0
-DSP Elements               : 8
-DSP 9x9                    : 0
-DSP 18x18                  : 4
-Pins                       : 0
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|alu:my_alu|lpm_mult:Mult1
-Library Name               : 
-
-Compilation Hierarchy Node :          |mult_7dt:auto_generated|
-LC Combinationals          : 79 (79)
-LC Registers               : 0 (0)
-Memory Bits                : 0
-DSP Elements               : 8
-DSP 9x9                    : 0
-DSP 18x18                  : 4
-Pins                       : 0
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|alu:my_alu|lpm_mult:Mult1|mult_7dt:auto_generated
-Library Name               : 
-
-Compilation Hierarchy Node :    |regn:input_reg_a|
-LC Combinationals          : 0 (0)
-LC Registers               : 32 (32)
+Compilation Hierarchy Node : |top
+LC Combinationals          : 352 (1)
+LC Registers               : 296 (0)
 Memory Bits                : 0
 DSP Elements               : 0
 DSP 9x9                    : 0
 DSP 18x18                  : 0
 Pins                       : 0
 Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:input_reg_a
-Library Name               : 
+Full Hierarchy Name        : |top
+Library Name               : work
 
-Compilation Hierarchy Node :    |regn:input_reg_b|
-LC Combinationals          : 0 (0)
-LC Registers               : 32 (32)
+Compilation Hierarchy Node :    |adder_reg:comb_3|
+LC Combinationals          : 80 (0)
+LC Registers               : 97 (0)
 Memory Bits                : 0
 DSP Elements               : 0
 DSP 9x9                    : 0
 DSP 18x18                  : 0
 Pins                       : 0
 Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:input_reg_b
-Library Name               : 
+Full Hierarchy Name        : |top|adder_reg:comb_3
+Library Name               : work
 
-Compilation Hierarchy Node :    |regn:input_reg_op|
-LC Combinationals          : 0 (0)
-LC Registers               : 4 (4)
+Compilation Hierarchy Node :       |adder:my_adder|
+LC Combinationals          : 80 (0)
+LC Registers               : 0 (0)
 Memory Bits                : 0
 DSP Elements               : 0
 DSP 9x9                    : 0
 DSP 18x18                  : 0
 Pins                       : 0
 Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:input_reg_op
-Library Name               : 
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder
+Library Name               : work
 
-Compilation Hierarchy Node :    |regn:input_reg_shamt|
-LC Combinationals          : 0 (0)
-LC Registers               : 5 (5)
-Memory Bits                : 0
-DSP Elements               : 0
-DSP 9x9                    : 0
-DSP 18x18                  : 0
-Pins                       : 0
-Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:input_reg_shamt
-Library Name               : 
-
-Compilation Hierarchy Node :    |regn:output_reg_hi|
+Compilation Hierarchy Node :          |full_adder:adder_array[0].add|
 LC Combinationals          : 1 (1)
-LC Registers               : 32 (32)
+LC Registers               : 0 (0)
 Memory Bits                : 0
 DSP Elements               : 0
 DSP 9x9                    : 0
 DSP 18x18                  : 0
 Pins                       : 0
 Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:output_reg_hi
-Library Name               : 
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[0].add
+Library Name               : work
 
-Compilation Hierarchy Node :    |regn:output_reg_lo|
+Compilation Hierarchy Node :          |full_adder:adder_array[10].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[10].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[11].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[11].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[12].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[12].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[13].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[13].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[14].add|
+LC Combinationals          : 3 (3)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[14].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[15].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[15].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[16].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[16].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[17].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[17].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[18].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[18].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[19].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[19].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[1].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[1].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[20].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[20].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[21].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[21].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[22].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[22].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[23].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[23].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[24].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[24].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[25].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[25].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[26].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[26].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[27].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[27].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[28].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[28].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[29].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[29].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[2].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[2].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[30].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[30].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[31].add|
+LC Combinationals          : 3 (3)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[31].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[3].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[3].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[4].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[4].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[5].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[5].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[6].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[6].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[7].add|
+LC Combinationals          : 2 (2)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[7].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[8].add|
+LC Combinationals          : 1 (1)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[8].add
+Library Name               : work
+
+Compilation Hierarchy Node :          |full_adder:adder_array[9].add|
+LC Combinationals          : 5 (5)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|adder:my_adder|full_adder:adder_array[9].add
+Library Name               : work
+
+Compilation Hierarchy Node :       |regn:input_reg_a|
 LC Combinationals          : 0 (0)
 LC Registers               : 32 (32)
 Memory Bits                : 0
@@ -652,10 +1200,22 @@ DSP 9x9                    : 0
 DSP 18x18                  : 0
 Pins                       : 0
 Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:output_reg_lo
-Library Name               : 
+Full Hierarchy Name        : |top|adder_reg:comb_3|regn:input_reg_a
+Library Name               : work
 
-Compilation Hierarchy Node :    |regn:output_reg_zero|
+Compilation Hierarchy Node :       |regn:input_reg_b|
+LC Combinationals          : 0 (0)
+LC Registers               : 32 (32)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|regn:input_reg_b
+Library Name               : work
+
+Compilation Hierarchy Node :       |regn:output_reg_cout|
 LC Combinationals          : 0 (0)
 LC Registers               : 1 (1)
 Memory Bits                : 0
@@ -664,110 +1224,743 @@ DSP 9x9                    : 0
 DSP 18x18                  : 0
 Pins                       : 0
 Virtual Pins               : 0
-Full Hierarchy Name        : |alu_reg|regn:output_reg_zero
-Library Name               : 
+Full Hierarchy Name        : |top|adder_reg:comb_3|regn:output_reg_cout
+Library Name               : work
+
+Compilation Hierarchy Node :       |regn:output_reg_s|
+LC Combinationals          : 0 (0)
+LC Registers               : 32 (32)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|adder_reg:comb_3|regn:output_reg_s
+Library Name               : work
+
+Compilation Hierarchy Node :    |altsource_probe:input_a|
+LC Combinationals          : 90 (0)
+LC Registers               : 73 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_a
+Library Name               : work
+
+Compilation Hierarchy Node :       |altsource_probe_body:altsource_probe_body_inst|
+LC Combinationals          : 90 (4)
+LC Registers               : 73 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst
+Library Name               : work
+
+Compilation Hierarchy Node :          |altsource_probe_impl:\wider_source_gen:wider_source_inst|
+LC Combinationals          : 86 (70)
+LC Registers               : 73 (65)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst
+Library Name               : work
+
+Compilation Hierarchy Node :             |sld_rom_sr:\instance_id_gen:rom_info_inst|
+LC Combinationals          : 16 (16)
+LC Registers               : 8 (8)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst
+Library Name               : work
+
+Compilation Hierarchy Node :    |altsource_probe:input_b|
+LC Combinationals          : 91 (0)
+LC Registers               : 73 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_b
+Library Name               : work
+
+Compilation Hierarchy Node :       |altsource_probe_body:altsource_probe_body_inst|
+LC Combinationals          : 91 (4)
+LC Registers               : 73 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst
+Library Name               : work
+
+Compilation Hierarchy Node :          |altsource_probe_impl:\wider_source_gen:wider_source_inst|
+LC Combinationals          : 87 (70)
+LC Registers               : 73 (65)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst
+Library Name               : work
+
+Compilation Hierarchy Node :             |sld_rom_sr:\instance_id_gen:rom_info_inst|
+LC Combinationals          : 17 (17)
+LC Registers               : 8 (8)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst
+Library Name               : work
+
+Compilation Hierarchy Node :    |altsource_probe:output_cout|
+LC Combinationals          : 29 (0)
+LC Registers               : 11 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_cout
+Library Name               : work
+
+Compilation Hierarchy Node :       |altsource_probe_body:altsource_probe_body_inst|
+LC Combinationals          : 29 (3)
+LC Registers               : 11 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst
+Library Name               : work
+
+Compilation Hierarchy Node :          |altsource_probe_impl:\equal_width_gen:equal_width_inst|
+LC Combinationals          : 26 (8)
+LC Registers               : 11 (3)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst
+Library Name               : work
+
+Compilation Hierarchy Node :             |sld_rom_sr:\instance_id_gen:rom_info_inst|
+LC Combinationals          : 18 (18)
+LC Registers               : 8 (8)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst|sld_rom_sr:\instance_id_gen:rom_info_inst
+Library Name               : work
+
+Compilation Hierarchy Node :    |altsource_probe:output_s|
+LC Combinationals          : 61 (0)
+LC Registers               : 42 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_s
+Library Name               : work
+
+Compilation Hierarchy Node :       |altsource_probe_body:altsource_probe_body_inst|
+LC Combinationals          : 61 (3)
+LC Registers               : 42 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst
+Library Name               : work
+
+Compilation Hierarchy Node :          |altsource_probe_impl:\wider_probe_gen:wider_probe_inst|
+LC Combinationals          : 58 (40)
+LC Registers               : 42 (34)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst
+Library Name               : work
+
+Compilation Hierarchy Node :             |sld_rom_sr:\instance_id_gen:rom_info_inst|
+LC Combinationals          : 18 (18)
+LC Registers               : 8 (8)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |top|altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst|sld_rom_sr:\instance_id_gen:rom_info_inst
+Library Name               : work
 +--------------------------------------------------------------------------------+
 
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary        ;
-+---------------------------------------+-------------+
-; Statistic                             ; Number Used ;
-+---------------------------------------+-------------+
-; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 8           ;
-; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 16          ;
-; Signed Embedded Multipliers           ; 1           ;
-; Unsigned Embedded Multipliers         ; 5           ;
-; Mixed Sign Embedded Multipliers       ; 2           ;
-; Variable Sign Embedded Multipliers    ; 0           ;
-; Dedicated Input Shift Register Chains ; 0           ;
-+---------------------------------------+-------------+
-Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 138   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
 +--------------------------------------------------------------------------------+
 ; Multiplexer Restructuring Statistics (Restructuring Performed)                 ;
 +--------------------------------------------------------------------------------+
-Multiplexer Inputs         : 16:1
+Multiplexer Inputs         : 3:1
 Bus Width                  : 32 bits
-Baseline Area              : 320 LEs
-Area if Restructured       : 64 LEs
-Saving if Restructured     : 256 LEs
-Registered                 : |alu_reg|regn:output_reg_hi|q[0]
+Baseline Area              : 64 LEs
+Area if Restructured       : 32 LEs
+Saving if Restructured     : 32 LEs
+Registered                 : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|hold_reg[21]
 Example Multiplexer Output : 
 
-Multiplexer Inputs         : 18:1
-Bus Width                  : 8 bits
-Baseline Area              : 96 LEs
-Area if Restructured       : 72 LEs
-Saving if Restructured     : 24 LEs
-Registered                 : |alu_reg|alu:my_alu|Mux22
+Multiplexer Inputs         : 3:1
+Bus Width                  : 32 bits
+Baseline Area              : 64 LEs
+Area if Restructured       : 32 LEs
+Saving if Restructured     : 32 LEs
+Registered                 : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|hold_reg[0]
 Example Multiplexer Output : 
 
-Multiplexer Inputs         : 19:1
-Bus Width                  : 7 bits
-Baseline Area              : 84 LEs
-Area if Restructured       : 63 LEs
-Saving if Restructured     : 21 LEs
-Registered                 : |alu_reg|alu:my_alu|Mux13
+Multiplexer Inputs         : 4:1
+Bus Width                  : 31 bits
+Baseline Area              : 62 LEs
+Area if Restructured       : 31 LEs
+Saving if Restructured     : 31 LEs
+Registered                 : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|shift_reg[22]
 Example Multiplexer Output : 
 
-Multiplexer Inputs         : 19:1
+Multiplexer Inputs         : 4:1
+Bus Width                  : 31 bits
+Baseline Area              : 62 LEs
+Area if Restructured       : 31 LEs
+Saving if Restructured     : 31 LEs
+Registered                 : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|shift_reg[21]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 5:1
+Bus Width                  : 31 bits
+Baseline Area              : 93 LEs
+Area if Restructured       : 62 LEs
+Saving if Restructured     : 31 LEs
+Registered                 : |top|altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst|shift_reg[4]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 5:1
 Bus Width                  : 4 bits
-Baseline Area              : 48 LEs
-Area if Restructured       : 40 LEs
+Baseline Area              : 12 LEs
+Area if Restructured       : 4 LEs
 Saving if Restructured     : 8 LEs
-Registered                 : |alu_reg|alu:my_alu|Mux27
+Registered                 : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|word_counter[3]
 Example Multiplexer Output : 
 
-Multiplexer Inputs         : 20:1
+Multiplexer Inputs         : 5:1
 Bus Width                  : 4 bits
-Baseline Area              : 52 LEs
+Baseline Area              : 12 LEs
+Area if Restructured       : 4 LEs
+Saving if Restructured     : 8 LEs
+Registered                 : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|word_counter[3]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 5:1
+Bus Width                  : 4 bits
+Baseline Area              : 12 LEs
+Area if Restructured       : 4 LEs
+Saving if Restructured     : 8 LEs
+Registered                 : |top|altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|word_counter[1]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 5:1
+Bus Width                  : 4 bits
+Baseline Area              : 12 LEs
+Area if Restructured       : 4 LEs
+Saving if Restructured     : 8 LEs
+Registered                 : |top|altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|word_counter[3]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 17:1
+Bus Width                  : 4 bits
+Baseline Area              : 44 LEs
+Area if Restructured       : 24 LEs
+Saving if Restructured     : 20 LEs
+Registered                 : |top|altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|WORD_SR[1]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 17:1
+Bus Width                  : 4 bits
+Baseline Area              : 44 LEs
+Area if Restructured       : 24 LEs
+Saving if Restructured     : 20 LEs
+Registered                 : |top|altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|WORD_SR[3]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 17:1
+Bus Width                  : 4 bits
+Baseline Area              : 44 LEs
+Area if Restructured       : 28 LEs
+Saving if Restructured     : 16 LEs
+Registered                 : |top|altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|WORD_SR[0]
+Example Multiplexer Output : 
+
+Multiplexer Inputs         : 17:1
+Bus Width                  : 4 bits
+Baseline Area              : 44 LEs
 Area if Restructured       : 40 LEs
-Saving if Restructured     : 12 LEs
-Registered                 : |alu_reg|alu:my_alu|Mux6
-Example Multiplexer Output : 
-
-Multiplexer Inputs         : 20:1
-Bus Width                  : 2 bits
-Baseline Area              : 26 LEs
-Area if Restructured       : 20 LEs
-Saving if Restructured     : 6 LEs
-Registered                 : |alu_reg|alu:my_alu|Mux29
-Example Multiplexer Output : 
-
-Multiplexer Inputs         : 21:1
-Bus Width                  : 2 bits
-Baseline Area              : 28 LEs
-Area if Restructured       : 22 LEs
-Saving if Restructured     : 6 LEs
-Registered                 : |alu_reg|alu:my_alu|Mux3
+Saving if Restructured     : 4 LEs
+Registered                 : |top|altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst|sld_rom_sr:\instance_id_gen:rom_info_inst|WORD_SR[1]
 Example Multiplexer Output : 
 +--------------------------------------------------------------------------------+
 
 
 
 +--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:input_reg_a                  ;
+; Source assignments for altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst ;
++--------------------------------------------------------------------------------+
+Assignment : NOT_GATE_PUSH_BACK
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : POWER_UP_LEVEL
+Value      : LOW
+From       : -
+To         : -
+
+Assignment : AUTO_SHIFT_REGISTER_RECOGNITION
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[0]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[31]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[30]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[29]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[28]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[27]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[26]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[25]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[24]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[23]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[22]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[21]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[20]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[19]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[18]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[17]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[16]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[15]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[14]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[13]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[12]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[11]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[10]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[9]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[8]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[7]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[6]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[5]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[4]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[3]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[2]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[1]
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Source assignments for altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst ;
++--------------------------------------------------------------------------------+
+Assignment : NOT_GATE_PUSH_BACK
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : POWER_UP_LEVEL
+Value      : LOW
+From       : -
+To         : -
+
+Assignment : AUTO_SHIFT_REGISTER_RECOGNITION
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[0]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[31]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[30]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[29]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[28]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[27]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[26]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[25]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[24]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[23]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[22]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[21]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[20]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[19]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[18]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[17]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[16]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[15]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[14]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[13]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[12]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[11]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[10]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[9]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[8]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[7]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[6]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[5]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[4]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[3]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[2]
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[1]
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Source assignments for altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst ;
++--------------------------------------------------------------------------------+
+Assignment : NOT_GATE_PUSH_BACK
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : POWER_UP_LEVEL
+Value      : LOW
+From       : -
+To         : -
+
+Assignment : AUTO_SHIFT_REGISTER_RECOGNITION
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[0]
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Source assignments for altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst ;
++--------------------------------------------------------------------------------+
+Assignment : NOT_GATE_PUSH_BACK
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : POWER_UP_LEVEL
+Value      : LOW
+From       : -
+To         : -
+
+Assignment : AUTO_SHIFT_REGISTER_RECOGNITION
+Value      : OFF
+From       : -
+To         : -
+
+Assignment : AUTO_CLOCK_ENABLE_RECOGNITION
+Value      : OFF
+From       : -
+To         : hold_reg[0]
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder_reg:comb_3                  ;
 +--------------------------------------------------------------------------------+
 Parameter Name : width
 Value          : 32
@@ -778,7 +1971,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:input_reg_b                  ;
+; Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:input_reg_a ;
 +--------------------------------------------------------------------------------+
 Parameter Name : width
 Value          : 32
@@ -789,320 +1982,723 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:input_reg_op                 ;
+; Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:input_reg_b ;
 +--------------------------------------------------------------------------------+
 Parameter Name : width
+Value          : 32
+Type           : Signed Integer
++--------------------------------------------------------------------------------+
+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder_reg:comb_3|adder:my_adder   ;
++--------------------------------------------------------------------------------+
+Parameter Name : width
+Value          : 32
+Type           : Signed Integer
++--------------------------------------------------------------------------------+
+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:output_reg_s ;
++--------------------------------------------------------------------------------+
+Parameter Name : width
+Value          : 32
+Type           : Signed Integer
++--------------------------------------------------------------------------------+
+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder_reg:comb_3|regn:output_reg_cout ;
++--------------------------------------------------------------------------------+
+Parameter Name : width
+Value          : 1
+Type           : Signed Integer
++--------------------------------------------------------------------------------+
+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: altsource_probe:input_a           ;
++--------------------------------------------------------------------------------+
+Parameter Name : lpm_type
+Value          : altsource_probe
+Type           : String
+
+Parameter Name : lpm_hint
+Value          : UNUSED
+Type           : String
+
+Parameter Name : sld_auto_instance_index
+Value          : YES
+Type           : String
+
+Parameter Name : sld_instance_index
+Value          : 0
+Type           : Signed Integer
+
+Parameter Name : SLD_NODE_INFO
+Value          : 4746752
+Type           : Signed Integer
+
+Parameter Name : sld_ir_width
 Value          : 4
 Type           : Signed Integer
-+--------------------------------------------------------------------------------+
 
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+Parameter Name : instance_id
+Value          : a
+Type           : String
 
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:input_reg_shamt              ;
-+--------------------------------------------------------------------------------+
-Parameter Name : width
-Value          : 5
-Type           : Signed Integer
-+--------------------------------------------------------------------------------+
-
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:output_reg_hi                ;
-+--------------------------------------------------------------------------------+
-Parameter Name : width
-Value          : 32
-Type           : Signed Integer
-+--------------------------------------------------------------------------------+
-
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:output_reg_lo                ;
-+--------------------------------------------------------------------------------+
-Parameter Name : width
-Value          : 32
-Type           : Signed Integer
-+--------------------------------------------------------------------------------+
-
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regn:output_reg_zero              ;
-+--------------------------------------------------------------------------------+
-Parameter Name : width
+Parameter Name : probe_width
 Value          : 1
 Type           : Signed Integer
+
+Parameter Name : source_width
+Value          : 32
+Type           : Signed Integer
+
+Parameter Name : source_initial_value
+Value          : 0
+Type           : String
+
+Parameter Name : enable_metastability
+Value          : NO
+Type           : String
 +--------------------------------------------------------------------------------+
 
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: alu:my_alu|lpm_mult:Mult0     ;
+; Parameter Settings for User Entity Instance: altsource_probe:input_b           ;
 +--------------------------------------------------------------------------------+
-Parameter Name : AUTO_CARRY_CHAINS
-Value          : ON
-Type           : AUTO_CARRY
+Parameter Name : lpm_type
+Value          : altsource_probe
+Type           : String
 
-Parameter Name : IGNORE_CARRY_BUFFERS
-Value          : OFF
-Type           : IGNORE_CARRY
+Parameter Name : lpm_hint
+Value          : UNUSED
+Type           : String
 
-Parameter Name : AUTO_CASCADE_CHAINS
-Value          : ON
-Type           : AUTO_CASCADE
+Parameter Name : sld_auto_instance_index
+Value          : YES
+Type           : String
 
-Parameter Name : IGNORE_CASCADE_BUFFERS
-Value          : OFF
-Type           : IGNORE_CASCADE
+Parameter Name : sld_instance_index
+Value          : 0
+Type           : Signed Integer
 
-Parameter Name : LPM_WIDTHA
-Value          : 32
-Type           : Untyped
+Parameter Name : SLD_NODE_INFO
+Value          : 4746752
+Type           : Signed Integer
 
-Parameter Name : LPM_WIDTHB
-Value          : 32
-Type           : Untyped
+Parameter Name : sld_ir_width
+Value          : 4
+Type           : Signed Integer
 
-Parameter Name : LPM_WIDTHP
-Value          : 64
-Type           : Untyped
+Parameter Name : instance_id
+Value          : b
+Type           : String
 
-Parameter Name : LPM_WIDTHR
-Value          : 64
-Type           : Untyped
-
-Parameter Name : LPM_WIDTHS
+Parameter Name : probe_width
 Value          : 1
-Type           : Untyped
+Type           : Signed Integer
 
-Parameter Name : LPM_REPRESENTATION
-Value          : SIGNED
-Type           : Untyped
+Parameter Name : source_width
+Value          : 32
+Type           : Signed Integer
 
-Parameter Name : LPM_PIPELINE
+Parameter Name : source_initial_value
 Value          : 0
-Type           : Untyped
+Type           : String
 
-Parameter Name : LATENCY
-Value          : 0
-Type           : Untyped
-
-Parameter Name : INPUT_A_IS_CONSTANT
+Parameter Name : enable_metastability
 Value          : NO
-Type           : Untyped
-
-Parameter Name : INPUT_B_IS_CONSTANT
-Value          : NO
-Type           : Untyped
-
-Parameter Name : USE_EAB
-Value          : OFF
-Type           : Untyped
-
-Parameter Name : MAXIMIZE_SPEED
-Value          : 5
-Type           : Untyped
-
-Parameter Name : DEVICE_FAMILY
-Value          : Cyclone IV E
-Type           : Untyped
-
-Parameter Name : CARRY_CHAIN
-Value          : MANUAL
-Type           : Untyped
-
-Parameter Name : APEX20K_TECHNOLOGY_MAPPER
-Value          : LUT
-Type           : TECH_MAPPER_APEX20K
-
-Parameter Name : DEDICATED_MULTIPLIER_CIRCUITRY
-Value          : AUTO
-Type           : Untyped
-
-Parameter Name : DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
-Value          : 0
-Type           : Untyped
-
-Parameter Name : DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
-Value          : 0
-Type           : Untyped
-
-Parameter Name : CBXI_PARAMETER
-Value          : mult_46t
-Type           : Untyped
-
-Parameter Name : INPUT_A_FIXED_VALUE
-Value          : Bx
-Type           : Untyped
-
-Parameter Name : INPUT_B_FIXED_VALUE
-Value          : Bx
-Type           : Untyped
-
-Parameter Name : USE_AHDL_IMPLEMENTATION
-Value          : OFF
-Type           : Untyped
+Type           : String
 +--------------------------------------------------------------------------------+
 
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: alu:my_alu|lpm_mult:Mult1     ;
+; Parameter Settings for User Entity Instance: altsource_probe:output_s          ;
 +--------------------------------------------------------------------------------+
-Parameter Name : AUTO_CARRY_CHAINS
-Value          : ON
-Type           : AUTO_CARRY
+Parameter Name : lpm_type
+Value          : altsource_probe
+Type           : String
 
-Parameter Name : IGNORE_CARRY_BUFFERS
-Value          : OFF
-Type           : IGNORE_CARRY
+Parameter Name : lpm_hint
+Value          : UNUSED
+Type           : String
 
-Parameter Name : AUTO_CASCADE_CHAINS
-Value          : ON
-Type           : AUTO_CASCADE
+Parameter Name : sld_auto_instance_index
+Value          : YES
+Type           : String
 
-Parameter Name : IGNORE_CASCADE_BUFFERS
-Value          : OFF
-Type           : IGNORE_CASCADE
+Parameter Name : sld_instance_index
+Value          : 0
+Type           : Signed Integer
 
-Parameter Name : LPM_WIDTHA
+Parameter Name : SLD_NODE_INFO
+Value          : 4746752
+Type           : Signed Integer
+
+Parameter Name : sld_ir_width
+Value          : 4
+Type           : Signed Integer
+
+Parameter Name : instance_id
+Value          : s
+Type           : String
+
+Parameter Name : probe_width
 Value          : 32
-Type           : Untyped
+Type           : Signed Integer
 
-Parameter Name : LPM_WIDTHB
-Value          : 32
-Type           : Untyped
-
-Parameter Name : LPM_WIDTHP
-Value          : 64
-Type           : Untyped
-
-Parameter Name : LPM_WIDTHR
-Value          : 64
-Type           : Untyped
-
-Parameter Name : LPM_WIDTHS
+Parameter Name : source_width
 Value          : 1
-Type           : Untyped
+Type           : Signed Integer
 
-Parameter Name : LPM_REPRESENTATION
-Value          : UNSIGNED
-Type           : Untyped
-
-Parameter Name : LPM_PIPELINE
+Parameter Name : source_initial_value
 Value          : 0
-Type           : Untyped
+Type           : String
 
-Parameter Name : LATENCY
-Value          : 0
-Type           : Untyped
-
-Parameter Name : INPUT_A_IS_CONSTANT
+Parameter Name : enable_metastability
 Value          : NO
-Type           : Untyped
-
-Parameter Name : INPUT_B_IS_CONSTANT
-Value          : NO
-Type           : Untyped
-
-Parameter Name : USE_EAB
-Value          : OFF
-Type           : Untyped
-
-Parameter Name : MAXIMIZE_SPEED
-Value          : 5
-Type           : Untyped
-
-Parameter Name : DEVICE_FAMILY
-Value          : Cyclone IV E
-Type           : Untyped
-
-Parameter Name : CARRY_CHAIN
-Value          : MANUAL
-Type           : Untyped
-
-Parameter Name : APEX20K_TECHNOLOGY_MAPPER
-Value          : LUT
-Type           : TECH_MAPPER_APEX20K
-
-Parameter Name : DEDICATED_MULTIPLIER_CIRCUITRY
-Value          : AUTO
-Type           : Untyped
-
-Parameter Name : DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
-Value          : 0
-Type           : Untyped
-
-Parameter Name : DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
-Value          : 0
-Type           : Untyped
-
-Parameter Name : CBXI_PARAMETER
-Value          : mult_7dt
-Type           : Untyped
-
-Parameter Name : INPUT_A_FIXED_VALUE
-Value          : Bx
-Type           : Untyped
-
-Parameter Name : INPUT_B_FIXED_VALUE
-Value          : Bx
-Type           : Untyped
-
-Parameter Name : USE_AHDL_IMPLEMENTATION
-Value          : OFF
-Type           : Untyped
+Type           : String
 +--------------------------------------------------------------------------------+
 
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                    ;
-+---------------------------------------+---------------------------+
-; Name                                  ; Value                     ;
-+---------------------------------------+---------------------------+
-; Number of entity instances            ; 2                         ;
-; Entity Instance                       ; alu:my_alu|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 32                        ;
-;     -- LPM_WIDTHB                     ; 32                        ;
-;     -- LPM_WIDTHP                     ; 64                        ;
-;     -- LPM_REPRESENTATION             ; SIGNED                    ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                        ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                        ;
-;     -- USE_EAB                        ; OFF                       ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                      ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                        ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                        ;
-; Entity Instance                       ; alu:my_alu|lpm_mult:Mult1 ;
-;     -- LPM_WIDTHA                     ; 32                        ;
-;     -- LPM_WIDTHB                     ; 32                        ;
-;     -- LPM_WIDTHP                     ; 64                        ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                  ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                        ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                        ;
-;     -- USE_EAB                        ; OFF                       ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                      ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                        ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                        ;
-+---------------------------------------+---------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: altsource_probe:output_cout       ;
++--------------------------------------------------------------------------------+
+Parameter Name : lpm_type
+Value          : altsource_probe
+Type           : String
+
+Parameter Name : lpm_hint
+Value          : UNUSED
+Type           : String
+
+Parameter Name : sld_auto_instance_index
+Value          : YES
+Type           : String
+
+Parameter Name : sld_instance_index
+Value          : 0
+Type           : Signed Integer
+
+Parameter Name : SLD_NODE_INFO
+Value          : 4746752
+Type           : Signed Integer
+
+Parameter Name : sld_ir_width
+Value          : 4
+Type           : Signed Integer
+
+Parameter Name : instance_id
+Value          : cout
+Type           : String
+
+Parameter Name : probe_width
+Value          : 1
+Type           : Signed Integer
+
+Parameter Name : source_width
+Value          : 1
+Type           : Signed Integer
+
+Parameter Name : source_initial_value
+Value          : 0
+Type           : String
+
+Parameter Name : enable_metastability
+Value          : NO
+Type           : String
++--------------------------------------------------------------------------------+
+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:02     ;
-+----------------+--------------+
++--------------------------------------------------------------------------------+
+; Partition Dependent Files                                                      ;
++--------------------------------------------------------------------------------+
+File     : adder.v
+Location : Project Directory
+Library  : work
+Checksum : 79f75a38c953e9c159a0eec12eafae3f
+
+File     : adder_reg.v
+Location : Project Directory
+Library  : work
+Checksum : d9f7b5085d96067f97c47d2c65c65a4
+
+File     : full_adder.v
+Location : Project Directory
+Library  : work
+Checksum : fcb286c8d07aef63b436863782c318bc
+
+File     : regn.v
+Location : Project Directory
+Library  : work
+Checksum : 983a42b0c32838bfc2e6144469fd1b3b
+
+File     : top.v
+Location : Project Directory
+Library  : work
+Checksum : c5f289a4669fd1a22c3676f3a4d3c54
+
+File     : libraries/megafunctions/altsource_probe.v
+Location : Quartus II Install
+Library  : work
+Checksum : db3337d9b9e44fad1c5aa60a783608d
+
+File     : libraries/megafunctions/altsource_probe_body.vhd
+Location : Quartus II Install
+Library  : work
+Checksum : 2c98e457b128ef92de1667bad33f32a
+
+File     : libraries/megafunctions/sld_rom_sr.vhd
+Location : Quartus II Install
+Library  : work
+Checksum : ba1510ef65fc3cda45853e3f35d9543b
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "altsource_probe:output_cout"                        ;
++--------------------------------------------------------------------------------+
+Port     : source
+Type     : Output
+Severity : Info
+Details  : Explicitly unconnected
+
+Port     : source_clk
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : source_ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : raw_tck
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : tdi
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : usr1
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_sdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_e1dr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_udr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_uir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_tlr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : clrn
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_in
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_out
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
+
+Port     : tdo
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "altsource_probe:output_s"                           ;
++--------------------------------------------------------------------------------+
+Port     : source
+Type     : Output
+Severity : Info
+Details  : Explicitly unconnected
+
+Port     : source_clk
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : source_ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : raw_tck
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : tdi
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : usr1
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_sdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_e1dr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_udr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_uir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_tlr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : clrn
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_in
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_out
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
+
+Port     : tdo
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "altsource_probe:input_b"                            ;
++--------------------------------------------------------------------------------+
+Port     : probe
+Type     : Input
+Severity : Info
+Details  : Explicitly unconnected
+
+Port     : source_clk
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : source_ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : raw_tck
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : tdi
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : usr1
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_sdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_e1dr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_udr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_uir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_tlr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : clrn
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_in
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_out
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
+
+Port     : tdo
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "altsource_probe:input_a"                            ;
++--------------------------------------------------------------------------------+
+Port     : probe
+Type     : Input
+Severity : Info
+Details  : Explicitly unconnected
+
+Port     : source_clk
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : source_ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : raw_tck
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : tdi
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : usr1
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_sdr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_e1dr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_udr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_cir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_uir
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : jtag_state_tlr
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : clrn
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ena
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_in
+Type     : Input
+Severity : Warning
+Details  : Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.
+
+Port     : ir_out
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
+
+Port     : tdo
+Type     : Output
+Severity : Warning
+Details  : Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder_reg:comb_3|adder:my_adder|full_adder:adder_array[0].add" ;
++--------------------------------------------------------------------------------+
+Port     : cin
+Type     : Input
+Severity : Info
+Details  : Stuck at GND
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; SignalTap II Logic Analyzer Settings                                           ;
++--------------------------------------------------------------------------------+
+Instance Index              : 0
+Instance Name               : auto_signaltap_0
+Trigger Input Width         : 123
+Data Input Width            : 123
+Sample Depth                : 128
+Segments                    : 1
+Storage Qualifier Type      : continuous
+Trigger Flow Control        : sequential
+Trigger Conditions          : 1
+Advanced Trigger Conditions : 0
+Trigger In Used             : no
+Trigger Out Used            : no
+Power-Up Trigger Enabled    : no
++--------------------------------------------------------------------------------+
+
+
+
++-----------------------------------------------+
+; Elapsed Time Per Partition                    ;
++--------------------------------+--------------+
+; Partition Name                 ; Elapsed Time ;
++--------------------------------+--------------+
+; sld_signaltap:auto_signaltap_0 ; 00:00:05     ;
+; Top                            ; 00:00:05     ;
+; sld_hub:auto_hub               ; 00:00:05     ;
++--------------------------------+--------------+
 
 
 +-------------------------------+
@@ -1111,9 +2707,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Fri Sep 30 17:29:38 2016
+    Info: Processing started: Mon Oct 10 16:16:43 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off the_project -c the_project
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file top.v
+    Info (12023): Found entity 1: top
 Info (12021): Found 1 design units, including 1 entities, in source file testbench3.v
     Info (12023): Found entity 1: testbench3
 Info (12021): Found 1 design units, including 1 entities, in source file testbench2.v
@@ -1130,58 +2728,138 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder_r
     Info (12023): Found entity 1: adder_reg
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: adder
-Info (12127): Elaborating entity "alu_reg" for the top level hierarchy
+Critical Warning (10846): Verilog HDL Instantiation warning at top.v(4): instance has no name
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "adder_reg" for hierarchy "adder_reg:comb_3"
 Warning (12125): Using design file regn.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: regn
-Info (12128): Elaborating entity "regn" for hierarchy "regn:input_reg_a"
-Info (12128): Elaborating entity "regn" for hierarchy "regn:input_reg_op"
-Info (12128): Elaborating entity "regn" for hierarchy "regn:input_reg_shamt"
-Info (12128): Elaborating entity "alu" for hierarchy "alu:my_alu"
-Warning (10935): Verilog HDL Casex/Casez warning at alu.v(42): casex/casez item expression overlaps with a previous casex/casez item expression
-Info (12128): Elaborating entity "regn" for hierarchy "regn:output_reg_zero"
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:my_alu|Mult0"
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "alu:my_alu|Mult1"
-Info (12130): Elaborated megafunction instantiation "alu:my_alu|lpm_mult:Mult0"
-Info (12133): Instantiated megafunction "alu:my_alu|lpm_mult:Mult0" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "32"
-    Info (12134): Parameter "LPM_WIDTHB" = "32"
-    Info (12134): Parameter "LPM_WIDTHP" = "64"
-    Info (12134): Parameter "LPM_WIDTHR" = "64"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_46t.tdf
-    Info (12023): Found entity 1: mult_46t
-Info (12130): Elaborated megafunction instantiation "alu:my_alu|lpm_mult:Mult1"
-Info (12133): Instantiated megafunction "alu:my_alu|lpm_mult:Mult1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHA" = "32"
-    Info (12134): Parameter "LPM_WIDTHB" = "32"
-    Info (12134): Parameter "LPM_WIDTHP" = "64"
-    Info (12134): Parameter "LPM_WIDTHR" = "64"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_7dt.tdf
-    Info (12023): Found entity 1: mult_7dt
-Info (13014): Ignored 470 buffer(s)
-    Info (13019): Ignored 470 SOFT buffer(s)
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1144 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 74 input pins
-    Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 989 logic cells
-    Info (21062): Implemented 16 DSP elements
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 377 megabytes
-    Info: Processing ended: Fri Sep 30 17:29:42 2016
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (12128): Elaborating entity "regn" for hierarchy "adder_reg:comb_3|regn:input_reg_a"
+Info (12128): Elaborating entity "adder" for hierarchy "adder_reg:comb_3|adder:my_adder"
+Info (12128): Elaborating entity "full_adder" for hierarchy "adder_reg:comb_3|adder:my_adder|full_adder:adder_array[0].add"
+Info (12128): Elaborating entity "regn" for hierarchy "adder_reg:comb_3|regn:output_reg_cout"
+Info (12128): Elaborating entity "altsource_probe" for hierarchy "altsource_probe:input_a"
+Info (12130): Elaborated megafunction instantiation "altsource_probe:input_a"
+Info (12133): Instantiated megafunction "altsource_probe:input_a" with the following parameter:
+    Info (12134): Parameter "source_width" = "32"
+    Info (12134): Parameter "instance_id" = "a"
+Info (12128): Elaborating entity "altsource_probe_body" for hierarchy "altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst"
+Info (12128): Elaborating entity "altsource_probe_impl" for hierarchy "altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst"
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "altsource_probe:input_a|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst|sld_rom_sr:\instance_id_gen:rom_info_inst"
+Info (12128): Elaborating entity "altsource_probe" for hierarchy "altsource_probe:input_b"
+Info (12130): Elaborated megafunction instantiation "altsource_probe:input_b"
+Info (12133): Instantiated megafunction "altsource_probe:input_b" with the following parameter:
+    Info (12134): Parameter "source_width" = "32"
+    Info (12134): Parameter "instance_id" = "b"
+Info (12128): Elaborating entity "altsource_probe_body" for hierarchy "altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst"
+Info (12128): Elaborating entity "altsource_probe_impl" for hierarchy "altsource_probe:input_b|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_source_gen:wider_source_inst"
+Info (12128): Elaborating entity "altsource_probe" for hierarchy "altsource_probe:output_s"
+Info (12130): Elaborated megafunction instantiation "altsource_probe:output_s"
+Info (12133): Instantiated megafunction "altsource_probe:output_s" with the following parameter:
+    Info (12134): Parameter "probe_width" = "32"
+    Info (12134): Parameter "instance_id" = "s"
+Info (12128): Elaborating entity "altsource_probe_body" for hierarchy "altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst"
+Info (12128): Elaborating entity "altsource_probe_impl" for hierarchy "altsource_probe:output_s|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\wider_probe_gen:wider_probe_inst"
+Info (12128): Elaborating entity "altsource_probe" for hierarchy "altsource_probe:output_cout"
+Info (12130): Elaborated megafunction instantiation "altsource_probe:output_cout"
+Info (12133): Instantiated megafunction "altsource_probe:output_cout" with the following parameter:
+    Info (12134): Parameter "probe_width" = "1"
+    Info (12134): Parameter "instance_id" = "cout"
+Info (12128): Elaborating entity "altsource_probe_body" for hierarchy "altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst"
+Info (12128): Elaborating entity "altsource_probe_impl" for hierarchy "altsource_probe:output_cout|altsource_probe_body:altsource_probe_body_inst|altsource_probe_impl:\equal_width_gen:equal_width_inst"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c124.tdf
+    Info (12023): Found entity 1: altsyncram_c124
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
+    Info (12023): Found entity 1: mux_ssc
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
+    Info (12023): Found entity 1: decode_dvf
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_1ii.tdf
+    Info (12023): Found entity 1: cntr_1ii
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_tgc.tdf
+    Info (12023): Found entity 1: cmpr_tgc
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_i6j.tdf
+    Info (12023): Found entity 1: cntr_i6j
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_egi.tdf
+    Info (12023): Found entity 1: cntr_egi
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_qgc.tdf
+    Info (12023): Found entity 1: cmpr_qgc
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_23j.tdf
+    Info (12023): Found entity 1: cntr_23j
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
+    Info (12023): Found entity 1: cmpr_ngc
+Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
+Info (12206): 3 design partitions require synthesis
+    Info (12220): Partition "Top" requires synthesis because it contains new sub-partitions
+    Info (12213): Partition "sld_hub:auto_hub" requires synthesis because the project database does not contain a post-synthesis netlist for this partition
+    Info (12213): Partition "sld_signaltap:auto_signaltap_0" requires synthesis because the project database does not contain a post-synthesis netlist for this partition
+Info (12209): No design partitions will skip synthesis in the current incremental compilation
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (281037): Using 8 processors to synthesize 3 partitions in parallel
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Mon Oct 10 16:16:50 2016
+Info: Command: quartus_map --parallel=1 --helper=0 --partition=Top the_project -c the_project
+Info (281020): Starting Logic Optimization and Technology Mapping for Top Partition
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (21057): Implemented 511 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 68 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 420 logic cells
+    Info (21071): Implemented 1 partitions
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 345 megabytes
+    Info: Processing ended: Mon Oct 10 16:16:52 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Mon Oct 10 16:16:50 2016
+Info: Command: quartus_map --parallel=1 --helper=1 --partition=sld_signaltap:auto_signaltap_0 the_project -c the_project
+Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_signaltap:auto_signaltap_0
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
+Info (21057): Implemented 2619 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 303 input pins
+    Info (21059): Implemented 256 output pins
+    Info (21061): Implemented 1937 logic cells
+    Info (21064): Implemented 123 RAM segments
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 352 megabytes
+    Info: Processing ended: Mon Oct 10 16:16:53 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Mon Oct 10 16:16:50 2016
+Info: Command: quartus_map --parallel=1 --helper=2 --partition=sld_hub:auto_hub the_project -c the_project
+Info (281019): Starting Logic Optimization and Technology Mapping for Partition sld_hub:auto_hub
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
+Info (21057): Implemented 376 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 58 input pins
+    Info (21059): Implemented 72 output pins
+    Info (21061): Implemented 246 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 345 megabytes
+    Info: Processing ended: Mon Oct 10 16:16:51 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+Info (281038): Finished parallel synthesis of all partitions
+Info (144001): Generated suppressed messages file /acct/sagerje/Downloads/master/611work/quartus_work/the_project.map.smsg
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 450 megabytes
+    Info: Processing ended: Mon Oct 10 16:16:54 2016
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:14
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /acct/sagerje/Downloads/master/611work/quartus_work/the_project.map.smsg.
 
 

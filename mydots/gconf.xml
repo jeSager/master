@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="default_size_rows" mtime="1476123872" type="int" value="300"/>
+	<entry name="default_size_columns" mtime="1476123872" type="int" value="300"/>
+	<entry name="title_mode" mtime="1476123872" type="string">
+		<stringvalue>ignore</stringvalue>
+	</entry>
+	<entry name="update_records" mtime="1476123872" type="bool" value="false"/>
+	<entry name="custom_command" mtime="1472668614" type="string">
+		<stringvalue></stringvalue>
+	</entry>
+	<entry name="use_custom_command" mtime="1472668616" type="bool" value="false"/>
+	<entry name="bold_color_same_as_fg" mtime="1472055599" type="bool" value="true"/>
+	<entry name="default_show_menubar" mtime="1476123872" type="bool" value="false"/>
+	<entry name="scrollbar_position" mtime="1476123872" type="string">
+		<stringvalue>hidden</stringvalue>
+	</entry>
+	<entry name="use_theme_colors" mtime="1476123872" type="bool" value="false"/>
+	<entry name="background_darkness" mtime="1476123872" type="float" value="0.51716697216033936"/>
+	<entry name="background_type" mtime="1472067504" type="string">
+		<stringvalue>solid</stringvalue>
+	</entry>
+	<entry name="silent_bell" mtime="1476123872" type="bool" value="true"/>
+	<entry name="cursor_shape" mtime="1476123872" type="string">
+		<stringvalue>ibeam</stringvalue>
+	</entry>
+	<entry name="use_custom_default_size" mtime="1476123872" type="bool" value="true"/>
+	<entry name="font" mtime="1476123872" type="string">
+		<stringvalue>Droid Sans Mono for Powerline 14</stringvalue>
+	</entry>
+	<entry name="use_system_font" mtime="1476123872" type="bool" value="false"/>
+	<entry name="palette" mtime="1476123872" type="string">
+		<stringvalue>#2E2E34343636:#F9F926267271:#A6A6E2E22E2D:#F4F4BFBF7574:#6666D9D9EFEF:#AEAE8181FFFF:#A1A1EFEFE4E4:#88888A8A8585:#2B842B842B84:#F9F926267271:#A6A6E2E22E2D:#F4F4BFBF7574:#6666D9D9EFEF:#AEAE8181FFFF:#A1A1EFEFE4E4:#F9F9F8F8F5F5</stringvalue>
+	</entry>
+	<entry name="alternate_screen_scroll" mtime="1476123872" type="bool" value="true"/>
+	<entry name="background_color" mtime="1476123872" type="string">
+		<stringvalue>#2E2E34343636</stringvalue>
+	</entry>
+	<entry name="visible_name" mtime="1476123872" type="string">
+		<stringvalue>Default</stringvalue>
+	</entry>
+	<entry name="bold_color" mtime="1476123872" type="string">
+		<stringvalue>#72729F9FCFCF</stringvalue>
+	</entry>
+	<entry name="foreground_color" mtime="1476123872" type="string">
+		<stringvalue>#F8F8F8F8F2F2</stringvalue>
+	</entry>
+</gconf>

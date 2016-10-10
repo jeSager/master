@@ -1,7 +1,7 @@
 +--------------------------------------------------------------------------------+
 ; Legal Partition Candidates                                                     ;
 +--------------------------------------------------------------------------------+
-Hierarchy         : output_reg_zero
+Hierarchy         : comb_3|output_reg_cout
 Input             : 2
 Constant Input    : 0
 Unused Input      : 0
@@ -16,7 +16,7 @@ Unused Bidir      : 0
 Input only Bidir  : 0
 Output only Bidir : 0
 
-Hierarchy         : output_reg_lo
+Hierarchy         : comb_3|output_reg_s
 Input             : 33
 Constant Input    : 0
 Unused Input      : 0
@@ -31,7 +31,502 @@ Unused Bidir      : 0
 Input only Bidir  : 0
 Output only Bidir : 0
 
-Hierarchy         : output_reg_hi
+Hierarchy         : comb_3|my_adder|adder_array[31].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[30].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[29].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[28].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[27].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[26].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[25].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[24].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[23].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[22].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[21].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[20].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[19].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[18].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[17].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[16].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[15].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[14].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[13].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[12].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[11].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[10].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[9].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[8].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[7].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[6].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[5].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[4].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[3].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[2].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[1].add
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 2
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder|adder_array[0].add
+Input             : 3
+Constant Input    : 1
+Unused Input      : 0
+Floating Input    : 1
+Output            : 2
+Constant Output   : 1
+Unused Output     : 1
+Floating Output   : 1
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|my_adder
+Input             : 64
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 33
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : comb_3|input_reg_b
 Input             : 33
 Constant Input    : 0
 Unused Input      : 0
@@ -46,52 +541,7 @@ Unused Bidir      : 0
 Input only Bidir  : 0
 Output only Bidir : 0
 
-Hierarchy         : my_alu
-Input             : 73
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 65
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : input_reg_shamt
-Input             : 6
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 5
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : input_reg_op
-Input             : 5
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 4
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : input_reg_b
+Hierarchy         : comb_3|input_reg_a
 Input             : 33
 Constant Input    : 0
 Unused Input      : 0
@@ -106,12 +556,12 @@ Unused Bidir      : 0
 Input only Bidir  : 0
 Output only Bidir : 0
 
-Hierarchy         : input_reg_a
-Input             : 33
+Hierarchy         : comb_3
+Input             : 65
 Constant Input    : 0
 Unused Input      : 0
 Floating Input    : 0
-Output            : 32
+Output            : 33
 Constant Output   : 0
 Unused Output     : 0
 Floating Output   : 0

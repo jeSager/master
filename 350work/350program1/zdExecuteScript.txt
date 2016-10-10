@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Descend into 'testdirectory' directory"
+cd testdirectory
+#
+for item in *
+do
+  echo " "
+  echo "EXECUTING" $item
+  cd $item
+  ./Aprog zin1.txt > ../../lastOutput.txt
+  ./Aprog zin2.txt >> ../../lastOutput.txt
+  ./Aprog zin3.txt >> ../../lastOutput.txt
+  cd ..
+echo "EXECUTION COMPLETE"
+done
+echo "Return from 'testdirectory' directory"
+cd ..
+echo " "

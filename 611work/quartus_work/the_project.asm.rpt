@@ -1,0 +1,178 @@
+Assembler report for the_project
+Fri Sep 30 17:30:11 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: the_project.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Fri Sep 30 17:30:11 2016 ;
+; Revision Name         ; the_project                           ;
+; Top-level Entity Name ; alu_reg                               ;
+; Family                ; Cyclone IV E                          ;
+; Device                ; EP4CE115F29C7                         ;
++-----------------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Assembler Settings                                                             ;
++--------------------------------------------------------------------------------+
+Option        : Use smart compilation
+Setting       : Off
+Default Value : Off
+
+Option        : Enable parallel Assembler and TimeQuest Timing Analyzer during compilation
+Setting       : On
+Default Value : On
+
+Option        : Enable compact report table
+Setting       : Off
+Default Value : Off
+
+Option        : Generate compressed bitstreams
+Setting       : On
+Default Value : On
+
+Option        : Compression mode
+Setting       : Off
+Default Value : Off
+
+Option        : Clock source for configuration device
+Setting       : Internal
+Default Value : Internal
+
+Option        : Clock frequency of the configuration device
+Setting       : 10 MHZ
+Default Value : 10 MHz
+
+Option        : Divide clock frequency by
+Setting       : 1
+Default Value : 1
+
+Option        : Auto user code
+Setting       : Off
+Default Value : Off
+
+Option        : Use configuration device
+Setting       : Off
+Default Value : Off
+
+Option        : Configuration device
+Setting       : Auto
+Default Value : Auto
+
+Option        : Configuration device auto user code
+Setting       : Off
+Default Value : Off
+
+Option        : Generate Tabular Text File (.ttf) For Target Device
+Setting       : Off
+Default Value : Off
+
+Option        : Generate Raw Binary File (.rbf) For Target Device
+Setting       : Off
+Default Value : Off
+
+Option        : Generate Hexadecimal (Intel-Format) Output File (.hexout) for Target Device
+Setting       : Off
+Default Value : Off
+
+Option        : Hexadecimal Output File start address
+Setting       : 0
+Default Value : 0
+
+Option        : Hexadecimal Output File count direction
+Setting       : Up
+Default Value : Up
+
+Option        : Release clears before tri-states
+Setting       : Off
+Default Value : Off
+
+Option        : Auto-restart configuration after error
+Setting       : On
+Default Value : On
+
+Option        : Enable OCT_DONE
+Setting       : Off
+Default Value : Off
+
+Option        : Generate Serial Vector Format File (.svf) for Target Device
+Setting       : Off
+Default Value : Off
+
+Option        : Generate a JEDEC STAPL Format File (.jam) for Target Device
+Setting       : Off
+Default Value : Off
+
+Option        : Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device
+Setting       : Off
+Default Value : Off
+
+Option        : Generate a compressed Jam STAPL Byte Code 2.0 File (.jbc) for Target Device
+Setting       : On
+Default Value : On
++--------------------------------------------------------------------------------+
+
+
+
++---------------------------+
+; Assembler Generated Files ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; the_project.sof           ;
++---------------------------+
+
+
++-------------------------------------------+
+; Assembler Device Options: the_project.sof ;
++----------------+--------------------------+
+; Option         ; Setting                  ;
++----------------+--------------------------+
+; Device         ; EP4CE115F29C7            ;
+; JTAG usercode  ; 0xFFFFFFFF               ;
+; Checksum       ; 0x0060E260               ;
++----------------+--------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Assembler
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Fri Sep 30 17:30:06 2016
+
+

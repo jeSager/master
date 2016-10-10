@@ -1,0 +1,169 @@
+
+# ____________________________________________________
+# Error on line:    4       
+# Line input:       0f0f0f0ff0f0f0f0001
+# Lo Output:        00000000
+# Lo Expected:      ffffffff
+# ____________________________________________________
+# Error on line:    4       
+# Line input:       0f0f0f0ff0f0f0f0001
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    5       
+# Line input:       0f0f0f0f00000000001
+# Lo Output:        00000000
+# Lo Expected:      0f0f0f0f
+# ____________________________________________________
+# Error on line:    5       
+# Line input:       0f0f0f0f00000000001
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    7       
+# Line input:       00000000ffffffff003
+# Lo Output:        00000000
+# Lo Expected:      ffffffff
+# ____________________________________________________
+# Error on line:    7       
+# Line input:       00000000ffffffff003
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    8       
+# Line input:       00000000ffffffff003
+# Lo Output:        00000000
+# Lo Expected:      ffffffff
+# ____________________________________________________
+# Error on line:    8       
+# Line input:       00000000ffffffff003
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    10      
+# Line input:       0000000000000000002
+# Lo Output:        00000000
+# Lo Expected:      ffffffff
+# ____________________________________________________
+# Error on line:    10      
+# Line input:       0000000000000000002
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    13      
+# Line input:       000000000000000f018
+# Lo Output:        00000000
+# Lo Expected:      0000001e
+# ____________________________________________________
+# Error on line:    13      
+# Line input:       000000000000000f018
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    14      
+# Line input:       000000000000000f008
+# Lo Output:        00000000
+# Lo Expected:      0000000f
+# ____________________________________________________
+# Error on line:    14      
+# Line input:       000000000000000f008
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    15      
+# Line input:       000000000000000f019
+# Lo Output:        00000000
+# Lo Expected:      00000007
+# ____________________________________________________
+# Error on line:    15      
+# Line input:       000000000000000f019
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    16      
+# Line input:       000000000000000f009
+# Lo Output:        00000000
+# Lo Expected:      0000000f
+# ____________________________________________________
+# Error on line:    16      
+# Line input:       000000000000000f009
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    19      
+# Line input:       000000000000000f00c
+# Lo Output:        00000000
+# Lo Expected:      00000001
+# ____________________________________________________
+# Error on line:    19      
+# Line input:       000000000000000f00c
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    20      
+# Line input:       0000000f0000000f00c
+# Zero Output:      0
+# Zero Expected:    1
+# ____________________________________________________
+# Error on line:    22      
+# Line input:       1ffffffffffffffb00c
+# Zero Output:      0
+# Zero Expected:    1
+# ____________________________________________________
+# Error on line:    28      
+# Line input:       000000000000000100d
+# Lo Output:        00000000
+# Lo Expected:      00000001
+# ____________________________________________________
+# Error on line:    28      
+# Line input:       000000000000000100d
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    30      
+# Line input:       000000010000000000d
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    34      
+# Line input:       00000000ffffffff004
+# Lo Output:        00000000
+# Lo Expected:      80000001
+# ____________________________________________________
+# Error on line:    34      
+# Line input:       00000000ffffffff004
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    36      
+# Line input:       0000000200000001004
+# Lo Output:        00000000
+# Lo Expected:      00000001
+# ____________________________________________________
+# Error on line:    36      
+# Line input:       0000000200000001004
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    38      
+# Line input:       0000000000000001004
+# Lo Output:        00000000
+# Lo Expected:      ffffffff
+# ____________________________________________________
+# Error on line:    38      
+# Line input:       0000000000000001004
+# Zero Output:      1
+# Zero Expected:    0
+# ____________________________________________________
+# Error on line:    42      
+# Line input:       0800000000000020006
+# Hi Output:        00000000
+# Hi Expected:      00000001
+# ____________________________________________________
+# Error on line:    42      
+# Line input:       0800000000000020006
+# Zero Output:      1
+# Zero Expected:    0
+#         49 tests completed with         33 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench3.v(74)
+#    Time: 515 ns  Iteration: 1  Instance: /testbench3

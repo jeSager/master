@@ -1,0 +1,4 @@
+gset string palette "#1d1f21:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6:#969896:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
+gset string background_color "#1d1f21"
+gset string foreground_color "#c5c8c6"
+gset string bold_color "#c5c8c6"

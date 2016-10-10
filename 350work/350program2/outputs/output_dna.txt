@@ -1,0 +1,82 @@
+MAIN: Beginning execution
+MAIN: datafile  '../../inputs/text_dna.txt'
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Mon Oct 10 08:26:40 2016
+TIME beginning             0.00 u         0.00 s   Res:        2176
+TIME beginning             0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+
+UTILS: open the input file '../../inputs/text_dna.txt'
+UTILS: open succeeded for '../../inputs/text_dna.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: open the input file '../../inputs/pattern_dna.txt'
+UTILS: open succeeded for '../../inputs/pattern_dna.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: open the input file '../../inputs/freq_dna.txt'
+UTILS: open succeeded for '../../inputs/freq_dna.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+
+
+
+THE MATCH LOCATION VECTORS ARE EQUAL
+
+
+
+______________________________________________________________________
+
+PATTERN:                                                        'AACC'
+......................................................................
+
+COMPARISONS                N                EXTRA                TOTAL
+NAIVE                    101                   87                  188
+INDEXED                   33                   58                   91
+......................................................................
+
+LOCATION(s):
+        21        31
+
+
+
+______________________________________________________________________
+
+PATTERN:                                                        'CAGT'
+......................................................................
+
+COMPARISONS                N                EXTRA                TOTAL
+NAIVE                    101                   41                  142
+INDEXED                   33                   11                   44
+......................................................................
+
+LOCATION(s):
+        65
+
+
+
+______________________________________________________________________
+
+PATTERN:                                                        'TACC'
+......................................................................
+
+COMPARISONS                N                EXTRA                TOTAL
+NAIVE                    101                   33                  134
+INDEXED                   33                   50                   83
+......................................................................
+
+LOCATION(s):
+        62        96
+MAIN: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Mon Oct 10 08:26:40 2016
+TIME ending                0.00 u         0.00 s   Res:        2560
+TIME ending                0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+

@@ -1,0 +1,17 @@
+James Sager
+csce274
+homework 4
+
+1
+Pass-by-value implies passing a copy of the variable.
+Pass-by-reference implies passing an alias of the variable.
+Everything is pass by value in C by default.  * can be used.
+It matters because the & operator doesn't exist like in c++
+this meand * will always be required.
+
+2
+0x0A & 0X0C = 0X08
+0X4C << 2 = 0X0C
+0XD0 >> 3 = 0X1A
+0X34 | 0XB8 = 0XBA
+0X69 ^ 0XA3 = 0XCA

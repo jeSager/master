@@ -1,0 +1,26 @@
+//serial sequence [158][15]//wait until it senses home base p16
+
+
+//virtual wall Packet ID: 13  p17  .... home base trips this sensor
+
+
+
+//p18
+//Infrared Byte
+//Packet ID: 17
+//Data Bytes: 1
+//unsigned
+//This  value  identifies  the  IR  byte  currently  being  received 
+//by iRobot Create. A value of 255 indicates that no IR byte 
+//is  being  received.  These  bytes  include  those  sent  by  the 
+//Roomba Remote, the Home Base, Create robots using the 
+//Send IR command, and user-created devices.
+//Range: 0 – 255
+
+//Scheduling Remote  143  Seek Dock//////////////////////////////////////
+
+
+
+
+//p20... check to see if it's connected to home base pid35
+

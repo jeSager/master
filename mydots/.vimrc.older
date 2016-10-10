@@ -1,0 +1,148 @@
+"===============================================================================
+" .vimrc
+" author: jeSager
+"===============================================================================
+"type :so % to reload without exit
+
+"_______________________________________________________________________________
+"
+" NAVIGATION
+"-------------------------------------------------------------------------------
+
+"open new buffers without saving
+set hidden
+"toggle buffers with tab in normal mode
+nnoremap <Tab> :bn<CR>
+"do not require shift to enter command (swap keys)
+nnoremap ; :
+nnoremap : ;
+"too lazy for esc
+imap jk  <Esc>
+"save with one key in either mode
+nmap <Home> :w<CR>
+imap <Home> <Esc>:w<CR>a
+nnoremap j j0
+nnoremap k k0
+set so=17
+"space, the final fronteir, is your leader
+let mapleader =" "
+"nnoremap <space> l
+
+"lw writes in normal
+nnoremap <leader>w :w<CR>
+
+"lp goes to previous buffer in normal
+nnoremap <leader>p :bp<CR>
+
+"lh turns off highlight after searching
+nnoremap <leader>h :nohl<CR>
+
+"<CR> in normal mode inserts a newline and returns to normal
+nnoremap <CR> o<Esc>
+
+"ld deletes the current buffer
+nnoremap <leader>d :bd<CR>
+
+"delete trailing whitespace on all files on save
+autocmd BufWritePre * :call DltTrlngWhtSpc()
+function! DltTrlngWhtSpc()
+  execute "normal! mz"
+  %s/\s\+$//ge
+  exe "normal! 'z"
+endfunc
+
+"two spaces for indentation (NO TABS)
+set shiftwidth=2
+set tabstop=2
+set expandtab
+
+"move a line up/down
+nnoremap <leader>k ddkkp
+nnoremap <leader>j ddp
+
+"source vimrc
+nnoremap <leader>s :so %<CR>
+
+"explore the working file's directory
+"because using :Ex[plore] will take over the current buffer
+nnoremap <leader>e :e%:h<CR>:set number<CR>:set rnu<CR>
+
+"turn off search highlight
+nnoremap <leader>h :nohl<CR>
+
+"_______________________________________________________________________________
+"
+" SEARCH SETTINGS
+"-------------------------------------------------------------------------------
+
+set hlsearch
+set ignorecase
+"search is case sensative if uppercase included
+set smartcase
+"search as typed
+set incsearch
+"clear search variable and highlighting
+"better to type :nohl
+"command Search let @/ = ""
+"extend options
+set wildmenu
+
+
+"_______________________________________________________________________________
+"
+" LINES, MARKERS, INDENTATION
+"-------------------------------------------------------------------------------
+
+"lines won't wrap with :vs
+set nowrap
+
+"80 character mark
+"End the current line highlight at 80 chars
+let &colorcolumn=join(range(81,999),",")
+hi colorcolumn ctermbg=8
+"make characters typed over 80 be red
+hi OverLength ctermfg=1
+match OverLength /\%81v.\+/
+
+"indent to spec
+filetype plugin indent on
+
+"line numbers
+set rnu
+set number
+set numberwidth=4
+set cursorline
+hi LineNr ctermfg=7 ctermbg=0
+hi CursorLineNr ctermfg=7 ctermbg=8
+
+"cursor line
+hi CursorLine cterm=NONE ctermbg=0
+
+
+"status bar
+set laststatus=2
+"colors work with dark solarized
+hi StatusLine ctermfg=black ctermbg=cyan
+"status bar with split
+"does not read rather than highlight
+hi StatusLineNC ctermfg=black ctermbg=black
+
+
+"_______________________________________________________________________________
+"
+" SPLITS
+"-------------------------------------------------------------------------------
+
+"vertical split style
+set fillchars+=vert:\
+hi VertSplit ctermfg=black
+
+"if there is a split,
+"equals and plus resize it
+"ctrl W toggles split
+if bufwinnr(1)
+ nnoremap = <C-W>>
+ nnoremap - <C-W><
+ nnoremap <C-W> <C-W>W
+endif
+

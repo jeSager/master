@@ -1,0 +1,80 @@
+Need output from 4 sources
+* dickens
+* dna
+* short
+* pi
+
+Reading in the frequency is recommended
+
+It is not required to report spaces unless it's in the test (the text only files don't matter)
+
+ASSIGNMENT:
+* naïve string matching algorithm
+	- count the number of comparisons
+* 2 page pdf analysis
+	- most important: the number of additional comparisons
+	- what is the cost of failure?
+	- NUMBER OF COMPARISONS AFTER INITIAL (n) / frequency(letter)
+
+
+EXAMPLE
+* 100k ascii source
+* 10k are asii a
+* if target pattern of 15 chars that starts with a: down to 99,985
+* It is given 10k on the first pass is is given (n)
+* The cost of failure is REAL_COMPARISONS / 99,985
+
+
+
+
+BEST IMPLEMENTATION:
+* Find matches should run 3 functions
+  - NaiveMatch
+  - FrequencyMatch
+  - IndexByFrequencyMatch
+* Each should return a vector of match locations
+* Each should return number of comparisons
+* Each should have a count of N
+  - Naive and LowestFrequency Match 'N' should be the length
+    of the search string.
+  - The index match N should be the length of the search string / number of
+    patterns searched
+
+* the_data a map<string vector<int>>
+  - the data should hold
+    * the pattern string
+    * a vector for each search (3)
+      - position 1: the count of N
+      - position 2: the amount of extra comparisons for each method
+      - position 3: number of occurances of the pattern found
+
+
+
+
+
+LOOP THROUGH THE TEXT
+* Create an index by character:
+  - each character is defined as a map key
+  - each map key has an associated location vector
+
+LOOP THROUGH THE PATTERNS
+* Loop through each pattern by character
+  - find the least frequent character in the pattern
+  - name the associated vector in the index "locations"
+      (meaning locations for the least frequent char)
+* Loop through the location vector
+  - use the variables "before" and "size" to create a test string
+    from the text
+
+
+
+
+FIND OTHER VALUES FOR COMPARISON
+* TextString.size=N
+* Comparisons for naive would be N + frequency of char at 0
+  if good + freq of char at 1
+  if good + freq of char at 2 ...
+* Comparisons for freq alone would be N + frequency of char at min
+  if good + freq of char at 0
+  if good + freq of char at 1
+

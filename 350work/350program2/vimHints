@@ -1,0 +1,66 @@
++{command}						*-+c* *-c*
+-c {command}	{command} will be executed after the first file has been
+		read (and after autocommands and modelines for that file have
+		been processed).  "command" is interpreted as an Ex command.
+		If the "command" contains spaces, it must be enclosed in
+		double quotes (this depends on the shell that is used).
+		Example:
+			vim  "+set si"  main.c
+			vim  "+find stdio.h"
+			vim  -c "set ff=dos"  -c wq  mine.mak
+
+		Note: You can use up to 10 "+" or "-c" arguments in a Vim
+		command.  They are executed in the order given.  A "-S"
+		argument counts as a "-c" argument as well.
+		{Vi only allows one command}
+
+
+--cmd {command}						*--cmd*
+		{command} will be executed before processing any vimrc file.
+		Otherwise it acts like -c {command}.  You can use up to 10 of
+		these commands, independently from "-c" commands.
+		{not in Vi}
+
+
+-R		Readonly mode.  The 'readonly' option will be set for all the
+		files being edited.  You can still edit the buffer, but will
+		be prevented from accidentally overwriting a file.  If you
+		forgot that you are in View mode and did make some changes,
+		you can overwrite a file by adding an exclamation mark to
+		the Ex command, as in ":w!".  The 'readonly' option can be
+		reset with ":set noro" (see the options chapter, |options|).
+		Subsequent edits will not be done in readonly mode.  Calling
+		the executable "view" has the same effect as the -R argument.
+		The 'updatecount' option will be set to 10000, meaning that
+		the swap file will not be updated automatically very often.
+
+
+-M		Modifications not allowed.  The 'modifiable' option will be
+		reset, so that changes are not allowed.  The 'write' option
+		will be reset, so that writing files is disabled.  However,
+		the 'modifiable' and 'write' options can be set to enable
+		changes and writing.
+		{not in Vi}
+
+
+-N		Not compatible mode.  Resets the 'compatible' option.  You can
+		use this to get 'nocompatible', when there is no .vimrc file
+		or when using "-u NONE".
+		Also see |compatible-default|.  {not in Vi}
+
+-p[N]		Open N tab pages.  If [N] is not given, one tab page is opened
+		for every file given as argument.  The maximum is set with
+		'tabpagemax' pages (default 10).  If there are more tab pages
+		than arguments, the last few tab pages will be editing an
+		empty file.  Also see |tabpage|.
+		{not in Vi}
+
+
+vim --cmd 'Command launched before vimrc' \
+     -c 'Command launched after vimrc' \
+     -c 'qa!' # Quit vim
+
+
+#for vim:
+# set autoread
+# au CursorHold * checktime

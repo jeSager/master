@@ -1,0 +1,50 @@
+char a[2][14];
+strcpy(a[0], "blah");
+strcpy(a[1], "hmm");
+
+char reading[10][10];
+
+strcpy(reading[0]="Battery Charge:  ";
+reading[1]="Wall Signal:  ";
+reading[2]="Cliff Sensor Far Left:  ";
+reading[3]="Cliff Sensor Center Left:  ";
+reading[4]="Cliff Sensor Far Right:  ";
+reading[5]="Cliff Sensor Center Right:  ";
+reading[6]="Charging State:  ";
+reading[7]="Voltage:  ";
+reading[8]="Current:  ";
+reading[9]="Battery Temperature:  ";
+reading[10]="Battery Capacity:  "
+
+char reading[11][1]=  { 
+	{//0th
+		{"Battery Charge:  "}, {25}},
+	{//1st
+		{"Wall Signal:  "}, {27}},
+	{//2nd
+		{"Cliff Sensor Far Left:  "}, {9}},
+	{//3rd
+		{"Cliff Sensor Center Left:  "},{10}},
+	{//4th
+		{"Cliff Sensor Far Right:  "}, {11}},
+	{//5th
+		{"Cliff Sensor Center Right:  "}, {12}},
+	{//6th
+		{"Charging State:  "}, {21}},
+	{//7th
+		{"Voltage:  "}, {22}},
+	{//8th
+		{"Current:  "}, {23}},
+	{//9th
+		{"Battery Temperature:  "}, {24}},
+	{//10th
+		{"Battery Capacity:  "},{26}
+	}	
+};
+
+for(int i=0;i<1;i++)
+	for(int j=0;i<10;j++)
+		///print reading[j][i];
+
+printf("a[%d][%d] = %d\n", i,j, a[i][j] );
+

@@ -1,0 +1,124 @@
++--------------------------------------------------------------------------------+
+; Legal Partition Candidates                                                     ;
++--------------------------------------------------------------------------------+
+Hierarchy         : output_reg_zero
+Input             : 2
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : output_reg_lo
+Input             : 33
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 32
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : output_reg_hi
+Input             : 33
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 32
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : my_alu
+Input             : 73
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 65
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : input_reg_shamt
+Input             : 6
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 5
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : input_reg_op
+Input             : 5
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 4
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : input_reg_b
+Input             : 33
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 32
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : input_reg_a
+Input             : 33
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 32
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
++--------------------------------------------------------------------------------+
+

@@ -1,10 +1,10 @@
 <session jtag_chain="USB-Blaster [1-10]" jtag_device="@1: EP3C120/EP4CE115 (0x020F70DD)" sof_file="the_project.sof">
   <display_tree gui_logging_enabled="0">
-    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
   </display_tree>
   <global_info>
     <single attribute="active instance" value="0"/>
-    <multi attribute="frame size" size="2" value="1086,782"/>
+    <multi attribute="frame size" size="2" value="941,1028"/>
     <single attribute="jtag widget visible" value="1"/>
     <multi attribute="jtag widget size" size="2" value="456,149"/>
     <single attribute="instance widget visible" value="1"/>
@@ -17,9 +17,9 @@
     <position_info>
       <single attribute="active tab" value="1"/>
     </position_info>
-    <signal_set global_temp="1" name="signal_set: 2016/10/10 16:16:14  #0">
+    <signal_set global_temp="1" name="signal_set: 2016/10/10 17:27:08  #0">
       <clock name="clk" polarity="posedge" tap_mode="probeonly"/>
-      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no" trigger_out_pin="auto_stp_trigger_out_0"/>
       <top_entity/>
       <signal_vec>
         <trigger_input_vec>
@@ -662,7 +662,7 @@
           <net is_signal_inverted="no" name="regn:output_reg_cout|q[0]"/>
         </setup_view>
       </presentation>
-      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2016/10/10 16:16:14  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2016/10/10 17:27:08  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">'regn:input_reg_a|q[0]' == high &amp;&amp; 'regn:input_reg_a|q[10]' == high &amp;&amp; 'regn:input_reg_a|q[11]' == high &amp;&amp; 'regn:input_reg_a|q[12]' == high &amp;&amp; 'regn:input_reg_a|q[13]' == high &amp;&amp; 'regn:input_reg_a|q[14]' == high &amp;&amp; 'regn:input_reg_a|q[15]' == high &amp;&amp; 'regn:input_reg_a|q[15]~feeder' == high &amp;&amp; 'regn:input_reg_a|q[16]' == high &amp;&amp; 'regn:input_reg_a|q[17]' == high &amp;&amp; 'regn:input_reg_a|q[18]' == high &amp;&amp; 'regn:input_reg_a|q[19]' == high &amp;&amp; 'regn:input_reg_a|q[1]' == high &amp;&amp; 'regn:input_reg_a|q[1]~feeder' == high &amp;&amp; 'regn:input_reg_a|q[20]' == high &amp;&amp; 'regn:input_reg_a|q[21]' == high &amp;&amp; 'regn:input_reg_a|q[21]~feeder' == high &amp;&amp; 'regn:input_reg_a|q[22]' == high &amp;&amp; 'regn:input_reg_a|q[23]' == high &amp;&amp; 'regn:input_reg_a|q[24]' == high &amp;&amp; 'regn:input_reg_a|q[25]' == high &amp;&amp; 'regn:input_reg_a|q[25]~feeder' == high &amp;&amp; 'regn:input_reg_a|q[26]' == low &amp;&amp; 'regn:input_reg_a|q[26]~feeder' == low &amp;&amp; 'regn:input_reg_a|q[27]' == low &amp;&amp; 'regn:input_reg_a|q[28]' == low &amp;&amp; 'regn:input_reg_a|q[29]' == low &amp;&amp; 'regn:input_reg_a|q[2]' == high &amp;&amp; 'regn:input_reg_a|q[2]~feeder' == high &amp;&amp; 'regn:input_reg_a|q[30]' == low &amp;&amp; 'regn:input_reg_a|q[30]~feeder' == low &amp;&amp; 'regn:input_reg_a|q[31]' == low &amp;&amp; 'regn:input_reg_a|q[31]~feeder' == low &amp;&amp; 'regn:input_reg_a|q[3]' == high &amp;&amp; 'regn:input_reg_a|q[4]' == high &amp;&amp; 'regn:input_reg_a|q[4]~feeder' == high &amp;&amp; 'regn:input_reg_a|q[5]' == high &amp;&amp; 'regn:input_reg_a|q[6]' == high &amp;&amp; 'regn:input_reg_a|q[7]' == high &amp;&amp; 'regn:input_reg_a|q[8]' == high &amp;&amp; 'regn:input_reg_a|q[9]' == high
@@ -691,12 +691,9 @@
             <op_node/>
           </storage_qualifier_level>
         </storage_qualifier_events>
-        <log>
-          <data global_temp="1" name="log: 2016/10/10 16:16:14  #2"/>
-          <extradata/>
-        </log>
       </trigger>
     </signal_set>
   </instance>
   <mnemonics/>
+  <static_plugin_mnemonics/>
 </session>

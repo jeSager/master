@@ -2,8 +2,8 @@ MAIN: Beginning execution
 MAIN: datafile  '../../inputs/text_dna.txt'
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Oct 10 08:26:40 2016
-TIME beginning             0.00 u         0.00 s   Res:        2176
+TIME CPU percent    0.00   0.00                    Tue Oct 11 11:51:07 2016
+TIME beginning             0.00 u         0.00 s   Res:        2088
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -73,8 +73,8 @@ LOCATION(s):
 MAIN: Ending execution
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Mon Oct 10 08:26:40 2016
-TIME ending                0.00 u         0.00 s   Res:        2560
+TIME CPU percent    0.00   0.00                    Tue Oct 11 11:51:07 2016
+TIME ending                0.00 u         0.00 s   Res:        2432
 TIME ending                0.00 u_t       0.00 s_t
 TIME***********************************************************************
 

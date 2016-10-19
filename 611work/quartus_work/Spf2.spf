@@ -1,0 +1,249 @@
+<session jtag_chain="USB-Blaster [1-10]" jtag_device="@1: EP3C120/EP4CE115 (0x020F70DD)">
+  <display_attributes is_max_probe_read_interval="1" is_write_immediate="1" probe_read_interval="1" probe_read_interval_units="s"/>
+  <instance enable_logging="true" entity_name="a" is_auto_node="true" name="altsource_probe:input_a">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="9" version="0"/>
+    <sources>
+      <source name="source[0]" value="true"/>
+      <source name="source[1]" value="true"/>
+      <source name="source[2]" value="true"/>
+      <source name="source[3]" value="true"/>
+      <source name="source[4]" value="true"/>
+      <source name="source[5]" value="true"/>
+      <source name="source[6]" value="true"/>
+      <source name="source[7]" value="true"/>
+      <source name="source[8]" value="true"/>
+      <source name="source[9]" value="true"/>
+      <source name="source[10]" value="true"/>
+      <source name="source[11]" value="true"/>
+      <source name="source[12]" value="true"/>
+      <source name="source[13]" value="true"/>
+      <source name="source[14]" value="true"/>
+      <source name="source[15]" value="true"/>
+      <source name="source[16]" value="true"/>
+      <source name="source[17]" value="true"/>
+      <source name="source[18]" value="true"/>
+      <source name="source[19]" value="true"/>
+      <source name="source[20]" value="true"/>
+      <source name="source[21]" value="true"/>
+      <source name="source[22]" value="true"/>
+      <source name="source[23]" value="true"/>
+      <source name="source[24]" value="true"/>
+      <source name="source[25]" value="true"/>
+      <source name="source[26]" value="true"/>
+      <source name="source[27]" value="true"/>
+      <source name="source[28]" value="true"/>
+      <source name="source[29]" value="true"/>
+      <source name="source[30]" value="true"/>
+      <source name="source[31]" value="true"/>
+    </sources>
+    <probes>
+      <probe name="altera_reserved_unconnected_port"/>
+    </probes>
+    <view>
+      <view_node expanded="true" index="0" node_type="probe" view_type="independent"/>
+      <view_node expanded="false" group_name="source[31..0]" index="0" lsb_to_msb="false" node_type="source" view_type="group_header"/>
+      <view_node expanded="true" index="31" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="30" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="29" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="28" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="27" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="26" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="25" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="24" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="23" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="22" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="21" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="20" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="19" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="18" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="17" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="16" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="15" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="14" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="13" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="12" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="11" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="10" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="9" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="8" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="7" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="6" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="5" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="4" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="3" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="2" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="1" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="0" node_type="source" view_type="group_member"/>
+    </view>
+    <log data="000000000000000000000000000000000000000000000000000000000000000000" max_size="8" size="8" time="BD99EF7500000000CD99EF7500000000CD99EF7500000000CD99EF7500000000CD99EF7500000000CD99EF7500000000CD99EF7500000000CD99EF7500000000" width="33"/>
+  </instance>
+  <instance enable_logging="true" entity_name="b" is_auto_node="true" name="altsource_probe:input_b">
+    <node_ip_info instance_id="1" mfg_id="110" node_id="9" version="0"/>
+    <sources>
+      <source name="source[0]"/>
+      <source name="source[1]"/>
+      <source name="source[2]"/>
+      <source name="source[3]"/>
+      <source name="source[4]"/>
+      <source name="source[5]"/>
+      <source name="source[6]"/>
+      <source name="source[7]"/>
+      <source name="source[8]"/>
+      <source name="source[9]"/>
+      <source name="source[10]"/>
+      <source name="source[11]"/>
+      <source name="source[12]"/>
+      <source name="source[13]"/>
+      <source name="source[14]"/>
+      <source name="source[15]"/>
+      <source name="source[16]"/>
+      <source name="source[17]"/>
+      <source name="source[18]"/>
+      <source name="source[19]"/>
+      <source name="source[20]"/>
+      <source name="source[21]"/>
+      <source name="source[22]"/>
+      <source name="source[23]"/>
+      <source name="source[24]"/>
+      <source name="source[25]"/>
+      <source name="source[26]"/>
+      <source name="source[27]"/>
+      <source name="source[28]"/>
+      <source name="source[29]"/>
+      <source name="source[30]"/>
+      <source name="source[31]"/>
+    </sources>
+    <probes>
+      <probe name="altera_reserved_unconnected_port"/>
+    </probes>
+    <view>
+      <view_node expanded="true" index="0" node_type="probe" view_type="independent"/>
+      <view_node expanded="false" group_name="source[31..0]" index="0" lsb_to_msb="false" node_type="source" view_type="group_header"/>
+      <view_node expanded="true" index="31" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="30" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="29" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="28" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="27" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="26" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="25" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="24" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="23" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="22" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="21" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="20" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="19" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="18" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="17" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="16" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="15" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="14" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="13" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="12" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="11" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="10" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="9" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="8" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="7" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="6" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="5" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="4" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="3" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="2" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="1" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="0" node_type="source" view_type="group_member"/>
+    </view>
+    <alias_list/>
+    <log data="" max_size="8" size="0" time="" width="33"/>
+  </instance>
+  <instance enable_logging="true" entity_name="s" is_auto_node="true" name="altsource_probe:output_s">
+    <node_ip_info instance_id="2" mfg_id="110" node_id="9" version="0"/>
+    <sources>
+      <source name="source[0]"/>
+    </sources>
+    <probes>
+      <probe name="adder_reg:comb_3|s[0]"/>
+      <probe name="adder_reg:comb_3|s[1]"/>
+      <probe name="adder_reg:comb_3|s[2]"/>
+      <probe name="adder_reg:comb_3|s[3]"/>
+      <probe name="adder_reg:comb_3|s[4]"/>
+      <probe name="adder_reg:comb_3|s[5]"/>
+      <probe name="adder_reg:comb_3|s[6]"/>
+      <probe name="adder_reg:comb_3|s[7]"/>
+      <probe name="adder_reg:comb_3|s[8]"/>
+      <probe name="adder_reg:comb_3|s[9]"/>
+      <probe name="adder_reg:comb_3|s[10]"/>
+      <probe name="adder_reg:comb_3|s[11]"/>
+      <probe name="adder_reg:comb_3|s[12]"/>
+      <probe name="adder_reg:comb_3|s[13]"/>
+      <probe name="adder_reg:comb_3|s[14]"/>
+      <probe name="adder_reg:comb_3|s[15]"/>
+      <probe name="adder_reg:comb_3|s[16]"/>
+      <probe name="adder_reg:comb_3|s[17]"/>
+      <probe name="adder_reg:comb_3|s[18]"/>
+      <probe name="adder_reg:comb_3|s[19]"/>
+      <probe name="adder_reg:comb_3|s[20]"/>
+      <probe name="adder_reg:comb_3|s[21]"/>
+      <probe name="adder_reg:comb_3|s[22]"/>
+      <probe name="adder_reg:comb_3|s[23]"/>
+      <probe name="adder_reg:comb_3|s[24]"/>
+      <probe name="adder_reg:comb_3|s[25]"/>
+      <probe name="adder_reg:comb_3|s[26]"/>
+      <probe name="adder_reg:comb_3|s[27]"/>
+      <probe name="adder_reg:comb_3|s[28]"/>
+      <probe name="adder_reg:comb_3|s[29]"/>
+      <probe name="adder_reg:comb_3|s[30]"/>
+      <probe name="adder_reg:comb_3|s[31]"/>
+    </probes>
+    <view>
+      <view_node expanded="false" group_name="adder_reg:comb_3|s[31..0]" index="0" lsb_to_msb="false" node_type="probe" view_type="group_header"/>
+      <view_node expanded="true" index="31" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="30" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="29" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="28" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="27" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="26" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="25" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="24" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="23" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="22" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="21" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="20" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="19" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="18" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="17" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="16" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="15" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="14" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="13" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="12" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="11" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="10" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="9" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="8" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="7" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="6" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="5" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="4" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="3" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="2" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="1" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="0" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="0" node_type="source" view_type="independent"/>
+    </view>
+    <log data="" max_size="8" size="0" time="" width="33"/>
+  </instance>
+  <instance enable_logging="true" entity_name="cout" is_auto_node="true" name="altsource_probe:output_cout">
+    <node_ip_info instance_id="3" mfg_id="110" node_id="9" version="0"/>
+    <sources>
+      <source name="source[0]"/>
+    </sources>
+    <probes>
+      <probe name="adder_reg:comb_3|cout"/>
+    </probes>
+    <view>
+      <view_node expanded="true" index="0" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="0" node_type="source" view_type="independent"/>
+    </view>
+    <log data="" max_size="8" size="0" time="" width="2"/>
+  </instance>
+</session>

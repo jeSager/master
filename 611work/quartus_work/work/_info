@@ -17,6 +17,14 @@ Z1 o-quiet -auto_acc_if_foreign -work work
 n@_opt
 Z2 OL;O;10.4b;61
 R0
+T_opt1
+!s110 1476721004
+V4>7>JUdT4zNMHcaz56ozX1
+04 17 4 work testbench_regfile fast 0
+=1-1866da1514de-5804f96c-98da7-1c6d
+R1
+n@_opt1
+R2
 T_opt2
 !s110 1475264103
 VV<PiM<_hX<o45foCSl15>2
@@ -71,16 +79,16 @@ r1
 31
 !i10b 1
 !s100 faok<7i^U>]6_lW3ZbW]c2
-IRRX`l0aoiVBRAhTEfj=fm1
-R0
+I>0HDV7cbHBPW8I;K4<QlJ3
+Z7 d/acct/sagerje/Downloads/master/611work/quartus_work
 w1475531459
-8/acct/sagerje/Downloads/quartus_work/alu.v
-F/acct/sagerje/Downloads/quartus_work/alu.v
+8/acct/sagerje/Downloads/master/611work/quartus_work/alu.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/alu.v
 L0 1
 R4
-Z7 !s108 1475533829.000000
-!s107 /acct/sagerje/Downloads/quartus_work/alu.v|
-!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/quartus_work/alu.v|
+Z8 !s108 1476299241.000000
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/alu.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/alu.v|
 !i113 0
 R6
 vfull_adder
@@ -100,6 +108,26 @@ R4
 R5
 !s107 /acct/sagerje/Downloads/quartus_work/full_adder.v|
 !s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/quartus_work/full_adder.v|
+!i113 0
+R6
+vregfile
+Z9 !s110 1476720986
+!i10b 1
+!s100 R^3Oi?YPiXT_Xo];[;ZH>3
+I>Cnh8Di`d=IE:NMR4Mnzg2
+R3
+R7
+w1476720002
+8/acct/sagerje/Downloads/master/611work/quartus_work/regfile.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/regfile.v
+Z10 L0 11
+R4
+r1
+!s85 0
+31
+Z11 !s108 1476720986.000000
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/regfile.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/regfile.v|
 !i113 0
 R6
 vregn
@@ -166,16 +194,36 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 AVcE=^Y5nkQlb[]KJE@IU3
-IAg0J4aS6>06>6X6O>=F[42
-R0
-w1475531466
-8/acct/sagerje/Downloads/quartus_work/testbench3.v
-F/acct/sagerje/Downloads/quartus_work/testbench3.v
-L0 1
-R4
+!s100 lPF8ED]e4?X_=[4:o?jUT3
+IP?kP7=OAg^foM=<hcH7Z?3
 R7
-!s107 /acct/sagerje/Downloads/quartus_work/testbench3.v|
-!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/quartus_work/testbench3.v|
+w1475534197
+8/acct/sagerje/Downloads/master/611work/quartus_work/testbench3.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/testbench3.v
+R10
+R4
+R8
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/testbench3.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/testbench3.v|
+!i113 0
+R6
+vtestbench_regfile
+R9
+!i10b 1
+!s100 _NZ:mkEWXAV0cjXmbQ2I[0
+IRIg1=b1doKHM<bi_NJ4@R0
+R3
+R7
+w1476715592
+8/acct/sagerje/Downloads/master/611work/quartus_work/testbench_regfile.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/testbench_regfile.v
+L0 13
+R4
+r1
+!s85 0
+31
+R11
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/testbench_regfile.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/testbench_regfile.v|
 !i113 0
 R6

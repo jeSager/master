@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("/acct/sagerje/Downloads/quartus_work/") File("the_project.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("/acct/sagerje/Downloads/master/611work/quartus_work/") File("the_project.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

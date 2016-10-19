@@ -32,8 +32,6 @@ SMatch::~SMatch() {
 void SMatch::FindMatches() {
   NaiveMatch();
   IndexedMatch();
-  ToStringData();
-
 }
 
 
@@ -67,7 +65,6 @@ void SMatch::NaiveMatch() {
     // Reset the comparisons value and the vector
     comparisons = 0;
     pattern_locations.clear();
-//    cout << "Starting:  "  << (*pit) << endl;
 
     // Loop the entire text
     for( unsigned int i = 0; i < text.size(); i++ ) {
@@ -88,7 +85,6 @@ void SMatch::NaiveMatch() {
 
     }// end loop the text
 
-//    cout << "Total comparisons for: " << (*pit) << ":  " << comparisons << endl;
     naive_match_comparisons_.push_back( comparisons );
     naive_match_locations_.push_back( pattern_locations );
   }// end loop the pattern
@@ -116,18 +112,29 @@ void SMatch::NaiveMatch() {
  *          from the text
 **/
 void SMatch::IndexedMatch() {
-  //these values are used in the second loop
-  int before, size, freq, min, ascii, another;
-  string str;
-  vector<int> pattern_locations;
 
-  //these values are used in the fist loop
+  // variables used in the indexing loop
+
+  // an iterator and a map
+  // the map key is the character, the vector values list locations
   map<int, vector<int>> text_lookup;
   map<int, vector<int>>::iterator text_lookup_iter;
-  int oneChar;
-  string text=ToStringText();
+  // oneChar is a character at a location, comparisons is the count
+  int oneChar, comparisons;
+  string text = ToStringText();
   bool match;
-  int comparisons;
+
+
+  // variables used in the matching loop
+
+  int before, size, freq, min, ascii, another, testLoc;
+  string str;
+  // this output data vector is pushed to a vector of vectors in the header
+  vector<int> pattern_locations;
+  // the is the vector of locations for the least frequent character
+  vector<int> locations;
+
+
 
 
   // this is the loop that indexes the text file
@@ -143,6 +150,7 @@ void SMatch::IndexedMatch() {
   for(vector<string>::iterator pit = the_patterns_.begin();
                                           pit != the_patterns_.end(); ++pit) {
 
+    // reset these values for each pattern
     pattern_locations.clear();
     comparisons=0;
     freq = INT_MAX;
@@ -150,10 +158,8 @@ void SMatch::IndexedMatch() {
     before=0;
     size=0;
 
-//    cout << endl;
-//    cout << endl;
-//    cout << "Starting \"" << (*pit) << "\"" << endl;
-
+    // associate a vector of locations by finding the least frequent character
+    // ... in the pattern
     for( unsigned int i = 0; i < ( *pit ).size(); i++ ) {
       str=(*pit)[i];
       another=str.at(0);
@@ -168,39 +174,51 @@ void SMatch::IndexedMatch() {
       }
     }
 
-    int testLoc;
-    string testString;
-    vector<int> locations;
-    locations=text_lookup.find(ascii) -> second;
-// this loop iterates the index
+    locations = text_lookup.find(ascii) -> second;
+
+    // this loop iterates the location vector of the least frequent character
+    // ... in the pattern and finds matches
     for(vector<int>::iterator it = locations.begin();
                                                 it != locations.end(); ++it) {
     testLoc = (*it)-before;
-    testString="";
     match = true;
     for( int i = 0; i < size && match; i++) {
       match = ( (*pit)[i] == text[testLoc + i] );
       comparisons ++;
     }
+
+    // matches are stored in pattern_locations
     if( match ) pattern_locations.push_back( testLoc );
 
-    }//end of the index locations loop
+    }// end of the location vector loop
 
+    // store the output in the header variables
     index_match_comparisons_.push_back( comparisons );
     index_match_locations_.push_back( pattern_locations );
 
-  }//end of the pattern loop
+  }// end of the pattern loop
 
 }
 
 
 /******************************************************************************
  * Function to read the frequency.
+ *
+ * The string 'match' is used to hold the character
+ * The int 'freq' holds the frequency that was initially recored as
+ *   'freq_string'
+ * The e_acute at the bottom of the Dickens frequency is skipped
+ *
+ * The map 'the_frequency_' holds the character and its frequency
+ *
 **/
 void SMatch::ReadFrequency(Scanner& in_scanner) {
 
+  // one_char is the character that is being used, input is the file line input
   string freq_string, one_char, input;
   int freq;
+
+  // match is just the character value pulled from the line
   string match = "";
   bool is_not_space;
 
@@ -218,14 +236,12 @@ void SMatch::ReadFrequency(Scanner& in_scanner) {
       else if( match != "" && is_not_space )
         freq_string += one_char;
     }
+
+    // frequency is an int
     freq = stoi( freq_string );
+
+    // use the map variable from the header
     the_frequency_[ match ] = freq;
-//  Testing the map here
-//      map<string, int>::iterator fit;
-//      int aint;
-//      string astr="a";
-//      aint = the_frequency_.find( astr ) -> second;
-//      cout << aint << endl;
   }
 }
 
@@ -280,57 +296,70 @@ string SMatch::ToStringText() {
 
 
 /******************************************************************************
- * Function to 'ToString' the 'vector' of data.
+ * Function to 'ToString' the data.
+ * Data structure variables of the header file are dumped into a string
+ * for output.
+ *
+ * This function is called in main.
+ *
 **/
 string SMatch::ToStringData() {
 
-  string double_space = string(2,'\n');
-  string line = string(70,'_');
-  string dotted_line = string(70,'.');
-  int numPerLine;
-  string s = "";
+  string s = "";                           // the string output
+  string line = "";                        // a line for numbers
+  int numPerLine;                          // the number of numbers on the line
+
+  // the values used for 'n' in the algorithms
   int n_naive=ToStringText().size();
   int n_indexed=n_naive/the_patterns_.size();
 
-  cout << double_space << endl;
+  string double_space = string(2,'\n');
+  string dotted_line = string(70,'.') + "\n";
+  string formatted_line = string(70,'_') + "\n";
+
+  s += double_space;
 
   // error checking for the blind
   if( naive_match_locations_ != index_match_locations_ )
     for( unsigned int i = 0; i < INT_MAX; i++ )
-      cout << "THERE IS SOMETHING WRONG HERE" << endl;
+      s += "THERE IS SOMETHING WRONG HERE";
   else
-      cout << "THE MATCH LOCATION VECTORS ARE EQUAL" << endl;
+      s += "THE MATCH LOCATION VECTORS ARE EQUAL";
 
 
   for(vector<vector<int>>::iterator vit = naive_match_locations_.begin();
                                    vit != naive_match_locations_.end(); ++vit) {
-  cout << double_space << endl;
-  cout << line << endl;
-  cout << "\nPATTERN: " << Utils::Format( "'"+the_patterns_.front(), 60 ) << "'" << endl;
-  cout << dotted_line << endl;
-  cout << endl;
-  cout << "COMPARISONS" << Utils::Format("N",17) << Utils::Format("EXTRA",21) << Utils::Format("TOTAL",21) << endl;
-  cout << "NAIVE      " << Utils::Format(n_naive,17) << Utils::Format(naive_match_comparisons_.front(),21) << Utils::Format(n_naive + naive_match_comparisons_.front(),21) << endl;
-  cout << "INDEXED    " << Utils::Format(n_indexed,17) << Utils::Format(index_match_comparisons_.front(),21) <<  Utils::Format(n_indexed + index_match_comparisons_.front(),21) << endl;
-  cout << dotted_line << endl;
-  cout << endl;
-  cout << "LOCATION(s):"<<endl;
+
+  s += double_space + formatted_line;
+  s += "\nPATTERN: " + Utils::Format( "'"+the_patterns_.front(), 60 ) + "'\n";
+  s += dotted_line;
+  s += "COMPARISONS" + Utils::Format("N",17) + Utils::Format("EXTRA",21);
+  s += Utils::Format("TOTAL",21) + "\n";
+  s += "NAIVE      " + Utils::Format(n_naive,17);
+  s += Utils::Format(naive_match_comparisons_.front(),21);
+  s += Utils::Format(n_naive + naive_match_comparisons_.front(),21) + "\n";
+  s += "INDEXED    " + Utils::Format(n_indexed,17);
+  s += Utils::Format(index_match_comparisons_.front(),21);
+  s += Utils::Format(n_indexed + index_match_comparisons_.front(),21) + "\n";
+  s += dotted_line;
+  s += "LOCATION(s):\n";
   the_patterns_.erase(the_patterns_.begin());
   naive_match_comparisons_.erase(naive_match_comparisons_.begin());
   index_match_comparisons_.erase(index_match_comparisons_.begin());
+
     for(vector <int>::iterator lit = (*vit).begin();
                                                    lit != (*vit).end(); ++lit) {
-      s += Utils::Format( (*lit), 10);
+      line += Utils::Format( (*lit), 10);
       numPerLine++;
       if( numPerLine == 7){
         numPerLine=0;
-        cout << s << endl;
-        s="";
+        s += line + "\n";
+        line = "";
       }
     }
-    cout << s << endl;
-    s="";
-    numPerLine=0;
+    s += line + "\n";
+    line = "";
+    numPerLine = 0;
   }
   return s;
 }

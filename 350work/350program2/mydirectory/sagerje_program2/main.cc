@@ -57,8 +57,8 @@ int main(int argc, char *argv[]) {
   stringmatch.ReadFrequency(in_scanner);
   in_scanner.Close();
 
-//  cout << stringmatch.ToStringData() << endl;
   stringmatch.FindMatches();
+  cout << stringmatch.ToStringData() << endl;
 
   cout << kTag << "Ending execution\n";
 

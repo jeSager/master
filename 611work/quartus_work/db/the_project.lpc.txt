@@ -1,135 +1,15 @@
 +--------------------------------------------------------------------------------+
 ; Legal Partition Candidates                                                     ;
 +--------------------------------------------------------------------------------+
-Hierarchy         : h
-Input             : 4
+Hierarchy         : my_system
+Input             : 0
 Constant Input    : 0
 Unused Input      : 0
 Floating Input    : 0
-Output            : 7
+Output            : 0
 Constant Output   : 0
 Unused Output     : 0
 Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : g
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : f
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : e
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : d
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : c
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : b
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : a
-Input             : 4
-Constant Input    : 0
-Unused Input      : 0
-Floating Input    : 0
-Output            : 7
-Constant Output   : 0
-Unused Output     : 0
-Floating Output   : 0
-Bidir             : 0
-Constant Bidir    : 0
-Unused Bidir      : 0
-Input only Bidir  : 0
-Output only Bidir : 0
-
-Hierarchy         : r
-Input             : 81
-Constant Input    : 30
-Unused Input      : 0
-Floating Input    : 30
-Output            : 96
-Constant Output   : 30
-Unused Output     : 30
-Floating Output   : 30
 Bidir             : 0
 Constant Bidir    : 0
 Unused Bidir      : 0

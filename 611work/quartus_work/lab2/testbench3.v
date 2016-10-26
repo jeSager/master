@@ -8,9 +8,9 @@
 *
 ********/
 
-module testbench3( input CLOCK_50, output[17:0] LEDR );
-  wire clk;
-  wire reset;
+module testbench3();
+
+  reg clk, reset;
   reg [31:0] a, b, hiexpected, loexpected;
   reg [3:0] op;
   reg [7:0] shamt;
@@ -20,38 +20,36 @@ module testbench3( input CLOCK_50, output[17:0] LEDR );
   reg [31:0] vectornum, errors;    // bookkeeping variables
   reg [143:0] testvectors[50:0]; // array of testvectors
 
-  assign LEDR = errors[17:0];
-
   // instantiate device under test
   alu dut(a, b, shamt, op, hi, lo, zero);
 
   // generate clock No sensitivity list, so it always executes
-//  always begin
-//    clk=1'b1; #5; clk= 1'b0; #5;
-//  end
-  assign clk = CLOCK_50;
+  always begin
+    clk=1'b1; #5; clk= 1'b0; #5;
+  end
+
   // at start of test, load vectors
   // and pulse reset
   initial begin
     $readmemh("addtests.tv", testvectors);
     vectornum= 0; errors = 0;
-    //reset= 1'b1; #27; reset= 1'b0;
+    reset= 1'b1; #27; reset= 1'b0;
   end
-assign reset = 1'b0;
+
   //Note: $readmemh reads test vector files written in
   //hexadecimal (as opposed to $readmemb in binary)
   // Can insert Verilog comments into file
   // Can also add addresses (use @ with hex address)
 
   // apply test vectors on rising edge of clk
-//  always @(posedge clk) begin
-//  end
+  always @(posedge clk) begin
+  #1; {a, b, shamt, op, hiexpected, loexpected, zeroexpected} = testvectors[vectornum];
+  end
 
   // check results on falling edge of clk
-  always @(posedge clk) begin
-  {a, b, shamt, op, hiexpected, loexpected, zeroexpected} <= testvectors[vectornum];
+  always @(negedge clk)
     if (~reset) begin // skip during reset
-      if (hi != hiexpected) begin
+      if (hi !== hiexpected) begin
         $display("____________________________________________________");
         $display("Error on line:    %-8d", {vectornum+1});
         $display("Line input:       %h", {a, b, shamt, op});
@@ -59,7 +57,7 @@ assign reset = 1'b0;
         $display("Hi Expected:      %h", {hiexpected});
         errors = errors + 1;
       end
-      if (lo != loexpected) begin
+      if (lo !== loexpected) begin
         $display("____________________________________________________");
         $display("Error on line:    %-8d", {vectornum+1});
         $display("Line input:       %h", {a, b, shamt, op});
@@ -67,7 +65,7 @@ assign reset = 1'b0;
         $display("Lo Expected:      %h", {loexpected});
         errors = errors + 1;
       end
-      if (zero != zeroexpected) begin
+      if (zero !== zeroexpected) begin
         $display("____________________________________________________");
         $display("Error on line:    %-8d", {vectornum+1});
         $display("Line input:       %h", {a, b, shamt, op});
@@ -84,7 +82,6 @@ assign reset = 1'b0;
         $display("%d tests completed with %d errors", vectornum, errors);
         $finish;
       end
-    end
    end
 endmodule
 // Note: === and !== can compare values that are

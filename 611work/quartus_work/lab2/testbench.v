@@ -8,8 +8,8 @@
 *
 ********/
 
-module testbench(input CLOCK_50);
-  wire clk;
+module testbench();//input CLOCK_50);
+  reg clk;
   reg reset;
   reg [31:0] a, b, hiexpected, loexpected;
   reg [3:0] op;
@@ -20,16 +20,16 @@ module testbench(input CLOCK_50);
   reg [31:0] vectornum, errors;    // bookkeeping variables
   reg [143:0] testvectors[50:0]; // array of testvectors
 
-  assign clk = CLOCK_50;
+//  assign clk = CLOCK_50;
 
 
   // instantiate device under test
   alu dut(a, b, shamt, op, hi, lo, zero);
 
   // generate clock No sensitivity list, so it always executes
-//  always begin
-//    clk=1'b1; #5; clk= 1'b0; #5;
-//  end
+  always begin
+    clk=1'b1; #5; clk= 1'b0; #5;
+  end
 
   // at start of test, load vectors
   // and pulse reset

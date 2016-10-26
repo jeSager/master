@@ -1,0 +1,7 @@
+user:  swearengineers@gmail.com
+pw: Capstone490
+url:  console.developers.google.com
+project: test
+id: lucky-leaf-147305
+
+

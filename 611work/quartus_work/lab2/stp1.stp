@@ -1,0 +1,1292 @@
+<session jtag_chain="USB-Blaster [1-2]" jtag_device="@1: EP3C120/EP4CE115 (0x020F70DD)" sof_file="">
+  <display_tree gui_logging_enabled="1">
+    <display_branch instance="auto_signaltap_0" signal_set="signal_set: 2016/10/20 16:20:32  #0" trigger="trigger: 2016/10/20 16:20:32  #1"/>
+  </display_tree>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <multi attribute="frame size" size="2" value="1883,1056"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="jtag widget size" size="2" value="415,149"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="sof manager visible" value="0"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set name="signal_set: 2016/10/20 16:20:32  #0">
+      <clock name="CLOCK_50" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="a[0]" tap_mode="classic" type="register"/>
+          <wire name="a[10]" tap_mode="classic" type="register"/>
+          <wire name="a[11]" tap_mode="classic" type="register"/>
+          <wire name="a[12]" tap_mode="classic" type="register"/>
+          <wire name="a[13]" tap_mode="classic" type="register"/>
+          <wire name="a[14]" tap_mode="classic" type="register"/>
+          <wire name="a[15]" tap_mode="classic" type="register"/>
+          <wire name="a[16]" tap_mode="classic" type="register"/>
+          <wire name="a[17]" tap_mode="classic" type="register"/>
+          <wire name="a[18]" tap_mode="classic" type="register"/>
+          <wire name="a[19]" tap_mode="classic" type="register"/>
+          <wire name="a[1]" tap_mode="classic" type="register"/>
+          <wire name="a[20]" tap_mode="classic" type="register"/>
+          <wire name="a[21]" tap_mode="classic" type="register"/>
+          <wire name="a[22]" tap_mode="classic" type="register"/>
+          <wire name="a[23]" tap_mode="classic" type="register"/>
+          <wire name="a[24]" tap_mode="classic" type="register"/>
+          <wire name="a[25]" tap_mode="classic" type="register"/>
+          <wire name="a[26]" tap_mode="classic" type="register"/>
+          <wire name="a[27]" tap_mode="classic" type="register"/>
+          <wire name="a[28]" tap_mode="classic" type="register"/>
+          <wire name="a[29]" tap_mode="classic" type="register"/>
+          <wire name="a[2]" tap_mode="classic" type="register"/>
+          <wire name="a[30]" tap_mode="classic" type="register"/>
+          <wire name="a[31]" tap_mode="classic" type="register"/>
+          <wire name="a[3]" tap_mode="classic" type="register"/>
+          <wire name="a[4]" tap_mode="classic" type="register"/>
+          <wire name="a[5]" tap_mode="classic" type="register"/>
+          <wire name="a[6]" tap_mode="classic" type="register"/>
+          <wire name="a[7]" tap_mode="classic" type="register"/>
+          <wire name="a[8]" tap_mode="classic" type="register"/>
+          <wire name="a[9]" tap_mode="classic" type="register"/>
+          <wire name="alu:dut|hi[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="b[0]" tap_mode="classic" type="register"/>
+          <wire name="b[10]" tap_mode="classic" type="register"/>
+          <wire name="b[11]" tap_mode="classic" type="register"/>
+          <wire name="b[12]" tap_mode="classic" type="register"/>
+          <wire name="b[13]" tap_mode="classic" type="register"/>
+          <wire name="b[14]" tap_mode="classic" type="register"/>
+          <wire name="b[15]" tap_mode="classic" type="register"/>
+          <wire name="b[16]" tap_mode="classic" type="register"/>
+          <wire name="b[17]" tap_mode="classic" type="register"/>
+          <wire name="b[18]" tap_mode="classic" type="register"/>
+          <wire name="b[19]" tap_mode="classic" type="register"/>
+          <wire name="b[1]" tap_mode="classic" type="register"/>
+          <wire name="b[20]" tap_mode="classic" type="register"/>
+          <wire name="b[21]" tap_mode="classic" type="register"/>
+          <wire name="b[22]" tap_mode="classic" type="register"/>
+          <wire name="b[23]" tap_mode="classic" type="register"/>
+          <wire name="b[24]" tap_mode="classic" type="register"/>
+          <wire name="b[25]" tap_mode="classic" type="register"/>
+          <wire name="b[26]" tap_mode="classic" type="register"/>
+          <wire name="b[27]" tap_mode="classic" type="register"/>
+          <wire name="b[28]" tap_mode="classic" type="register"/>
+          <wire name="b[29]" tap_mode="classic" type="register"/>
+          <wire name="b[2]" tap_mode="classic" type="register"/>
+          <wire name="b[30]" tap_mode="classic" type="register"/>
+          <wire name="b[31]" tap_mode="classic" type="register"/>
+          <wire name="b[3]" tap_mode="classic" type="register"/>
+          <wire name="b[4]" tap_mode="classic" type="register"/>
+          <wire name="b[5]" tap_mode="classic" type="register"/>
+          <wire name="b[6]" tap_mode="classic" type="register"/>
+          <wire name="b[7]" tap_mode="classic" type="register"/>
+          <wire name="b[8]" tap_mode="classic" type="register"/>
+          <wire name="b[9]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[0]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[10]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[11]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[12]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[13]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[14]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[15]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[16]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[17]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[18]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[19]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[1]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[20]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[21]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[22]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[23]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[24]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[25]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[26]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[27]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[28]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[29]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[2]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[30]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[31]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[3]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[4]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[5]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[6]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[7]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[8]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[9]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[0]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[10]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[11]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[12]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[13]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[14]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[15]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[16]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[17]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[18]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[19]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[1]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[20]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[21]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[22]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[23]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[24]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[25]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[26]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[27]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[28]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[29]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[2]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[30]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[31]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[3]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[4]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[5]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[6]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[7]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[8]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[9]" tap_mode="classic" type="register"/>
+          <wire name="op[0]" tap_mode="classic" type="register"/>
+          <wire name="op[1]" tap_mode="classic" type="register"/>
+          <wire name="op[2]" tap_mode="classic" type="register"/>
+          <wire name="op[3]" tap_mode="classic" type="register"/>
+          <wire name="shamt[0]" tap_mode="classic" type="register"/>
+          <wire name="shamt[1]" tap_mode="classic" type="register"/>
+          <wire name="shamt[2]" tap_mode="classic" type="register"/>
+          <wire name="shamt[3]" tap_mode="classic" type="register"/>
+          <wire name="shamt[4]" tap_mode="classic" type="register"/>
+          <wire name="shamt[5]" tap_mode="classic" type="register"/>
+          <wire name="shamt[6]" tap_mode="classic" type="register"/>
+          <wire name="shamt[7]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[0]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[10]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[11]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[12]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[13]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[14]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[15]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[16]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[17]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[18]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[19]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[1]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[20]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[21]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[22]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[23]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[24]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[25]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[26]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[27]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[28]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[29]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[2]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[30]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[31]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[3]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[4]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[5]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[6]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[7]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[8]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[9]" tap_mode="classic" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="a[0]" tap_mode="classic" type="register"/>
+          <wire name="a[10]" tap_mode="classic" type="register"/>
+          <wire name="a[11]" tap_mode="classic" type="register"/>
+          <wire name="a[12]" tap_mode="classic" type="register"/>
+          <wire name="a[13]" tap_mode="classic" type="register"/>
+          <wire name="a[14]" tap_mode="classic" type="register"/>
+          <wire name="a[15]" tap_mode="classic" type="register"/>
+          <wire name="a[16]" tap_mode="classic" type="register"/>
+          <wire name="a[17]" tap_mode="classic" type="register"/>
+          <wire name="a[18]" tap_mode="classic" type="register"/>
+          <wire name="a[19]" tap_mode="classic" type="register"/>
+          <wire name="a[1]" tap_mode="classic" type="register"/>
+          <wire name="a[20]" tap_mode="classic" type="register"/>
+          <wire name="a[21]" tap_mode="classic" type="register"/>
+          <wire name="a[22]" tap_mode="classic" type="register"/>
+          <wire name="a[23]" tap_mode="classic" type="register"/>
+          <wire name="a[24]" tap_mode="classic" type="register"/>
+          <wire name="a[25]" tap_mode="classic" type="register"/>
+          <wire name="a[26]" tap_mode="classic" type="register"/>
+          <wire name="a[27]" tap_mode="classic" type="register"/>
+          <wire name="a[28]" tap_mode="classic" type="register"/>
+          <wire name="a[29]" tap_mode="classic" type="register"/>
+          <wire name="a[2]" tap_mode="classic" type="register"/>
+          <wire name="a[30]" tap_mode="classic" type="register"/>
+          <wire name="a[31]" tap_mode="classic" type="register"/>
+          <wire name="a[3]" tap_mode="classic" type="register"/>
+          <wire name="a[4]" tap_mode="classic" type="register"/>
+          <wire name="a[5]" tap_mode="classic" type="register"/>
+          <wire name="a[6]" tap_mode="classic" type="register"/>
+          <wire name="a[7]" tap_mode="classic" type="register"/>
+          <wire name="a[8]" tap_mode="classic" type="register"/>
+          <wire name="a[9]" tap_mode="classic" type="register"/>
+          <wire name="alu:dut|hi[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="b[0]" tap_mode="classic" type="register"/>
+          <wire name="b[10]" tap_mode="classic" type="register"/>
+          <wire name="b[11]" tap_mode="classic" type="register"/>
+          <wire name="b[12]" tap_mode="classic" type="register"/>
+          <wire name="b[13]" tap_mode="classic" type="register"/>
+          <wire name="b[14]" tap_mode="classic" type="register"/>
+          <wire name="b[15]" tap_mode="classic" type="register"/>
+          <wire name="b[16]" tap_mode="classic" type="register"/>
+          <wire name="b[17]" tap_mode="classic" type="register"/>
+          <wire name="b[18]" tap_mode="classic" type="register"/>
+          <wire name="b[19]" tap_mode="classic" type="register"/>
+          <wire name="b[1]" tap_mode="classic" type="register"/>
+          <wire name="b[20]" tap_mode="classic" type="register"/>
+          <wire name="b[21]" tap_mode="classic" type="register"/>
+          <wire name="b[22]" tap_mode="classic" type="register"/>
+          <wire name="b[23]" tap_mode="classic" type="register"/>
+          <wire name="b[24]" tap_mode="classic" type="register"/>
+          <wire name="b[25]" tap_mode="classic" type="register"/>
+          <wire name="b[26]" tap_mode="classic" type="register"/>
+          <wire name="b[27]" tap_mode="classic" type="register"/>
+          <wire name="b[28]" tap_mode="classic" type="register"/>
+          <wire name="b[29]" tap_mode="classic" type="register"/>
+          <wire name="b[2]" tap_mode="classic" type="register"/>
+          <wire name="b[30]" tap_mode="classic" type="register"/>
+          <wire name="b[31]" tap_mode="classic" type="register"/>
+          <wire name="b[3]" tap_mode="classic" type="register"/>
+          <wire name="b[4]" tap_mode="classic" type="register"/>
+          <wire name="b[5]" tap_mode="classic" type="register"/>
+          <wire name="b[6]" tap_mode="classic" type="register"/>
+          <wire name="b[7]" tap_mode="classic" type="register"/>
+          <wire name="b[8]" tap_mode="classic" type="register"/>
+          <wire name="b[9]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[0]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[10]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[11]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[12]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[13]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[14]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[15]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[16]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[17]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[18]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[19]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[1]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[20]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[21]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[22]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[23]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[24]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[25]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[26]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[27]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[28]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[29]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[2]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[30]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[31]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[3]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[4]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[5]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[6]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[7]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[8]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[9]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[0]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[10]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[11]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[12]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[13]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[14]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[15]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[16]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[17]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[18]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[19]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[1]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[20]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[21]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[22]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[23]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[24]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[25]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[26]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[27]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[28]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[29]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[2]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[30]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[31]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[3]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[4]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[5]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[6]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[7]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[8]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[9]" tap_mode="classic" type="register"/>
+          <wire name="op[0]" tap_mode="classic" type="register"/>
+          <wire name="op[1]" tap_mode="classic" type="register"/>
+          <wire name="op[2]" tap_mode="classic" type="register"/>
+          <wire name="op[3]" tap_mode="classic" type="register"/>
+          <wire name="shamt[0]" tap_mode="classic" type="register"/>
+          <wire name="shamt[1]" tap_mode="classic" type="register"/>
+          <wire name="shamt[2]" tap_mode="classic" type="register"/>
+          <wire name="shamt[3]" tap_mode="classic" type="register"/>
+          <wire name="shamt[4]" tap_mode="classic" type="register"/>
+          <wire name="shamt[5]" tap_mode="classic" type="register"/>
+          <wire name="shamt[6]" tap_mode="classic" type="register"/>
+          <wire name="shamt[7]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[0]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[10]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[11]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[12]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[13]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[14]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[15]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[16]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[17]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[18]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[19]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[1]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[20]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[21]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[22]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[23]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[24]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[25]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[26]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[27]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[28]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[29]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[2]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[30]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[31]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[3]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[4]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[5]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[6]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[7]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[8]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[9]" tap_mode="classic" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="a[0]" tap_mode="classic" type="register"/>
+          <wire name="a[10]" tap_mode="classic" type="register"/>
+          <wire name="a[11]" tap_mode="classic" type="register"/>
+          <wire name="a[12]" tap_mode="classic" type="register"/>
+          <wire name="a[13]" tap_mode="classic" type="register"/>
+          <wire name="a[14]" tap_mode="classic" type="register"/>
+          <wire name="a[15]" tap_mode="classic" type="register"/>
+          <wire name="a[16]" tap_mode="classic" type="register"/>
+          <wire name="a[17]" tap_mode="classic" type="register"/>
+          <wire name="a[18]" tap_mode="classic" type="register"/>
+          <wire name="a[19]" tap_mode="classic" type="register"/>
+          <wire name="a[1]" tap_mode="classic" type="register"/>
+          <wire name="a[20]" tap_mode="classic" type="register"/>
+          <wire name="a[21]" tap_mode="classic" type="register"/>
+          <wire name="a[22]" tap_mode="classic" type="register"/>
+          <wire name="a[23]" tap_mode="classic" type="register"/>
+          <wire name="a[24]" tap_mode="classic" type="register"/>
+          <wire name="a[25]" tap_mode="classic" type="register"/>
+          <wire name="a[26]" tap_mode="classic" type="register"/>
+          <wire name="a[27]" tap_mode="classic" type="register"/>
+          <wire name="a[28]" tap_mode="classic" type="register"/>
+          <wire name="a[29]" tap_mode="classic" type="register"/>
+          <wire name="a[2]" tap_mode="classic" type="register"/>
+          <wire name="a[30]" tap_mode="classic" type="register"/>
+          <wire name="a[31]" tap_mode="classic" type="register"/>
+          <wire name="a[3]" tap_mode="classic" type="register"/>
+          <wire name="a[4]" tap_mode="classic" type="register"/>
+          <wire name="a[5]" tap_mode="classic" type="register"/>
+          <wire name="a[6]" tap_mode="classic" type="register"/>
+          <wire name="a[7]" tap_mode="classic" type="register"/>
+          <wire name="a[8]" tap_mode="classic" type="register"/>
+          <wire name="a[9]" tap_mode="classic" type="register"/>
+          <wire name="alu:dut|hi[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|hi[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="alu:dut|lo[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="b[0]" tap_mode="classic" type="register"/>
+          <wire name="b[10]" tap_mode="classic" type="register"/>
+          <wire name="b[11]" tap_mode="classic" type="register"/>
+          <wire name="b[12]" tap_mode="classic" type="register"/>
+          <wire name="b[13]" tap_mode="classic" type="register"/>
+          <wire name="b[14]" tap_mode="classic" type="register"/>
+          <wire name="b[15]" tap_mode="classic" type="register"/>
+          <wire name="b[16]" tap_mode="classic" type="register"/>
+          <wire name="b[17]" tap_mode="classic" type="register"/>
+          <wire name="b[18]" tap_mode="classic" type="register"/>
+          <wire name="b[19]" tap_mode="classic" type="register"/>
+          <wire name="b[1]" tap_mode="classic" type="register"/>
+          <wire name="b[20]" tap_mode="classic" type="register"/>
+          <wire name="b[21]" tap_mode="classic" type="register"/>
+          <wire name="b[22]" tap_mode="classic" type="register"/>
+          <wire name="b[23]" tap_mode="classic" type="register"/>
+          <wire name="b[24]" tap_mode="classic" type="register"/>
+          <wire name="b[25]" tap_mode="classic" type="register"/>
+          <wire name="b[26]" tap_mode="classic" type="register"/>
+          <wire name="b[27]" tap_mode="classic" type="register"/>
+          <wire name="b[28]" tap_mode="classic" type="register"/>
+          <wire name="b[29]" tap_mode="classic" type="register"/>
+          <wire name="b[2]" tap_mode="classic" type="register"/>
+          <wire name="b[30]" tap_mode="classic" type="register"/>
+          <wire name="b[31]" tap_mode="classic" type="register"/>
+          <wire name="b[3]" tap_mode="classic" type="register"/>
+          <wire name="b[4]" tap_mode="classic" type="register"/>
+          <wire name="b[5]" tap_mode="classic" type="register"/>
+          <wire name="b[6]" tap_mode="classic" type="register"/>
+          <wire name="b[7]" tap_mode="classic" type="register"/>
+          <wire name="b[8]" tap_mode="classic" type="register"/>
+          <wire name="b[9]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[0]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[10]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[11]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[12]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[13]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[14]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[15]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[16]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[17]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[18]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[19]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[1]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[20]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[21]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[22]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[23]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[24]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[25]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[26]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[27]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[28]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[29]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[2]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[30]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[31]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[3]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[4]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[5]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[6]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[7]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[8]" tap_mode="classic" type="register"/>
+          <wire name="hiexpected[9]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[0]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[10]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[11]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[12]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[13]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[14]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[15]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[16]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[17]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[18]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[19]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[1]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[20]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[21]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[22]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[23]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[24]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[25]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[26]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[27]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[28]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[29]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[2]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[30]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[31]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[3]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[4]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[5]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[6]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[7]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[8]" tap_mode="classic" type="register"/>
+          <wire name="loexpected[9]" tap_mode="classic" type="register"/>
+          <wire name="op[0]" tap_mode="classic" type="register"/>
+          <wire name="op[1]" tap_mode="classic" type="register"/>
+          <wire name="op[2]" tap_mode="classic" type="register"/>
+          <wire name="op[3]" tap_mode="classic" type="register"/>
+          <wire name="shamt[0]" tap_mode="classic" type="register"/>
+          <wire name="shamt[1]" tap_mode="classic" type="register"/>
+          <wire name="shamt[2]" tap_mode="classic" type="register"/>
+          <wire name="shamt[3]" tap_mode="classic" type="register"/>
+          <wire name="shamt[4]" tap_mode="classic" type="register"/>
+          <wire name="shamt[5]" tap_mode="classic" type="register"/>
+          <wire name="shamt[6]" tap_mode="classic" type="register"/>
+          <wire name="shamt[7]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[0]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[10]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[11]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[12]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[13]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[14]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[15]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[16]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[17]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[18]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[19]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[1]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[20]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[21]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[22]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[23]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[24]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[25]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[26]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[27]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[28]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[29]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[2]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[30]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[31]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[3]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[4]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[5]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[6]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[7]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[8]" tap_mode="classic" type="register"/>
+          <wire name="vectornum[9]" tap_mode="classic" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="a" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="a[31]"/>
+            <net is_signal_inverted="no" name="a[30]"/>
+            <net is_signal_inverted="no" name="a[29]"/>
+            <net is_signal_inverted="no" name="a[28]"/>
+            <net is_signal_inverted="no" name="a[27]"/>
+            <net is_signal_inverted="no" name="a[26]"/>
+            <net is_signal_inverted="no" name="a[25]"/>
+            <net is_signal_inverted="no" name="a[24]"/>
+            <net is_signal_inverted="no" name="a[23]"/>
+            <net is_signal_inverted="no" name="a[22]"/>
+            <net is_signal_inverted="no" name="a[21]"/>
+            <net is_signal_inverted="no" name="a[20]"/>
+            <net is_signal_inverted="no" name="a[19]"/>
+            <net is_signal_inverted="no" name="a[18]"/>
+            <net is_signal_inverted="no" name="a[17]"/>
+            <net is_signal_inverted="no" name="a[16]"/>
+            <net is_signal_inverted="no" name="a[15]"/>
+            <net is_signal_inverted="no" name="a[14]"/>
+            <net is_signal_inverted="no" name="a[13]"/>
+            <net is_signal_inverted="no" name="a[12]"/>
+            <net is_signal_inverted="no" name="a[11]"/>
+            <net is_signal_inverted="no" name="a[10]"/>
+            <net is_signal_inverted="no" name="a[9]"/>
+            <net is_signal_inverted="no" name="a[8]"/>
+            <net is_signal_inverted="no" name="a[7]"/>
+            <net is_signal_inverted="no" name="a[6]"/>
+            <net is_signal_inverted="no" name="a[5]"/>
+            <net is_signal_inverted="no" name="a[4]"/>
+            <net is_signal_inverted="no" name="a[3]"/>
+            <net is_signal_inverted="no" name="a[2]"/>
+            <net is_signal_inverted="no" name="a[1]"/>
+            <net is_signal_inverted="no" name="a[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="b" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="b[31]"/>
+            <net is_signal_inverted="no" name="b[30]"/>
+            <net is_signal_inverted="no" name="b[29]"/>
+            <net is_signal_inverted="no" name="b[28]"/>
+            <net is_signal_inverted="no" name="b[27]"/>
+            <net is_signal_inverted="no" name="b[26]"/>
+            <net is_signal_inverted="no" name="b[25]"/>
+            <net is_signal_inverted="no" name="b[24]"/>
+            <net is_signal_inverted="no" name="b[23]"/>
+            <net is_signal_inverted="no" name="b[22]"/>
+            <net is_signal_inverted="no" name="b[21]"/>
+            <net is_signal_inverted="no" name="b[20]"/>
+            <net is_signal_inverted="no" name="b[19]"/>
+            <net is_signal_inverted="no" name="b[18]"/>
+            <net is_signal_inverted="no" name="b[17]"/>
+            <net is_signal_inverted="no" name="b[16]"/>
+            <net is_signal_inverted="no" name="b[15]"/>
+            <net is_signal_inverted="no" name="b[14]"/>
+            <net is_signal_inverted="no" name="b[13]"/>
+            <net is_signal_inverted="no" name="b[12]"/>
+            <net is_signal_inverted="no" name="b[11]"/>
+            <net is_signal_inverted="no" name="b[10]"/>
+            <net is_signal_inverted="no" name="b[9]"/>
+            <net is_signal_inverted="no" name="b[8]"/>
+            <net is_signal_inverted="no" name="b[7]"/>
+            <net is_signal_inverted="no" name="b[6]"/>
+            <net is_signal_inverted="no" name="b[5]"/>
+            <net is_signal_inverted="no" name="b[4]"/>
+            <net is_signal_inverted="no" name="b[3]"/>
+            <net is_signal_inverted="no" name="b[2]"/>
+            <net is_signal_inverted="no" name="b[1]"/>
+            <net is_signal_inverted="no" name="b[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="loexpected" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="loexpected[31]"/>
+            <net is_signal_inverted="no" name="loexpected[30]"/>
+            <net is_signal_inverted="no" name="loexpected[29]"/>
+            <net is_signal_inverted="no" name="loexpected[28]"/>
+            <net is_signal_inverted="no" name="loexpected[27]"/>
+            <net is_signal_inverted="no" name="loexpected[26]"/>
+            <net is_signal_inverted="no" name="loexpected[25]"/>
+            <net is_signal_inverted="no" name="loexpected[24]"/>
+            <net is_signal_inverted="no" name="loexpected[23]"/>
+            <net is_signal_inverted="no" name="loexpected[22]"/>
+            <net is_signal_inverted="no" name="loexpected[21]"/>
+            <net is_signal_inverted="no" name="loexpected[20]"/>
+            <net is_signal_inverted="no" name="loexpected[19]"/>
+            <net is_signal_inverted="no" name="loexpected[18]"/>
+            <net is_signal_inverted="no" name="loexpected[17]"/>
+            <net is_signal_inverted="no" name="loexpected[16]"/>
+            <net is_signal_inverted="no" name="loexpected[15]"/>
+            <net is_signal_inverted="no" name="loexpected[14]"/>
+            <net is_signal_inverted="no" name="loexpected[13]"/>
+            <net is_signal_inverted="no" name="loexpected[12]"/>
+            <net is_signal_inverted="no" name="loexpected[11]"/>
+            <net is_signal_inverted="no" name="loexpected[10]"/>
+            <net is_signal_inverted="no" name="loexpected[9]"/>
+            <net is_signal_inverted="no" name="loexpected[8]"/>
+            <net is_signal_inverted="no" name="loexpected[7]"/>
+            <net is_signal_inverted="no" name="loexpected[6]"/>
+            <net is_signal_inverted="no" name="loexpected[5]"/>
+            <net is_signal_inverted="no" name="loexpected[4]"/>
+            <net is_signal_inverted="no" name="loexpected[3]"/>
+            <net is_signal_inverted="no" name="loexpected[2]"/>
+            <net is_signal_inverted="no" name="loexpected[1]"/>
+            <net is_signal_inverted="no" name="loexpected[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="hiexpected" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="hiexpected[31]"/>
+            <net is_signal_inverted="no" name="hiexpected[30]"/>
+            <net is_signal_inverted="no" name="hiexpected[29]"/>
+            <net is_signal_inverted="no" name="hiexpected[28]"/>
+            <net is_signal_inverted="no" name="hiexpected[27]"/>
+            <net is_signal_inverted="no" name="hiexpected[26]"/>
+            <net is_signal_inverted="no" name="hiexpected[25]"/>
+            <net is_signal_inverted="no" name="hiexpected[24]"/>
+            <net is_signal_inverted="no" name="hiexpected[23]"/>
+            <net is_signal_inverted="no" name="hiexpected[22]"/>
+            <net is_signal_inverted="no" name="hiexpected[21]"/>
+            <net is_signal_inverted="no" name="hiexpected[20]"/>
+            <net is_signal_inverted="no" name="hiexpected[19]"/>
+            <net is_signal_inverted="no" name="hiexpected[18]"/>
+            <net is_signal_inverted="no" name="hiexpected[17]"/>
+            <net is_signal_inverted="no" name="hiexpected[16]"/>
+            <net is_signal_inverted="no" name="hiexpected[15]"/>
+            <net is_signal_inverted="no" name="hiexpected[14]"/>
+            <net is_signal_inverted="no" name="hiexpected[13]"/>
+            <net is_signal_inverted="no" name="hiexpected[12]"/>
+            <net is_signal_inverted="no" name="hiexpected[11]"/>
+            <net is_signal_inverted="no" name="hiexpected[10]"/>
+            <net is_signal_inverted="no" name="hiexpected[9]"/>
+            <net is_signal_inverted="no" name="hiexpected[8]"/>
+            <net is_signal_inverted="no" name="hiexpected[7]"/>
+            <net is_signal_inverted="no" name="hiexpected[6]"/>
+            <net is_signal_inverted="no" name="hiexpected[5]"/>
+            <net is_signal_inverted="no" name="hiexpected[4]"/>
+            <net is_signal_inverted="no" name="hiexpected[3]"/>
+            <net is_signal_inverted="no" name="hiexpected[2]"/>
+            <net is_signal_inverted="no" name="hiexpected[1]"/>
+            <net is_signal_inverted="no" name="hiexpected[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="op" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="op[3]"/>
+            <net is_signal_inverted="no" name="op[2]"/>
+            <net is_signal_inverted="no" name="op[1]"/>
+            <net is_signal_inverted="no" name="op[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="shamt" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="shamt[7]"/>
+            <net is_signal_inverted="no" name="shamt[6]"/>
+            <net is_signal_inverted="no" name="shamt[5]"/>
+            <net is_signal_inverted="no" name="shamt[4]"/>
+            <net is_signal_inverted="no" name="shamt[3]"/>
+            <net is_signal_inverted="no" name="shamt[2]"/>
+            <net is_signal_inverted="no" name="shamt[1]"/>
+            <net is_signal_inverted="no" name="shamt[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="vectornum" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="vectornum[31]"/>
+            <net is_signal_inverted="no" name="vectornum[30]"/>
+            <net is_signal_inverted="no" name="vectornum[29]"/>
+            <net is_signal_inverted="no" name="vectornum[28]"/>
+            <net is_signal_inverted="no" name="vectornum[27]"/>
+            <net is_signal_inverted="no" name="vectornum[26]"/>
+            <net is_signal_inverted="no" name="vectornum[25]"/>
+            <net is_signal_inverted="no" name="vectornum[24]"/>
+            <net is_signal_inverted="no" name="vectornum[23]"/>
+            <net is_signal_inverted="no" name="vectornum[22]"/>
+            <net is_signal_inverted="no" name="vectornum[21]"/>
+            <net is_signal_inverted="no" name="vectornum[20]"/>
+            <net is_signal_inverted="no" name="vectornum[19]"/>
+            <net is_signal_inverted="no" name="vectornum[18]"/>
+            <net is_signal_inverted="no" name="vectornum[17]"/>
+            <net is_signal_inverted="no" name="vectornum[16]"/>
+            <net is_signal_inverted="no" name="vectornum[15]"/>
+            <net is_signal_inverted="no" name="vectornum[14]"/>
+            <net is_signal_inverted="no" name="vectornum[13]"/>
+            <net is_signal_inverted="no" name="vectornum[12]"/>
+            <net is_signal_inverted="no" name="vectornum[11]"/>
+            <net is_signal_inverted="no" name="vectornum[10]"/>
+            <net is_signal_inverted="no" name="vectornum[9]"/>
+            <net is_signal_inverted="no" name="vectornum[8]"/>
+            <net is_signal_inverted="no" name="vectornum[7]"/>
+            <net is_signal_inverted="no" name="vectornum[6]"/>
+            <net is_signal_inverted="no" name="vectornum[5]"/>
+            <net is_signal_inverted="no" name="vectornum[4]"/>
+            <net is_signal_inverted="no" name="vectornum[3]"/>
+            <net is_signal_inverted="no" name="vectornum[2]"/>
+            <net is_signal_inverted="no" name="vectornum[1]"/>
+            <net is_signal_inverted="no" name="vectornum[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="alu:dut|hi" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="alu:dut|hi[31]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[30]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[29]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[28]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[27]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[26]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[25]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[24]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[23]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[22]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[21]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[20]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[19]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[18]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[17]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[16]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[15]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[14]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[13]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[12]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[11]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[10]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[9]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[8]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[7]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[6]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[5]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[4]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[3]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[2]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[1]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="alu:dut|lo" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="alu:dut|lo[31]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[30]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[29]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[28]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[27]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[26]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[25]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[24]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[23]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[22]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[21]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[20]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[19]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[18]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[17]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[16]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[15]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[14]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[13]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[12]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[11]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[10]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[9]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[8]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[7]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[6]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[5]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[4]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[3]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[2]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[1]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[0]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="a" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="a[31]"/>
+            <net is_signal_inverted="no" name="a[30]"/>
+            <net is_signal_inverted="no" name="a[29]"/>
+            <net is_signal_inverted="no" name="a[28]"/>
+            <net is_signal_inverted="no" name="a[27]"/>
+            <net is_signal_inverted="no" name="a[26]"/>
+            <net is_signal_inverted="no" name="a[25]"/>
+            <net is_signal_inverted="no" name="a[24]"/>
+            <net is_signal_inverted="no" name="a[23]"/>
+            <net is_signal_inverted="no" name="a[22]"/>
+            <net is_signal_inverted="no" name="a[21]"/>
+            <net is_signal_inverted="no" name="a[20]"/>
+            <net is_signal_inverted="no" name="a[19]"/>
+            <net is_signal_inverted="no" name="a[18]"/>
+            <net is_signal_inverted="no" name="a[17]"/>
+            <net is_signal_inverted="no" name="a[16]"/>
+            <net is_signal_inverted="no" name="a[15]"/>
+            <net is_signal_inverted="no" name="a[14]"/>
+            <net is_signal_inverted="no" name="a[13]"/>
+            <net is_signal_inverted="no" name="a[12]"/>
+            <net is_signal_inverted="no" name="a[11]"/>
+            <net is_signal_inverted="no" name="a[10]"/>
+            <net is_signal_inverted="no" name="a[9]"/>
+            <net is_signal_inverted="no" name="a[8]"/>
+            <net is_signal_inverted="no" name="a[7]"/>
+            <net is_signal_inverted="no" name="a[6]"/>
+            <net is_signal_inverted="no" name="a[5]"/>
+            <net is_signal_inverted="no" name="a[4]"/>
+            <net is_signal_inverted="no" name="a[3]"/>
+            <net is_signal_inverted="no" name="a[2]"/>
+            <net is_signal_inverted="no" name="a[1]"/>
+            <net is_signal_inverted="no" name="a[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="b" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="b[31]"/>
+            <net is_signal_inverted="no" name="b[30]"/>
+            <net is_signal_inverted="no" name="b[29]"/>
+            <net is_signal_inverted="no" name="b[28]"/>
+            <net is_signal_inverted="no" name="b[27]"/>
+            <net is_signal_inverted="no" name="b[26]"/>
+            <net is_signal_inverted="no" name="b[25]"/>
+            <net is_signal_inverted="no" name="b[24]"/>
+            <net is_signal_inverted="no" name="b[23]"/>
+            <net is_signal_inverted="no" name="b[22]"/>
+            <net is_signal_inverted="no" name="b[21]"/>
+            <net is_signal_inverted="no" name="b[20]"/>
+            <net is_signal_inverted="no" name="b[19]"/>
+            <net is_signal_inverted="no" name="b[18]"/>
+            <net is_signal_inverted="no" name="b[17]"/>
+            <net is_signal_inverted="no" name="b[16]"/>
+            <net is_signal_inverted="no" name="b[15]"/>
+            <net is_signal_inverted="no" name="b[14]"/>
+            <net is_signal_inverted="no" name="b[13]"/>
+            <net is_signal_inverted="no" name="b[12]"/>
+            <net is_signal_inverted="no" name="b[11]"/>
+            <net is_signal_inverted="no" name="b[10]"/>
+            <net is_signal_inverted="no" name="b[9]"/>
+            <net is_signal_inverted="no" name="b[8]"/>
+            <net is_signal_inverted="no" name="b[7]"/>
+            <net is_signal_inverted="no" name="b[6]"/>
+            <net is_signal_inverted="no" name="b[5]"/>
+            <net is_signal_inverted="no" name="b[4]"/>
+            <net is_signal_inverted="no" name="b[3]"/>
+            <net is_signal_inverted="no" name="b[2]"/>
+            <net is_signal_inverted="no" name="b[1]"/>
+            <net is_signal_inverted="no" name="b[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="loexpected" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="loexpected[31]"/>
+            <net is_signal_inverted="no" name="loexpected[30]"/>
+            <net is_signal_inverted="no" name="loexpected[29]"/>
+            <net is_signal_inverted="no" name="loexpected[28]"/>
+            <net is_signal_inverted="no" name="loexpected[27]"/>
+            <net is_signal_inverted="no" name="loexpected[26]"/>
+            <net is_signal_inverted="no" name="loexpected[25]"/>
+            <net is_signal_inverted="no" name="loexpected[24]"/>
+            <net is_signal_inverted="no" name="loexpected[23]"/>
+            <net is_signal_inverted="no" name="loexpected[22]"/>
+            <net is_signal_inverted="no" name="loexpected[21]"/>
+            <net is_signal_inverted="no" name="loexpected[20]"/>
+            <net is_signal_inverted="no" name="loexpected[19]"/>
+            <net is_signal_inverted="no" name="loexpected[18]"/>
+            <net is_signal_inverted="no" name="loexpected[17]"/>
+            <net is_signal_inverted="no" name="loexpected[16]"/>
+            <net is_signal_inverted="no" name="loexpected[15]"/>
+            <net is_signal_inverted="no" name="loexpected[14]"/>
+            <net is_signal_inverted="no" name="loexpected[13]"/>
+            <net is_signal_inverted="no" name="loexpected[12]"/>
+            <net is_signal_inverted="no" name="loexpected[11]"/>
+            <net is_signal_inverted="no" name="loexpected[10]"/>
+            <net is_signal_inverted="no" name="loexpected[9]"/>
+            <net is_signal_inverted="no" name="loexpected[8]"/>
+            <net is_signal_inverted="no" name="loexpected[7]"/>
+            <net is_signal_inverted="no" name="loexpected[6]"/>
+            <net is_signal_inverted="no" name="loexpected[5]"/>
+            <net is_signal_inverted="no" name="loexpected[4]"/>
+            <net is_signal_inverted="no" name="loexpected[3]"/>
+            <net is_signal_inverted="no" name="loexpected[2]"/>
+            <net is_signal_inverted="no" name="loexpected[1]"/>
+            <net is_signal_inverted="no" name="loexpected[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="hiexpected" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="hiexpected[31]"/>
+            <net is_signal_inverted="no" name="hiexpected[30]"/>
+            <net is_signal_inverted="no" name="hiexpected[29]"/>
+            <net is_signal_inverted="no" name="hiexpected[28]"/>
+            <net is_signal_inverted="no" name="hiexpected[27]"/>
+            <net is_signal_inverted="no" name="hiexpected[26]"/>
+            <net is_signal_inverted="no" name="hiexpected[25]"/>
+            <net is_signal_inverted="no" name="hiexpected[24]"/>
+            <net is_signal_inverted="no" name="hiexpected[23]"/>
+            <net is_signal_inverted="no" name="hiexpected[22]"/>
+            <net is_signal_inverted="no" name="hiexpected[21]"/>
+            <net is_signal_inverted="no" name="hiexpected[20]"/>
+            <net is_signal_inverted="no" name="hiexpected[19]"/>
+            <net is_signal_inverted="no" name="hiexpected[18]"/>
+            <net is_signal_inverted="no" name="hiexpected[17]"/>
+            <net is_signal_inverted="no" name="hiexpected[16]"/>
+            <net is_signal_inverted="no" name="hiexpected[15]"/>
+            <net is_signal_inverted="no" name="hiexpected[14]"/>
+            <net is_signal_inverted="no" name="hiexpected[13]"/>
+            <net is_signal_inverted="no" name="hiexpected[12]"/>
+            <net is_signal_inverted="no" name="hiexpected[11]"/>
+            <net is_signal_inverted="no" name="hiexpected[10]"/>
+            <net is_signal_inverted="no" name="hiexpected[9]"/>
+            <net is_signal_inverted="no" name="hiexpected[8]"/>
+            <net is_signal_inverted="no" name="hiexpected[7]"/>
+            <net is_signal_inverted="no" name="hiexpected[6]"/>
+            <net is_signal_inverted="no" name="hiexpected[5]"/>
+            <net is_signal_inverted="no" name="hiexpected[4]"/>
+            <net is_signal_inverted="no" name="hiexpected[3]"/>
+            <net is_signal_inverted="no" name="hiexpected[2]"/>
+            <net is_signal_inverted="no" name="hiexpected[1]"/>
+            <net is_signal_inverted="no" name="hiexpected[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="op" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="op[3]"/>
+            <net is_signal_inverted="no" name="op[2]"/>
+            <net is_signal_inverted="no" name="op[1]"/>
+            <net is_signal_inverted="no" name="op[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="shamt" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="shamt[7]"/>
+            <net is_signal_inverted="no" name="shamt[6]"/>
+            <net is_signal_inverted="no" name="shamt[5]"/>
+            <net is_signal_inverted="no" name="shamt[4]"/>
+            <net is_signal_inverted="no" name="shamt[3]"/>
+            <net is_signal_inverted="no" name="shamt[2]"/>
+            <net is_signal_inverted="no" name="shamt[1]"/>
+            <net is_signal_inverted="no" name="shamt[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="vectornum" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="vectornum[31]"/>
+            <net is_signal_inverted="no" name="vectornum[30]"/>
+            <net is_signal_inverted="no" name="vectornum[29]"/>
+            <net is_signal_inverted="no" name="vectornum[28]"/>
+            <net is_signal_inverted="no" name="vectornum[27]"/>
+            <net is_signal_inverted="no" name="vectornum[26]"/>
+            <net is_signal_inverted="no" name="vectornum[25]"/>
+            <net is_signal_inverted="no" name="vectornum[24]"/>
+            <net is_signal_inverted="no" name="vectornum[23]"/>
+            <net is_signal_inverted="no" name="vectornum[22]"/>
+            <net is_signal_inverted="no" name="vectornum[21]"/>
+            <net is_signal_inverted="no" name="vectornum[20]"/>
+            <net is_signal_inverted="no" name="vectornum[19]"/>
+            <net is_signal_inverted="no" name="vectornum[18]"/>
+            <net is_signal_inverted="no" name="vectornum[17]"/>
+            <net is_signal_inverted="no" name="vectornum[16]"/>
+            <net is_signal_inverted="no" name="vectornum[15]"/>
+            <net is_signal_inverted="no" name="vectornum[14]"/>
+            <net is_signal_inverted="no" name="vectornum[13]"/>
+            <net is_signal_inverted="no" name="vectornum[12]"/>
+            <net is_signal_inverted="no" name="vectornum[11]"/>
+            <net is_signal_inverted="no" name="vectornum[10]"/>
+            <net is_signal_inverted="no" name="vectornum[9]"/>
+            <net is_signal_inverted="no" name="vectornum[8]"/>
+            <net is_signal_inverted="no" name="vectornum[7]"/>
+            <net is_signal_inverted="no" name="vectornum[6]"/>
+            <net is_signal_inverted="no" name="vectornum[5]"/>
+            <net is_signal_inverted="no" name="vectornum[4]"/>
+            <net is_signal_inverted="no" name="vectornum[3]"/>
+            <net is_signal_inverted="no" name="vectornum[2]"/>
+            <net is_signal_inverted="no" name="vectornum[1]"/>
+            <net is_signal_inverted="no" name="vectornum[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="alu:dut|hi" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="alu:dut|hi[31]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[30]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[29]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[28]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[27]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[26]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[25]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[24]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[23]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[22]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[21]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[20]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[19]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[18]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[17]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[16]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[15]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[14]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[13]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[12]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[11]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[10]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[9]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[8]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[7]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[6]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[5]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[4]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[3]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[2]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[1]"/>
+            <net is_signal_inverted="no" name="alu:dut|hi[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="alu:dut|lo" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="alu:dut|lo[31]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[30]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[29]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[28]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[27]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[26]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[25]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[24]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[23]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[22]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[21]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[20]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[19]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[18]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[17]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[16]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[15]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[14]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[13]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[12]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[11]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[10]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[9]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[8]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[7]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[6]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[5]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[4]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[3]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[2]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[1]"/>
+            <net is_signal_inverted="no" name="alu:dut|lo[0]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" name="trigger: 2016/10/20 16:20:32  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data name="log: 2016/10/20 16:20:54  #0"/>
+          <extradata/>
+        </log>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+</session>

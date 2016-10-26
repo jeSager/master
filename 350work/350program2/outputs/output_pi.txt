@@ -2,8 +2,8 @@ MAIN: Beginning execution
 MAIN: datafile  '../../inputs/text_pi.txt'
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Oct 12 14:18:49 2016
-TIME beginning             0.00 u         0.00 s   Res:        2180
+TIME CPU percent    0.00   0.00                    Wed Oct 26 15:23:55 2016
+TIME beginning             0.00 u         0.00 s   Res:        2104
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -125,8 +125,8 @@ LOCATION(s):
 MAIN: Ending execution
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Oct 12 14:18:49 2016
-TIME ending                0.00 u         0.00 s   Res:        2944
+TIME CPU percent    0.00   0.00                    Wed Oct 26 15:23:55 2016
+TIME ending                0.00 u         0.00 s   Res:        3056
 TIME ending                0.00 u_t       0.00 s_t
 TIME***********************************************************************
 

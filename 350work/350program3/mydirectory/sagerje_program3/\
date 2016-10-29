@@ -4,9 +4,6 @@
  * Author/copyright:  Duncan Buell
  * Date: 7 May 2015
  *
- * Modified by;  James Sager
- * Date: Wed Oct 26 14:59:16 EDT 2016
- *
 **/
 
 #ifndef NODE_H
@@ -20,41 +17,30 @@ using namespace std;
 #include "../../Utilities/scanline.h"
 
 class Node {
-
 public:
- //Functions
-
- //Constructors and Destructor
  Node();
- Node(int which);
+ Node(int node_number);
  virtual ~Node();
 
- //Accessors
- int GetNodeNumber() const;
- int GetIncomingCount() const;
- int GetNumberOfChildren() const;
- bool HasNotBeenVisited() const;
- vector<int> GetChildSubs() const;
-
- //Mutators
  void AddChildSub(int which);
- void SetVisited(bool what);
- void IncrementIncoming();
  void DecrementIncoming();
- void SetNodeNumber(int which);
+ vector<int> GetChildSubs() const;
+ int GetIncomingCount() const;
+ int GetNodeNumber() const;
+ int GetNumberOfChildren() const;
+ bool HasBeenVisited() const;
+ void IncrementIncoming();
+ void SetVisited(bool what);
 
- //General
  string ToString() const;
 
 private:
- //Variables
-
- int kDummyNodeNumber = -99;
- bool visited_ = false;
+ int dummy_number_ = -99;
+ bool visited_;
  int node_number_ = kDummyNodeNumber;
  int incoming_ = 0;
- vector<int> child_subs_;
 
+ vector<int> child_subs_;
 };
 
 #endif

@@ -1,18 +1,31 @@
 #!/bin/bash
+echo "Creating log and stdout directories"
+mkdir ./outputs/log/ ./outputs/std/
+
+echo "Creating program output and log files"
+touch /outputs/outfile0.txt /outputs/log/logfile0.txt
+touch /outputs/outfile1.txt /outputs/log/logfile1.txt
+touch /outputs/outfile2.txt /outputs/log/logfile2.txt
+touch /outputs/outfile3.txt /outputs/log/logfile3.txt
+touch /outputs/outfile4.txt /outputs/log/logfile4.txt
+
 echo "Descend into 'testdirectory' directory"
 cd testdirectory
-#
 for item in *
 do
   echo " "
   echo "EXECUTING" $item
   cd $item
-#  Aprog ../../inputs/graph1.txt ../../outputs/outfile1.txt ../../outputs/logfile1.txt > ../../outputs/stdout1.txt
-#  Aprog ../../inputs/graph2.txt ../../outputs/outfile2.txt ../../outputs/logfile2.txt > ../../outputs/stdout2.txt
-#  Aprog ../../inputs/graph3.txt ../../outputs/outfile3.txt ../../outputs/logfile3.txt > ../../outputs/stdout3.txt
-#  Aprog ../../inputs/graph4.txt ../../outputs/outfile4.txt ../../outputs/logfile4.txt > ../../outputs/stdout4.txt
-  Aprog ../../inputs/graph5.txt ../../inputs/outfile5.txt ../../inputs/logfile5.txt > ../../outputs/stdout5.txt
-  cp ../../inputs/outfile5.txt ../../inputs/logfile5.txt ../../outputs/
+  echo "Graph 0:"
+  ./Aprog ../../inputs/graph0.txt ../../outputs/outfile0.txt ../../outputs/log/logfile0.txt > ../../outputs/std/stdout0.txt
+  echo "Graph 1:"
+  ./Aprog ../../inputs/graph1.txt ../../outputs/outfile1.txt ../../outputs/log/logfile1.txt > ../../outputs/std/stdout1.txt
+  echo "Graph 2:"
+  ./Aprog ../../inputs/graph2.txt ../../outputs/outfile2.txt ../../outputs/log/logfile2.txt > ../../outputs/std/stdout2.txt
+  echo "Graph 3:"
+  ./Aprog ../../inputs/graph3.txt ../../outputs/outfile3.txt ../../outputs/log/logfile3.txt > ../../outputs/std/stdout3.txt
+  echo "Graph 4:"
+  ./Aprog ../../inputs/graph4.txt ../../outputs/outfile4.txt ../../outputs/log/logfile4.txt > ../../outputs/std/stdout4.txt
   cd ..
 echo "EXECUTION COMPLETE"
 done

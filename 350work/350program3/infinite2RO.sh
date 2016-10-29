@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RUN=1
-COUNT=0
+# COUNT=0
 TOTAL_TIME=
 OUTPUT_DIR=./outputs
 COMPILER_OUT="$OUTPUT_DIR/z_compiler.txt"
@@ -22,7 +22,7 @@ f_Label () {
 while [[ $RUN == 1 ]]; do
   BEGIN=$(date +%s%N)
   f_Label "BEGIN" "now"
-  COUNT=$COUNT + 1
+#  COUNT=$COUNT + 1
   if [ -d $OUTPUT_DIR ]; then
     echo "Removing old output"
     rm -r $OUTPUT_DIR
@@ -61,7 +61,8 @@ while [[ $RUN == 1 ]]; do
   echo "Entering the outputs directory"
   cd $OUTPUT_DIR
   echo "Creating Array of outputs"
-  OUTFILES=( * )
+#  OUTFILES=( * )
+  OUTFILES=( "$(ls -p | grep -v / )" )
   echo "Opening outputs in read-only buffers"
   vim -M "+noremap <cr> :cq!<cr>" "+noremap q :q!<cr>" "+set foldcolumn=2" "+hi foldcolumn ctermbg=0" "+hi nontext ctermfg=0" "+set nonumber" "+set norelativenumber" "+noremap <tab> :bn<cr>" "+noremap <S-tab> :bp<cr>" "+set wrap linebreak nolist" ${OUTFILES[@]}
   RUN=$?

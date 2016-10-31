@@ -268,14 +268,18 @@ void GraphCode::Reset(ofstream& out){
   for( int i = max; i > -1; --i)
     for(vector<Node>::reverse_iterator node = the_graph_.rbegin();
                                              node != the_graph_.rend(); ++node)
-      if((*node).GetIncomingCount() == i)
-        nodeStack.push(*node);
+      if((*node).GetIncomingCount() == i) // mark this visited here
+        nodeStack.push(*node);            // check its branches
   while( ! nodeStack.empty()){
     out << nodeStack.top().GetNodeNumber() << " ";
     nodeStack.pop();
   }
 
 }
+// the list is smallest number with least incoming
+// to largest number with most incoming
+// incoming is prioritized
+
 
 
 

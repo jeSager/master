@@ -1,26 +1,65 @@
-module lab4_regfile (
+/*******************************************************************************
+* regfile.v
+*
+* Lab 3 Top Files:
+*     quartus:  lab3_top.v
+*     modelsim: testbench_regfile.v
+*
+* Alex Harmon and James Sager
+* Fri Oct 14 14:20:48 EDT 2016
+*******************************************************************************/
+module regfile (
   input clk, we,
   input  [4:0] readaddr1, readaddr2, writeaddr,
   input  [31:0] writedata, reg30_in,
-  output [31:0] readdata1, readdata2, reg30_out
+  output reg [31:0] readdata1, readdata2, reg30_out
 );
 
   reg [31:0] array[31:0];
-  reg [5 :0] i;
+
+  reg [7 :0] i;
 
   initial begin
-    for(i=0;i<31;i=i+1) array[i]=0;
-//    reg[1] <= 32'b1010
-//    reg[2] <= 32'b.1;
+    for(i=0;i<32;i=i+1) array[i]=0;
+    reg30_out =0;
   end
 
-  assign reg30_out = array[30];
-  assign readdata1 = (readaddr1 != 30) ? array[readaddr1] : 0;
-  assign readdata2 = (readaddr2 != 30) ? array[readaddr2] : 0;
+  always @(*) begin
+    reg30_out <= array[30];
+    if ( readaddr1==30)
+      readdata1 <= reg30_in;
+    else if (writeaddr==readaddr1 && we && readaddr1!=0)
+      readdata1 <= writedata;
+    else
+      readdata1 <= array[readaddr1];
 
-  always @ (posedge clk) if (we && writeaddr != 0) begin
-    if( writeaddr != 30 ) array[writeaddr] <= writedata;
-    else array[30] <= reg30_in;
+
+    if ( readaddr2==30)
+      readdata2 <= reg30_in;
+    else if (writeaddr==readaddr2 && we && readaddr2!=0)
+      readdata2 <= writedata;
+    else
+      readdata2 <= array[readaddr2];
   end
 
+  always @ (posedge clk) begin
+    if (we && writeaddr != 0) begin
+      if ( writeaddr == 30) array[30] <= reg30_in;
+      else array[writeaddr] <= writedata;
+    end
+
+  end
+//  assign writedata <= 0;
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+Flow report for the_project
+Thu Oct 27 18:15:47 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Summary                                                                   ;
++------------------------------------+-------------------------------------------+
+; Flow Status                        ; Successful - Thu Oct 27 18:15:47 2016     ;
+; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
+; Revision Name                      ; the_project                               ;
+; Top-level Entity Name              ; lab3_top                                  ;
+; Family                             ; Cyclone IV E                              ;
+; Device                             ; EP4CE115F29C7                             ;
+; Timing Models                      ; Final                                     ;
+; Total logic elements               ; 67 / 114,480 ( < 1 % )                    ;
+;     Total combinational functions  ; 31 / 114,480 ( < 1 % )                    ;
+;     Dedicated logic registers      ; 36 / 114,480 ( < 1 % )                    ;
+; Total registers                    ; 36                                        ;
+; Total pins                         ; 75 / 529 ( 14 % )                         ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                           ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                             ;
++------------------------------------+-------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/27/2016 18:15:24 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; the_project         ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                               ;
++--------------------------------------------------------------------------------+
+Assignment Name : COMPILER_SIGNATURE_ID
+Value           : 26830024545502.147760652417894
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : EDA_OUTPUT_DATA_FORMAT
+Value           : Vhdl
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_simulation
+
+Assignment Name : EDA_SIMULATION_TOOL
+Value           : ModelSim-Altera (VHDL)
+Default Value   : <None>
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : ENABLE_SIGNALTAP
+Value           : On
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MAX_CORE_JUNCTION_TEMP
+Value           : 85
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MIN_CORE_JUNCTION_TEMP
+Value           : 0
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MISC_FILE
+Value           : /acct/sagerje/Downloads/quartus_work/the_project.dpf
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MISC_FILE
+Value           : /acct/sagerje/Downloads/master/611work/quartus_work/the_project.dpf
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : PARTITION_COLOR
+Value           : 16764057
+Default Value   : --
+Entity Name     : lab3_top
+Section Id      : Top
+
+Assignment Name : PARTITION_FITTER_PRESERVATION_LEVEL
+Value           : PLACEMENT_AND_ROUTING
+Default Value   : --
+Entity Name     : lab3_top
+Section Id      : Top
+
+Assignment Name : PARTITION_NETLIST_TYPE
+Value           : SOURCE
+Default Value   : --
+Entity Name     : lab3_top
+Section Id      : Top
+
+Assignment Name : POWER_BOARD_THERMAL_MODEL
+Value           : None (CONSERVATIVE)
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : POWER_PRESET_COOLING_SOLUTION
+Value           : 23 MM HEAT SINK WITH 200 LFPM AIRFLOW
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : TOP_LEVEL_ENTITY
+Value           : lab3_top
+Default Value   : the_project
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : USE_SIGNALTAP_FILE
+Value           : stp1.stp
+Default Value   : --
+Entity Name     : --
+Section Id      : --
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                              ;
++--------------------------------------------------------------------------------+
+Module Name                        : Analysis & Synthesis
+Elapsed Time                       : 00:00:02
+Average Processors Used            : 1.0
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:01
+
+Module Name                        : Fitter
+Elapsed Time                       : 00:00:12
+Average Processors Used            : 2.9
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:18
+
+Module Name                        : TimeQuest Timing Analyzer
+Elapsed Time                       : 00:00:03
+Average Processors Used            : 1.0
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:02
+
+Module Name                        : Assembler
+Elapsed Time                       : 00:00:05
+Average Processors Used            : 1.0
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:05
+
+Module Name                        : EDA Netlist Writer
+Elapsed Time                       : 00:00:01
+Average Processors Used            : 1.0
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:01
+
+Module Name                        : Total
+Elapsed Time                       : 00:00:23
+Average Processors Used            : --
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:27
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Flow OS Summary                                                                ;
++--------------------------------------------------------------------------------+
+Module Name      : Analysis & Synthesis
+Machine Hostname : cocsce-l3d22-02
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : Fitter
+Machine Hostname : cocsce-l3d22-02
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : TimeQuest Timing Analyzer
+Machine Hostname : cocsce-l3d22-02
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : Assembler
+Machine Hostname : cocsce-l3d22-02
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : EDA Netlist Writer
+Machine Hostname : cocsce-l3d22-02
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
++--------------------------------------------------------------------------------+
+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off the_project -c the_project
+quartus_fit --read_settings_files=off --write_settings_files=off the_project -c the_project
+quartus_sta the_project -c the_project
+quartus_asm --read_settings_files=off --write_settings_files=off the_project -c the_project
+quartus_eda --read_settings_files=off --write_settings_files=off the_project -c the_project
+
+
+

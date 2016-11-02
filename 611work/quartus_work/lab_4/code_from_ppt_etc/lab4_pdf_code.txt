@@ -1,0 +1,93 @@
+
+
+
+module control_unit (input [5:0] function_code,
+
+//...
+
+);
+
+always @(*) begin
+  if ((function_code == 6'b100000) | (function_code == 6'b100001)) begin
+                                                                    // add, addu
+    alu_op = 4'b0100;
+    alu_shamt = 5'bX;
+    enhilo = 1'b0;
+    regsel = 2'b00;
+    regwrite = 1'b1;
+  end else if ((function_code == 6'b100010) | (function_code == 6'b100011)) begin
+                                                                     //sub, subu
+    alu_op = 4'b0101;
+    alu_shamt = 5b'X;
+    enhilo = 1'b0;
+    regsel = 2'b00;
+    regwrite = 1'b1;
+    //  ...
+
+ end else if (function_code == 6'b011000) begin
+                                                             // mult (not multu)
+    alu_op = 4'b0110;
+    alu_shamt = 5b'X;
+    enhilo = 1'b1;
+    regsel = 2'b00;
+    regwrite = 1'b0;
+    // ...
+
+ end
+endmodule
+
+
+//=======================================================================
+//  For testing on DE2
+
+module de2 (
+  input CLOCK_50,
+  input [3:0] KEY,
+  input [17:0] SW
+  output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6 HEX7
+);
+
+  // connect DE2 I/Os to CPU/mem/decoders
+
+  system my_system (.clk(CLOCK_50), .rst(~KEY[0]),
+      .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2), .HEX3(HEX3),
+      .HEX4(HEX4), .HEX5(HEX5), .HEX6(HEX6), .HEX7(HEX7), .SW(SW));
+
+endmodule
+
+
+
+//=======================================================================
+// For testing with testbench
+
+module testbench ();
+  reg clk_tb;
+  reg rst_tb;
+  wire [6:0] HEX0;
+  wire [6:0] HEX1;
+  wire [6:0] HEX2;
+  wire [6:0] HEX3;
+  wire [6:0] HEX4;
+  wire [6:0] HEX5;
+  wire [6:0] HEX6;
+  wire [6:0] HEX8;
+
+  initial begin rst_tb=1; #4; rst_tb=0; end
+
+  always begin clk_tb=0; #5; clk_tb=1; #5; end
+
+  system my_system (.clk(clk_tb), .rst(rst_tb),
+      .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2), .HEX3(HEX3),
+      .HEX4(HEX4), .HEX5(HEX5), .HEX6(HEX6), .HEX7(HEX7), .SW(18'd15));
+
+endmodule
+
+
+
+//=======================================================================
+// In register file, add:
+
+initial begin
+  reg[1] <= 32'd <value for 10>
+  reg[2] <= 32'd <value for 0.1>
+end

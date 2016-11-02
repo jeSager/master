@@ -1,0 +1,2130 @@
+# //  ModelSim SE-64 10.4b May 26 2015 Linux 3.16.0-41-generic
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:45:26 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 16:45:26 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:45:26 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 16:45:26 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench_regfile -novopt
+# vsim work.testbench_regfile -novopt 
+# Start time: 16:45:43 on Oct 27,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       1       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       2       
+# Line input:          0000000000000000010000
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       3       
+# Line input:          0000000100000000000002
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       4       
+# Line input:          0000000000000000000200
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       5       
+# Line input:          000000000000000100001e
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         15 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:57:08 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 16:57:08 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:57:08 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 16:57:08 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       1       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       2       
+# Line input:          0000000000000000010000
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       3       
+# Line input:          0000000100000000000002
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       4       
+# Line input:          0000000000000000000200
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       5       
+# Line input:          000000000000000100001e
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         15 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:58:46 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 16:58:46 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:58:46 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 16:58:46 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       1       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       2       
+# Line input:          0000000000000000010000
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       3       
+# Line input:          0000000100000000000002
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       4       
+# Line input:          0000000000000000000200
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       5       
+# Line input:          000000000000000100001e
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         15 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:59:46 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 16:59:46 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 16:59:46 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 16:59:46 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -novopt work.testbench_regfile
+# End time: 17:00:07 on Oct 27,2016, Elapsed time: 0:14:24
+# Errors: 0, Warnings: 3
+# vsim -novopt work.testbench_regfile 
+# Start time: 17:00:07 on Oct 27,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       1       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       2       
+# Line input:          0000000000000000010000
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       3       
+# Line input:          0000000100000000000002
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       4       
+# Line input:          0000000000000000000200
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       5       
+# Line input:          000000000000000100001e
+# Reg 30 Output:       xxxxxxxx
+# Reg 30 Expected:     00000000
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         15 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:07:16 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 17:07:16 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:07:16 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 17:07:16 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+add wave -position insertpoint sim:/testbench_regfile/dut/*
+run -all
+# ____________________________________________________
+# Error on line:       13      
+# Line input:          xxxxxxxxxxxxxxxxxxxxxx
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     xxxxxxxx
+#         13 tests completed with         11 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+# Causality operation skipped due to absence of debug database file
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:23:28 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 17:23:28 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:23:28 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 17:23:28 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:46:50 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 17:46:50 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:46:50 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 17:46:50 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:54:32 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 17:54:32 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:54:32 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 17:54:32 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:58:16 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 17:58:16 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 17:58:16 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 17:58:16 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:04:48 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:04:48 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:04:48 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: /acct/sagerje/Downloads/quartus_work/regfile.v(25): (vlog-2110) Illegal reference to net "reg30_out".
+# ** Error: /acct/sagerje/Downloads/quartus_work/regfile.v(46): (vlog-2110) Illegal reference to net "reg30_out".
+# ** Error: /acct/sagerje/Downloads/quartus_work/regfile.v(47): (vlog-2110) Illegal reference to net "reg30_out".
+# End time: 18:04:48 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:05:21 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:05:21 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:05:21 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:05:21 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:14:45 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:14:45 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:14:45 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:14:45 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          7 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:19:07 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:19:07 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:19:07 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:19:07 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:30:33 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:30:33 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:30:33 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: (vlog-13069) /acct/sagerje/Downloads/quartus_work/regfile.v(47): near "array": syntax error, unexpected IDENTIFIER, expecting '('.
+# End time: 18:30:33 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:31:17 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:31:17 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:31:17 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:31:17 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:32:28 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:32:28 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:32:28 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:32:28 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:35:55 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:35:55 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:35:55 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:35:55 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:36:29 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:36:29 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:36:29 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:36:29 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:37:40 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:37:40 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:37:40 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:37:40 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:39:17 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:39:17 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:39:17 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: (vlog-13069) /acct/sagerje/Downloads/quartus_work/regfile.v(49): near "else": syntax error, unexpected else.
+# End time: 18:39:17 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:40:10 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:40:10 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:40:10 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:40:11 on Oct 27,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:41:00 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:41:00 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:41:00 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:41:00 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:41:31 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:41:31 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:41:31 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:41:31 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:42:19 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:42:19 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:42:19 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:42:19 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:42:39 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:42:39 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:42:39 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:42:39 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000000
+# Reg 30 Expected:     00000001
+#         12 tests completed with         10 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:43:29 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:43:29 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:43:29 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:43:29 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vsim -novopt work.testbench_regfile
+# End time: 18:43:57 on Oct 27,2016, Elapsed time: 1:43:50
+# Errors: 5, Warnings: 21
+# vsim -novopt work.testbench_regfile 
+# Start time: 18:43:57 on Oct 27,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading work.testbench_regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:47:08 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:47:08 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:47:08 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: (vlog-13069) /acct/sagerje/Downloads/quartus_work/regfile.v(48): near "array": syntax error, unexpected IDENTIFIER, expecting '('.
+# End time: 18:47:08 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:47:37 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:47:38 on Oct 27,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:47:38 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:47:38 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       4       
+# Line input:          0000000000000000000200
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       6       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       8       
+# Line input:          0000000000000000000000
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       9       
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       10      
+# Line input:          0000000200000000020002
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       11      
+# Line input:          0000000100000000000001
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Reg 30 Output:       00000002
+# Reg 30 Expected:     00000001
+#         12 tests completed with         11 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:48:25 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:48:25 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:48:25 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:48:25 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data1 Output:        00000001
+# Data1 Expected:      00000000
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          3 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:53:21 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:53:21 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:53:21 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: /acct/sagerje/Downloads/quartus_work/regfile.v(51): (vlog-2110) Illegal reference to net "writedata".
+# End time: 18:53:21 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:53:39 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:53:39 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:53:39 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: /acct/sagerje/Downloads/quartus_work/regfile.v(51): (vlog-2110) Illegal reference to net "writedata".
+# End time: 18:53:39 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:54:00 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:54:00 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:54:00 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: /acct/sagerje/Downloads/quartus_work/regfile.v(51): LHS in procedural continuous assignment may not be a net: writedata.
+# End time: 18:54:00 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:54:14 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:54:14 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:54:14 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: (vlog-13069) /acct/sagerje/Downloads/quartus_work/regfile.v(51): near "<=": syntax error, unexpected <=.
+# End time: 18:54:14 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:56:58 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:56:58 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:56:58 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# ** Error: (vlog-13069) /acct/sagerje/Downloads/quartus_work/regfile.v(51): near "end": syntax error, unexpected end.
+# End time: 18:56:58 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:57:15 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:57:15 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:57:15 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:57:15 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       7       
+# Line input:          0000000100000000000000
+# Data2 Output:        00000001
+# Data2 Expected:      00000000
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          2 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:57:55 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:57:55 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:57:55 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:57:55 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+# ____________________________________________________
+# Error on line:       12      
+# Line input:          0000000200000000000101
+# Data2 Output:        00000002
+# Data2 Expected:      00000001
+#         12 tests completed with          1 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+# Optimization canceled
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:59:38 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/testbench_regfile.v 
+# -- Compiling module testbench_regfile
+# 
+# Top level modules:
+# 	testbench_regfile
+# End time: 18:59:38 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 18:59:38 on Oct 27,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/quartus_work/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 18:59:38 on Oct 27,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.testbench_regfile
+# Loading work.testbench_regfile
+# Refreshing /acct/sagerje/Downloads/quartus_work/work.regfile
+# Loading work.regfile
+run -all
+#         12 tests completed with          0 errors
+# ** Note: $finish    : /acct/sagerje/Downloads/quartus_work/testbench_regfile.v(96)
+#    Time: 145 ns  Iteration: 1  Instance: /testbench_regfile
+# 1
+# Break in Module testbench_regfile at /acct/sagerje/Downloads/quartus_work/testbench_regfile.v line 96
+# End time: 19:04:33 on Oct 27,2016, Elapsed time: 0:20:36
+# Errors: 7, Warnings: 6

@@ -1,0 +1,381 @@
+Partition Merge report for the_project
+Wed Oct 12 18:44:56 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Summary                                                        ;
++------------------------------------+-------------------------------------------+
+; Partition Merge Status             ; Successful - Wed Oct 12 18:44:56 2016     ;
+; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
+; Revision Name                      ; the_project                               ;
+; Top-level Entity Name              ; testbench                                 ;
+; Family                             ; Cyclone IV E                              ;
+; Total logic elements               ; 0                                         ;
+;     Total combinational functions  ; 0                                         ;
+;     Dedicated logic registers      ; 0                                         ;
+; Total registers                    ; 0                                         ;
+; Total pins                         ; 1                                         ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 0                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                         ;
+; Total PLLs                         ; 0                                         ;
++------------------------------------+-------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                             ;
++--------------------------------------------------------------------------------+
+Partition Name         : Top
+Partition Type         : User-created
+Netlist Type Used      : Source File
+Netlist Type Requested : Post-Fit
+Partition Contents     : 
+
+Partition Name         : hard_block:auto_generated_inst
+Partition Type         : Auto-generated
+Netlist Type Used      : Source File
+Netlist Type Requested : Source File
+Partition Contents     : hard_block:auto_generated_inst
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                           ;
++--------------------------------------------------------------------------------+
+Statistic                      : Estimated Total logic elements
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Total combinational functions
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Logic element usage by number of LUT inputs
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- 4 input functions
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- 3 input functions
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- <=2 input functions
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Logic elements by mode
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- normal mode
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- arithmetic mode
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Total registers
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Dedicated logic registers
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- I/O registers
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Virtual pins
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : I/O pins
+Top                            : 1
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Embedded Multiplier 9-bit elements
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Total memory bits
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : Total RAM block bits
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Connections
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Input Connections
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Input Connections
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Connections
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Output Connections
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Internal Connections
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Total Connections
+Top                            : 1
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Connections
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : External Connections
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Top
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- hard_block:auto_generated_inst
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Partition Interface
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Input Ports
+Top                            : 1
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Bidir Ports
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Registered Ports
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Registered Input Ports
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Registered Output Ports
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      : 
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      : Port Connectivity
+Top                            : 
+hard_block:auto_generated_inst : 
+
+Statistic                      :     -- Input Ports driven by GND
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports driven by GND
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Input Ports driven by VCC
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports driven by VCC
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Input Ports with no Source
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports with no Source
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Input Ports with no Fanout
+Top                            : 0
+hard_block:auto_generated_inst : 0
+
+Statistic                      :     -- Output Ports with no Fanout
+Top                            : 0
+hard_block:auto_generated_inst : 0
++--------------------------------------------------------------------------------+
+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                       ;
++--------------------------------------------------------------------------------+
+Name      : CLOCK_50
+Partition : Top
+Type      : Input Port
+Location  : n/a
+Status    : 
+
+Name      :     -- CLOCK_50
+Partition : Top
+Type      : Input Pad
+Location  : Unplaced
+Status    : Synthesized
+
+Name      :     -- CLOCK_50~input
+Partition : Top
+Type      : Input Buffer
+Location  : Unplaced
+Status    : Synthesized
+
+Name      : 
+Partition : 
+Type      : 
+Location  : 
+Status    : 
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------+
+; Partition Merge Resource Usage Summary                 ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+;                                             ;          ;
+; Total combinational functions               ; 0        ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 0        ;
+;     -- 3 input functions                    ; 0        ;
+;     -- <=2 input functions                  ; 0        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 0        ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 1        ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 1        ;
+; Total fan-out                               ; 1        ;
+; Average fan-out                             ; 0.50     ;
++---------------------------------------------+----------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Partition Merge
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Wed Oct 12 18:44:56 2016
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off the_project -c the_project --merge=on
+Warning (35009): Previously generated Fitter netlist for partition "Top" does not exist -- using previously generated Synthesis netlist instead
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35002): Resolved and merged 1 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 32-bit Partition Merge was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 326 megabytes
+    Info: Processing ended: Wed Oct 12 18:44:57 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

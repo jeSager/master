@@ -1,0 +1,1746 @@
+Analysis & Synthesis report for the_project
+Thu Oct 27 18:15:26 2016
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "regfile:r"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                   ;
++------------------------------------+-------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Oct 27 18:15:26 2016     ;
+; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
+; Revision Name                      ; the_project                               ;
+; Top-level Entity Name              ; lab3_top                                  ;
+; Family                             ; Cyclone IV E                              ;
+; Total logic elements               ; 67                                        ;
+;     Total combinational functions  ; 31                                        ;
+;     Dedicated logic registers      ; 36                                        ;
+; Total registers                    ; 36                                        ;
+; Total pins                         ; 75                                        ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 0                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                         ;
+; Total PLLs                         ; 0                                         ;
++------------------------------------+-------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                  ;
++--------------------------------------------------------------------------------+
+Option        : Device
+Setting       : EP4CE115F29C7
+Default Value : 
+
+Option        : Top-level entity name
+Setting       : lab3_top
+Default Value : the_project
+
+Option        : Family name
+Setting       : Cyclone IV E
+Default Value : Cyclone IV GX
+
+Option        : Use smart compilation
+Setting       : Off
+Default Value : Off
+
+Option        : Enable parallel Assembler and TimeQuest Timing Analyzer during compilation
+Setting       : On
+Default Value : On
+
+Option        : Enable compact report table
+Setting       : Off
+Default Value : Off
+
+Option        : Restructure Multiplexers
+Setting       : Auto
+Default Value : Auto
+
+Option        : Create Debugging Nodes for IP Cores
+Setting       : Off
+Default Value : Off
+
+Option        : Preserve fewer node names
+Setting       : On
+Default Value : On
+
+Option        : Disable OpenCore Plus hardware evaluation
+Setting       : Off
+Default Value : Off
+
+Option        : Verilog Version
+Setting       : Verilog_2001
+Default Value : Verilog_2001
+
+Option        : VHDL Version
+Setting       : VHDL_1993
+Default Value : VHDL_1993
+
+Option        : State Machine Processing
+Setting       : Auto
+Default Value : Auto
+
+Option        : Safe State Machine
+Setting       : Off
+Default Value : Off
+
+Option        : Extract Verilog State Machines
+Setting       : On
+Default Value : On
+
+Option        : Extract VHDL State Machines
+Setting       : On
+Default Value : On
+
+Option        : Ignore Verilog initial constructs
+Setting       : Off
+Default Value : Off
+
+Option        : Iteration limit for constant Verilog loops
+Setting       : 5000
+Default Value : 5000
+
+Option        : Iteration limit for non-constant Verilog loops
+Setting       : 250
+Default Value : 250
+
+Option        : Add Pass-Through Logic to Inferred RAMs
+Setting       : On
+Default Value : On
+
+Option        : Infer RAMs from Raw Logic
+Setting       : On
+Default Value : On
+
+Option        : Parallel Synthesis
+Setting       : On
+Default Value : On
+
+Option        : DSP Block Balancing
+Setting       : Auto
+Default Value : Auto
+
+Option        : NOT Gate Push-Back
+Setting       : On
+Default Value : On
+
+Option        : Power-Up Don't Care
+Setting       : On
+Default Value : On
+
+Option        : Remove Redundant Logic Cells
+Setting       : Off
+Default Value : Off
+
+Option        : Remove Duplicate Registers
+Setting       : On
+Default Value : On
+
+Option        : Ignore CARRY Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore CASCADE Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore GLOBAL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore ROW GLOBAL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore LCELL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore SOFT Buffers
+Setting       : On
+Default Value : On
+
+Option        : Limit AHDL Integers to 32 Bits
+Setting       : Off
+Default Value : Off
+
+Option        : Optimization Technique
+Setting       : Balanced
+Default Value : Balanced
+
+Option        : Carry Chain Length
+Setting       : 70
+Default Value : 70
+
+Option        : Auto Carry Chains
+Setting       : On
+Default Value : On
+
+Option        : Auto Open-Drain Pins
+Setting       : On
+Default Value : On
+
+Option        : Perform WYSIWYG Primitive Resynthesis
+Setting       : Off
+Default Value : Off
+
+Option        : Auto ROM Replacement
+Setting       : On
+Default Value : On
+
+Option        : Auto RAM Replacement
+Setting       : On
+Default Value : On
+
+Option        : Auto DSP Block Replacement
+Setting       : On
+Default Value : On
+
+Option        : Auto Shift Register Replacement
+Setting       : Auto
+Default Value : Auto
+
+Option        : Allow Shift Register Merging across Hierarchies
+Setting       : Auto
+Default Value : Auto
+
+Option        : Auto Clock Enable Replacement
+Setting       : On
+Default Value : On
+
+Option        : Strict RAM Replacement
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Synchronous Control Signals
+Setting       : On
+Default Value : On
+
+Option        : Force Use of Synchronous Clear Signals
+Setting       : Off
+Default Value : Off
+
+Option        : Auto RAM Block Balancing
+Setting       : On
+Default Value : On
+
+Option        : Auto RAM to Logic Cell Conversion
+Setting       : Off
+Default Value : Off
+
+Option        : Auto Resource Sharing
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Any RAM Size For Recognition
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Any ROM Size For Recognition
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Any Shift Register Size For Recognition
+Setting       : Off
+Default Value : Off
+
+Option        : Use LogicLock Constraints during Resource Balancing
+Setting       : On
+Default Value : On
+
+Option        : Ignore translate_off and synthesis_off directives
+Setting       : Off
+Default Value : Off
+
+Option        : Timing-Driven Synthesis
+Setting       : On
+Default Value : On
+
+Option        : Report Parameter Settings
+Setting       : On
+Default Value : On
+
+Option        : Report Source Assignments
+Setting       : On
+Default Value : On
+
+Option        : Report Connectivity Checks
+Setting       : On
+Default Value : On
+
+Option        : Ignore Maximum Fan-Out Assignments
+Setting       : Off
+Default Value : Off
+
+Option        : Synchronization Register Chain Length
+Setting       : 2
+Default Value : 2
+
+Option        : PowerPlay Power Optimization
+Setting       : Normal compilation
+Default Value : Normal compilation
+
+Option        : HDL message level
+Setting       : Level2
+Default Value : Level2
+
+Option        : Suppress Register Optimization Related Messages
+Setting       : Off
+Default Value : Off
+
+Option        : Number of Removed Registers Reported in Synthesis Report
+Setting       : 5000
+Default Value : 5000
+
+Option        : Number of Swept Nodes Reported in Synthesis Report
+Setting       : 5000
+Default Value : 5000
+
+Option        : Number of Inverted Registers Reported in Synthesis Report
+Setting       : 100
+Default Value : 100
+
+Option        : Clock MUX Protection
+Setting       : On
+Default Value : On
+
+Option        : Auto Gated Clock Conversion
+Setting       : Off
+Default Value : Off
+
+Option        : Block Design Naming
+Setting       : Auto
+Default Value : Auto
+
+Option        : SDC constraint protection
+Setting       : Off
+Default Value : Off
+
+Option        : Synthesis Effort
+Setting       : Auto
+Default Value : Auto
+
+Option        : Shift Register Replacement - Allow Asynchronous Clear Signal
+Setting       : On
+Default Value : On
+
+Option        : Analysis & Synthesis Message Level
+Setting       : Medium
+Default Value : Medium
+
+Option        : Disable Register Merging Across Hierarchies
+Setting       : Auto
+Default Value : Auto
+
+Option        : Resource Aware Inference For Block RAM
+Setting       : On
+Default Value : On
+
+Option        : Synthesis Seed
+Setting       : 1
+Default Value : 1
++--------------------------------------------------------------------------------+
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-8 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                         ;
++--------------------------------------------------------------------------------+
+File Name with User-Entered Path : regfile.v
+Used in Netlist                  : yes
+File Type                        : User Verilog HDL File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/regfile.v
+Library                          : 
+
+File Name with User-Entered Path : lab3_top.v
+Used in Netlist                  : yes
+File Type                        : User Verilog HDL File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/lab3_top.v
+Library                          : 
+
+File Name with User-Entered Path : decoder.v
+Used in Netlist                  : yes
+File Type                        : User Verilog HDL File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/quartus_work/decoder.v
+Library                          : 
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 67             ;
+;                                             ;                ;
+; Total combinational functions               ; 31             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 28             ;
+;     -- 3 input functions                    ; 0              ;
+;     -- <=2 input functions                  ; 3              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 31             ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 36             ;
+;     -- Dedicated logic registers            ; 36             ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 75             ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 36             ;
+; Total fan-out                               ; 300            ;
+; Average fan-out                             ; 1.38           ;
++---------------------------------------------+----------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                            ;
++--------------------------------------------------------------------------------+
+Compilation Hierarchy Node : |lab3_top
+LC Combinationals          : 31 (0)
+LC Registers               : 36 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 75
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top
+Library Name               : 
+
+Compilation Hierarchy Node :    |decoder:a|
+LC Combinationals          : 7 (7)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top|decoder:a
+Library Name               : 
+
+Compilation Hierarchy Node :    |decoder:b|
+LC Combinationals          : 7 (7)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top|decoder:b
+Library Name               : 
+
+Compilation Hierarchy Node :    |decoder:c|
+LC Combinationals          : 7 (7)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top|decoder:c
+Library Name               : 
+
+Compilation Hierarchy Node :    |decoder:d|
+LC Combinationals          : 7 (7)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top|decoder:d
+Library Name               : 
+
+Compilation Hierarchy Node :    |decoder:e|
+LC Combinationals          : 3 (3)
+LC Registers               : 0 (0)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top|decoder:e
+Library Name               : 
+
+Compilation Hierarchy Node :    |regfile:r|
+LC Combinationals          : 0 (0)
+LC Registers               : 36 (36)
+Memory Bits                : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab3_top|regfile:r
+Library Name               : 
++--------------------------------------------------------------------------------+
+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++------------------------------------------+----------------------------------------+
+; Register name                            ; Reason for Removal                     ;
++------------------------------------------+----------------------------------------+
+; regfile:r|array[0][0]                    ; Lost fanout                            ;
+; regfile:r|array[0][1]                    ; Lost fanout                            ;
+; regfile:r|array[0][2]                    ; Lost fanout                            ;
+; regfile:r|array[0][3]                    ; Lost fanout                            ;
+; regfile:r|array[0][4]                    ; Lost fanout                            ;
+; regfile:r|array[0][5]                    ; Lost fanout                            ;
+; regfile:r|array[0][6]                    ; Lost fanout                            ;
+; regfile:r|array[0][7]                    ; Lost fanout                            ;
+; regfile:r|array[0][8]                    ; Lost fanout                            ;
+; regfile:r|array[0][9]                    ; Lost fanout                            ;
+; regfile:r|array[0][10]                   ; Lost fanout                            ;
+; regfile:r|array[0][11]                   ; Lost fanout                            ;
+; regfile:r|array[0][12]                   ; Lost fanout                            ;
+; regfile:r|array[0][13]                   ; Lost fanout                            ;
+; regfile:r|array[0][14]                   ; Lost fanout                            ;
+; regfile:r|array[0][15]                   ; Lost fanout                            ;
+; regfile:r|array[0][16]                   ; Lost fanout                            ;
+; regfile:r|array[0][17]                   ; Lost fanout                            ;
+; regfile:r|array[0][18]                   ; Lost fanout                            ;
+; regfile:r|array[0][19]                   ; Lost fanout                            ;
+; regfile:r|array[0][20]                   ; Lost fanout                            ;
+; regfile:r|array[0][21]                   ; Lost fanout                            ;
+; regfile:r|array[0][22]                   ; Lost fanout                            ;
+; regfile:r|array[0][23]                   ; Lost fanout                            ;
+; regfile:r|array[0][24]                   ; Lost fanout                            ;
+; regfile:r|array[0][25]                   ; Lost fanout                            ;
+; regfile:r|array[0][26]                   ; Lost fanout                            ;
+; regfile:r|array[0][27]                   ; Lost fanout                            ;
+; regfile:r|array[0][28]                   ; Lost fanout                            ;
+; regfile:r|array[0][29]                   ; Lost fanout                            ;
+; regfile:r|array[0][30]                   ; Lost fanout                            ;
+; regfile:r|array[0][31]                   ; Lost fanout                            ;
+; regfile:r|array[1][0]                    ; Lost fanout                            ;
+; regfile:r|array[1][1]                    ; Lost fanout                            ;
+; regfile:r|array[1][2]                    ; Lost fanout                            ;
+; regfile:r|array[1][3]                    ; Lost fanout                            ;
+; regfile:r|array[1][4]                    ; Lost fanout                            ;
+; regfile:r|array[1][5]                    ; Lost fanout                            ;
+; regfile:r|array[1][6]                    ; Lost fanout                            ;
+; regfile:r|array[1][7]                    ; Lost fanout                            ;
+; regfile:r|array[1][8]                    ; Lost fanout                            ;
+; regfile:r|array[1][9]                    ; Lost fanout                            ;
+; regfile:r|array[1][10]                   ; Lost fanout                            ;
+; regfile:r|array[1][11]                   ; Lost fanout                            ;
+; regfile:r|array[1][12]                   ; Lost fanout                            ;
+; regfile:r|array[1][13]                   ; Lost fanout                            ;
+; regfile:r|array[1][14]                   ; Lost fanout                            ;
+; regfile:r|array[1][15]                   ; Lost fanout                            ;
+; regfile:r|array[1][16]                   ; Lost fanout                            ;
+; regfile:r|array[1][17]                   ; Lost fanout                            ;
+; regfile:r|array[1][18]                   ; Lost fanout                            ;
+; regfile:r|array[1][19]                   ; Lost fanout                            ;
+; regfile:r|array[1][20]                   ; Lost fanout                            ;
+; regfile:r|array[1][21]                   ; Lost fanout                            ;
+; regfile:r|array[1][22]                   ; Lost fanout                            ;
+; regfile:r|array[1][23]                   ; Lost fanout                            ;
+; regfile:r|array[1][24]                   ; Lost fanout                            ;
+; regfile:r|array[1][25]                   ; Lost fanout                            ;
+; regfile:r|array[1][26]                   ; Lost fanout                            ;
+; regfile:r|array[1][27]                   ; Lost fanout                            ;
+; regfile:r|array[1][28]                   ; Lost fanout                            ;
+; regfile:r|array[1][29]                   ; Lost fanout                            ;
+; regfile:r|array[1][30]                   ; Lost fanout                            ;
+; regfile:r|array[1][31]                   ; Lost fanout                            ;
+; regfile:r|array[2][0]                    ; Lost fanout                            ;
+; regfile:r|array[2][1]                    ; Lost fanout                            ;
+; regfile:r|array[2][2]                    ; Lost fanout                            ;
+; regfile:r|array[2][3]                    ; Lost fanout                            ;
+; regfile:r|array[2][4]                    ; Lost fanout                            ;
+; regfile:r|array[2][5]                    ; Lost fanout                            ;
+; regfile:r|array[2][6]                    ; Lost fanout                            ;
+; regfile:r|array[2][7]                    ; Lost fanout                            ;
+; regfile:r|array[2][8]                    ; Lost fanout                            ;
+; regfile:r|array[2][9]                    ; Lost fanout                            ;
+; regfile:r|array[2][10]                   ; Lost fanout                            ;
+; regfile:r|array[2][11]                   ; Lost fanout                            ;
+; regfile:r|array[2][12]                   ; Lost fanout                            ;
+; regfile:r|array[2][13]                   ; Lost fanout                            ;
+; regfile:r|array[2][14]                   ; Lost fanout                            ;
+; regfile:r|array[2][15]                   ; Lost fanout                            ;
+; regfile:r|array[2][16]                   ; Lost fanout                            ;
+; regfile:r|array[2][17]                   ; Lost fanout                            ;
+; regfile:r|array[2][18]                   ; Lost fanout                            ;
+; regfile:r|array[2][19]                   ; Lost fanout                            ;
+; regfile:r|array[2][20]                   ; Lost fanout                            ;
+; regfile:r|array[2][21]                   ; Lost fanout                            ;
+; regfile:r|array[2][22]                   ; Lost fanout                            ;
+; regfile:r|array[2][23]                   ; Lost fanout                            ;
+; regfile:r|array[2][24]                   ; Lost fanout                            ;
+; regfile:r|array[2][25]                   ; Lost fanout                            ;
+; regfile:r|array[2][26]                   ; Lost fanout                            ;
+; regfile:r|array[2][27]                   ; Lost fanout                            ;
+; regfile:r|array[2][28]                   ; Lost fanout                            ;
+; regfile:r|array[2][29]                   ; Lost fanout                            ;
+; regfile:r|array[2][30]                   ; Lost fanout                            ;
+; regfile:r|array[2][31]                   ; Lost fanout                            ;
+; regfile:r|array[3][0]                    ; Lost fanout                            ;
+; regfile:r|array[3][1]                    ; Lost fanout                            ;
+; regfile:r|array[3][2]                    ; Lost fanout                            ;
+; regfile:r|array[3][3]                    ; Lost fanout                            ;
+; regfile:r|array[3][4]                    ; Lost fanout                            ;
+; regfile:r|array[3][5]                    ; Lost fanout                            ;
+; regfile:r|array[3][6]                    ; Lost fanout                            ;
+; regfile:r|array[3][7]                    ; Lost fanout                            ;
+; regfile:r|array[3][8]                    ; Lost fanout                            ;
+; regfile:r|array[3][9]                    ; Lost fanout                            ;
+; regfile:r|array[3][10]                   ; Lost fanout                            ;
+; regfile:r|array[3][11]                   ; Lost fanout                            ;
+; regfile:r|array[3][12]                   ; Lost fanout                            ;
+; regfile:r|array[3][13]                   ; Lost fanout                            ;
+; regfile:r|array[3][14]                   ; Lost fanout                            ;
+; regfile:r|array[3][15]                   ; Lost fanout                            ;
+; regfile:r|array[3][16]                   ; Lost fanout                            ;
+; regfile:r|array[3][17]                   ; Lost fanout                            ;
+; regfile:r|array[3][18]                   ; Lost fanout                            ;
+; regfile:r|array[3][19]                   ; Lost fanout                            ;
+; regfile:r|array[3][20]                   ; Lost fanout                            ;
+; regfile:r|array[3][21]                   ; Lost fanout                            ;
+; regfile:r|array[3][22]                   ; Lost fanout                            ;
+; regfile:r|array[3][23]                   ; Lost fanout                            ;
+; regfile:r|array[3][24]                   ; Lost fanout                            ;
+; regfile:r|array[3][25]                   ; Lost fanout                            ;
+; regfile:r|array[3][26]                   ; Lost fanout                            ;
+; regfile:r|array[3][27]                   ; Lost fanout                            ;
+; regfile:r|array[3][28]                   ; Lost fanout                            ;
+; regfile:r|array[3][29]                   ; Lost fanout                            ;
+; regfile:r|array[3][30]                   ; Lost fanout                            ;
+; regfile:r|array[3][31]                   ; Lost fanout                            ;
+; regfile:r|array[4][0]                    ; Lost fanout                            ;
+; regfile:r|array[4][1]                    ; Lost fanout                            ;
+; regfile:r|array[4][2]                    ; Lost fanout                            ;
+; regfile:r|array[4][3]                    ; Lost fanout                            ;
+; regfile:r|array[4][4]                    ; Lost fanout                            ;
+; regfile:r|array[4][5]                    ; Lost fanout                            ;
+; regfile:r|array[4][6]                    ; Lost fanout                            ;
+; regfile:r|array[4][7]                    ; Lost fanout                            ;
+; regfile:r|array[4][8]                    ; Lost fanout                            ;
+; regfile:r|array[4][9]                    ; Lost fanout                            ;
+; regfile:r|array[4][10]                   ; Lost fanout                            ;
+; regfile:r|array[4][11]                   ; Lost fanout                            ;
+; regfile:r|array[4][12]                   ; Lost fanout                            ;
+; regfile:r|array[4][13]                   ; Lost fanout                            ;
+; regfile:r|array[4][14]                   ; Lost fanout                            ;
+; regfile:r|array[4][15]                   ; Lost fanout                            ;
+; regfile:r|array[4][16]                   ; Lost fanout                            ;
+; regfile:r|array[4][17]                   ; Lost fanout                            ;
+; regfile:r|array[4][18]                   ; Lost fanout                            ;
+; regfile:r|array[4][19]                   ; Lost fanout                            ;
+; regfile:r|array[4][20]                   ; Lost fanout                            ;
+; regfile:r|array[4][21]                   ; Lost fanout                            ;
+; regfile:r|array[4][22]                   ; Lost fanout                            ;
+; regfile:r|array[4][23]                   ; Lost fanout                            ;
+; regfile:r|array[4][24]                   ; Lost fanout                            ;
+; regfile:r|array[4][25]                   ; Lost fanout                            ;
+; regfile:r|array[4][26]                   ; Lost fanout                            ;
+; regfile:r|array[4][27]                   ; Lost fanout                            ;
+; regfile:r|array[4][28]                   ; Lost fanout                            ;
+; regfile:r|array[4][29]                   ; Lost fanout                            ;
+; regfile:r|array[4][30]                   ; Lost fanout                            ;
+; regfile:r|array[4][31]                   ; Lost fanout                            ;
+; regfile:r|array[5][0]                    ; Lost fanout                            ;
+; regfile:r|array[5][1]                    ; Lost fanout                            ;
+; regfile:r|array[5][2]                    ; Lost fanout                            ;
+; regfile:r|array[5][3]                    ; Lost fanout                            ;
+; regfile:r|array[5][4]                    ; Lost fanout                            ;
+; regfile:r|array[5][5]                    ; Lost fanout                            ;
+; regfile:r|array[5][6]                    ; Lost fanout                            ;
+; regfile:r|array[5][7]                    ; Lost fanout                            ;
+; regfile:r|array[5][8]                    ; Lost fanout                            ;
+; regfile:r|array[5][9]                    ; Lost fanout                            ;
+; regfile:r|array[5][10]                   ; Lost fanout                            ;
+; regfile:r|array[5][11]                   ; Lost fanout                            ;
+; regfile:r|array[5][12]                   ; Lost fanout                            ;
+; regfile:r|array[5][13]                   ; Lost fanout                            ;
+; regfile:r|array[5][14]                   ; Lost fanout                            ;
+; regfile:r|array[5][15]                   ; Lost fanout                            ;
+; regfile:r|array[5][16]                   ; Lost fanout                            ;
+; regfile:r|array[5][17]                   ; Lost fanout                            ;
+; regfile:r|array[5][18]                   ; Lost fanout                            ;
+; regfile:r|array[5][19]                   ; Lost fanout                            ;
+; regfile:r|array[5][20]                   ; Lost fanout                            ;
+; regfile:r|array[5][21]                   ; Lost fanout                            ;
+; regfile:r|array[5][22]                   ; Lost fanout                            ;
+; regfile:r|array[5][23]                   ; Lost fanout                            ;
+; regfile:r|array[5][24]                   ; Lost fanout                            ;
+; regfile:r|array[5][25]                   ; Lost fanout                            ;
+; regfile:r|array[5][26]                   ; Lost fanout                            ;
+; regfile:r|array[5][27]                   ; Lost fanout                            ;
+; regfile:r|array[5][28]                   ; Lost fanout                            ;
+; regfile:r|array[5][29]                   ; Lost fanout                            ;
+; regfile:r|array[5][30]                   ; Lost fanout                            ;
+; regfile:r|array[5][31]                   ; Lost fanout                            ;
+; regfile:r|array[6][0]                    ; Lost fanout                            ;
+; regfile:r|array[6][1]                    ; Lost fanout                            ;
+; regfile:r|array[6][2]                    ; Lost fanout                            ;
+; regfile:r|array[6][3]                    ; Lost fanout                            ;
+; regfile:r|array[6][4]                    ; Lost fanout                            ;
+; regfile:r|array[6][5]                    ; Lost fanout                            ;
+; regfile:r|array[6][6]                    ; Lost fanout                            ;
+; regfile:r|array[6][7]                    ; Lost fanout                            ;
+; regfile:r|array[6][8]                    ; Lost fanout                            ;
+; regfile:r|array[6][9]                    ; Lost fanout                            ;
+; regfile:r|array[6][10]                   ; Lost fanout                            ;
+; regfile:r|array[6][11]                   ; Lost fanout                            ;
+; regfile:r|array[6][12]                   ; Lost fanout                            ;
+; regfile:r|array[6][13]                   ; Lost fanout                            ;
+; regfile:r|array[6][14]                   ; Lost fanout                            ;
+; regfile:r|array[6][15]                   ; Lost fanout                            ;
+; regfile:r|array[6][16]                   ; Lost fanout                            ;
+; regfile:r|array[6][17]                   ; Lost fanout                            ;
+; regfile:r|array[6][18]                   ; Lost fanout                            ;
+; regfile:r|array[6][19]                   ; Lost fanout                            ;
+; regfile:r|array[6][20]                   ; Lost fanout                            ;
+; regfile:r|array[6][21]                   ; Lost fanout                            ;
+; regfile:r|array[6][22]                   ; Lost fanout                            ;
+; regfile:r|array[6][23]                   ; Lost fanout                            ;
+; regfile:r|array[6][24]                   ; Lost fanout                            ;
+; regfile:r|array[6][25]                   ; Lost fanout                            ;
+; regfile:r|array[6][26]                   ; Lost fanout                            ;
+; regfile:r|array[6][27]                   ; Lost fanout                            ;
+; regfile:r|array[6][28]                   ; Lost fanout                            ;
+; regfile:r|array[6][29]                   ; Lost fanout                            ;
+; regfile:r|array[6][30]                   ; Lost fanout                            ;
+; regfile:r|array[6][31]                   ; Lost fanout                            ;
+; regfile:r|array[7][0]                    ; Lost fanout                            ;
+; regfile:r|array[7][1]                    ; Lost fanout                            ;
+; regfile:r|array[7][2]                    ; Lost fanout                            ;
+; regfile:r|array[7][3]                    ; Lost fanout                            ;
+; regfile:r|array[7][4]                    ; Lost fanout                            ;
+; regfile:r|array[7][5]                    ; Lost fanout                            ;
+; regfile:r|array[7][6]                    ; Lost fanout                            ;
+; regfile:r|array[7][7]                    ; Lost fanout                            ;
+; regfile:r|array[7][8]                    ; Lost fanout                            ;
+; regfile:r|array[7][9]                    ; Lost fanout                            ;
+; regfile:r|array[7][10]                   ; Lost fanout                            ;
+; regfile:r|array[7][11]                   ; Lost fanout                            ;
+; regfile:r|array[7][12]                   ; Lost fanout                            ;
+; regfile:r|array[7][13]                   ; Lost fanout                            ;
+; regfile:r|array[7][14]                   ; Lost fanout                            ;
+; regfile:r|array[7][15]                   ; Lost fanout                            ;
+; regfile:r|array[7][16]                   ; Lost fanout                            ;
+; regfile:r|array[7][17]                   ; Lost fanout                            ;
+; regfile:r|array[7][18]                   ; Lost fanout                            ;
+; regfile:r|array[7][19]                   ; Lost fanout                            ;
+; regfile:r|array[7][20]                   ; Lost fanout                            ;
+; regfile:r|array[7][21]                   ; Lost fanout                            ;
+; regfile:r|array[7][22]                   ; Lost fanout                            ;
+; regfile:r|array[7][23]                   ; Lost fanout                            ;
+; regfile:r|array[7][24]                   ; Lost fanout                            ;
+; regfile:r|array[7][25]                   ; Lost fanout                            ;
+; regfile:r|array[7][26]                   ; Lost fanout                            ;
+; regfile:r|array[7][27]                   ; Lost fanout                            ;
+; regfile:r|array[7][28]                   ; Lost fanout                            ;
+; regfile:r|array[7][29]                   ; Lost fanout                            ;
+; regfile:r|array[7][30]                   ; Lost fanout                            ;
+; regfile:r|array[7][31]                   ; Lost fanout                            ;
+; regfile:r|array[8][0]                    ; Lost fanout                            ;
+; regfile:r|array[8][1]                    ; Lost fanout                            ;
+; regfile:r|array[8][2]                    ; Lost fanout                            ;
+; regfile:r|array[8][3]                    ; Lost fanout                            ;
+; regfile:r|array[8][4]                    ; Lost fanout                            ;
+; regfile:r|array[8][5]                    ; Lost fanout                            ;
+; regfile:r|array[8][6]                    ; Lost fanout                            ;
+; regfile:r|array[8][7]                    ; Lost fanout                            ;
+; regfile:r|array[8][8]                    ; Lost fanout                            ;
+; regfile:r|array[8][9]                    ; Lost fanout                            ;
+; regfile:r|array[8][10]                   ; Lost fanout                            ;
+; regfile:r|array[8][11]                   ; Lost fanout                            ;
+; regfile:r|array[8][12]                   ; Lost fanout                            ;
+; regfile:r|array[8][13]                   ; Lost fanout                            ;
+; regfile:r|array[8][14]                   ; Lost fanout                            ;
+; regfile:r|array[8][15]                   ; Lost fanout                            ;
+; regfile:r|array[8][16]                   ; Lost fanout                            ;
+; regfile:r|array[8][17]                   ; Lost fanout                            ;
+; regfile:r|array[8][18]                   ; Lost fanout                            ;
+; regfile:r|array[8][19]                   ; Lost fanout                            ;
+; regfile:r|array[8][20]                   ; Lost fanout                            ;
+; regfile:r|array[8][21]                   ; Lost fanout                            ;
+; regfile:r|array[8][22]                   ; Lost fanout                            ;
+; regfile:r|array[8][23]                   ; Lost fanout                            ;
+; regfile:r|array[8][24]                   ; Lost fanout                            ;
+; regfile:r|array[8][25]                   ; Lost fanout                            ;
+; regfile:r|array[8][26]                   ; Lost fanout                            ;
+; regfile:r|array[8][27]                   ; Lost fanout                            ;
+; regfile:r|array[8][28]                   ; Lost fanout                            ;
+; regfile:r|array[8][29]                   ; Lost fanout                            ;
+; regfile:r|array[8][30]                   ; Lost fanout                            ;
+; regfile:r|array[8][31]                   ; Lost fanout                            ;
+; regfile:r|array[9][0]                    ; Lost fanout                            ;
+; regfile:r|array[9][1]                    ; Lost fanout                            ;
+; regfile:r|array[9][2]                    ; Lost fanout                            ;
+; regfile:r|array[9][3]                    ; Lost fanout                            ;
+; regfile:r|array[9][4]                    ; Lost fanout                            ;
+; regfile:r|array[9][5]                    ; Lost fanout                            ;
+; regfile:r|array[9][6]                    ; Lost fanout                            ;
+; regfile:r|array[9][7]                    ; Lost fanout                            ;
+; regfile:r|array[9][8]                    ; Lost fanout                            ;
+; regfile:r|array[9][9]                    ; Lost fanout                            ;
+; regfile:r|array[9][10]                   ; Lost fanout                            ;
+; regfile:r|array[9][11]                   ; Lost fanout                            ;
+; regfile:r|array[9][12]                   ; Lost fanout                            ;
+; regfile:r|array[9][13]                   ; Lost fanout                            ;
+; regfile:r|array[9][14]                   ; Lost fanout                            ;
+; regfile:r|array[9][15]                   ; Lost fanout                            ;
+; regfile:r|array[9][16]                   ; Lost fanout                            ;
+; regfile:r|array[9][17]                   ; Lost fanout                            ;
+; regfile:r|array[9][18]                   ; Lost fanout                            ;
+; regfile:r|array[9][19]                   ; Lost fanout                            ;
+; regfile:r|array[9][20]                   ; Lost fanout                            ;
+; regfile:r|array[9][21]                   ; Lost fanout                            ;
+; regfile:r|array[9][22]                   ; Lost fanout                            ;
+; regfile:r|array[9][23]                   ; Lost fanout                            ;
+; regfile:r|array[9][24]                   ; Lost fanout                            ;
+; regfile:r|array[9][25]                   ; Lost fanout                            ;
+; regfile:r|array[9][26]                   ; Lost fanout                            ;
+; regfile:r|array[9][27]                   ; Lost fanout                            ;
+; regfile:r|array[9][28]                   ; Lost fanout                            ;
+; regfile:r|array[9][29]                   ; Lost fanout                            ;
+; regfile:r|array[9][30]                   ; Lost fanout                            ;
+; regfile:r|array[9][31]                   ; Lost fanout                            ;
+; regfile:r|array[10][0]                   ; Lost fanout                            ;
+; regfile:r|array[10][1]                   ; Lost fanout                            ;
+; regfile:r|array[10][2]                   ; Lost fanout                            ;
+; regfile:r|array[10][3]                   ; Lost fanout                            ;
+; regfile:r|array[10][4]                   ; Lost fanout                            ;
+; regfile:r|array[10][5]                   ; Lost fanout                            ;
+; regfile:r|array[10][6]                   ; Lost fanout                            ;
+; regfile:r|array[10][7]                   ; Lost fanout                            ;
+; regfile:r|array[10][8]                   ; Lost fanout                            ;
+; regfile:r|array[10][9]                   ; Lost fanout                            ;
+; regfile:r|array[10][10]                  ; Lost fanout                            ;
+; regfile:r|array[10][11]                  ; Lost fanout                            ;
+; regfile:r|array[10][12]                  ; Lost fanout                            ;
+; regfile:r|array[10][13]                  ; Lost fanout                            ;
+; regfile:r|array[10][14]                  ; Lost fanout                            ;
+; regfile:r|array[10][15]                  ; Lost fanout                            ;
+; regfile:r|array[10][16]                  ; Lost fanout                            ;
+; regfile:r|array[10][17]                  ; Lost fanout                            ;
+; regfile:r|array[10][18]                  ; Lost fanout                            ;
+; regfile:r|array[10][19]                  ; Lost fanout                            ;
+; regfile:r|array[10][20]                  ; Lost fanout                            ;
+; regfile:r|array[10][21]                  ; Lost fanout                            ;
+; regfile:r|array[10][22]                  ; Lost fanout                            ;
+; regfile:r|array[10][23]                  ; Lost fanout                            ;
+; regfile:r|array[10][24]                  ; Lost fanout                            ;
+; regfile:r|array[10][25]                  ; Lost fanout                            ;
+; regfile:r|array[10][26]                  ; Lost fanout                            ;
+; regfile:r|array[10][27]                  ; Lost fanout                            ;
+; regfile:r|array[10][28]                  ; Lost fanout                            ;
+; regfile:r|array[10][29]                  ; Lost fanout                            ;
+; regfile:r|array[10][30]                  ; Lost fanout                            ;
+; regfile:r|array[10][31]                  ; Lost fanout                            ;
+; regfile:r|array[11][0]                   ; Lost fanout                            ;
+; regfile:r|array[11][1]                   ; Lost fanout                            ;
+; regfile:r|array[11][2]                   ; Lost fanout                            ;
+; regfile:r|array[11][3]                   ; Lost fanout                            ;
+; regfile:r|array[11][4]                   ; Lost fanout                            ;
+; regfile:r|array[11][5]                   ; Lost fanout                            ;
+; regfile:r|array[11][6]                   ; Lost fanout                            ;
+; regfile:r|array[11][7]                   ; Lost fanout                            ;
+; regfile:r|array[11][8]                   ; Lost fanout                            ;
+; regfile:r|array[11][9]                   ; Lost fanout                            ;
+; regfile:r|array[11][10]                  ; Lost fanout                            ;
+; regfile:r|array[11][11]                  ; Lost fanout                            ;
+; regfile:r|array[11][12]                  ; Lost fanout                            ;
+; regfile:r|array[11][13]                  ; Lost fanout                            ;
+; regfile:r|array[11][14]                  ; Lost fanout                            ;
+; regfile:r|array[11][15]                  ; Lost fanout                            ;
+; regfile:r|array[11][16]                  ; Lost fanout                            ;
+; regfile:r|array[11][17]                  ; Lost fanout                            ;
+; regfile:r|array[11][18]                  ; Lost fanout                            ;
+; regfile:r|array[11][19]                  ; Lost fanout                            ;
+; regfile:r|array[11][20]                  ; Lost fanout                            ;
+; regfile:r|array[11][21]                  ; Lost fanout                            ;
+; regfile:r|array[11][22]                  ; Lost fanout                            ;
+; regfile:r|array[11][23]                  ; Lost fanout                            ;
+; regfile:r|array[11][24]                  ; Lost fanout                            ;
+; regfile:r|array[11][25]                  ; Lost fanout                            ;
+; regfile:r|array[11][26]                  ; Lost fanout                            ;
+; regfile:r|array[11][27]                  ; Lost fanout                            ;
+; regfile:r|array[11][28]                  ; Lost fanout                            ;
+; regfile:r|array[11][29]                  ; Lost fanout                            ;
+; regfile:r|array[11][30]                  ; Lost fanout                            ;
+; regfile:r|array[11][31]                  ; Lost fanout                            ;
+; regfile:r|array[12][0]                   ; Lost fanout                            ;
+; regfile:r|array[12][1]                   ; Lost fanout                            ;
+; regfile:r|array[12][2]                   ; Lost fanout                            ;
+; regfile:r|array[12][3]                   ; Lost fanout                            ;
+; regfile:r|array[12][4]                   ; Lost fanout                            ;
+; regfile:r|array[12][5]                   ; Lost fanout                            ;
+; regfile:r|array[12][6]                   ; Lost fanout                            ;
+; regfile:r|array[12][7]                   ; Lost fanout                            ;
+; regfile:r|array[12][8]                   ; Lost fanout                            ;
+; regfile:r|array[12][9]                   ; Lost fanout                            ;
+; regfile:r|array[12][10]                  ; Lost fanout                            ;
+; regfile:r|array[12][11]                  ; Lost fanout                            ;
+; regfile:r|array[12][12]                  ; Lost fanout                            ;
+; regfile:r|array[12][13]                  ; Lost fanout                            ;
+; regfile:r|array[12][14]                  ; Lost fanout                            ;
+; regfile:r|array[12][15]                  ; Lost fanout                            ;
+; regfile:r|array[12][16]                  ; Lost fanout                            ;
+; regfile:r|array[12][17]                  ; Lost fanout                            ;
+; regfile:r|array[12][18]                  ; Lost fanout                            ;
+; regfile:r|array[12][19]                  ; Lost fanout                            ;
+; regfile:r|array[12][20]                  ; Lost fanout                            ;
+; regfile:r|array[12][21]                  ; Lost fanout                            ;
+; regfile:r|array[12][22]                  ; Lost fanout                            ;
+; regfile:r|array[12][23]                  ; Lost fanout                            ;
+; regfile:r|array[12][24]                  ; Lost fanout                            ;
+; regfile:r|array[12][25]                  ; Lost fanout                            ;
+; regfile:r|array[12][26]                  ; Lost fanout                            ;
+; regfile:r|array[12][27]                  ; Lost fanout                            ;
+; regfile:r|array[12][28]                  ; Lost fanout                            ;
+; regfile:r|array[12][29]                  ; Lost fanout                            ;
+; regfile:r|array[12][30]                  ; Lost fanout                            ;
+; regfile:r|array[12][31]                  ; Lost fanout                            ;
+; regfile:r|array[13][0]                   ; Lost fanout                            ;
+; regfile:r|array[13][1]                   ; Lost fanout                            ;
+; regfile:r|array[13][2]                   ; Lost fanout                            ;
+; regfile:r|array[13][3]                   ; Lost fanout                            ;
+; regfile:r|array[13][4]                   ; Lost fanout                            ;
+; regfile:r|array[13][5]                   ; Lost fanout                            ;
+; regfile:r|array[13][6]                   ; Lost fanout                            ;
+; regfile:r|array[13][7]                   ; Lost fanout                            ;
+; regfile:r|array[13][8]                   ; Lost fanout                            ;
+; regfile:r|array[13][9]                   ; Lost fanout                            ;
+; regfile:r|array[13][10]                  ; Lost fanout                            ;
+; regfile:r|array[13][11]                  ; Lost fanout                            ;
+; regfile:r|array[13][12]                  ; Lost fanout                            ;
+; regfile:r|array[13][13]                  ; Lost fanout                            ;
+; regfile:r|array[13][14]                  ; Lost fanout                            ;
+; regfile:r|array[13][15]                  ; Lost fanout                            ;
+; regfile:r|array[13][16]                  ; Lost fanout                            ;
+; regfile:r|array[13][17]                  ; Lost fanout                            ;
+; regfile:r|array[13][18]                  ; Lost fanout                            ;
+; regfile:r|array[13][19]                  ; Lost fanout                            ;
+; regfile:r|array[13][20]                  ; Lost fanout                            ;
+; regfile:r|array[13][21]                  ; Lost fanout                            ;
+; regfile:r|array[13][22]                  ; Lost fanout                            ;
+; regfile:r|array[13][23]                  ; Lost fanout                            ;
+; regfile:r|array[13][24]                  ; Lost fanout                            ;
+; regfile:r|array[13][25]                  ; Lost fanout                            ;
+; regfile:r|array[13][26]                  ; Lost fanout                            ;
+; regfile:r|array[13][27]                  ; Lost fanout                            ;
+; regfile:r|array[13][28]                  ; Lost fanout                            ;
+; regfile:r|array[13][29]                  ; Lost fanout                            ;
+; regfile:r|array[13][30]                  ; Lost fanout                            ;
+; regfile:r|array[13][31]                  ; Lost fanout                            ;
+; regfile:r|array[14][0]                   ; Lost fanout                            ;
+; regfile:r|array[14][1]                   ; Lost fanout                            ;
+; regfile:r|array[14][2]                   ; Lost fanout                            ;
+; regfile:r|array[14][3]                   ; Lost fanout                            ;
+; regfile:r|array[14][4]                   ; Lost fanout                            ;
+; regfile:r|array[14][5]                   ; Lost fanout                            ;
+; regfile:r|array[14][6]                   ; Lost fanout                            ;
+; regfile:r|array[14][7]                   ; Lost fanout                            ;
+; regfile:r|array[14][8]                   ; Lost fanout                            ;
+; regfile:r|array[14][9]                   ; Lost fanout                            ;
+; regfile:r|array[14][10]                  ; Lost fanout                            ;
+; regfile:r|array[14][11]                  ; Lost fanout                            ;
+; regfile:r|array[14][12]                  ; Lost fanout                            ;
+; regfile:r|array[14][13]                  ; Lost fanout                            ;
+; regfile:r|array[14][14]                  ; Lost fanout                            ;
+; regfile:r|array[14][15]                  ; Lost fanout                            ;
+; regfile:r|array[14][16]                  ; Lost fanout                            ;
+; regfile:r|array[14][17]                  ; Lost fanout                            ;
+; regfile:r|array[14][18]                  ; Lost fanout                            ;
+; regfile:r|array[14][19]                  ; Lost fanout                            ;
+; regfile:r|array[14][20]                  ; Lost fanout                            ;
+; regfile:r|array[14][21]                  ; Lost fanout                            ;
+; regfile:r|array[14][22]                  ; Lost fanout                            ;
+; regfile:r|array[14][23]                  ; Lost fanout                            ;
+; regfile:r|array[14][24]                  ; Lost fanout                            ;
+; regfile:r|array[14][25]                  ; Lost fanout                            ;
+; regfile:r|array[14][26]                  ; Lost fanout                            ;
+; regfile:r|array[14][27]                  ; Lost fanout                            ;
+; regfile:r|array[14][28]                  ; Lost fanout                            ;
+; regfile:r|array[14][29]                  ; Lost fanout                            ;
+; regfile:r|array[14][30]                  ; Lost fanout                            ;
+; regfile:r|array[14][31]                  ; Lost fanout                            ;
+; regfile:r|array[15][0]                   ; Lost fanout                            ;
+; regfile:r|array[15][1]                   ; Lost fanout                            ;
+; regfile:r|array[15][2]                   ; Lost fanout                            ;
+; regfile:r|array[15][3]                   ; Lost fanout                            ;
+; regfile:r|array[15][4]                   ; Lost fanout                            ;
+; regfile:r|array[15][5]                   ; Lost fanout                            ;
+; regfile:r|array[15][6]                   ; Lost fanout                            ;
+; regfile:r|array[15][7]                   ; Lost fanout                            ;
+; regfile:r|array[15][8]                   ; Lost fanout                            ;
+; regfile:r|array[15][9]                   ; Lost fanout                            ;
+; regfile:r|array[15][10]                  ; Lost fanout                            ;
+; regfile:r|array[15][11]                  ; Lost fanout                            ;
+; regfile:r|array[15][12]                  ; Lost fanout                            ;
+; regfile:r|array[15][13]                  ; Lost fanout                            ;
+; regfile:r|array[15][14]                  ; Lost fanout                            ;
+; regfile:r|array[15][15]                  ; Lost fanout                            ;
+; regfile:r|array[15][16]                  ; Lost fanout                            ;
+; regfile:r|array[15][17]                  ; Lost fanout                            ;
+; regfile:r|array[15][18]                  ; Lost fanout                            ;
+; regfile:r|array[15][19]                  ; Lost fanout                            ;
+; regfile:r|array[15][20]                  ; Lost fanout                            ;
+; regfile:r|array[15][21]                  ; Lost fanout                            ;
+; regfile:r|array[15][22]                  ; Lost fanout                            ;
+; regfile:r|array[15][23]                  ; Lost fanout                            ;
+; regfile:r|array[15][24]                  ; Lost fanout                            ;
+; regfile:r|array[15][25]                  ; Lost fanout                            ;
+; regfile:r|array[15][26]                  ; Lost fanout                            ;
+; regfile:r|array[15][27]                  ; Lost fanout                            ;
+; regfile:r|array[15][28]                  ; Lost fanout                            ;
+; regfile:r|array[15][29]                  ; Lost fanout                            ;
+; regfile:r|array[15][30]                  ; Lost fanout                            ;
+; regfile:r|array[15][31]                  ; Lost fanout                            ;
+; regfile:r|array[16][0]                   ; Lost fanout                            ;
+; regfile:r|array[16][1]                   ; Lost fanout                            ;
+; regfile:r|array[16][2]                   ; Lost fanout                            ;
+; regfile:r|array[16][3]                   ; Lost fanout                            ;
+; regfile:r|array[16][4]                   ; Lost fanout                            ;
+; regfile:r|array[16][5]                   ; Lost fanout                            ;
+; regfile:r|array[16][6]                   ; Lost fanout                            ;
+; regfile:r|array[16][7]                   ; Lost fanout                            ;
+; regfile:r|array[16][8]                   ; Lost fanout                            ;
+; regfile:r|array[16][9]                   ; Lost fanout                            ;
+; regfile:r|array[16][10]                  ; Lost fanout                            ;
+; regfile:r|array[16][11]                  ; Lost fanout                            ;
+; regfile:r|array[16][12]                  ; Lost fanout                            ;
+; regfile:r|array[16][13]                  ; Lost fanout                            ;
+; regfile:r|array[16][14]                  ; Lost fanout                            ;
+; regfile:r|array[16][15]                  ; Lost fanout                            ;
+; regfile:r|array[16][16]                  ; Lost fanout                            ;
+; regfile:r|array[16][17]                  ; Lost fanout                            ;
+; regfile:r|array[16][18]                  ; Lost fanout                            ;
+; regfile:r|array[16][19]                  ; Lost fanout                            ;
+; regfile:r|array[16][20]                  ; Lost fanout                            ;
+; regfile:r|array[16][21]                  ; Lost fanout                            ;
+; regfile:r|array[16][22]                  ; Lost fanout                            ;
+; regfile:r|array[16][23]                  ; Lost fanout                            ;
+; regfile:r|array[16][24]                  ; Lost fanout                            ;
+; regfile:r|array[16][25]                  ; Lost fanout                            ;
+; regfile:r|array[16][26]                  ; Lost fanout                            ;
+; regfile:r|array[16][27]                  ; Lost fanout                            ;
+; regfile:r|array[16][28]                  ; Lost fanout                            ;
+; regfile:r|array[16][29]                  ; Lost fanout                            ;
+; regfile:r|array[16][30]                  ; Lost fanout                            ;
+; regfile:r|array[16][31]                  ; Lost fanout                            ;
+; regfile:r|array[17][0]                   ; Lost fanout                            ;
+; regfile:r|array[17][1]                   ; Lost fanout                            ;
+; regfile:r|array[17][2]                   ; Lost fanout                            ;
+; regfile:r|array[17][3]                   ; Lost fanout                            ;
+; regfile:r|array[17][4]                   ; Lost fanout                            ;
+; regfile:r|array[17][5]                   ; Lost fanout                            ;
+; regfile:r|array[17][6]                   ; Lost fanout                            ;
+; regfile:r|array[17][7]                   ; Lost fanout                            ;
+; regfile:r|array[17][8]                   ; Lost fanout                            ;
+; regfile:r|array[17][9]                   ; Lost fanout                            ;
+; regfile:r|array[17][10]                  ; Lost fanout                            ;
+; regfile:r|array[17][11]                  ; Lost fanout                            ;
+; regfile:r|array[17][12]                  ; Lost fanout                            ;
+; regfile:r|array[17][13]                  ; Lost fanout                            ;
+; regfile:r|array[17][14]                  ; Lost fanout                            ;
+; regfile:r|array[17][15]                  ; Lost fanout                            ;
+; regfile:r|array[17][16]                  ; Lost fanout                            ;
+; regfile:r|array[17][17]                  ; Lost fanout                            ;
+; regfile:r|array[17][18]                  ; Lost fanout                            ;
+; regfile:r|array[17][19]                  ; Lost fanout                            ;
+; regfile:r|array[17][20]                  ; Lost fanout                            ;
+; regfile:r|array[17][21]                  ; Lost fanout                            ;
+; regfile:r|array[17][22]                  ; Lost fanout                            ;
+; regfile:r|array[17][23]                  ; Lost fanout                            ;
+; regfile:r|array[17][24]                  ; Lost fanout                            ;
+; regfile:r|array[17][25]                  ; Lost fanout                            ;
+; regfile:r|array[17][26]                  ; Lost fanout                            ;
+; regfile:r|array[17][27]                  ; Lost fanout                            ;
+; regfile:r|array[17][28]                  ; Lost fanout                            ;
+; regfile:r|array[17][29]                  ; Lost fanout                            ;
+; regfile:r|array[17][30]                  ; Lost fanout                            ;
+; regfile:r|array[17][31]                  ; Lost fanout                            ;
+; regfile:r|array[18][0]                   ; Lost fanout                            ;
+; regfile:r|array[18][1]                   ; Lost fanout                            ;
+; regfile:r|array[18][2]                   ; Lost fanout                            ;
+; regfile:r|array[18][3]                   ; Lost fanout                            ;
+; regfile:r|array[18][4]                   ; Lost fanout                            ;
+; regfile:r|array[18][5]                   ; Lost fanout                            ;
+; regfile:r|array[18][6]                   ; Lost fanout                            ;
+; regfile:r|array[18][7]                   ; Lost fanout                            ;
+; regfile:r|array[18][8]                   ; Lost fanout                            ;
+; regfile:r|array[18][9]                   ; Lost fanout                            ;
+; regfile:r|array[18][10]                  ; Lost fanout                            ;
+; regfile:r|array[18][11]                  ; Lost fanout                            ;
+; regfile:r|array[18][12]                  ; Lost fanout                            ;
+; regfile:r|array[18][13]                  ; Lost fanout                            ;
+; regfile:r|array[18][14]                  ; Lost fanout                            ;
+; regfile:r|array[18][15]                  ; Lost fanout                            ;
+; regfile:r|array[18][16]                  ; Lost fanout                            ;
+; regfile:r|array[18][17]                  ; Lost fanout                            ;
+; regfile:r|array[18][18]                  ; Lost fanout                            ;
+; regfile:r|array[18][19]                  ; Lost fanout                            ;
+; regfile:r|array[18][20]                  ; Lost fanout                            ;
+; regfile:r|array[18][21]                  ; Lost fanout                            ;
+; regfile:r|array[18][22]                  ; Lost fanout                            ;
+; regfile:r|array[18][23]                  ; Lost fanout                            ;
+; regfile:r|array[18][24]                  ; Lost fanout                            ;
+; regfile:r|array[18][25]                  ; Lost fanout                            ;
+; regfile:r|array[18][26]                  ; Lost fanout                            ;
+; regfile:r|array[18][27]                  ; Lost fanout                            ;
+; regfile:r|array[18][28]                  ; Lost fanout                            ;
+; regfile:r|array[18][29]                  ; Lost fanout                            ;
+; regfile:r|array[18][30]                  ; Lost fanout                            ;
+; regfile:r|array[18][31]                  ; Lost fanout                            ;
+; regfile:r|array[19][0]                   ; Lost fanout                            ;
+; regfile:r|array[19][1]                   ; Lost fanout                            ;
+; regfile:r|array[19][2]                   ; Lost fanout                            ;
+; regfile:r|array[19][3]                   ; Lost fanout                            ;
+; regfile:r|array[19][4]                   ; Lost fanout                            ;
+; regfile:r|array[19][5]                   ; Lost fanout                            ;
+; regfile:r|array[19][6]                   ; Lost fanout                            ;
+; regfile:r|array[19][7]                   ; Lost fanout                            ;
+; regfile:r|array[19][8]                   ; Lost fanout                            ;
+; regfile:r|array[19][9]                   ; Lost fanout                            ;
+; regfile:r|array[19][10]                  ; Lost fanout                            ;
+; regfile:r|array[19][11]                  ; Lost fanout                            ;
+; regfile:r|array[19][12]                  ; Lost fanout                            ;
+; regfile:r|array[19][13]                  ; Lost fanout                            ;
+; regfile:r|array[19][14]                  ; Lost fanout                            ;
+; regfile:r|array[19][15]                  ; Lost fanout                            ;
+; regfile:r|array[19][16]                  ; Lost fanout                            ;
+; regfile:r|array[19][17]                  ; Lost fanout                            ;
+; regfile:r|array[19][18]                  ; Lost fanout                            ;
+; regfile:r|array[19][19]                  ; Lost fanout                            ;
+; regfile:r|array[19][20]                  ; Lost fanout                            ;
+; regfile:r|array[19][21]                  ; Lost fanout                            ;
+; regfile:r|array[19][22]                  ; Lost fanout                            ;
+; regfile:r|array[19][23]                  ; Lost fanout                            ;
+; regfile:r|array[19][24]                  ; Lost fanout                            ;
+; regfile:r|array[19][25]                  ; Lost fanout                            ;
+; regfile:r|array[19][26]                  ; Lost fanout                            ;
+; regfile:r|array[19][27]                  ; Lost fanout                            ;
+; regfile:r|array[19][28]                  ; Lost fanout                            ;
+; regfile:r|array[19][29]                  ; Lost fanout                            ;
+; regfile:r|array[19][30]                  ; Lost fanout                            ;
+; regfile:r|array[19][31]                  ; Lost fanout                            ;
+; regfile:r|array[20][0]                   ; Lost fanout                            ;
+; regfile:r|array[20][1]                   ; Lost fanout                            ;
+; regfile:r|array[20][2]                   ; Lost fanout                            ;
+; regfile:r|array[20][3]                   ; Lost fanout                            ;
+; regfile:r|array[20][4]                   ; Lost fanout                            ;
+; regfile:r|array[20][5]                   ; Lost fanout                            ;
+; regfile:r|array[20][6]                   ; Lost fanout                            ;
+; regfile:r|array[20][7]                   ; Lost fanout                            ;
+; regfile:r|array[20][8]                   ; Lost fanout                            ;
+; regfile:r|array[20][9]                   ; Lost fanout                            ;
+; regfile:r|array[20][10]                  ; Lost fanout                            ;
+; regfile:r|array[20][11]                  ; Lost fanout                            ;
+; regfile:r|array[20][12]                  ; Lost fanout                            ;
+; regfile:r|array[20][13]                  ; Lost fanout                            ;
+; regfile:r|array[20][14]                  ; Lost fanout                            ;
+; regfile:r|array[20][15]                  ; Lost fanout                            ;
+; regfile:r|array[20][16]                  ; Lost fanout                            ;
+; regfile:r|array[20][17]                  ; Lost fanout                            ;
+; regfile:r|array[20][18]                  ; Lost fanout                            ;
+; regfile:r|array[20][19]                  ; Lost fanout                            ;
+; regfile:r|array[20][20]                  ; Lost fanout                            ;
+; regfile:r|array[20][21]                  ; Lost fanout                            ;
+; regfile:r|array[20][22]                  ; Lost fanout                            ;
+; regfile:r|array[20][23]                  ; Lost fanout                            ;
+; regfile:r|array[20][24]                  ; Lost fanout                            ;
+; regfile:r|array[20][25]                  ; Lost fanout                            ;
+; regfile:r|array[20][26]                  ; Lost fanout                            ;
+; regfile:r|array[20][27]                  ; Lost fanout                            ;
+; regfile:r|array[20][28]                  ; Lost fanout                            ;
+; regfile:r|array[20][29]                  ; Lost fanout                            ;
+; regfile:r|array[20][30]                  ; Lost fanout                            ;
+; regfile:r|array[20][31]                  ; Lost fanout                            ;
+; regfile:r|array[21][0]                   ; Lost fanout                            ;
+; regfile:r|array[21][1]                   ; Lost fanout                            ;
+; regfile:r|array[21][2]                   ; Lost fanout                            ;
+; regfile:r|array[21][3]                   ; Lost fanout                            ;
+; regfile:r|array[21][4]                   ; Lost fanout                            ;
+; regfile:r|array[21][5]                   ; Lost fanout                            ;
+; regfile:r|array[21][6]                   ; Lost fanout                            ;
+; regfile:r|array[21][7]                   ; Lost fanout                            ;
+; regfile:r|array[21][8]                   ; Lost fanout                            ;
+; regfile:r|array[21][9]                   ; Lost fanout                            ;
+; regfile:r|array[21][10]                  ; Lost fanout                            ;
+; regfile:r|array[21][11]                  ; Lost fanout                            ;
+; regfile:r|array[21][12]                  ; Lost fanout                            ;
+; regfile:r|array[21][13]                  ; Lost fanout                            ;
+; regfile:r|array[21][14]                  ; Lost fanout                            ;
+; regfile:r|array[21][15]                  ; Lost fanout                            ;
+; regfile:r|array[21][16]                  ; Lost fanout                            ;
+; regfile:r|array[21][17]                  ; Lost fanout                            ;
+; regfile:r|array[21][18]                  ; Lost fanout                            ;
+; regfile:r|array[21][19]                  ; Lost fanout                            ;
+; regfile:r|array[21][20]                  ; Lost fanout                            ;
+; regfile:r|array[21][21]                  ; Lost fanout                            ;
+; regfile:r|array[21][22]                  ; Lost fanout                            ;
+; regfile:r|array[21][23]                  ; Lost fanout                            ;
+; regfile:r|array[21][24]                  ; Lost fanout                            ;
+; regfile:r|array[21][25]                  ; Lost fanout                            ;
+; regfile:r|array[21][26]                  ; Lost fanout                            ;
+; regfile:r|array[21][27]                  ; Lost fanout                            ;
+; regfile:r|array[21][28]                  ; Lost fanout                            ;
+; regfile:r|array[21][29]                  ; Lost fanout                            ;
+; regfile:r|array[21][30]                  ; Lost fanout                            ;
+; regfile:r|array[21][31]                  ; Lost fanout                            ;
+; regfile:r|array[22][0]                   ; Lost fanout                            ;
+; regfile:r|array[22][1]                   ; Lost fanout                            ;
+; regfile:r|array[22][2]                   ; Lost fanout                            ;
+; regfile:r|array[22][3]                   ; Lost fanout                            ;
+; regfile:r|array[22][4]                   ; Lost fanout                            ;
+; regfile:r|array[22][5]                   ; Lost fanout                            ;
+; regfile:r|array[22][6]                   ; Lost fanout                            ;
+; regfile:r|array[22][7]                   ; Lost fanout                            ;
+; regfile:r|array[22][8]                   ; Lost fanout                            ;
+; regfile:r|array[22][9]                   ; Lost fanout                            ;
+; regfile:r|array[22][10]                  ; Lost fanout                            ;
+; regfile:r|array[22][11]                  ; Lost fanout                            ;
+; regfile:r|array[22][12]                  ; Lost fanout                            ;
+; regfile:r|array[22][13]                  ; Lost fanout                            ;
+; regfile:r|array[22][14]                  ; Lost fanout                            ;
+; regfile:r|array[22][15]                  ; Lost fanout                            ;
+; regfile:r|array[22][16]                  ; Lost fanout                            ;
+; regfile:r|array[22][17]                  ; Lost fanout                            ;
+; regfile:r|array[22][18]                  ; Lost fanout                            ;
+; regfile:r|array[22][19]                  ; Lost fanout                            ;
+; regfile:r|array[22][20]                  ; Lost fanout                            ;
+; regfile:r|array[22][21]                  ; Lost fanout                            ;
+; regfile:r|array[22][22]                  ; Lost fanout                            ;
+; regfile:r|array[22][23]                  ; Lost fanout                            ;
+; regfile:r|array[22][24]                  ; Lost fanout                            ;
+; regfile:r|array[22][25]                  ; Lost fanout                            ;
+; regfile:r|array[22][26]                  ; Lost fanout                            ;
+; regfile:r|array[22][27]                  ; Lost fanout                            ;
+; regfile:r|array[22][28]                  ; Lost fanout                            ;
+; regfile:r|array[22][29]                  ; Lost fanout                            ;
+; regfile:r|array[22][30]                  ; Lost fanout                            ;
+; regfile:r|array[22][31]                  ; Lost fanout                            ;
+; regfile:r|array[23][0]                   ; Lost fanout                            ;
+; regfile:r|array[23][1]                   ; Lost fanout                            ;
+; regfile:r|array[23][2]                   ; Lost fanout                            ;
+; regfile:r|array[23][3]                   ; Lost fanout                            ;
+; regfile:r|array[23][4]                   ; Lost fanout                            ;
+; regfile:r|array[23][5]                   ; Lost fanout                            ;
+; regfile:r|array[23][6]                   ; Lost fanout                            ;
+; regfile:r|array[23][7]                   ; Lost fanout                            ;
+; regfile:r|array[23][8]                   ; Lost fanout                            ;
+; regfile:r|array[23][9]                   ; Lost fanout                            ;
+; regfile:r|array[23][10]                  ; Lost fanout                            ;
+; regfile:r|array[23][11]                  ; Lost fanout                            ;
+; regfile:r|array[23][12]                  ; Lost fanout                            ;
+; regfile:r|array[23][13]                  ; Lost fanout                            ;
+; regfile:r|array[23][14]                  ; Lost fanout                            ;
+; regfile:r|array[23][15]                  ; Lost fanout                            ;
+; regfile:r|array[23][16]                  ; Lost fanout                            ;
+; regfile:r|array[23][17]                  ; Lost fanout                            ;
+; regfile:r|array[23][18]                  ; Lost fanout                            ;
+; regfile:r|array[23][19]                  ; Lost fanout                            ;
+; regfile:r|array[23][20]                  ; Lost fanout                            ;
+; regfile:r|array[23][21]                  ; Lost fanout                            ;
+; regfile:r|array[23][22]                  ; Lost fanout                            ;
+; regfile:r|array[23][23]                  ; Lost fanout                            ;
+; regfile:r|array[23][24]                  ; Lost fanout                            ;
+; regfile:r|array[23][25]                  ; Lost fanout                            ;
+; regfile:r|array[23][26]                  ; Lost fanout                            ;
+; regfile:r|array[23][27]                  ; Lost fanout                            ;
+; regfile:r|array[23][28]                  ; Lost fanout                            ;
+; regfile:r|array[23][29]                  ; Lost fanout                            ;
+; regfile:r|array[23][30]                  ; Lost fanout                            ;
+; regfile:r|array[23][31]                  ; Lost fanout                            ;
+; regfile:r|array[24][0]                   ; Lost fanout                            ;
+; regfile:r|array[24][1]                   ; Lost fanout                            ;
+; regfile:r|array[24][2]                   ; Lost fanout                            ;
+; regfile:r|array[24][3]                   ; Lost fanout                            ;
+; regfile:r|array[24][4]                   ; Lost fanout                            ;
+; regfile:r|array[24][5]                   ; Lost fanout                            ;
+; regfile:r|array[24][6]                   ; Lost fanout                            ;
+; regfile:r|array[24][7]                   ; Lost fanout                            ;
+; regfile:r|array[24][8]                   ; Lost fanout                            ;
+; regfile:r|array[24][9]                   ; Lost fanout                            ;
+; regfile:r|array[24][10]                  ; Lost fanout                            ;
+; regfile:r|array[24][11]                  ; Lost fanout                            ;
+; regfile:r|array[24][12]                  ; Lost fanout                            ;
+; regfile:r|array[24][13]                  ; Lost fanout                            ;
+; regfile:r|array[24][14]                  ; Lost fanout                            ;
+; regfile:r|array[24][15]                  ; Lost fanout                            ;
+; regfile:r|array[24][16]                  ; Lost fanout                            ;
+; regfile:r|array[24][17]                  ; Lost fanout                            ;
+; regfile:r|array[24][18]                  ; Lost fanout                            ;
+; regfile:r|array[24][19]                  ; Lost fanout                            ;
+; regfile:r|array[24][20]                  ; Lost fanout                            ;
+; regfile:r|array[24][21]                  ; Lost fanout                            ;
+; regfile:r|array[24][22]                  ; Lost fanout                            ;
+; regfile:r|array[24][23]                  ; Lost fanout                            ;
+; regfile:r|array[24][24]                  ; Lost fanout                            ;
+; regfile:r|array[24][25]                  ; Lost fanout                            ;
+; regfile:r|array[24][26]                  ; Lost fanout                            ;
+; regfile:r|array[24][27]                  ; Lost fanout                            ;
+; regfile:r|array[24][28]                  ; Lost fanout                            ;
+; regfile:r|array[24][29]                  ; Lost fanout                            ;
+; regfile:r|array[24][30]                  ; Lost fanout                            ;
+; regfile:r|array[24][31]                  ; Lost fanout                            ;
+; regfile:r|array[25][0]                   ; Lost fanout                            ;
+; regfile:r|array[25][1]                   ; Lost fanout                            ;
+; regfile:r|array[25][2]                   ; Lost fanout                            ;
+; regfile:r|array[25][3]                   ; Lost fanout                            ;
+; regfile:r|array[25][4]                   ; Lost fanout                            ;
+; regfile:r|array[25][5]                   ; Lost fanout                            ;
+; regfile:r|array[25][6]                   ; Lost fanout                            ;
+; regfile:r|array[25][7]                   ; Lost fanout                            ;
+; regfile:r|array[25][8]                   ; Lost fanout                            ;
+; regfile:r|array[25][9]                   ; Lost fanout                            ;
+; regfile:r|array[25][10]                  ; Lost fanout                            ;
+; regfile:r|array[25][11]                  ; Lost fanout                            ;
+; regfile:r|array[25][12]                  ; Lost fanout                            ;
+; regfile:r|array[25][13]                  ; Lost fanout                            ;
+; regfile:r|array[25][14]                  ; Lost fanout                            ;
+; regfile:r|array[25][15]                  ; Lost fanout                            ;
+; regfile:r|array[25][16]                  ; Lost fanout                            ;
+; regfile:r|array[25][17]                  ; Lost fanout                            ;
+; regfile:r|array[25][18]                  ; Lost fanout                            ;
+; regfile:r|array[25][19]                  ; Lost fanout                            ;
+; regfile:r|array[25][20]                  ; Lost fanout                            ;
+; regfile:r|array[25][21]                  ; Lost fanout                            ;
+; regfile:r|array[25][22]                  ; Lost fanout                            ;
+; regfile:r|array[25][23]                  ; Lost fanout                            ;
+; regfile:r|array[25][24]                  ; Lost fanout                            ;
+; regfile:r|array[25][25]                  ; Lost fanout                            ;
+; regfile:r|array[25][26]                  ; Lost fanout                            ;
+; regfile:r|array[25][27]                  ; Lost fanout                            ;
+; regfile:r|array[25][28]                  ; Lost fanout                            ;
+; regfile:r|array[25][29]                  ; Lost fanout                            ;
+; regfile:r|array[25][30]                  ; Lost fanout                            ;
+; regfile:r|array[25][31]                  ; Lost fanout                            ;
+; regfile:r|array[26][0]                   ; Lost fanout                            ;
+; regfile:r|array[26][1]                   ; Lost fanout                            ;
+; regfile:r|array[26][2]                   ; Lost fanout                            ;
+; regfile:r|array[26][3]                   ; Lost fanout                            ;
+; regfile:r|array[26][4]                   ; Lost fanout                            ;
+; regfile:r|array[26][5]                   ; Lost fanout                            ;
+; regfile:r|array[26][6]                   ; Lost fanout                            ;
+; regfile:r|array[26][7]                   ; Lost fanout                            ;
+; regfile:r|array[26][8]                   ; Lost fanout                            ;
+; regfile:r|array[26][9]                   ; Lost fanout                            ;
+; regfile:r|array[26][10]                  ; Lost fanout                            ;
+; regfile:r|array[26][11]                  ; Lost fanout                            ;
+; regfile:r|array[26][12]                  ; Lost fanout                            ;
+; regfile:r|array[26][13]                  ; Lost fanout                            ;
+; regfile:r|array[26][14]                  ; Lost fanout                            ;
+; regfile:r|array[26][15]                  ; Lost fanout                            ;
+; regfile:r|array[26][16]                  ; Lost fanout                            ;
+; regfile:r|array[26][17]                  ; Lost fanout                            ;
+; regfile:r|array[26][18]                  ; Lost fanout                            ;
+; regfile:r|array[26][19]                  ; Lost fanout                            ;
+; regfile:r|array[26][20]                  ; Lost fanout                            ;
+; regfile:r|array[26][21]                  ; Lost fanout                            ;
+; regfile:r|array[26][22]                  ; Lost fanout                            ;
+; regfile:r|array[26][23]                  ; Lost fanout                            ;
+; regfile:r|array[26][24]                  ; Lost fanout                            ;
+; regfile:r|array[26][25]                  ; Lost fanout                            ;
+; regfile:r|array[26][26]                  ; Lost fanout                            ;
+; regfile:r|array[26][27]                  ; Lost fanout                            ;
+; regfile:r|array[26][28]                  ; Lost fanout                            ;
+; regfile:r|array[26][29]                  ; Lost fanout                            ;
+; regfile:r|array[26][30]                  ; Lost fanout                            ;
+; regfile:r|array[26][31]                  ; Lost fanout                            ;
+; regfile:r|array[27][0]                   ; Lost fanout                            ;
+; regfile:r|array[27][1]                   ; Lost fanout                            ;
+; regfile:r|array[27][2]                   ; Lost fanout                            ;
+; regfile:r|array[27][3]                   ; Lost fanout                            ;
+; regfile:r|array[27][4]                   ; Lost fanout                            ;
+; regfile:r|array[27][5]                   ; Lost fanout                            ;
+; regfile:r|array[27][6]                   ; Lost fanout                            ;
+; regfile:r|array[27][7]                   ; Lost fanout                            ;
+; regfile:r|array[27][8]                   ; Lost fanout                            ;
+; regfile:r|array[27][9]                   ; Lost fanout                            ;
+; regfile:r|array[27][10]                  ; Lost fanout                            ;
+; regfile:r|array[27][11]                  ; Lost fanout                            ;
+; regfile:r|array[27][12]                  ; Lost fanout                            ;
+; regfile:r|array[27][13]                  ; Lost fanout                            ;
+; regfile:r|array[27][14]                  ; Lost fanout                            ;
+; regfile:r|array[27][15]                  ; Lost fanout                            ;
+; regfile:r|array[27][16]                  ; Lost fanout                            ;
+; regfile:r|array[27][17]                  ; Lost fanout                            ;
+; regfile:r|array[27][18]                  ; Lost fanout                            ;
+; regfile:r|array[27][19]                  ; Lost fanout                            ;
+; regfile:r|array[27][20]                  ; Lost fanout                            ;
+; regfile:r|array[27][21]                  ; Lost fanout                            ;
+; regfile:r|array[27][22]                  ; Lost fanout                            ;
+; regfile:r|array[27][23]                  ; Lost fanout                            ;
+; regfile:r|array[27][24]                  ; Lost fanout                            ;
+; regfile:r|array[27][25]                  ; Lost fanout                            ;
+; regfile:r|array[27][26]                  ; Lost fanout                            ;
+; regfile:r|array[27][27]                  ; Lost fanout                            ;
+; regfile:r|array[27][28]                  ; Lost fanout                            ;
+; regfile:r|array[27][29]                  ; Lost fanout                            ;
+; regfile:r|array[27][30]                  ; Lost fanout                            ;
+; regfile:r|array[27][31]                  ; Lost fanout                            ;
+; regfile:r|array[28][0]                   ; Lost fanout                            ;
+; regfile:r|array[28][1]                   ; Lost fanout                            ;
+; regfile:r|array[28][2]                   ; Lost fanout                            ;
+; regfile:r|array[28][3]                   ; Lost fanout                            ;
+; regfile:r|array[28][4]                   ; Lost fanout                            ;
+; regfile:r|array[28][5]                   ; Lost fanout                            ;
+; regfile:r|array[28][6]                   ; Lost fanout                            ;
+; regfile:r|array[28][7]                   ; Lost fanout                            ;
+; regfile:r|array[28][8]                   ; Lost fanout                            ;
+; regfile:r|array[28][9]                   ; Lost fanout                            ;
+; regfile:r|array[28][10]                  ; Lost fanout                            ;
+; regfile:r|array[28][11]                  ; Lost fanout                            ;
+; regfile:r|array[28][12]                  ; Lost fanout                            ;
+; regfile:r|array[28][13]                  ; Lost fanout                            ;
+; regfile:r|array[28][14]                  ; Lost fanout                            ;
+; regfile:r|array[28][15]                  ; Lost fanout                            ;
+; regfile:r|array[28][16]                  ; Lost fanout                            ;
+; regfile:r|array[28][17]                  ; Lost fanout                            ;
+; regfile:r|array[28][18]                  ; Lost fanout                            ;
+; regfile:r|array[28][19]                  ; Lost fanout                            ;
+; regfile:r|array[28][20]                  ; Lost fanout                            ;
+; regfile:r|array[28][21]                  ; Lost fanout                            ;
+; regfile:r|array[28][22]                  ; Lost fanout                            ;
+; regfile:r|array[28][23]                  ; Lost fanout                            ;
+; regfile:r|array[28][24]                  ; Lost fanout                            ;
+; regfile:r|array[28][25]                  ; Lost fanout                            ;
+; regfile:r|array[28][26]                  ; Lost fanout                            ;
+; regfile:r|array[28][27]                  ; Lost fanout                            ;
+; regfile:r|array[28][28]                  ; Lost fanout                            ;
+; regfile:r|array[28][29]                  ; Lost fanout                            ;
+; regfile:r|array[28][30]                  ; Lost fanout                            ;
+; regfile:r|array[28][31]                  ; Lost fanout                            ;
+; regfile:r|array[29][0]                   ; Lost fanout                            ;
+; regfile:r|array[29][1]                   ; Lost fanout                            ;
+; regfile:r|array[29][2]                   ; Lost fanout                            ;
+; regfile:r|array[29][3]                   ; Lost fanout                            ;
+; regfile:r|array[29][4]                   ; Lost fanout                            ;
+; regfile:r|array[29][5]                   ; Lost fanout                            ;
+; regfile:r|array[29][6]                   ; Lost fanout                            ;
+; regfile:r|array[29][7]                   ; Lost fanout                            ;
+; regfile:r|array[29][8]                   ; Lost fanout                            ;
+; regfile:r|array[29][9]                   ; Lost fanout                            ;
+; regfile:r|array[29][10]                  ; Lost fanout                            ;
+; regfile:r|array[29][11]                  ; Lost fanout                            ;
+; regfile:r|array[29][12]                  ; Lost fanout                            ;
+; regfile:r|array[29][13]                  ; Lost fanout                            ;
+; regfile:r|array[29][14]                  ; Lost fanout                            ;
+; regfile:r|array[29][15]                  ; Lost fanout                            ;
+; regfile:r|array[29][16]                  ; Lost fanout                            ;
+; regfile:r|array[29][17]                  ; Lost fanout                            ;
+; regfile:r|array[29][18]                  ; Lost fanout                            ;
+; regfile:r|array[29][19]                  ; Lost fanout                            ;
+; regfile:r|array[29][20]                  ; Lost fanout                            ;
+; regfile:r|array[29][21]                  ; Lost fanout                            ;
+; regfile:r|array[29][22]                  ; Lost fanout                            ;
+; regfile:r|array[29][23]                  ; Lost fanout                            ;
+; regfile:r|array[29][24]                  ; Lost fanout                            ;
+; regfile:r|array[29][25]                  ; Lost fanout                            ;
+; regfile:r|array[29][26]                  ; Lost fanout                            ;
+; regfile:r|array[29][27]                  ; Lost fanout                            ;
+; regfile:r|array[29][28]                  ; Lost fanout                            ;
+; regfile:r|array[29][29]                  ; Lost fanout                            ;
+; regfile:r|array[29][30]                  ; Lost fanout                            ;
+; regfile:r|array[29][31]                  ; Lost fanout                            ;
+; regfile:r|array[31][0]                   ; Lost fanout                            ;
+; regfile:r|array[31][1]                   ; Lost fanout                            ;
+; regfile:r|array[31][2]                   ; Lost fanout                            ;
+; regfile:r|array[31][3]                   ; Lost fanout                            ;
+; regfile:r|array[31][4]                   ; Lost fanout                            ;
+; regfile:r|array[31][5]                   ; Lost fanout                            ;
+; regfile:r|array[31][6]                   ; Lost fanout                            ;
+; regfile:r|array[31][7]                   ; Lost fanout                            ;
+; regfile:r|array[31][8]                   ; Lost fanout                            ;
+; regfile:r|array[31][9]                   ; Lost fanout                            ;
+; regfile:r|array[31][10]                  ; Lost fanout                            ;
+; regfile:r|array[31][11]                  ; Lost fanout                            ;
+; regfile:r|array[31][12]                  ; Lost fanout                            ;
+; regfile:r|array[31][13]                  ; Lost fanout                            ;
+; regfile:r|array[31][14]                  ; Lost fanout                            ;
+; regfile:r|array[31][15]                  ; Lost fanout                            ;
+; regfile:r|array[31][16]                  ; Lost fanout                            ;
+; regfile:r|array[31][17]                  ; Lost fanout                            ;
+; regfile:r|array[31][18]                  ; Lost fanout                            ;
+; regfile:r|array[31][19]                  ; Lost fanout                            ;
+; regfile:r|array[31][20]                  ; Lost fanout                            ;
+; regfile:r|array[31][21]                  ; Lost fanout                            ;
+; regfile:r|array[31][22]                  ; Lost fanout                            ;
+; regfile:r|array[31][23]                  ; Lost fanout                            ;
+; regfile:r|array[31][24]                  ; Lost fanout                            ;
+; regfile:r|array[31][25]                  ; Lost fanout                            ;
+; regfile:r|array[31][26]                  ; Lost fanout                            ;
+; regfile:r|array[31][27]                  ; Lost fanout                            ;
+; regfile:r|array[31][28]                  ; Lost fanout                            ;
+; regfile:r|array[31][29]                  ; Lost fanout                            ;
+; regfile:r|array[31][30]                  ; Lost fanout                            ;
+; regfile:r|array[31][31]                  ; Lost fanout                            ;
+; regfile:r|array[30][18]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][19]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][20]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][21]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][22]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][23]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][24]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][25]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][26]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][27]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][28]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][29]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][30]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|array[30][31]                  ; Stuck at GND due to stuck port data_in ;
+; regfile:r|reg30_out[18..31]              ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1020 ;                                        ;
++------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                    ;
++--------------------------------------------------------------------------------+
+Register name                          : regfile:r|array[30][18]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[18]
+
+Register name                          : regfile:r|array[30][19]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[19]
+
+Register name                          : regfile:r|array[30][20]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[20]
+
+Register name                          : regfile:r|array[30][21]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[21]
+
+Register name                          : regfile:r|array[30][22]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[22]
+
+Register name                          : regfile:r|array[30][23]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[23]
+
+Register name                          : regfile:r|array[30][24]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[24]
+
+Register name                          : regfile:r|array[30][25]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[25]
+
+Register name                          : regfile:r|array[30][26]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[26]
+
+Register name                          : regfile:r|array[30][27]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[27]
+
+Register name                          : regfile:r|array[30][28]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[28]
+
+Register name                          : regfile:r|array[30][29]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[29]
+
+Register name                          : regfile:r|array[30][30]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[30]
+
+Register name                          : regfile:r|array[30][31]
+Reason for Removal                     : Stuck at GNDdue to stuck port data_in
+Registers Removed due to This Register : regfile:r|reg30_out[31]
++--------------------------------------------------------------------------------+
+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 36    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "regfile:r"                                          ;
++--------------------------------------------------------------------------------+
+Port     : we
+Type     : Input
+Severity : Info
+Details  : Stuck at VCC
+
+Port     : readaddr1
+Type     : Input
+Severity : Info
+Details  : Stuck at GND
+
+Port     : readaddr2[4..1]
+Type     : Input
+Severity : Info
+Details  : Stuck at VCC
+
+Port     : readaddr2[0]
+Type     : Input
+Severity : Info
+Details  : Stuck at GND
+
+Port     : writeaddr[4..1]
+Type     : Input
+Severity : Info
+Details  : Stuck at VCC
+
+Port     : writeaddr[0]
+Type     : Input
+Severity : Info
+Details  : Stuck at GND
+
+Port     : reg30_in[31..18]
+Type     : Input
+Severity : Info
+Details  : Stuck at GND
+
+Port     : readdata1
+Type     : Output
+Severity : Info
+Details  : Connected to dangling logic. Logic that only feeds a dangling port will be removed.
++--------------------------------------------------------------------------------+
+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
+    Info: Processing started: Thu Oct 27 18:15:24 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off the_project -c the_project
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
+    Info (12023): Found entity 1: regfile
+Info (12021): Found 1 design units, including 1 entities, in source file lab3_top.v
+    Info (12023): Found entity 1: lab3_top
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
+    Info (12023): Found entity 1: decoder
+Info (12127): Elaborating entity "lab3_top" for the top level hierarchy
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:r"
+Warning (10230): Verilog HDL assignment warning at regfile.v(23): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:a"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX5[0]" is stuck at GND
+    Warning (13410): Pin "HEX5[1]" is stuck at GND
+    Warning (13410): Pin "HEX5[2]" is stuck at GND
+    Warning (13410): Pin "HEX5[3]" is stuck at GND
+    Warning (13410): Pin "HEX5[4]" is stuck at GND
+    Warning (13410): Pin "HEX5[5]" is stuck at GND
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC
+    Warning (13410): Pin "HEX6[0]" is stuck at GND
+    Warning (13410): Pin "HEX6[1]" is stuck at GND
+    Warning (13410): Pin "HEX6[2]" is stuck at GND
+    Warning (13410): Pin "HEX6[3]" is stuck at GND
+    Warning (13410): Pin "HEX6[4]" is stuck at GND
+    Warning (13410): Pin "HEX6[5]" is stuck at GND
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC
+    Warning (13410): Pin "HEX7[0]" is stuck at GND
+    Warning (13410): Pin "HEX7[1]" is stuck at GND
+    Warning (13410): Pin "HEX7[2]" is stuck at GND
+    Warning (13410): Pin "HEX7[3]" is stuck at GND
+    Warning (13410): Pin "HEX7[4]" is stuck at GND
+    Warning (13410): Pin "HEX7[5]" is stuck at GND
+    Warning (13410): Pin "HEX7[6]" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 992 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 67 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 374 megabytes
+    Info: Processing ended: Thu Oct 27 18:15:26 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

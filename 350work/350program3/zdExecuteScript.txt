@@ -8,6 +8,7 @@ touch /outputs/outfile1.txt /outputs/log/logfile1.txt
 touch /outputs/outfile2.txt /outputs/log/logfile2.txt
 touch /outputs/outfile3.txt /outputs/log/logfile3.txt
 touch /outputs/outfile4.txt /outputs/log/logfile4.txt
+touch /outputs/outfile5.txt /outputs/log/logfile5.txt
 
 echo "Descend into 'testdirectory' directory"
 cd testdirectory
@@ -26,6 +27,8 @@ do
   ./Aprog ../../inputs/graph3.txt ../../outputs/outfile3.txt ../../outputs/log/logfile3.txt > ../../outputs/std/stdout3.txt
   echo "Graph 4:"
   ./Aprog ../../inputs/graph4.txt ../../outputs/outfile4.txt ../../outputs/log/logfile4.txt > ../../outputs/std/stdout4.txt
+  echo "Graph 5:"
+  ./Aprog ../../inputs/prereq_graph.txt ../../outputs/outfile5.txt ../../outputs/log/logfile5.txt > ../../outputs/std/stdout5.txt
   cd ..
 echo "EXECUTION COMPLETE"
 done

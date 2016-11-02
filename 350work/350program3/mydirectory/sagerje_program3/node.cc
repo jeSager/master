@@ -111,7 +111,7 @@ void Node::SetNodeNumber(int which){
 string Node::ToString()const{
 
   string s = "\tNODE " + Utils::Format(node_number_, 2) + ":  ";
-
+//should output something if there are no nodes here..
   vector<int>::const_iterator iter;
   for(iter = child_subs_.begin(); iter != child_subs_.end(); ++iter)
      s += Utils::Format(*iter, 2) + "   ";

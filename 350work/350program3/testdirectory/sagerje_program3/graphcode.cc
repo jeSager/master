@@ -35,8 +35,10 @@ GraphCode::~GraphCode() {
  * General functions.
 **/
 
+//********************* ADDED LINE TO SET ORPHAN PARAMETER ********************
 /******************************************************************************
  * Function 'ReadGraph'.
+ *
  * We read data from the input stream and create a graph.
  *
  * The only thing tricky about this is to make sure we have all the nodes
@@ -56,6 +58,7 @@ void GraphCode::ReadGraph(Scanner& in_stream) {
   ScanLine scanline;
 
   int first_node, last_node;
+  vector<int> children;
 
   if (in_stream.HasNext()) {
     first_node = in_stream.NextInt();
@@ -70,9 +73,8 @@ void GraphCode::ReadGraph(Scanner& in_stream) {
     }
   }
 
-  else {
+  else
     Utils::log_stream << TAG << "Terminating. No data in input file." << endl;
-  }
 
   // Read line by line, one line for each node.
   // Use each line to create a 'ScanLine'.
@@ -88,10 +90,12 @@ void GraphCode::ReadGraph(Scanner& in_stream) {
     while( scanline.HasNext()) {
       int the_child = scanline.NextInt();
       node.AddChildSub(the_child);
+      the_graph_.at(the_child).SetIsOrphan(false); // <<<<<<<<<<     LINE ADDED
     }
 
     this->the_graph_.at(parent_node_num) = node;
   }
+
 
 #ifdef EBUG
   cout << TAG << "leave ReadGraph " << endl;
@@ -100,42 +104,13 @@ void GraphCode::ReadGraph(Scanner& in_stream) {
 } // end ReadGraph
 
 
-// For topological sorting to be possible,
-//    nodes are not allowed to have any edge leading to a ancestor nodes.
-// The graph must be ascyclic.
-
-//...............................................................
-//
-// Properties / Goals
-//...............................................................
-//
-// path_ is a vector of strings that will be used
-//
-// searching the nodes, need to note the order in which a node becomes
-// a dead end.
-//
-// set all the nodes as unvisited
-//   if a node is visited, it cannot be a proper decendent
-//
-// determine if the graph is acyclic:  test for a cycle
-//
-//
-// Try this:
-// for each node
-//    the node is a starting point if there are no incoming edges
-//    for each remaining node
-//       delete a node with no incoming edges
-//       if cannot, fail
-//       else, success
-
-
-
 
 /******************************************************************************
  * Function 'DoTopoSort'.
  *
  * Description:
  *   This function sorts the Nodes created by the function 'ReadGraph'
+ *   It is dependent on the function 'RecursiveDFS'
  *
  * Parameter:
  *   out_stream -- the output stream to which to write the eventual result
@@ -146,23 +121,32 @@ void GraphCode::DoTopoSort(ofstream& out_stream){
   cout << TAG << "enter DoTopoSort\n";
 #endif
 
-//  stack<Node> nodeStack;
-  Reset(out_stream);
-//  bool fullStack = false;
-//
-//  for(vector<Node>::iterator nodeIter = the_graph_.begin();
-//                                     nodeIter != the_graph_.end(); ++nodeIter){
-//    out_stream << (*nodeIter).GetNodeNumber() << "  " << (*nodeIter).GetIncomingCount() << endl;
-//      nodeStack = Recurse((*nodeIter), nodeStack);
-//    }
-//
-//
-//  fullStack = (nodeStack.size() == the_graph_.size());
-//  while(nodeStack.empty() == false){
-//    if(fullStack)
-//      out_stream << nodeStack.top().GetNodeNumber() << " ";
-//    nodeStack.pop();
-//  }
+  // RecursiveDFS is called using only orphan nodes
+  for(vector<Node>::iterator it = the_graph_.begin();
+                                                  it != the_graph_.end(); ++it)
+    if( (*it).IsOrphan() && (*it).IsNotVisited()){
+
+      out_stream << "Begin DFS from orphan node: ";
+      out_stream << (*it).GetNodeNumber() << endl;
+      RecursiveDFS((*it), the_graph_, out_stream );
+  }
+
+  // The sort was successful if the next condition is met;
+  // Else, print the error.
+  if( node_stack_.size() == the_graph_.size() ){
+
+    out_stream << endl << string(70,'_') << endl;
+    out_stream << endl << "THE FINAL SORT ORDER:  " << endl;
+    out_stream << string(70,'.') << endl << endl;
+
+    while( ! node_stack_.empty() ){
+      out_stream << node_stack_.top().GetNodeNumber() << " ";
+      node_stack_.pop();
+    }
+  }
+  else
+    out_stream << "ERROR:  ONLY ACYCLIC GRAPHS CAN BE SORTED." << endl;
+
 
 #ifdef EBUG
   cout << TAG << "leave DoTopoSort\n";
@@ -173,113 +157,36 @@ void GraphCode::DoTopoSort(ofstream& out_stream){
 
 
 /******************************************************************************
- * Function 'Recurse'
- * This recursive function is initally called by DoTopoSort.
- * It will recurse while there are child nodes without incoming edges.
+ * Function 'RecursiveDFS'
  *
- * Parameter:
- *   A single node.
-**/
-stack<Node> GraphCode::Recurse(Node n, stack<Node> nodeStack){
-
-  vector<Node> children = GetChildren(n);
-//  bool fullStack;
-
-  if(n.HasNotBeenVisited()){
-    nodeStack.push(n);
-    n.SetVisited(true);
-    for(vector<Node>::iterator childIter = children.begin();
-                                    childIter != children.end(); ++childIter){
-      (*childIter).DecrementIncoming();
-      nodeStack=Recurse(n, nodeStack);
-//      fullStack = (nodeStack.size() == the_graph_.size());
-//      if(! fullStack){
-//        (*childIter).IncrementIncoming();
-//        (*childIter).SetVisited(false);
-//      }
-    }
-  }
-
-  return nodeStack;
-}
-
-
-
-/******************************************************************************
- * Function 'GetChildren'
- * This can get the child nodes of any node.
+ * Used to populate the private class variable node_stack:
+ *   - Sets the parameter node's property to visited.
+ *   - For each child that has Not been visited, this recurses.
  *
- * Returns:
- *   A vector of child nodes
-**/
-vector<Node> GraphCode::GetChildren(Node n){
-
-  vector<Node> children;
-  vector<int> childSubs = n.GetChildSubs();
-
-  for(vector<int>::iterator childNum = childSubs.begin();
-                                       childNum != childSubs.end(); ++childNum)
-    for(vector<Node>::iterator node = the_graph_.begin();
-                                              node != the_graph_.end(); ++node)
-      if(*childNum == (*node).GetNodeNumber())  children.push_back(*node);
-
-  return children;
-
-} // end GetChildren
-
-
-
-/******************************************************************************
- * Function 'Reset'
- * Resets the visited
+ * Initialized by the DoTopoSort Function if an orphan node exits.
+ * Called from within itself, if a child node exits.
  *
- * Parameter:
- *   A vector of Nodes.
+ * Parameters:
+ *   Node         n     The parent node that children are visited from.
+ *   vector<Node> g     The graph of nodes.
+ *   ofstream     out   The outfile stream.
 **/
-void GraphCode::Reset(ofstream& out){
+void GraphCode::RecursiveDFS(Node& n, vector<Node>& g, ofstream& out){
 
-  stack<Node> nodeStack;
-  vector<int> incomingVector;
-  vector<int> childSubs;
-  int max = 0;
+  vector<int> subs = n.GetChildSubs();
 
-  // make the incomingVector
-  for(vector<Node>::iterator node = the_graph_.begin();
-                                             node != the_graph_.end(); ++node){
-    (*node).SetVisited(false);
-    childSubs = (*node).GetChildSubs();
+  n.SetAsVisited();
 
-    for(vector<int>::iterator nodeNum = childSubs.begin();
-                                         nodeNum != childSubs.end(); ++nodeNum)
-      incomingVector.push_back(*nodeNum);
-  }
+  out << "\t\tDecending from node " << n.GetNodeNumber() << endl;
 
-  // increment incoming accordingly for each node, find max incoming
-  for(vector<Node>::iterator node = the_graph_.begin();
-                                             node != the_graph_.end(); ++node){
-    for(vector<int>::iterator nodeNum = incomingVector.begin();
-                                    nodeNum != incomingVector.end(); ++nodeNum)
-      if( (*node).GetNodeNumber() == (*nodeNum))
-        (*node).IncrementIncoming();
-    max = ((*node).GetIncomingCount() > max) ? (*node).GetIncomingCount() : max;
-  }
+  for(vector<int>::iterator it = subs.begin(); it != subs.end(); ++it)
+    if( g.at(*it).IsNotVisited() )
+      RecursiveDFS(g.at(*it), g, out);
 
-  // push the nodes on the stack in order of incoming edges
-  for( int i = max; i > -1; --i)
-    for(vector<Node>::reverse_iterator node = the_graph_.rbegin();
-                                             node != the_graph_.rend(); ++node)
-      if((*node).GetIncomingCount() == i) // mark this visited here
-        nodeStack.push(*node);            // check its branches
-  while( ! nodeStack.empty()){
-    out << nodeStack.top().GetNodeNumber() << " ";
-    nodeStack.pop();
-  }
+  out << "Add " << n.GetNodeNumber() << " to the stack" << endl;
+  node_stack_.push(n);
 
-}
-// the list is smallest number with least incoming
-// to largest number with most incoming
-// incoming is prioritized
-
+} // end RecursiveDFS
 
 
 

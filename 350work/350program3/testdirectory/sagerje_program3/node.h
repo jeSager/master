@@ -1,4 +1,4 @@
-/****************************************************************
+ /****************************************************************
  * Header file for a node in a graph.
  *
  * Author/copyright:  Duncan Buell
@@ -24,24 +24,20 @@ class Node {
 public:
  //Functions
 
- //Constructors and Destructor
- Node();
+ //Constructor and Destructor
  Node(int which);
  virtual ~Node();
 
  //Accessors
  int GetNodeNumber() const;
- int GetIncomingCount() const;
- int GetNumberOfChildren() const;
- bool HasNotBeenVisited() const;
  vector<int> GetChildSubs() const;
+ bool IsNotVisited() const;
+ bool IsOrphan() const;
 
  //Mutators
  void AddChildSub(int which);
- void SetVisited(bool what);
- void IncrementIncoming();
- void DecrementIncoming();
- void SetNodeNumber(int which);
+ void SetIsOrphan(bool what);
+ void SetAsVisited();
 
  //General
  string ToString() const;
@@ -50,10 +46,10 @@ private:
  //Variables
 
  int kDummyNodeNumber = -99;
- bool visited_ = false;
  int node_number_ = kDummyNodeNumber;
- int incoming_ = 0;
  vector<int> child_subs_;
+ bool visted_ = false;
+ bool orphan_ = true;
 
 };
 

@@ -1,0 +1,28 @@
+This is the basic version of the prerequisites for the Computer Science
+undergraduate degree. I have also posted the graphical version that is
+on the departmental website. I will leave it to you to figure out how
+to rewrite this in the input format for the source removal algorithm.
+(Or else to rewrite the input function to be able to read this text and
+create the appropriate graph representation.)
+
+ENGL101 ENGL102
+CSCE145 CSCE146 CSCE212 CSCE215
+MATH141 CSCE211 PHYS211 MATH142
+
+ENGL102 ENGL462  
+CSCE215 CSCE240
+CSCE146 CSCE240 CSCE350 MATH374
+PHYS211 PHYS212
+MATH142 MATH241 MATH374 STAT509
+
+CSCE240 CSCE311 CSCE330
+CSCE211 CSCE212
+MATH374 CSCE330 CSCE350
+
+CSCE212 CSCE311 CSCE355
+
+ENGL462 CSCE 490  
+CSCE311 CSCE416 CSCE490
+CSCE350 CSCE355
+
+CSCE490 CSCE492

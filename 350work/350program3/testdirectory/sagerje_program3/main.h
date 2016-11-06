@@ -17,6 +17,5 @@ using namespace std;
 #include "../../Utilities/scanline.h"
 
 #include "graphcode.h"
-#include "node.h"
 
 #endif // MAIN_H

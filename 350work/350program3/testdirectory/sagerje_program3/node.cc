@@ -13,23 +13,16 @@
 **/
 
 /******************************************************************************
- * Overloaded Constructor
+ * Constructor
  * ----------------------
  *
  * Parameter Description:
  *
- *   When Node is constructed, it should be given an integer parameter.
- *     The integer parameter "which" will be assigned to the private
- *     class variable "node_number_".
- *
- *   If a parameter is not provided initally, the variable 'node_number_' is
- *     initialized to the integer -99 by the header file.  The variable can
- *     be set at a later time with the function 'SetNodeNumber'.
+ *   An integer parameter is required when a Node is constructed.
+ *   The integer parameter "which" will be assigned to the private
+ *   class variable "node_number_".
  *
 **/
-Node::Node(){
-}
-
 Node::Node(int which){
   node_number_ = which;
 }
@@ -57,19 +50,15 @@ Node::~Node(){
 int Node::GetNodeNumber()const{
   return node_number_;
 }
-int Node::GetIncomingCount()const{
-  return incoming_;
-}
-bool Node::HasNotBeenVisited()const{
-  return ! visited_;
-}
-int Node::GetNumberOfChildren()const{
-  return child_subs_.size();
-}
 vector<int> Node::GetChildSubs()const{
   return child_subs_;
 }
-
+bool Node::IsNotVisited()const{
+  return ! visted_;
+}
+bool Node::IsOrphan()const{
+  return orphan_;
+}
 
 
 /******************************************************************************
@@ -85,17 +74,11 @@ vector<int> Node::GetChildSubs()const{
 void Node::AddChildSub(int which){
   child_subs_.push_back(which);
 }
-void Node::SetVisited(bool what){
-  visited_ = what;
+void Node::SetAsVisited(){
+  visted_ = true;
 }
-void Node::IncrementIncoming(){
-  incoming_ ++;
-}
-void Node::DecrementIncoming(){
-  incoming_ --;
-}
-void Node::SetNodeNumber(int which){
-  node_number_ = which;
+void Node::SetIsOrphan(bool what){
+  orphan_ = what;
 }
 
 

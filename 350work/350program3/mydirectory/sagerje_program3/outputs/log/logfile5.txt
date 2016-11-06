@@ -1,0 +1,5 @@
+Beginning execution
+infile  '../../inputs/prereq_graph.txt'
+outfile '../../outputs/outfile5.txt'
+logfile '../../outputs/log/logfile5.txt'
+Ending execution

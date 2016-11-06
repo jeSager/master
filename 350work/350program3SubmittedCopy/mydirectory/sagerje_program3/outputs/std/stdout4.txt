@@ -1,0 +1,12 @@
+UTILS: open the logfile '../../outputs/log/logfile4.txt'
+UTILS: open succeeded for '../../outputs/log/logfile4.txt'
+UTILS: open the output file '../../outputs/outfile4.txt'
+UTILS: open succeeded for '../../outputs/outfile4.txt'
+UTILS: open the input file '../../inputs/graph4.txt'
+UTILS: open succeeded for '../../inputs/graph4.txt'
+UTILS: close the input file
+UTILS: the input file was closed
+UTILS: close the output file
+UTILS: the output file was closed
+UTILS: close the output file
+UTILS: the output file was closed

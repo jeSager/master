@@ -1105,6 +1105,9 @@ set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to KEY
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to SW
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to HEX3[1]
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to HEX3[0]
+set_global_assignment -name VERILOG_FILE lab4_testbench.v
+set_global_assignment -name VERILOG_FILE lab4_imem.v
+set_global_assignment -name VERILOG_FILE lab4_alu.v
 set_global_assignment -name VERILOG_FILE lab4_decoder.v
 set_global_assignment -name VERILOG_FILE lab4_regfile.v
 set_global_assignment -name VERILOG_FILE lab4_de2.v

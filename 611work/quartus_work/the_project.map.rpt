@@ -1,5 +1,5 @@
 Analysis & Synthesis report for the_project
-Wed Oct 26 16:40:35 2016
+Wed Nov  9 16:47:57 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Oct 26 16:40:35 2016         ;
+; Analysis & Synthesis Status        ; Failed - Wed Nov  9 16:47:57 2016         ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; the_project                               ;
 ; Top-level Entity Name              ; lab4_de2                                  ;
@@ -394,26 +394,37 @@ Default Value : 1
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Wed Oct 26 16:40:34 2016
+    Info: Processing started: Wed Nov  9 16:47:55 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off the_project -c the_project
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file lab4_testbench.v
+    Info (12023): Found entity 1: lab4_testbench
+Info (12021): Found 1 design units, including 1 entities, in source file lab4_imem.v
+    Info (12023): Found entity 1: lab4_imem
+Info (12021): Found 1 design units, including 1 entities, in source file lab4_alu.v
+    Info (12023): Found entity 1: alu
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_decoder.v
     Info (12023): Found entity 1: lab4_decoder
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_regfile.v
-    Info (12023): Found entity 1: lab4_regfile
+    Info (12023): Found entity 1: regfile
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_de2.v
     Info (12023): Found entity 1: lab4_de2
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_control_unit.v
     Info (12023): Found entity 1: lab4_control_unit
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(24): created implicit net for "HEX0"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(24): created implicit net for "HEX1"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(24): created implicit net for "HEX2"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(24): created implicit net for "HEX3"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(25): created implicit net for "HEX4"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(25): created implicit net for "HEX5"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(25): created implicit net for "HEX6"
+Warning (10236): Verilog HDL Implicit Net warning at lab4_de2.v(25): created implicit net for "HEX7"
 Info (12127): Elaborating entity "lab4_de2" for the top level hierarchy
-Warning (12125): Using design file lab4_testbench.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: lab4_testbench
-Info (12128): Elaborating entity "lab4_testbench" for hierarchy "lab4_testbench:my_system"
-Error (12006): Node instance "my_system" instantiates undefined entity "system" File: /acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v Line: 19
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+Error (12006): Node instance "my_system" instantiates undefined entity "system" File: /acct/sagerje/Downloads/master/611work/quartus_work/lab4_de2.v Line: 25
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 8 warnings
     Error: Peak virtual memory: 334 megabytes
-    Error: Processing ended: Wed Oct 26 16:40:35 2016
-    Error: Elapsed time: 00:00:01
+    Error: Processing ended: Wed Nov  9 16:47:57 2016
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:01
 
 

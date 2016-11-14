@@ -1,13 +1,3 @@
-/*******************************************************************************
-* regfile.v
-*
-* Lab 3 Top Files:
-*     quartus:  lab3_top.v
-*     modelsim: testbench_regfile.v
-*
-* Alex Harmon and James Sager
-* Fri Oct 14 14:20:48 EDT 2016
-*******************************************************************************/
 module regfile (
   input clk, we,
   input  [4:0] readaddr1, readaddr2, writeaddr,
@@ -40,6 +30,7 @@ module regfile (
       readdata2 <= writedata;
     else
       readdata2 <= array[readaddr2];
+
   end
 
   always @ (posedge clk) begin

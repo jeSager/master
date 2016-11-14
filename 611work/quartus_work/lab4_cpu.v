@@ -60,13 +60,12 @@ lab4_alu alu(
   alu_zero_out
 );
 
-always @( posedge clk ) rgstr_wd_in <= 0;//{alu_hi_out, alu_lo_out};
 
 always @( posedge clk ) begin
+
   ctrl_opcode_in <= ftch_out[31:26];
   rgstr_ra1_in   <= ftch_out[25:21];
   rgstr_ra2_in   <= ftch_out[20:16];
-  rgstr_wa_in    <= ftch_out[15:11];
   ctrl_shift_in  <= ftch_out[10:6];
   ctrl_funct_in  <= ftch_out[ 5:0];
   alu_a_in       <= rgstr_d1_out;
@@ -74,12 +73,13 @@ always @( posedge clk ) begin
   alu_shamt_in   <= ctrl_shamt_out;
   alu_op_in      <= ctrl_op_out;
 
-  // ex stage . . mux
-  // hi_in <= ctrl_enhilo_out;
-  // hi_in <= alu_hi_out;
-  // lo_in <= alu_lo_out;
-  // r <= alu_lo_out;
-end
+  if( ~ctrl_regsel_out ) begin
+    rgstr_wa_in <= ftch_out[15:11];
+    if( ctrl_enhilo_out ) rgstr_wd_in <= {alu_hi_out, alu_lo_out};
+    else rgstr_wd_in <= alu_lo_out;
+  end
+
+end // always
 
 
 endmodule

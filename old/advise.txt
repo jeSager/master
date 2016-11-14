@@ -1,0 +1,23 @@
+                                                                     SPRING 2017
+________________________________________________________________________________
+
+NEEDED COURSES                  CRN     DAY  TIME          LOCATION    INSTRUCT
+--------------------------------------------------------------------------------
+CSCE 313    Embedded Systems    41045   MW   2:20-3:35pm   SWGN 2A27   Bakos
+CSCE 492    Capstone II         41006   MWF  5:00-5:50pm 	 SWGN 1C01   TBA
+CSCE 317    Systems Egr         41425   TR 	 4:25-5:40pm   SWGN 2A14   Valtorta
+ELCT 371    Electronics         41913   TR 	 11:40-12:55pm SWGN 2A14   TBA
+
+
+NEED ONE CSCE ELECTIVE
+--------------------------------------------------------------------------------
+CSCE 355    Computation         47396   MW 	 5:30-6:45pm   SWGN 2A21   TBA
+CSCE 531    Compilers           41134   TR 	 2:50-4:05pm   WMBB 409    Fenner
+
+
+NEED ONE MATH ELECTIVE
+--------------------------------------------------------------------------------
+MATH 544    Linear Algebra      43353	  MWF  10:50-11:40am LCONTE 405  Liu
+
+
+

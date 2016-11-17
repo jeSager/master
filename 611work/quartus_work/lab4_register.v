@@ -10,7 +10,11 @@ module lab4_register (
 
   reg [31:0] rgstr[31:0];
 
-  initial rgstr[0] = 0;
+  initial begin
+    rgstr[0] = 0;
+    rgstr[1] <= 32'd10;
+    rgstr[2] <= 32'b110011001100110011001101;
+  end
 
   assign r30out = ( we & (wa == 30) ) ? r30in : rgstr[30];
 

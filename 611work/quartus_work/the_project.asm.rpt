@@ -1,5 +1,5 @@
 Assembler report for the_project
-Thu Oct 20 16:21:46 2016
+Thu Nov 17 02:44:53 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -9,10 +9,9 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Encrypted IP Cores Summary
-  5. Assembler Generated Files
-  6. Assembler Device Options: the_project.sof
-  7. Assembler Messages
+  4. Assembler Generated Files
+  5. Assembler Device Options: the_project.sof
+  6. Assembler Messages
 
 
 
@@ -38,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 20 16:21:45 2016 ;
+; Assembler Status      ; Successful - Thu Nov 17 02:44:53 2016 ;
 ; Revision Name         ; the_project                           ;
-; Top-level Entity Name ; testbench3                            ;
+; Top-level Entity Name ; lab4_cpu                              ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -148,20 +147,6 @@ Default Value : On
 
 
 
-+--------------------------------------------------------------------------------+
-; Assembler Encrypted IP Cores Summary                                           ;
-+--------------------------------------------------------------------------------+
-Vendor       : Altera
-IP Core Name : Signal Tap (6AF7 BCE1)
-License Type : Licensed
-
-Vendor       : Altera
-IP Core Name : Signal Tap (6AF7 BCEC)
-License Type : Licensed
-+--------------------------------------------------------------------------------+
-
-
-
 +---------------------------+
 ; Assembler Generated Files ;
 +---------------------------+
@@ -178,7 +163,7 @@ License Type : Licensed
 +----------------+--------------------------+
 ; Device         ; EP4CE115F29C7            ;
 ; JTAG usercode  ; 0xFFFFFFFF               ;
-; Checksum       ; 0x007AADFF               ;
+; Checksum       ; 0x005660B3               ;
 +----------------+--------------------------+
 
 
@@ -188,6 +173,6 @@ License Type : Licensed
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Thu Oct 20 16:21:40 2016
+    Info: Processing started: Thu Nov 17 02:44:48 2016
 
 

@@ -5,11 +5,14 @@ for item in *
 do
   cd $item
   echo "Executing Dickens"
-  ./Aprog ../../inputs/text_dickens.txt ../../inputs/pattern_dickens.txt ../../inputs/freq_dickens.txt > ../../outputs/output_dickens.txt
+  ./Aprog ../../inputs/text_dickens.txt ../../inputs/pattern_dickens.txt ../../inputs/freq_dickens.txt
+  # > ../../outputs/output_dickens.txt
   echo "Executing Pi"
-  ./Aprog ../../inputs/text_pi.txt ../../inputs/pattern_pi.txt ../../inputs/freq_pi.txt > ../../outputs/output_pi.txt
+  ./Aprog ../../inputs/text_pi.txt ../../inputs/pattern_pi.txt ../../inputs/freq_pi.txt
+  # > ../../outputs/output_pi.txt
   echo "Executing DNA"
-  ./Aprog ../../inputs/text_dna.txt ../../inputs/pattern_dna.txt ../../inputs/freq_dna.txt > ../../outputs/output_dna.txt
+  ./Aprog ../../inputs/text_dna.txt ../../inputs/pattern_dna.txt ../../inputs/freq_dna.txt
+  # > ../../outputs/output_dna.txt
   cd ..
 done
 cd ..

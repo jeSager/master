@@ -1,5 +1,5 @@
 Flow report for the_project
-Wed Nov  9 16:47:57 2016
+Thu Nov 17 02:44:55 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -38,22 +38,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Flow Summary                                                                   ;
 +------------------------------------+-------------------------------------------+
-; Flow Status                        ; Flow Failed - Wed Nov  9 16:47:57 2016    ;
+; Flow Status                        ; Successful - Thu Nov 17 02:44:55 2016     ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; the_project                               ;
-; Top-level Entity Name              ; lab4_de2                                  ;
+; Top-level Entity Name              ; lab4_cpu                                  ;
 ; Family                             ; Cyclone IV E                              ;
 ; Device                             ; EP4CE115F29C7                             ;
 ; Timing Models                      ; Final                                     ;
-; Total logic elements               ; N/A until Partition Merge                 ;
-;     Total combinational functions  ; N/A until Partition Merge                 ;
-;     Dedicated logic registers      ; N/A until Partition Merge                 ;
-; Total registers                    ; N/A until Partition Merge                 ;
-; Total pins                         ; N/A until Partition Merge                 ;
-; Total virtual pins                 ; N/A until Partition Merge                 ;
-; Total memory bits                  ; N/A until Partition Merge                 ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                 ;
-; Total PLLs                         ; N/A until Partition Merge                 ;
+; Total logic elements               ; 0 / 114,480 ( 0 % )                       ;
+;     Total combinational functions  ; 0 / 114,480 ( 0 % )                       ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                       ;
+; Total registers                    ; 0                                         ;
+; Total pins                         ; 66 / 529 ( 12 % )                         ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                           ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                             ;
 +------------------------------------+-------------------------------------------+
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/09/2016 16:47:56 ;
+; Start date & time ; 11/17/2016 02:44:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; the_project         ;
 +-------------------+---------------------+
@@ -72,7 +72,7 @@ applicable agreement for further details.
 ; Flow Non-Default Global Settings                                               ;
 +--------------------------------------------------------------------------------+
 Assignment Name : COMPILER_SIGNATURE_ID
-Value           : 26830024545502.147872807622159
+Value           : 167746772114089.147936867312803
 Default Value   : --
 Entity Name     : --
 Section Id      : --
@@ -122,19 +122,19 @@ Section Id      : --
 Assignment Name : PARTITION_COLOR
 Value           : 16764057
 Default Value   : --
-Entity Name     : lab4_de2
+Entity Name     : lab4_cpu
 Section Id      : Top
 
 Assignment Name : PARTITION_FITTER_PRESERVATION_LEVEL
 Value           : PLACEMENT_AND_ROUTING
 Default Value   : --
-Entity Name     : lab4_de2
+Entity Name     : lab4_cpu
 Section Id      : Top
 
 Assignment Name : PARTITION_NETLIST_TYPE
 Value           : SOURCE
 Default Value   : --
-Entity Name     : lab4_de2
+Entity Name     : lab4_cpu
 Section Id      : Top
 
 Assignment Name : POWER_BOARD_THERMAL_MODEL
@@ -150,7 +150,7 @@ Entity Name     : --
 Section Id      : --
 
 Assignment Name : TOP_LEVEL_ENTITY
-Value           : lab4_de2
+Value           : lab4_cpu
 Default Value   : the_project
 Entity Name     : --
 Section Id      : --
@@ -173,11 +173,35 @@ Average Processors Used            : 1.0
 Peak Virtual Memory                : --
 Total CPU Time (on all processors) : 00:00:01
 
-Module Name                        : Total
+Module Name                        : Fitter
+Elapsed Time                       : 00:00:11
+Average Processors Used            : 2.9
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:16
+
+Module Name                        : TimeQuest Timing Analyzer
 Elapsed Time                       : 00:00:02
-Average Processors Used            : --
+Average Processors Used            : 1.0
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:02
+
+Module Name                        : Assembler
+Elapsed Time                       : 00:00:05
+Average Processors Used            : 1.0
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:05
+
+Module Name                        : EDA Netlist Writer
+Elapsed Time                       : 00:00:00
+Average Processors Used            : 1.0
 Peak Virtual Memory                : --
 Total CPU Time (on all processors) : 00:00:01
+
+Module Name                        : Total
+Elapsed Time                       : 00:00:20
+Average Processors Used            : --
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:25
 +--------------------------------------------------------------------------------+
 
 
@@ -186,7 +210,31 @@ Total CPU Time (on all processors) : 00:00:01
 ; Flow OS Summary                                                                ;
 +--------------------------------------------------------------------------------+
 Module Name      : Analysis & Synthesis
-Machine Hostname : cocsce-l3d22-02
+Machine Hostname : cocsce-l1d39-03
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : Fitter
+Machine Hostname : cocsce-l1d39-03
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : TimeQuest Timing Analyzer
+Machine Hostname : cocsce-l1d39-03
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : Assembler
+Machine Hostname : cocsce-l1d39-03
+OS Name          : Ubuntu 14.04.5
+OS Version       : 14
+Processor type   : x86_64
+
+Module Name      : EDA Netlist Writer
+Machine Hostname : cocsce-l1d39-03
 OS Name          : Ubuntu 14.04.5
 OS Version       : 14
 Processor type   : x86_64
@@ -198,6 +246,10 @@ Processor type   : x86_64
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off the_project -c the_project
+quartus_fit --read_settings_files=off --write_settings_files=off the_project -c the_project
+quartus_sta the_project -c the_project
+quartus_asm --read_settings_files=off --write_settings_files=off the_project -c the_project
+quartus_eda --read_settings_files=off --write_settings_files=off the_project -c the_project
 
 
 

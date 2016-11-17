@@ -1,12 +1,57 @@
 +--------------------------------------------------------------------------------+
 ; Legal Partition Candidates                                                     ;
 +--------------------------------------------------------------------------------+
-Hierarchy         : my_system
-Input             : 0
+Hierarchy         : alu
+Input             : 76
 Constant Input    : 0
 Unused Input      : 0
 Floating Input    : 0
-Output            : 0
+Output            : 65
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ctrl
+Input             : 17
+Constant Input    : 2
+Unused Input      : 6
+Floating Input    : 2
+Output            : 13
+Constant Output   : 2
+Unused Output     : 2
+Floating Output   : 2
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : rgstr
+Input             : 81
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 96
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : ftch
+Input             : 2
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 32
 Constant Output   : 0
 Unused Output     : 0
 Floating Output   : 0

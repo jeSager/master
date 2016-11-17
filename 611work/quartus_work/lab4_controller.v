@@ -1,5 +1,5 @@
 module lab4_controller(
-  input     [5:0] op_code,
+  input     [ 5:0] op_code,
   input     [10:6] shift_amount,
   input     [ 5:0] function_code,
 

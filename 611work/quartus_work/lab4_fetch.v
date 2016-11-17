@@ -1,19 +1,21 @@
 module lab4_fetch(
 
-  input clk, reset
-  output reg [31:0] data
+  input clock, reset,
+  output reg [31:0] word
 );
 
 reg [31:0] RAM[1023:0];
-reg [9:0] word;
+reg [9:0] count = 0;
 
-initial $readmemh( "lab4_hexdump_mips.txt", RAM );
+initial $readmemh( "lab4_hexdump_mips.tv", RAM );
 
-always @( posedge clk ) begin
+always @( negedge clock ) begin
 
-  if( reset ) word = 0;
-  else word = word + 1;
-  data = RAM[ word ];
+  if( reset ) count = 0;
+  else count = count + 1;
+  word = RAM[ count ];
+  if( $feof(lab4_hexdump_mips.tv) == word ) $display("cycle %h", word);
+  else $display ("whooya");
 
 end
 

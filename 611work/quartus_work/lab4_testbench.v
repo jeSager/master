@@ -1,23 +1,21 @@
 module lab4_testbench ();
 
-  reg clk_tb;
-  reg rst_tb;
-  reg [6:0] h0, h1, h2, h3, h4, h5, h6, h7;
-  reg [48:0] line;
+reg clock;
+reg reset;
+wire [31:0] cpu_d1_out;
+wire [31:0] cpu_d2_out;
 
-  initial begin rst_tb=1; #4; rst_tb=0; end
-  always begin clk_tb=0; #5; clk_tb=1; #5; end
+initial begin reset=1; #6; reset=0; end
 
-  lab4_cpu cpu (
-    .clk_cpu(clk_tb), .rst_cpu(rst_tb), .sw_cpu(18'd15),
-    .h0(h0), .h1(h1), .h2(h2), .h3(h3), .h4(h4), .h5(h5), .h6(h6), .h7(h7)
-  );
+always begin clock=0; #5; clock=1; #5; end
 
-  always @(posedge clk_tb) begin
-    #1;
-    { h0, h1, h2, h3, h4, h5, h6, h7 } = line;
-    if( line == 'bx ) $finish;
-    else $display("line %d", line);
-  end
+lab4_cpu cpu (
+  clock, reset,
+  cpu_d1_out, cpu_d2_out
+);
+
+//always @(posedge clock) begin
+//  $display("cycle %h", cpu_d1_out);
+//end
 
 endmodule

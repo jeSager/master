@@ -1,0 +1,124 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/acct/sagerje/Downloads/master
+vlab4_alu
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 IaO?WVcgXGOJzi227ekWY2
+IIMPRGdC4;^`b2<R206Ojb2
+R0
+w1479160142
+8/acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v
+L0 1
+Z2 OL;L;10.4b;61
+Z3 !s108 1479331148.000000
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v|
+!i113 0
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vlab4_controller
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 dBEPB6DifT5LO:0@SSBHh2
+I;kV1lb:H7VB]I<fU3dcaO2
+R0
+w1479089353
+8/acct/sagerje/Downloads/master/611work/quartus_work/lab4_controller.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/lab4_controller.v
+L0 1
+R2
+R3
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_controller.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_controller.v|
+!i113 0
+R4
+vlab4_cpu
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 `3UkfT07clmifi]X722OD2
+I6L^0L29N[?HN6j?Wj4_X41
+R0
+w1479330092
+8/acct/sagerje/Downloads/master/611work/quartus_work/lab4_cpu.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/lab4_cpu.v
+L0 1
+R2
+R3
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_cpu.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_cpu.v|
+!i113 0
+R4
+vlab4_fetch
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 H=oSaHMI?Iimk=YYQTgjP3
+I8kNKGKnWIM:Ek^T9<g]463
+R0
+w1479329939
+8/acct/sagerje/Downloads/master/611work/quartus_work/lab4_fetch.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/lab4_fetch.v
+L0 1
+R2
+R3
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_fetch.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_fetch.v|
+!i113 0
+R4
+vlab4_register
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 d3IzDi=:e0`?^[3A4oAbW3
+IQ72GA2__=DD=:oKO0E4jS2
+R0
+w1479330739
+8/acct/sagerje/Downloads/master/611work/quartus_work/lab4_register.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/lab4_register.v
+L0 1
+R2
+R3
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_register.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_register.v|
+!i113 0
+R4
+vlab4_testbench
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 b0I]kI?4`U[[8Uh;aXNnF3
+I7VS6bb`6lfF4Andd3il6W1
+R0
+w1479331143
+8/acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v
+F/acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v
+L0 1
+R2
+!s108 1479331149.000000
+!s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v|
+!s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v|
+!i113 0
+R4

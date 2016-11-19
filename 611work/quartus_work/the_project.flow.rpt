@@ -1,5 +1,5 @@
 Flow report for the_project
-Thu Nov 17 02:44:55 2016
+Sat Nov 19 01:16:47 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Flow Summary                                                                   ;
 +------------------------------------+-------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov 17 02:44:55 2016     ;
+; Flow Status                        ; Successful - Sat Nov 19 01:16:47 2016     ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; the_project                               ;
 ; Top-level Entity Name              ; lab4_cpu                                  ;
 ; Family                             ; Cyclone IV E                              ;
 ; Device                             ; EP4CE115F29C7                             ;
 ; Timing Models                      ; Final                                     ;
-; Total logic elements               ; 0 / 114,480 ( 0 % )                       ;
-;     Total combinational functions  ; 0 / 114,480 ( 0 % )                       ;
-;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                       ;
-; Total registers                    ; 0                                         ;
+; Total logic elements               ; 22 / 114,480 ( < 1 % )                    ;
+;     Total combinational functions  ; 20 / 114,480 ( < 1 % )                    ;
+;     Dedicated logic registers      ; 10 / 114,480 ( < 1 % )                    ;
+; Total registers                    ; 10                                        ;
 ; Total pins                         ; 66 / 529 ( 12 % )                         ;
 ; Total virtual pins                 ; 0                                         ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                     ;
+; Total memory bits                  ; 32,768 / 3,981,312 ( < 1 % )              ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                           ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                             ;
 +------------------------------------+-------------------------------------------+
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/17/2016 02:44:33 ;
+; Start date & time ; 11/19/2016 01:16:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; the_project         ;
 +-------------------+---------------------+
@@ -72,7 +72,7 @@ applicable agreement for further details.
 ; Flow Non-Default Global Settings                                               ;
 +--------------------------------------------------------------------------------+
 Assignment Name : COMPILER_SIGNATURE_ID
-Value           : 167746772114089.147936867312803
+Value           : 167746771933079.147953618014026
 Default Value   : --
 Entity Name     : --
 Section Id      : --
@@ -174,19 +174,19 @@ Peak Virtual Memory                : --
 Total CPU Time (on all processors) : 00:00:01
 
 Module Name                        : Fitter
-Elapsed Time                       : 00:00:11
-Average Processors Used            : 2.9
+Elapsed Time                       : 00:00:15
+Average Processors Used            : 3.2
 Peak Virtual Memory                : --
-Total CPU Time (on all processors) : 00:00:16
+Total CPU Time (on all processors) : 00:00:25
 
 Module Name                        : TimeQuest Timing Analyzer
-Elapsed Time                       : 00:00:02
+Elapsed Time                       : 00:00:04
 Average Processors Used            : 1.0
 Peak Virtual Memory                : --
-Total CPU Time (on all processors) : 00:00:02
+Total CPU Time (on all processors) : 00:00:03
 
 Module Name                        : Assembler
-Elapsed Time                       : 00:00:05
+Elapsed Time                       : 00:00:06
 Average Processors Used            : 1.0
 Peak Virtual Memory                : --
 Total CPU Time (on all processors) : 00:00:05
@@ -198,10 +198,10 @@ Peak Virtual Memory                : --
 Total CPU Time (on all processors) : 00:00:01
 
 Module Name                        : Total
-Elapsed Time                       : 00:00:20
+Elapsed Time                       : 00:00:27
 Average Processors Used            : --
 Peak Virtual Memory                : --
-Total CPU Time (on all processors) : 00:00:25
+Total CPU Time (on all processors) : 00:00:35
 +--------------------------------------------------------------------------------+
 
 
@@ -210,31 +210,31 @@ Total CPU Time (on all processors) : 00:00:25
 ; Flow OS Summary                                                                ;
 +--------------------------------------------------------------------------------+
 Module Name      : Analysis & Synthesis
-Machine Hostname : cocsce-l1d39-03
+Machine Hostname : cocsce-l1d39-24
 OS Name          : Ubuntu 14.04.5
 OS Version       : 14
 Processor type   : x86_64
 
 Module Name      : Fitter
-Machine Hostname : cocsce-l1d39-03
+Machine Hostname : cocsce-l1d39-24
 OS Name          : Ubuntu 14.04.5
 OS Version       : 14
 Processor type   : x86_64
 
 Module Name      : TimeQuest Timing Analyzer
-Machine Hostname : cocsce-l1d39-03
+Machine Hostname : cocsce-l1d39-24
 OS Name          : Ubuntu 14.04.5
 OS Version       : 14
 Processor type   : x86_64
 
 Module Name      : Assembler
-Machine Hostname : cocsce-l1d39-03
+Machine Hostname : cocsce-l1d39-24
 OS Name          : Ubuntu 14.04.5
 OS Version       : 14
 Processor type   : x86_64
 
 Module Name      : EDA Netlist Writer
-Machine Hostname : cocsce-l1d39-03
+Machine Hostname : cocsce-l1d39-24
 OS Name          : Ubuntu 14.04.5
 OS Version       : 14
 Processor type   : x86_64

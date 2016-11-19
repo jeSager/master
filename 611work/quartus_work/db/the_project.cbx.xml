@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="the_project">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab4_cpu|lab4_fetch:ftch|altsyncram:RAM_rtl_0" CBX_FILE_NAME="altsyncram_um71.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

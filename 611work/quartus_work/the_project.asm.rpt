@@ -1,5 +1,5 @@
 Assembler report for the_project
-Thu Nov 17 02:44:53 2016
+Sat Nov 19 01:16:45 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 17 02:44:53 2016 ;
+; Assembler Status      ; Successful - Sat Nov 19 01:16:45 2016 ;
 ; Revision Name         ; the_project                           ;
 ; Top-level Entity Name ; lab4_cpu                              ;
 ; Family                ; Cyclone IV E                          ;
@@ -163,7 +163,7 @@ Default Value : On
 +----------------+--------------------------+
 ; Device         ; EP4CE115F29C7            ;
 ; JTAG usercode  ; 0xFFFFFFFF               ;
-; Checksum       ; 0x005660B3               ;
+; Checksum       ; 0x0056D34C               ;
 +----------------+--------------------------+
 
 
@@ -173,6 +173,6 @@ Default Value : On
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Thu Nov 17 02:44:48 2016
+    Info: Processing started: Sat Nov 19 01:16:39 2016
 
 

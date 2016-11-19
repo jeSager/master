@@ -1,11 +1,9 @@
 module lab4_cpu (
   input  clk, rst,
-  //we,
-//  input  [17:0] sw,
   output [31:0] d1out, d2out //, r30out
 );
 
-
+reg we;
 
 ///////////////////////////////////rgstr
 reg  [ 4:0] rgstr_ra1_in, rgstr_ra2_in, rgstr_wa_in;
@@ -64,32 +62,46 @@ lab4_alu alu(
 );
 
 
-always @( posedge clk ) begin
-
+always @( negedge clk ) begin
+  $display("Begin always @ negedge");
+  we             <= 0;
+  $display("\t we is false");
   ctrl_opcode_in <= ftch_out[31:26];
+  $display("\t ctrl_opcode_in <= %10d", ctrl_opcode_in );
   rgstr_ra1_in   <= ftch_out[25:21];
+  $display("\t rgstr_ra1_in   <= %10d", rgstr_ra1_in );
   rgstr_ra2_in   <= ftch_out[20:16];
+  $display("\t rgstr_ra2_in   <= %10d", rgstr_ra2_in );
   ctrl_shift_in  <= ftch_out[10:6];
+  $display("\t ctrl_shift_in  <= %10d", ctrl_shift_in);
   ctrl_funct_in  <= ftch_out[ 5:0];
+  $display("\t ctrl_funct_in  <= %10d", ctrl_funct_in);
   alu_a_in       <= rgstr_d1_out;
+  $display("\t alu_a_in       <= %10d", alu_a_in);
   alu_b_in       <= rgstr_d2_out;
+  $display("\t alu_b_in       <= %10d", alu_b_in);
   alu_shamt_in   <= ctrl_shamt_out;
+  $display("\t alu_shamt_in   <= %10d", alu_shamt_in);
   alu_op_in      <= ctrl_op_out;
+  $display("\t alu_op_in      <= %10d", alu_op_in);
+  we             <= 1;
+  $display("\t we is true");
 
-end // always
+end // always posedge
 
-always @ * if( ~ctrl_regsel_out ) begin
 
+always @( posedge clk ) if( we ) begin
+  $display("Begin always @ posedge");
   rgstr_wa_in <= ftch_out[15:11];
+  $display("\t rgstr_wa_in    <= %10d", rgstr_wa_in);
   if( ctrl_enhilo_out ) rgstr_wd_in <= {alu_hi_out, alu_lo_out};
   else rgstr_wd_in <= alu_lo_out;
-
-end
-
-assign d1out = ftch_out;
-//assign d1out = alu_lo_out;
+  $display("\t rgsr_wd_in     <= %10d", rgstr_wd_in);
+end // always negedge
 
 
+//assign d1out = rgstr_wa_in;
+//assign d2out = rgstr_wd_in;
 
 
 endmodule

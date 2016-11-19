@@ -1,5 +1,5 @@
 Analysis & Synthesis report for the_project
-Thu Nov 17 02:44:34 2016
+Sat Nov 19 01:16:22 2016
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -13,12 +13,17 @@ Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "lab4_alu:alu"
- 10. Port Connectivity Checks: "lab4_controller:ctrl"
- 11. Port Connectivity Checks: "lab4_register:rgstr"
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. General Register Statistics
+ 10. Registers Packed Into Inferred Megafunctions
+ 11. Source assignments for lab4_fetch:ftch|altsyncram:RAM_rtl_0|altsyncram_um71:auto_generated
+ 12. Parameter Settings for Inferred Entity Instance: lab4_fetch:ftch|altsyncram:RAM_rtl_0
+ 13. altsyncram Parameter Settings by Entity Instance
+ 14. Port Connectivity Checks: "lab4_alu:alu"
+ 15. Port Connectivity Checks: "lab4_controller:ctrl"
+ 16. Port Connectivity Checks: "lab4_register:rgstr"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -44,18 +49,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 17 02:44:34 2016     ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 19 01:16:22 2016     ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; the_project                               ;
 ; Top-level Entity Name              ; lab4_cpu                                  ;
 ; Family                             ; Cyclone IV E                              ;
-; Total logic elements               ; 0                                         ;
-;     Total combinational functions  ; 0                                         ;
-;     Dedicated logic registers      ; 0                                         ;
-; Total registers                    ; 0                                         ;
+; Total logic elements               ; 20                                        ;
+;     Total combinational functions  ; 20                                        ;
+;     Dedicated logic registers      ; 10                                        ;
+; Total registers                    ; 10                                        ;
 ; Total pins                         ; 66                                        ;
 ; Total virtual pins                 ; 0                                         ;
-; Total memory bits                  ; 0                                         ;
+; Total memory bits                  ; 32,768                                    ;
 ; Embedded Multiplier 9-bit elements ; 0                                         ;
 ; Total PLLs                         ; 0                                         ;
 +------------------------------------+-------------------------------------------+
@@ -429,50 +434,118 @@ File Type                        : User Verilog HDL File
 File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v
 Library                          : 
 
-File Name with User-Entered Path : lab4_hexdump_mips.txt
+File Name with User-Entered Path : lab4_hexdump_mips.tv
 Used in Netlist                  : yes
-File Type                        : Auto-Found File 
-File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/lab4_hexdump_mips.txt
+File Type                        : Auto-Found Unspecified File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/lab4_hexdump_mips.tv
+Library                          : 
+
+File Name with User-Entered Path : altsyncram.tdf
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altsyncram.tdf
+Library                          : 
+
+File Name with User-Entered Path : stratix_ram_block.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/stratix_ram_block.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_mux.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_mux.inc
+Library                          : 
+
+File Name with User-Entered Path : lpm_decode.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/lpm_decode.inc
+Library                          : 
+
+File Name with User-Entered Path : aglobal120.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/aglobal120.inc
+Library                          : 
+
+File Name with User-Entered Path : a_rdenreg.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/a_rdenreg.inc
+Library                          : 
+
+File Name with User-Entered Path : altrom.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altrom.inc
+Library                          : 
+
+File Name with User-Entered Path : altram.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altram.inc
+Library                          : 
+
+File Name with User-Entered Path : altdpram.inc
+Used in Netlist                  : yes
+File Type                        : Megafunction 
+File Name with Absolute Path     : /usr/local/3rdparty/altera/quartus12/quartus/libraries/megafunctions/altdpram.inc
+Library                          : 
+
+File Name with User-Entered Path : db/altsyncram_um71.tdf
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Megafunction 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/altsyncram_um71.tdf
+Library                          : 
+
+File Name with User-Entered Path : db/the_project.ram0_lab4_fetch_86c718ac.hdl.mif
+Used in Netlist                  : yes
+File Type                        : Auto-Generated Auto-Found Memory Initialization File 
+File Name with Absolute Path     : /acct/sagerje/Downloads/master/611work/quartus_work/db/the_project.ram0_lab4_fetch_86c718ac.hdl.mif
 Library                          : 
 +--------------------------------------------------------------------------------+
 
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 66    ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 66    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 20        ;
+;                                             ;           ;
+; Total combinational functions               ; 20        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 20        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 11        ;
+;     -- arithmetic mode                      ; 9         ;
+;                                             ;           ;
+; Total registers                             ; 10        ;
+;     -- Dedicated logic registers            ; 10        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 66        ;
+; Total memory bits                           ; 32768     ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 42        ;
+; Total fan-out                               ; 509       ;
+; Average fan-out                             ; 2.62      ;
++---------------------------------------------+-----------+
 
 
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Resource Utilization by Entity                            ;
 +--------------------------------------------------------------------------------+
 Compilation Hierarchy Node : |lab4_cpu
-LC Combinationals          : 0 (0)
-LC Registers               : 0 (0)
-Memory Bits                : 0
+LC Combinationals          : 20 (0)
+LC Registers               : 10 (0)
+Memory Bits                : 32768
 DSP Elements               : 0
 DSP 9x9                    : 0
 DSP 18x18                  : 0
@@ -480,9 +553,61 @@ Pins                       : 66
 Virtual Pins               : 0
 Full Hierarchy Name        : |lab4_cpu
 Library Name               : 
+
+Compilation Hierarchy Node :    |lab4_fetch:ftch|
+LC Combinationals          : 20 (20)
+LC Registers               : 10 (10)
+Memory Bits                : 32768
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab4_cpu|lab4_fetch:ftch
+Library Name               : 
+
+Compilation Hierarchy Node :       |altsyncram:RAM_rtl_0|
+LC Combinationals          : 0 (0)
+LC Registers               : 0 (0)
+Memory Bits                : 32768
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab4_cpu|lab4_fetch:ftch|altsyncram:RAM_rtl_0
+Library Name               : 
+
+Compilation Hierarchy Node :          |altsyncram_um71:auto_generated|
+LC Combinationals          : 0 (0)
+LC Registers               : 0 (0)
+Memory Bits                : 32768
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 0
+Virtual Pins               : 0
+Full Hierarchy Name        : |lab4_cpu|lab4_fetch:ftch|altsyncram:RAM_rtl_0|altsyncram_um71:auto_generated
+Library Name               : 
 +--------------------------------------------------------------------------------+
 
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                               ;
++--------------------------------------------------------------------------------+
+Name         : lab4_fetch:ftch|altsyncram:RAM_rtl_0|altsyncram_um71:auto_generated|ALTSYNCRAM
+Type         : AUTO
+Mode         : ROM
+Port A Depth : 1024
+Port A Width : 32
+Port B Depth : --
+Port B Width : --
+Size         : 32768
+MIF          : db/the_project.ram0_lab4_fetch_86c718ac.hdl.mif
++--------------------------------------------------------------------------------+
+
 
 
 +------------------------------------------------------+
@@ -490,7 +615,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 10    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -498,6 +623,262 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                   ;
++--------------------------------------------------------------------------------+
+Register Name : lab4_fetch:ftch|word[0..31]
+Megafunction  : lab4_fetch:ftch|RAM_rtl_0
+Type          : RAM
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Source assignments for lab4_fetch:ftch|altsyncram:RAM_rtl_0|altsyncram_um71:auto_generated ;
++--------------------------------------------------------------------------------+
+Assignment : OPTIMIZE_POWER_DURING_SYNTHESIS
+Value      : NORMAL_COMPILATION
+From       : -
+To         : -
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lab4_fetch:ftch|altsyncram:RAM_rtl_0 ;
++--------------------------------------------------------------------------------+
+Parameter Name : BYTE_SIZE_BLOCK
+Value          : 8
+Type           : Untyped
+
+Parameter Name : AUTO_CARRY_CHAINS
+Value          : ON
+Type           : AUTO_CARRY
+
+Parameter Name : IGNORE_CARRY_BUFFERS
+Value          : OFF
+Type           : IGNORE_CARRY
+
+Parameter Name : AUTO_CASCADE_CHAINS
+Value          : ON
+Type           : AUTO_CASCADE
+
+Parameter Name : IGNORE_CASCADE_BUFFERS
+Value          : OFF
+Type           : IGNORE_CASCADE
+
+Parameter Name : WIDTH_BYTEENA
+Value          : 1
+Type           : Untyped
+
+Parameter Name : OPERATION_MODE
+Value          : ROM
+Type           : Untyped
+
+Parameter Name : WIDTH_A
+Value          : 32
+Type           : Untyped
+
+Parameter Name : WIDTHAD_A
+Value          : 10
+Type           : Untyped
+
+Parameter Name : NUMWORDS_A
+Value          : 1024
+Type           : Untyped
+
+Parameter Name : OUTDATA_REG_A
+Value          : UNREGISTERED
+Type           : Untyped
+
+Parameter Name : ADDRESS_ACLR_A
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : OUTDATA_ACLR_A
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : WRCONTROL_ACLR_A
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : INDATA_ACLR_A
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : BYTEENA_ACLR_A
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : WIDTH_B
+Value          : 1
+Type           : Untyped
+
+Parameter Name : WIDTHAD_B
+Value          : 1
+Type           : Untyped
+
+Parameter Name : NUMWORDS_B
+Value          : 1
+Type           : Untyped
+
+Parameter Name : INDATA_REG_B
+Value          : CLOCK1
+Type           : Untyped
+
+Parameter Name : WRCONTROL_WRADDRESS_REG_B
+Value          : CLOCK1
+Type           : Untyped
+
+Parameter Name : RDCONTROL_REG_B
+Value          : CLOCK1
+Type           : Untyped
+
+Parameter Name : ADDRESS_REG_B
+Value          : CLOCK1
+Type           : Untyped
+
+Parameter Name : OUTDATA_REG_B
+Value          : UNREGISTERED
+Type           : Untyped
+
+Parameter Name : BYTEENA_REG_B
+Value          : CLOCK1
+Type           : Untyped
+
+Parameter Name : INDATA_ACLR_B
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : WRCONTROL_ACLR_B
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : ADDRESS_ACLR_B
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : OUTDATA_ACLR_B
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : RDCONTROL_ACLR_B
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : BYTEENA_ACLR_B
+Value          : NONE
+Type           : Untyped
+
+Parameter Name : WIDTH_BYTEENA_A
+Value          : 1
+Type           : Untyped
+
+Parameter Name : WIDTH_BYTEENA_B
+Value          : 1
+Type           : Untyped
+
+Parameter Name : RAM_BLOCK_TYPE
+Value          : AUTO
+Type           : Untyped
+
+Parameter Name : BYTE_SIZE
+Value          : 8
+Type           : Untyped
+
+Parameter Name : READ_DURING_WRITE_MODE_MIXED_PORTS
+Value          : DONT_CARE
+Type           : Untyped
+
+Parameter Name : READ_DURING_WRITE_MODE_PORT_A
+Value          : NEW_DATA_NO_NBE_READ
+Type           : Untyped
+
+Parameter Name : READ_DURING_WRITE_MODE_PORT_B
+Value          : NEW_DATA_NO_NBE_READ
+Type           : Untyped
+
+Parameter Name : INIT_FILE
+Value          : db/the_project.ram0_lab4_fetch_86c718ac.hdl.mif
+Type           : Untyped
+
+Parameter Name : INIT_FILE_LAYOUT
+Value          : PORT_A
+Type           : Untyped
+
+Parameter Name : MAXIMUM_DEPTH
+Value          : 0
+Type           : Untyped
+
+Parameter Name : CLOCK_ENABLE_INPUT_A
+Value          : NORMAL
+Type           : Untyped
+
+Parameter Name : CLOCK_ENABLE_INPUT_B
+Value          : NORMAL
+Type           : Untyped
+
+Parameter Name : CLOCK_ENABLE_OUTPUT_A
+Value          : NORMAL
+Type           : Untyped
+
+Parameter Name : CLOCK_ENABLE_OUTPUT_B
+Value          : NORMAL
+Type           : Untyped
+
+Parameter Name : CLOCK_ENABLE_CORE_A
+Value          : USE_INPUT_CLKEN
+Type           : Untyped
+
+Parameter Name : CLOCK_ENABLE_CORE_B
+Value          : USE_INPUT_CLKEN
+Type           : Untyped
+
+Parameter Name : ENABLE_ECC
+Value          : FALSE
+Type           : Untyped
+
+Parameter Name : ECC_PIPELINE_STAGE_ENABLED
+Value          : FALSE
+Type           : Untyped
+
+Parameter Name : WIDTH_ECCSTATUS
+Value          : 3
+Type           : Untyped
+
+Parameter Name : DEVICE_FAMILY
+Value          : Cyclone IV E
+Type           : Untyped
+
+Parameter Name : CBXI_PARAMETER
+Value          : altsyncram_um71
+Type           : Untyped
++--------------------------------------------------------------------------------+
+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                 ;
++-------------------------------------------+--------------------------------------+
+; Name                                      ; Value                                ;
++-------------------------------------------+--------------------------------------+
+; Number of entity instances                ; 1                                    ;
+; Entity Instance                           ; lab4_fetch:ftch|altsyncram:RAM_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                  ;
+;     -- WIDTH_A                            ; 32                                   ;
+;     -- NUMWORDS_A                         ; 1024                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                         ;
+;     -- WIDTH_B                            ; 1                                    ;
+;     -- NUMWORDS_B                         ; 1                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                               ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                         ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                 ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                            ;
++-------------------------------------------+--------------------------------------+
 
 
 +--------------------------------------------------------------------------------+
@@ -558,7 +939,7 @@ Details  : Connected to dangling logic. Logic that only feeds a dangling port wi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Thu Nov 17 02:44:32 2016
+    Info: Processing started: Sat Nov 19 01:16:20 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off the_project -c the_project
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_register.v
@@ -571,53 +952,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab4_co
     Info (12023): Found entity 1: lab4_controller
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_alu.v
     Info (12023): Found entity 1: lab4_alu
-Warning (10236): Verilog HDL Implicit Net warning at lab4_cpu.v(35): created implicit net for "we"
 Info (12127): Elaborating entity "lab4_cpu" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at lab4_cpu.v(80): truncated value with size 64 to match size of target (32)
-Warning (10240): Verilog HDL Always Construct warning at lab4_cpu.v(78): inferring latch(es) for variable "rgstr_wa_in", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at lab4_cpu.v(78): inferring latch(es) for variable "rgstr_wd_in", which holds its previous value in one or more paths through the always construct
-Warning (10034): Output port "d1out" at lab4_cpu.v(4) has no driver
+Warning (10230): Verilog HDL assignment warning at lab4_cpu.v(86): truncated value with size 64 to match size of target (32)
 Warning (10034): Output port "d2out" at lab4_cpu.v(5) has no driver
-Info (10041): Inferred latch for "rgstr_wd_in[0]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[1]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[2]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[3]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[4]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[5]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[6]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[7]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[8]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[9]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[10]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[11]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[12]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[13]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[14]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[15]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[16]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[17]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[18]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[19]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[20]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[21]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[22]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[23]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[24]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[25]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[26]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[27]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[28]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[29]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[30]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wd_in[31]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wa_in[0]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wa_in[1]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wa_in[2]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wa_in[3]" at lab4_cpu.v(78)
-Info (10041): Inferred latch for "rgstr_wa_in[4]" at lab4_cpu.v(78)
 Info (12128): Elaborating entity "lab4_fetch" for hierarchy "lab4_fetch:ftch"
-Warning (10850): Verilog HDL warning at lab4_fetch.v(10): number of words (20) in memory file does not match the number of elements in the address range [0:1023]
-Warning (10230): Verilog HDL assignment warning at lab4_fetch.v(15): truncated value with size 32 to match size of target (10)
+Warning (10850): Verilog HDL warning at lab4_fetch.v(11): number of words (20) in memory file does not match the number of elements in the address range [0:1023]
+Warning (10230): Verilog HDL assignment warning at lab4_fetch.v(18): truncated value with size 32 to match size of target (10)
 Warning (10030): Net "RAM.data_a" at lab4_fetch.v(7) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "RAM.waddr_a" at lab4_fetch.v(7) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "RAM.we_a" at lab4_fetch.v(7) has no driver or initial value, using a default initial value '0'
@@ -631,39 +971,33 @@ Info (10041): Inferred latch for "alu_op[2]" at lab4_controller.v(26)
 Info (10041): Inferred latch for "alu_op[3]" at lab4_controller.v(26)
 Info (12128): Elaborating entity "lab4_alu" for hierarchy "lab4_alu:alu"
 Warning (10935): Verilog HDL Casex/Casez warning at lab4_alu.v(52): casex/casez item expression overlaps with a previous casex/casez item expression
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "lab4_fetch:ftch|RAM_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 10
+        Info (286033): Parameter NUMWORDS_A set to 1024
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/the_project.ram0_lab4_fetch_86c718ac.hdl.mif
+Info (12130): Elaborated megafunction instantiation "lab4_fetch:ftch|altsyncram:RAM_rtl_0"
+Info (12133): Instantiated megafunction "lab4_fetch:ftch|altsyncram:RAM_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "10"
+    Info (12134): Parameter "NUMWORDS_A" = "1024"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/the_project.ram0_lab4_fetch_86c718ac.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_um71.tdf
+    Info (12023): Found entity 1: altsyncram_um71
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "d1out[0]" is stuck at GND
-    Warning (13410): Pin "d1out[1]" is stuck at GND
-    Warning (13410): Pin "d1out[2]" is stuck at GND
-    Warning (13410): Pin "d1out[3]" is stuck at GND
-    Warning (13410): Pin "d1out[4]" is stuck at GND
-    Warning (13410): Pin "d1out[5]" is stuck at GND
-    Warning (13410): Pin "d1out[6]" is stuck at GND
-    Warning (13410): Pin "d1out[7]" is stuck at GND
-    Warning (13410): Pin "d1out[8]" is stuck at GND
-    Warning (13410): Pin "d1out[9]" is stuck at GND
-    Warning (13410): Pin "d1out[10]" is stuck at GND
-    Warning (13410): Pin "d1out[11]" is stuck at GND
-    Warning (13410): Pin "d1out[12]" is stuck at GND
-    Warning (13410): Pin "d1out[13]" is stuck at GND
-    Warning (13410): Pin "d1out[14]" is stuck at GND
-    Warning (13410): Pin "d1out[15]" is stuck at GND
-    Warning (13410): Pin "d1out[16]" is stuck at GND
-    Warning (13410): Pin "d1out[17]" is stuck at GND
-    Warning (13410): Pin "d1out[18]" is stuck at GND
-    Warning (13410): Pin "d1out[19]" is stuck at GND
-    Warning (13410): Pin "d1out[20]" is stuck at GND
-    Warning (13410): Pin "d1out[21]" is stuck at GND
-    Warning (13410): Pin "d1out[22]" is stuck at GND
-    Warning (13410): Pin "d1out[23]" is stuck at GND
-    Warning (13410): Pin "d1out[24]" is stuck at GND
-    Warning (13410): Pin "d1out[25]" is stuck at GND
-    Warning (13410): Pin "d1out[26]" is stuck at GND
-    Warning (13410): Pin "d1out[27]" is stuck at GND
-    Warning (13410): Pin "d1out[28]" is stuck at GND
-    Warning (13410): Pin "d1out[29]" is stuck at GND
-    Warning (13410): Pin "d1out[30]" is stuck at GND
-    Warning (13410): Pin "d1out[31]" is stuck at GND
     Warning (13410): Pin "d2out[0]" is stuck at GND
     Warning (13410): Pin "d2out[1]" is stuck at GND
     Warning (13410): Pin "d2out[2]" is stuck at GND
@@ -696,17 +1030,17 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "d2out[29]" is stuck at GND
     Warning (13410): Pin "d2out[30]" is stuck at GND
     Warning (13410): Pin "d2out[31]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk"
-    Warning (15610): No output dependent on input pin "rst"
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 64 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 351 megabytes
-    Info: Processing ended: Thu Nov 17 02:44:34 2016
+    Info (21061): Implemented 30 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 379 megabytes
+    Info: Processing ended: Sat Nov 19 01:16:22 2016
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

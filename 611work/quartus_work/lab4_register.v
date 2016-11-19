@@ -11,19 +11,21 @@ module lab4_register (
   reg [31:0] rgstr[31:0];
 
   initial begin
-    rgstr[0] = 0;
-    rgstr[1] <= 32'd10;
-    rgstr[2] <= 32'b110011001100110011001101;
+    rgstr[0] <= 0;
+//    rgstr[1] <= 32'd10;
+//    rgstr[2] <= 32'b110011001100110011001101;
+    rgstr[1] <= 32'd11;
+    rgstr[2] <= 32'd17;
   end
 
   assign r30out = ( we & (wa == 30) ) ? r30in : rgstr[30];
 
   always @ * begin
 
-    if( (ra1 == wa) & (ra1 != 0) & (we == 1) ) rd1 <= wd;
+    if( (ra1 == wa) & (ra1 != 0) & we ) rd1 <= wd;
     else rd1 <= rgstr[ra1];
 
-    if( (ra2 == wa) & (ra2 != 0) & (we == 1) ) rd2 <= wd;
+    if( (ra2 == wa) & (ra2 != 0) & we ) rd2 <= wd;
     else rd2 <= rgstr[ra2];
 
   end

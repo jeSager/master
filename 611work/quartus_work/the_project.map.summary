@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Nov 17 02:44:34 2016
+Analysis & Synthesis Status : Successful - Sat Nov 19 01:16:22 2016
 Quartus II 32-bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
 Revision Name : the_project
 Top-level Entity Name : lab4_cpu
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 10
+Total registers : 10
 Total pins : 66
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 32,768
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

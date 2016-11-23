@@ -6,113 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
 
-    *{
-      margin:0;
-      padding:0;
-    }
-
-    input[type=text] {
-      width: 90%;
-      margin: 8px 5%;
-      padding: 12px 20px;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    button[type=submit] {
-      width: 35%;
-      margin: 8px;
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #prev {margin-left:5%; }
-    #next {float:right; margin-right:5%;};
-    button[type=submit]:hover {
-      background-color: #45a049;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    label{
-      color:#fff;
-      margin-left: 5%;
-      font-size:110%;
-      font-family: Arial;
-    }
-
-    .container{
-      margin: 0 auto;
-      padding: 0;
-      background-color:#fff;
-      border: 1px solid gray;
-      padding-bottom:5%;
-      min-width:500px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-
-    .mBttns, #display{text-align: center;}
-
-
-    #display {
-      background-color:white;
-      display:block;
-      width: 100%;
-      height: 300px;
-      font-size:3em;
-      padding-top: 100px;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    }
-
-
-    ul.mbttn {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-
-    ul.mbttn li {
-      cursor: pointer;
-      display: inline-block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 17px;
-      float: left;
-    }
-
-    ul.mbttn li:hover {background-color: #555;}
-    ul.mbttn li::-moz-focus-inner { border: 0; outline: none;}
-    ul.mbttn img::-moz-focus-inner { border: 0; outline: none;}
-    :active, :focus { outline: none; -moz-outline-style: none; }
-
-
-    .problem {
-      background-color:grey;
-      display:block;
-      height:400px;
-      padding-top:5%;
-    }
-
-
 /*******************************************************************************
 
-
+                                                            generic header style
 
 *******************************************************************************/
 
@@ -187,13 +87,125 @@
          background-color: #a43841;
        }
      }
+/*******************************************************************************
+
+                                                               mathquizzes style
+
+*******************************************************************************/
+
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    input[type=text] {
+      width: 90%;
+      margin: 8px 5%;
+      padding: 12px 20px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #prev, #next {
+      width: 35%;
+      margin: 8px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 4px;
+      border:none;
+      cursor: pointer;
+    }
+
+    #prev {margin-left:5%; }
+    #next {float:right; margin-right:5%;}
+ 
+
+    #prev:hover, #next:hover {
+      background-color: #45a049;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+
+    label{
+      color:#fff;
+      margin-left: 5%;
+      font-size:110%;
+      font-family: Arial;
+    }
+
+    .container{
+      margin: 0 auto;
+      padding: 0;
+      border: 1px solid gray;
+      min-width:500px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #display {
+      background-color:white;
+      display:block;
+      height: 300px;
+      width: 100%;
+      padding-top: 100px;          
+    }
+
+
+    ul.mbttn {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      height:50px;
+
+    }
+
+    ul.mbttn li {
+      cursor: pointer;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 100%;
+      height: 100%;
+      float: left;
+      opacity:0;
+
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+    }
+
+    :active, :focus { outline: none; -moz-outline-style: none; }
+
+    ul.mbttn li:hover {
+      background-color: #555;
+      color:#fff;  
+    }
+
+
+    .inputArea {
+      background-color:grey;
+      display:block;
+      height:400px;
+      padding-top:5%;
+    }
+
   </style>
 
-<!--
 
---------------------------------------------------------------------------------
 
--->
    <script type="text/x-mathjax-config">
      MathJax.Hub.Config({
        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
@@ -204,6 +216,14 @@
 
 </head>
 <body>
+
+<!--
+
+                                                             generic header html
+________________________________________________________________________________
+
+-->
+
 
 <div class="container">
 
@@ -232,8 +252,8 @@
 </nav>
 
 <!--
-
---------------------------------------------------------------------------------
+                                                                mathquizzes html
+________________________________________________________________________________
 -->
 
 <h2 id="display"></h2>
@@ -253,7 +273,7 @@
   <li onclick="addLaTex('\\infty ')">$\infty$</li>
   <li onclick="addLaTex('\\sum_{i=0}^n ')">$\sum_{i=0}^n$</li>
   </ul>
-  <div class="problem">
+  <div class="inputArea">
   <label for="data">Question:</label>
   <input type="text" id="textbox" name="exp">
   <button onclick="nextFun()" id ="prev" type="submit">previous</button>
@@ -261,24 +281,46 @@
   </div>
   </div>
 
-
-
+<!--
+                                                                  mathquizzes js
+________________________________________________________________________________
+-->
 
 <script>
+
+/*******************************************************************************
+* Variables set to match ids of elements:
+*
+**********/
+
 var textbox = document.getElementById("textbox");
 var display = document.getElementById("display");
-/*******************************************************************************
-* Focus the textbox on when the page loads.
-*******************************************************************************/
 
-window.onload = function() {
-  textbox.focus();
-};
 
 
 /*******************************************************************************
-* The textbox will match the display.
-*******************************************************************************/
+* Page Load
+* ---------
+*  - Focus the textbox
+*  - Then, scroll back to the top
+*  - Mathjax buttons show up slowly to avoid jittery behaivior
+* 
+**********/
+
+$("#textbox").focus();
+window.scrollTo(0,0);
+$(".mbttn li").animate({opacity: '1'}, 1200);
+
+
+
+/*******************************************************************************
+* Display Function
+* ----------------
+* - Make the math display match the textbox
+* - A timeout where the text is invisible allows the mathjax to render
+*
+**********/
+
 var displayRefreshRate = setInterval(match, 100);
 var old;
 function match() {
@@ -296,15 +338,36 @@ function match() {
 }
 
 
-function nextFun() {
-  textbox.value = "";
+
+/*******************************************************************************
+* LaTeX Button Function
+* ---------------------
+* - Put the Latex in the textbox
+* - Re-focus the textbox
+*
+**********/
+
+function addLaTex(latex){
+  textbox.value=textbox.value.concat(latex);
+  textbox.focus();
 }
 
 
 
+
 /*******************************************************************************
-* The <Enter> key event listener
-*******************************************************************************/
+* Offline Functions:  
+* -----------------
+* Only used to test js while server is not running
+* 1.)  Clear the textbox
+*      - called by <enter>, next, or prev buttons
+*
+* 2.)  <Enter> key event listener
+*
+**********/
+function nextFun() {
+  textbox.value = "";
+}
 
 textbox.addEventListener("keyup",
   function(event) {
@@ -314,14 +377,8 @@ textbox.addEventListener("keyup",
     }
 });
 
-/*******************************************************************************
-* Put the Latex in the textbox
-*******************************************************************************/
 
-function addLaTex(latex){
-  textbox.value=textbox.value.concat(latex);
-  textbox.focus();
-}
+
 </script>
 </body>
 </html>

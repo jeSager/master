@@ -12,12 +12,12 @@ do
   cd $item
   echo "EXECUTING $item -1"
   ./Aprog $zIN/in1.txt > $zOUT/out1.txt
-#  echo "EXECUTING $item -2"
-#  ./Aprog $zIN/in2.txt > $zOUT/out2.txt
-#  echo "EXECUTING $item -3"
-#  ./Aprog $zIN/in3.txt > $zOUT/out3.txt
-#  echo "EXECUTING $item -4"
-#  ./Aprog $zIN/in4.txt > $zOUT/out4.txt
+  echo "EXECUTING $item -2"
+  ./Aprog $zIN/in2.txt > $zOUT/out2.txt
+  echo "EXECUTING $item -3"
+  ./Aprog $zIN/in3.txt > $zOUT/out3.txt
+  echo "EXECUTING $item -4"
+  ./Aprog $zIN/in4.txt > $zOUT/out4.txt
   cd ..
 echo "EXECUTION COMPLETE"
 done

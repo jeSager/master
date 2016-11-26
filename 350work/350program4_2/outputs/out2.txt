@@ -1,0 +1,81 @@
+UTILS: open the input file '../../inputs/in2.txt'
+UTILS: open succeeded for '../../inputs/in2.txt'
+Enter ReadNetwork
+Leave ReadNetwork
+Enter RunSimulation
+CLOCK:   0    NODE: 111    FROM:  -1
+ added 112 to map for clock 1
+ added 113 to map for clock 2
+ added 114 to map for clock 3
+CLOCK:   1    NODE: 112    FROM: 111
+ added 111 to map for clock 2
+ added 113 to map for clock 3
+ added 114 to map for clock 4
+ added 121 to map for clock 5
+CLOCK:   2    NODE: 113    FROM: 111
+ added 111 to map for clock 3
+ added 112 to map for clock 4
+ added 114 to map for clock 5
+ added 131 to map for clock 6
+CLOCK:   3    NODE: 114    FROM: 111
+ added 111 to map for clock 4
+ added 112 to map for clock 5
+ added 113 to map for clock 6
+ added 141 to map for clock 7
+CLOCK:   5    NODE: 121    FROM: 112
+ added 122 to map for clock 6
+ added 123 to map for clock 7
+ added 124 to map for clock 8
+ added 112 to map for clock 9
+CLOCK:   6    NODE: 131    FROM: 113
+ added 132 to map for clock 7
+ added 133 to map for clock 8
+ added 134 to map for clock 9
+ added 113 to map for clock 10
+CLOCK:   6    NODE: 122    FROM: 121
+ added 121 to map for clock 7
+ added 123 to map for clock 8
+ added 124 to map for clock 9
+CLOCK:   7    NODE: 141    FROM: 114
+ added 142 to map for clock 8
+ added 143 to map for clock 9
+ added 144 to map for clock 10
+ added 114 to map for clock 11
+CLOCK:   7    NODE: 123    FROM: 121
+ added 121 to map for clock 8
+ added 122 to map for clock 9
+ added 124 to map for clock 10
+ added 132 to map for clock 11
+CLOCK:   7    NODE: 132    FROM: 131
+ added 131 to map for clock 8
+ added 133 to map for clock 9
+ added 134 to map for clock 10
+ added 123 to map for clock 11
+CLOCK:   8    NODE: 124    FROM: 121
+ added 121 to map for clock 9
+ added 122 to map for clock 10
+ added 123 to map for clock 11
+ added 142 to map for clock 12
+CLOCK:   8    NODE: 133    FROM: 131
+ added 131 to map for clock 9
+ added 132 to map for clock 10
+ added 134 to map for clock 11
+CLOCK:   8    NODE: 142    FROM: 141
+ added 141 to map for clock 9
+ added 143 to map for clock 10
+ added 144 to map for clock 11
+ added 124 to map for clock 12
+CLOCK:   9    NODE: 134    FROM: 131
+ added 131 to map for clock 10
+ added 132 to map for clock 11
+ added 133 to map for clock 12
+ added 143 to map for clock 13
+CLOCK:   9    NODE: 143    FROM: 141
+ added 141 to map for clock 10
+ added 142 to map for clock 11
+ added 144 to map for clock 12
+ added 134 to map for clock 13
+CLOCK:  10    NODE: 144    FROM: 141
+ added 141 to map for clock 11
+ added 142 to map for clock 12
+ added 143 to map for clock 13

@@ -32,7 +32,7 @@ public:
 
 private:
  int number_of_nodes_ = 0;
- int count_ = 0;
+ vector<int> waiting_list_;
  map<int, Node> network_;
  map<int, Node>::iterator network_iter_;
  int global_clock_ = 0;

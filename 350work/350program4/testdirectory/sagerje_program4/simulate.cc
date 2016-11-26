@@ -119,6 +119,8 @@ void Simulate::QueueDispatch( map<int, queue<vector<int>>> cycle ){
     n = network_[ current_q.front()[0] ];
     links = n.GetLinkLabels();
 
+//    cout << "SMT for Node: " << n.GetNodeLabel() << "\t Clock: ";
+//    cout << global_clock_ << "\t From: " << current_q.front()[1] << endl;
     // Dispatch the node:
     n.SetMessageAtTime( global_clock_, current_q.front()[1] );
     network_[n.GetNodeLabel()] = n;

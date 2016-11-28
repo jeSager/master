@@ -18,6 +18,7 @@ Node::Node() {
   node_label_ = Node::kDummyLabel;
   time_got_message_ = Node::kDummyTime;
   got_message_from_node_ = Node::kDummyLabel;
+  queued_=false;
 }
 
 /******************************************************************************
@@ -56,6 +57,22 @@ int Node::GotMessageFrom() {
 int Node::GetNodeLabel() {
   return node_label_;
 }
+
+/*********************************************************************
+ * If the node has been added to the queue
+**/
+void Node::SetQueued() {
+  queued_ = true;
+}
+
+/*********************************************************************
+ * If the node has been added to the queue
+**/
+bool Node::IsNotQueued() {
+  return !queued_;
+}
+
+
 
 /*********************************************************************
  * Set the time when the message was received.

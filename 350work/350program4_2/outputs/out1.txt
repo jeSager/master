@@ -4,19 +4,3 @@ Enter ReadNetwork
 Leave ReadNetwork
 Enter RunSimulation
 CLOCK:   0    NODE:   0    FROM:  -1
- added 5 to map for clock 1
- added 16 to map for clock 2
-CLOCK:   1    NODE:   5    FROM:   0
- added 4 to map for clock 2
- added 19 to map for clock 3
- added 3 to map for clock 4
-CLOCK:   2    NODE:  16    FROM:   0
- added 18 to map for clock 3
- added 3 to map for clock 4
-CLOCK:   2    NODE:   4    FROM:   5
- added 0 to map for clock 3
- added 3 to map for clock 4
- added 19 to map for clock 5
-CLOCK:   3    NODE:  19    FROM:   5
- added 3 to map for clock 4
- added 19 to map for clock 5

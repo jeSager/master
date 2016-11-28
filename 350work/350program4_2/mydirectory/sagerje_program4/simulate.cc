@@ -43,7 +43,7 @@ void Simulate::ReadNetwork(Scanner& in_file) {
     Node node;
     node.ParseInputLine(line);
     network_[node.GetNodeLabel()] = node;
-    waiting_list_.push_back( node.GetNodeLabel() );
+//    waiting_list_.push_back( node.GetNodeLabel() );
     number_of_nodes_ ++;
   }
 
@@ -120,22 +120,26 @@ void Simulate::QueueDispatch( map<int, queue<vector<int>>> cycle ){
     n = network_[ current_q.front()[0] ];
     links = n.GetLinkLabels();
 
-    for( vector<int>::iterator it = waiting_list_.begin();
-                                             it != waiting_list_.end(); ++it ){
+//    for( vector<int>::iterator it = waiting_list_.begin();
+//                                             it != waiting_list_.end(); ++it ){
 
       // If the node has not received, do ...
-      if( (*it) == current_q.front()[0] ){
+//      if( (*it) == current_q.front()[0] ){
 
         // Remove the node from the waiting list:
-        waiting_list_.erase(it);
+//        waiting_list_.erase(it);
 
         // Dispatch the node, if it's not complete:
+      if( n.IsNotQueued() ){
+        number_dispatched_++;
         n.SetMessageAtTime( global_clock_, current_q.front()[1] );
         network_[n.GetNodeLabel()] = n;
 
         for( vector<int>::iterator link = links.begin();
                                                  link != links.end(); ++link ){
+          // mark the node as queued
 
+          network_[*link].SetQueued();
           // If there isn't a queue for the clock cycle, create one:
           cycle_iter = cycle.find( queue_clock );
           if( cycle_iter == cycle.end()){
@@ -150,23 +154,26 @@ void Simulate::QueueDispatch( map<int, queue<vector<int>>> cycle ){
 
           // Add the vector to the queue at this cycle:
           cycle[ queue_clock ].push( addTo );
-            cout << " added " << (*link) << " to map for clock " << queue_clock << endl;
+//            cout << " added " << (*link) << " to map for clock " << queue_clock << endl;
 
           // Attach more links to subsequent cycles:
           queue_clock ++;
         } // end for
       } // end if
-    } // end for
+//      } // end if
+//    } // end for
     current_q.pop();
   } // end while
 
-  if( ! waiting_list_.empty()){
+//  if( ! waiting_list_.empty()){
     // Set the global clock:
-    global_clock_ ++;
-    QueueDispatch( cycle );
-  }
-  else
-    cout << "empty" << endl;
+    if( number_dispatched_ != number_of_nodes_){
+      global_clock_ ++;
+      QueueDispatch( cycle );
+    }
+//  }
+//  else
+//    cout << "empty" << endl;
 
 }
 

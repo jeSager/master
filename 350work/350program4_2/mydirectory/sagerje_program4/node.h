@@ -33,12 +33,14 @@ public:
  void SetMessageAtTime(int when, int from_whom);
  void ParseInputLine(string line);
  string ToString() const;
+ void SetQueued();
+ bool IsNotQueued();
 
 private:
  int time_got_message_;
  int got_message_from_node_;
  int node_label_;
-
+ bool queued_=false;
  vector<int> links_;
 
 };

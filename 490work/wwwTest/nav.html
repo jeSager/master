@@ -121,7 +121,7 @@
 
     #prev {margin-left:5%; }
     #next {float:right; margin-right:5%;}
- 
+
 
     #prev:hover, #next:hover {
       background-color: #45a049;
@@ -151,7 +151,7 @@
       display:block;
       height: 300px;
       width: 100%;
-      padding-top: 100px;          
+      padding-top: 100px;
     }
 
 
@@ -168,7 +168,7 @@
     ul.mbttn li {
       cursor: pointer;
       display: block;
-      color: #f2f2f2;
+      color: #333;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -176,7 +176,6 @@
       font-size: 100%;
       height: 100%;
       float: left;
-      opacity:0;
 
       -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -191,7 +190,7 @@
 
     ul.mbttn li:hover {
       background-color: #555;
-      color:#fff;  
+      color:#fff;
     }
 
 
@@ -257,30 +256,74 @@ ________________________________________________________________________________
 -->
 
 <h2 id="display"></h2>
-<ul class="mbttn">
-  <li onclick="addLaTex('\\frac{x}{y} ')">$\frac{x}{y}$</li>
-  <li onclick="addLaTex('x\\cdot y')">$x\cdot y$</li>
-  <li onclick="addLaTex('x^{xy}')">$x^{xy}$</li>
-  <li onclick="addLaTex('\\sqrt{x} ')">$\sqrt{x}$</li>
-  <li onclick="addLaTex('\\sqrt[3]{x}')">$\sqrt[3]{x}$</li>
-  <li onclick="addLaTex('|x| ')">$|x|$</li>
-  <li onclick="addLaTex('\\alpha ')">$\alpha$</li>
-  <li onclick="addLaTex('\\beta ')">$\beta$</li>
-  <li onclick="addLaTex('\\Delta ')">$\Delta$</li>
-  <li onclick="addLaTex('\\Omega ')">$\Omega$</li>
-  <li onclick="addLaTex('\\ge ')">$\ge$</li>
-  <li onclick="addLaTex('\\ne ')">$\ne$</li>
-  <li onclick="addLaTex('\\infty ')">$\infty$</li>
-  <li onclick="addLaTex('\\sum_{i=0}^n ')">$\sum_{i=0}^n$</li>
-  </ul>
-  <div class="inputArea">
-  <label for="data">Question:</label>
-  <input type="text" id="textbox" name="exp">
-  <button onclick="nextFun()" id ="prev" type="submit">previous</button>
-  <button onclick="nextFun()" id ="next" type="submit">next</button>
-  </div>
-  </div>
 
+<ul class="mbttn">
+
+  <li onclick="addLaTex('\\frac{x}{y} ')">
+    <script type="math/tex">\frac{x}{y}</script>
+  </li>
+
+  <li onclick="addLaTex('x\\cdot y')">
+    <script type="math/tex">x\cdot y</script>
+  </li>
+
+  <li onclick="addLaTex('x^{xy}')">
+    <script type="math/tex">x^{xy}</script>
+  </li>
+
+  <li onclick="addLaTex('\\sqrt{x} ')">
+    <script type="math/tex">\sqrt{x}</script>
+  </li>
+
+  <li onclick="addLaTex('\\sqrt[3]{x}')">
+    <script type="math/tex">\sqrt[3]{x}</script>
+  </li>
+
+  <li onclick="addLaTex('|x| ')">
+    <script type="math/tex">|x|</script>
+  </li>
+
+  <li onclick="addLaTex('\\alpha ')">
+    <script type="math/tex">\alpha</script>
+  </li>
+
+  <li onclick="addLaTex('\\beta ')">
+    <script type="math/tex">\beta</script>
+  </li>
+
+  <li onclick="addLaTex('\\Delta ')">
+    <script type="math/tex">\Delta</script>
+  </li>
+
+  <li onclick="addLaTex('\\Omega ')">
+    <script type="math/tex">\Omega</script>
+  </li>
+
+  <li onclick="addLaTex('\\ge ')">
+    <script type="math/tex">\ge</script>
+  </li>
+
+  <li onclick="addLaTex('\\ne ')">
+    <script type="math/tex">\ne</script>
+  </li>
+
+  <li onclick="addLaTex('\\infty ')">
+    <script type="math/tex">\infty</script>
+  </li>
+
+  <li onclick="addLaTex('\\sum_{i=0}^n ')">
+    <script type="math/tex">\sum_{i=0}^n</script>
+  </li>
+
+</ul>
+<div class="inputArea">
+<label for="data">Question:</label>
+<input type="text" id="textbox" name="exp">
+<button onclick="nextFun()" id ="prev" type="submit">previous</button>
+<button onclick="nextFun()" id ="next" type="submit">next</button>
+</div>
+</div>
+<script id="mj" type="math/tex; mode=display"></script>
 <!--
                                                                   mathquizzes js
 ________________________________________________________________________________
@@ -304,12 +347,15 @@ var display = document.getElementById("display");
 *  - Focus the textbox
 *  - Then, scroll back to the top
 *  - Mathjax buttons show up slowly to avoid jittery behaivior
-* 
+*
 **********/
 
 $("#textbox").focus();
 window.scrollTo(0,0);
-$(".mbttn li").animate({opacity: '1'}, 1200);
+
+setTimeout(function(){
+  $("ul.mbttn li").css("color", "#f2f2f2");
+}, 300);
 
 
 
@@ -326,13 +372,13 @@ var old;
 function match() {
   if( old != textbox.value ){
     clearInterval(displayRefreshRate);
-    display.style.color = "white";
-    display.innerHTML = '$${' + textbox.value + '}$$';
+    display.style.color = "#fff";
+    display.innerHTML = '$$' + textbox.value + '$$';
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,display]);
     old = this.textbox.value;
-    setTimeout(
-      function visible(){ display.style.color = "black";}, 300
-    );
+    setTimeout(function(){
+        display.style.color = "#000";
+    }, 300);
     displayRefreshRate = setInterval(match, 100);
   }
 }
@@ -356,7 +402,7 @@ function addLaTex(latex){
 
 
 /*******************************************************************************
-* Offline Functions:  
+* Offline Functions:
 * -----------------
 * Only used to test js while server is not running
 * 1.)  Clear the textbox

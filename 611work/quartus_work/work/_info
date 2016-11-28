@@ -117,7 +117,7 @@ R9
 R10
 L0 1
 R4
-Z14 !s108 1479555908.000000
+Z14 !s108 1480365430.000000
 R12
 R13
 !i113 0
@@ -201,7 +201,7 @@ R11
 !i113 0
 R6
 vlab4_decoder
-!s110 1479374996
+!s110 1480365430
 !i10b 1
 !s100 mEM4R;<;7zcd<IESI87gU0
 IEHbmn]]QBG<5e[;G>D_C23
@@ -215,7 +215,7 @@ R4
 r1
 !s85 0
 31
-!s108 1479374996.000000
+R14
 !s107 /acct/sagerje/Downloads/master/611work/quartus_work/lab4_decoder.v|
 !s90 -reportprogress|300|-work|work|/acct/sagerje/Downloads/master/611work/quartus_work/lab4_decoder.v|
 !i113 0

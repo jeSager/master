@@ -30,7 +30,7 @@ module lab4_register (
 
   end
 
-  // zero is initialized, but never written here
+  // zero written in initial, but never written here
   always @ (posedge clk) if (we && wa != 0) begin
 
     if( wa != 30 ) rgstr[wa] <= wd;

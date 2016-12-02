@@ -29,6 +29,20 @@ wire [ 0:0] alu_zero_out;
 wire [31:0] ftch_out;
 
 
+//reg [ 4:0] waPort;
+//reg [31:0] wdPort;
+//
+//
+//
+//always @ * begin
+//  waPort = ftch_out[15:11];
+//  rgstr_wa_in = waPort;
+//  wdPort = alu_lo_out;
+//  rgstr_wd_in = wdPort;
+//end
+
+
+
 lab4_fetch ftch( clk, rst, ftch_out );
 
 
@@ -62,8 +76,18 @@ lab4_alu alu(
 );
 
 
-always @( negedge clk ) begin
-  $display("Begin always @ negedge");
+// store for stage 1
+// store for stage 2
+// store for stage 3
+
+
+
+reg [2:0] stage = 0;
+
+always @( posedge clk ) begin
+  stage = ( stage == 3 ) ? 0 : ( stage + 0 );
+
+  $display("Begin ! we");
   we             <= 0;
   $display("\t we is false");
   ctrl_opcode_in <= ftch_out[31:26];
@@ -86,22 +110,30 @@ always @( negedge clk ) begin
   $display("\t alu_op_in      <= %10d", alu_op_in);
   we             <= 1;
   $display("\t we is true");
+end // end always
 
-end // always posedge
-
-
-always @( posedge clk ) if( we ) begin
-  $display("Begin always @ posedge");
+always @ * if( we ) begin
+  $display("Write Enabled");
   rgstr_wa_in <= ftch_out[15:11];
   $display("\t rgstr_wa_in    <= %10d", rgstr_wa_in);
   if( ctrl_enhilo_out ) rgstr_wd_in <= {alu_hi_out, alu_lo_out};
   else rgstr_wd_in <= alu_lo_out;
   $display("\t rgsr_wd_in     <= %10d", rgstr_wd_in);
-end // always negedge
-
-
+end
 //assign d1out = rgstr_wa_in;
 //assign d2out = rgstr_wd_in;
 
-
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+

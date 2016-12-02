@@ -1,6 +1,0 @@
-#! /bin/bash
-./zaZipUpScript.txt
-./zbFileCopyScript.txt
-./zcCompileScript.txt
-./zdExecuteScript.txt
-less lastOutput.txt

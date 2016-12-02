@@ -1,0 +1,84 @@
+
+MATHQUIZZES TODO
+================
+
+
+
+CSS CHANGES
+-----------
+ * Max width
+   - input area
+   - wrapper
+
+ * Lighten input area
+   - Use color from home / assignment lists
+
+ * Scrollbars for all pages
+
+ * Favicon
+
+ * Float page title's left
+
+ * Make login look like other pages
+   - OR apply login color elsewhere
+
+ * Color menues
+
+ * Footer
+
+ * Bootstrap mobile menus
+
+
+
+JAVASCRIPT
+----------
+ * User / password scripts
+
+ * Mathjax visibility funtion
+     https://cdn.mathjax.org/mathjax/latest/test/examples.html
+
+ * Show problem list on right
+
+
+
+DATA STORE AND PYTHON
+---------------------
+ * Secured page thing
+
+ * Delete problem
+
+ * Class object
+   - home show classes
+
+ * Assignment Object
+   - json file for problems
+
+ * Grades Object
+
+ * Permissions
+
+
+
+HTML:  Mock ups by Account-type?
+----
+
+
+
+
+
+LINKS
+-----
+
+ * Data Store datatypes:
+    https://cloud.google.com/appengine/docs/python/ndb/entity-property-reference
+
+ * Working with data store items:
+    https://cloud.google.com/appengine/docs/python/ndb/creating-entities
+
+ * Ajax working:
+    http://stackoverflow.com/questions/22052013/how-to-use-ajax-with-google-app-engine-python
+
+ * Async with NDB models:
+    https://cloud.google.com/appengine/docs/python/ndb/modelclass
+
+

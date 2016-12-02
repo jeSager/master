@@ -1,0 +1,112 @@
+Main: Beginning execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Wed Nov 30 00:00:29 2016
+TIME beginning             0.00 u         0.00 s   Res:        2324
+TIME beginning             0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+
+start the computation
+UTILS: open the input file '../../inputs/in2.txt'
+UTILS: open succeeded for '../../inputs/in2.txt'
+Enter ReadNetwork
+Leave ReadNetwork
+
+________________________________________________________________________________
+
+BEFORE SIMULATION
+................................................................................
+
+NODECOUNT:   16
+ 111 TIME: 99999999 (FROM: 99999999)  LINKS:   112  113  114
+ 112 TIME: 99999999 (FROM: 99999999)  LINKS:   111  113  114  121
+ 113 TIME: 99999999 (FROM: 99999999)  LINKS:   111  112  114  131
+ 114 TIME: 99999999 (FROM: 99999999)  LINKS:   111  112  113  141
+ 121 TIME: 99999999 (FROM: 99999999)  LINKS:   122  123  124  112
+ 122 TIME: 99999999 (FROM: 99999999)  LINKS:   121  123  124
+ 123 TIME: 99999999 (FROM: 99999999)  LINKS:   121  122  124  132
+ 124 TIME: 99999999 (FROM: 99999999)  LINKS:   121  122  123  142
+ 131 TIME: 99999999 (FROM: 99999999)  LINKS:   132  133  134  113
+ 132 TIME: 99999999 (FROM: 99999999)  LINKS:   131  133  134  123
+ 133 TIME: 99999999 (FROM: 99999999)  LINKS:   131  132  134
+ 134 TIME: 99999999 (FROM: 99999999)  LINKS:   131  132  133  143
+ 141 TIME: 99999999 (FROM: 99999999)  LINKS:   142  143  144  114
+ 142 TIME: 99999999 (FROM: 99999999)  LINKS:   141  143  144  124
+ 143 TIME: 99999999 (FROM: 99999999)  LINKS:   141  142  144  134
+ 144 TIME: 99999999 (FROM: 99999999)  LINKS:   141  142  143
+
+________________________________________________________________________________
+
+
+Enter RunSimulation
+    NODE: 111   CLOCK:   0    FROM:  -1
+    NODE: 112   CLOCK:   1    FROM: 111
+    NODE: 113   CLOCK:   2    FROM: 111
+--- NODE:  114   IS BUSY AT CLOCK 3
+--- NODE   114   ADDED TO THE QUEUE FOR CYCLE 4
+--- NODE:  111   IS BUSY AT CLOCK 3
+    NODE: 114   CLOCK:   4    FROM: 112
+--- NODE:  114   IS BUSY AT CLOCK 4
+    NODE: 121   CLOCK:   5    FROM: 112
+    NODE: 131   CLOCK:   6    FROM: 113
+    NODE: 122   CLOCK:   6    FROM: 121
+--- NODE:  113   IS BUSY AT CLOCK 7
+    NODE: 123   CLOCK:   7    FROM: 121
+    NODE: 132   CLOCK:   7    FROM: 131
+    NODE: 141   CLOCK:   8    FROM: 114
+    NODE: 124   CLOCK:   8    FROM: 121
+    NODE: 133   CLOCK:   8    FROM: 131
+--- NODE:  121   IS BUSY AT CLOCK 8
+--- NODE:  112   IS BUSY AT CLOCK 9
+    NODE: 134   CLOCK:   9    FROM: 131
+--- NODE:  133   IS BUSY AT CLOCK 9
+    NODE: 142   CLOCK:   9    FROM: 141
+--- NODE:  113   IS BUSY AT CLOCK 10
+--- NODE:  134   IS BUSY AT CLOCK 10
+    NODE: 143   CLOCK:  10    FROM: 141
+--- NODE:  122   IS BUSY AT CLOCK 10
+    NODE: 144   CLOCK:  11    FROM: 141
+--- NODE:  141   IS BUSY AT CLOCK 11
+Leave RunSimulation
+
+SIMULATION RESULTS:  16 nodes received the message in 
+                     11 clock cycles.
+
+________________________________________________________________________________
+
+AFTER SIMULATION
+................................................................................
+
+NODECOUNT:   16
+ 111 TIME:    0 (FROM:   -1)  LINKS:   112  113  114
+ 112 TIME:    1 (FROM:  111)  LINKS:   111  113  114  121
+ 113 TIME:    2 (FROM:  111)  LINKS:   111  112  114  131
+ 114 TIME:    4 (FROM:  112)  LINKS:   111  112  113  141
+ 121 TIME:    5 (FROM:  112)  LINKS:   122  123  124  112
+ 122 TIME:    6 (FROM:  121)  LINKS:   121  123  124
+ 123 TIME:    7 (FROM:  121)  LINKS:   121  122  124  132
+ 124 TIME:    8 (FROM:  121)  LINKS:   121  122  123  142
+ 131 TIME:    6 (FROM:  113)  LINKS:   132  133  134  113
+ 132 TIME:    7 (FROM:  131)  LINKS:   131  133  134  123
+ 133 TIME:    8 (FROM:  131)  LINKS:   131  132  134
+ 134 TIME:    9 (FROM:  131)  LINKS:   131  132  133  143
+ 141 TIME:    8 (FROM:  114)  LINKS:   142  143  144  114
+ 142 TIME:    9 (FROM:  141)  LINKS:   141  143  144  124
+ 143 TIME:   10 (FROM:  141)  LINKS:   141  142  144  134
+ 144 TIME:   11 (FROM:  141)  LINKS:   141  142  143
+
+________________________________________________________________________________
+
+
+Main: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Wed Nov 30 00:00:29 2016
+TIME ending                0.00 u         0.00 s   Res:        2568
+TIME ending                0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+

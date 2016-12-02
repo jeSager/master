@@ -1,3 +1,7 @@
+Reading pref.tcl
+
+# 10.4b
+
 # do n.do
 # Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
 # Start time: 15:57:46 on Nov 30,2016

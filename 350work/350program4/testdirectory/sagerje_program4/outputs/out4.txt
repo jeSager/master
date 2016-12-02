@@ -1,0 +1,113 @@
+Main: Beginning execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Wed Nov 30 00:00:29 2016
+TIME beginning             0.00 u         0.00 s   Res:        2324
+TIME beginning             0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+
+start the computation
+UTILS: open the input file '../../inputs/in4.txt'
+UTILS: open succeeded for '../../inputs/in4.txt'
+Enter ReadNetwork
+Leave ReadNetwork
+
+________________________________________________________________________________
+
+BEFORE SIMULATION
+................................................................................
+
+NODECOUNT:   16
+   0 TIME: 99999999 (FROM: 99999999)  LINKS:     3    1   30   10
+   1 TIME: 99999999 (FROM: 99999999)  LINKS:     0    2   31   11
+   2 TIME: 99999999 (FROM: 99999999)  LINKS:     1    3   32   12
+   3 TIME: 99999999 (FROM: 99999999)  LINKS:     2    0   33   13
+  10 TIME: 99999999 (FROM: 99999999)  LINKS:    13   11    0   20
+  11 TIME: 99999999 (FROM: 99999999)  LINKS:    10   12    1   21
+  12 TIME: 99999999 (FROM: 99999999)  LINKS:    11   13    2   22
+  13 TIME: 99999999 (FROM: 99999999)  LINKS:    12   10    3   23
+  20 TIME: 99999999 (FROM: 99999999)  LINKS:    23   21   10   30
+  21 TIME: 99999999 (FROM: 99999999)  LINKS:    20   22   11   31
+  22 TIME: 99999999 (FROM: 99999999)  LINKS:    21   23   12   32
+  23 TIME: 99999999 (FROM: 99999999)  LINKS:    22   20   13   33
+  30 TIME: 99999999 (FROM: 99999999)  LINKS:    33   31   20    0
+  31 TIME: 99999999 (FROM: 99999999)  LINKS:    30   32   21    1
+  32 TIME: 99999999 (FROM: 99999999)  LINKS:    31   33   22    2
+  33 TIME: 99999999 (FROM: 99999999)  LINKS:    32   30   23    3
+
+________________________________________________________________________________
+
+
+Enter RunSimulation
+    NODE:   0   CLOCK:   0    FROM:  -1
+    NODE:   3   CLOCK:   1    FROM:   0
+    NODE:   1   CLOCK:   2    FROM:   0
+    NODE:   2   CLOCK:   2    FROM:   3
+    NODE:  30   CLOCK:   3    FROM:   0
+--- NODE:  1   IS BUSY AT CLOCK 3
+    NODE:  10   CLOCK:   4    FROM:   0
+--- NODE:  33   IS BUSY AT CLOCK 4
+--- NODE   33   ADDED TO THE QUEUE FOR CYCLE 5
+--- NODE:  33   IS BUSY AT CLOCK 4
+--- NODE   33   ADDED TO THE QUEUE FOR CYCLE 5
+    NODE:  13   CLOCK:   5    FROM:   3
+    NODE:  31   CLOCK:   5    FROM:   1
+    NODE:  32   CLOCK:   5    FROM:   2
+    NODE:  33   CLOCK:   5    FROM:   3
+--- NODE:  33   IS BUSY AT CLOCK 5
+    NODE:  11   CLOCK:   6    FROM:   1
+    NODE:  12   CLOCK:   6    FROM:   2
+    NODE:  20   CLOCK:   6    FROM:  30
+--- NODE:  32   IS BUSY AT CLOCK 6
+--- NODE:  32   IS BUSY AT CLOCK 7
+--- NODE:  11   IS BUSY AT CLOCK 7
+    NODE:  23   CLOCK:   7    FROM:  20
+--- NODE:  21   IS BUSY AT CLOCK 8
+--- NODE   21   ADDED TO THE QUEUE FOR CYCLE 9
+    NODE:  22   CLOCK:   8    FROM:  32
+--- NODE:  23   IS BUSY AT CLOCK 8
+--- NODE:  13   IS BUSY AT CLOCK 8
+    NODE:  21   CLOCK:   8    FROM:  20
+Leave RunSimulation
+
+SIMULATION RESULTS:  16 nodes received the message in 
+                     8 clock cycles.
+
+________________________________________________________________________________
+
+AFTER SIMULATION
+................................................................................
+
+NODECOUNT:   16
+   0 TIME:    0 (FROM:   -1)  LINKS:     3    1   30   10
+   1 TIME:    2 (FROM:    0)  LINKS:     0    2   31   11
+   2 TIME:    2 (FROM:    3)  LINKS:     1    3   32   12
+   3 TIME:    1 (FROM:    0)  LINKS:     2    0   33   13
+  10 TIME:    4 (FROM:    0)  LINKS:    13   11    0   20
+  11 TIME:    6 (FROM:    1)  LINKS:    10   12    1   21
+  12 TIME:    6 (FROM:    2)  LINKS:    11   13    2   22
+  13 TIME:    5 (FROM:    3)  LINKS:    12   10    3   23
+  20 TIME:    6 (FROM:   30)  LINKS:    23   21   10   30
+  21 TIME:    8 (FROM:   20)  LINKS:    20   22   11   31
+  22 TIME:    8 (FROM:   32)  LINKS:    21   23   12   32
+  23 TIME:    7 (FROM:   20)  LINKS:    22   20   13   33
+  30 TIME:    3 (FROM:    0)  LINKS:    33   31   20    0
+  31 TIME:    5 (FROM:    1)  LINKS:    30   32   21    1
+  32 TIME:    5 (FROM:    2)  LINKS:    31   33   22    2
+  33 TIME:    5 (FROM:    3)  LINKS:    32   30   23    3
+
+________________________________________________________________________________
+
+
+Main: Ending execution
+
+TIME***********************************************************************
+TIME CPU percent    0.00   0.00                    Wed Nov 30 00:00:29 2016
+TIME ending                0.00 u         0.00 s   Res:        2632
+TIME ending                0.00 u_t       0.00 s_t
+TIME***********************************************************************
+
+
+

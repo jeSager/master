@@ -1,8 +1,8 @@
 Main: Beginning execution
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Nov 30 00:03:06 2016
-TIME beginning             0.00 u         0.00 s   Res:        2168
+TIME CPU percent    0.00   0.00                    Wed Nov 30 00:00:29 2016
+TIME beginning             0.00 u         0.00 s   Res:        2324
 TIME beginning             0.00 u_t       0.00 s_t
 TIME***********************************************************************
 
@@ -49,56 +49,42 @@ Enter RunSimulation
     NODE:   5   CLOCK:   1    FROM:   0
     NODE:  16   CLOCK:   2    FROM:   0
     NODE:   4   CLOCK:   2    FROM:   5
---- NODE:  19   IS BUSY AT CLOCK 3
---- NODE   19   ADDED TO THE QUEUE FOR CYCLE 4
-    NODE:  18   CLOCK:   3    FROM:  16
+    NODE:  19   CLOCK:   3    FROM:   5
+--- NODE:  18   IS BUSY AT CLOCK 3
+--- NODE   18   ADDED TO THE QUEUE FOR CYCLE 4
     NODE:   3   CLOCK:   4    FROM:   5
---- NODE:  19   IS BUSY AT CLOCK 4
---- NODE   19   ADDED TO THE QUEUE FOR CYCLE 5
---- NODE:  10   IS BUSY AT CLOCK 4
---- NODE   10   ADDED TO THE QUEUE FOR CYCLE 5
---- NODE:  19   IS BUSY AT CLOCK 5
---- NODE   19   ADDED TO THE QUEUE FOR CYCLE 6
-    NODE:  17   CLOCK:   5    FROM:  18
-    NODE:  19   CLOCK:   5    FROM:   5
---- NODE:  10   IS BUSY AT CLOCK 5
---- NODE   10   ADDED TO THE QUEUE FOR CYCLE 6
-    NODE:  11   CLOCK:   6    FROM:  18
---- NODE:  10   IS BUSY AT CLOCK 6
---- NODE   10   ADDED TO THE QUEUE FOR CYCLE 7
---- NODE:  14   IS BUSY AT CLOCK 7
---- NODE   14   ADDED TO THE QUEUE FOR CYCLE 8
---- NODE:  12   IS BUSY AT CLOCK 7
---- NODE   12   ADDED TO THE QUEUE FOR CYCLE 8
-    NODE:  15   CLOCK:   7    FROM:  11
-    NODE:  10   CLOCK:   7    FROM:  18
+--- NODE:  3   IS BUSY AT CLOCK 4
+--- NODE:  18   IS BUSY AT CLOCK 4
+--- NODE   18   ADDED TO THE QUEUE FOR CYCLE 5
+    NODE:  17   CLOCK:   5    FROM:   3
+    NODE:  18   CLOCK:   5    FROM:  16
+    NODE:  10   CLOCK:   6    FROM:  18
+    NODE:  12   CLOCK:   7    FROM:  17
+--- NODE:  17   IS BUSY AT CLOCK 7
+    NODE:  11   CLOCK:   7    FROM:  10
     NODE:   2   CLOCK:   8    FROM:  17
-    NODE:  14   CLOCK:   8    FROM:  11
---- NODE:  14   IS BUSY AT CLOCK 8
-    NODE:  12   CLOCK:   8    FROM:  17
---- NODE:  2   IS BUSY AT CLOCK 9
---- NODE:  1   IS BUSY AT CLOCK 9
---- NODE   1   ADDED TO THE QUEUE FOR CYCLE 10
+    NODE:   1   CLOCK:   8    FROM:  12
+    NODE:  15   CLOCK:   8    FROM:  11
+    NODE:  14   CLOCK:   9    FROM:  18
+--- NODE:  14   IS BUSY AT CLOCK 9
+    NODE:   7   CLOCK:   9    FROM:  12
+--- NODE:  14   IS BUSY AT CLOCK 9
+--- NODE:  19   IS BUSY AT CLOCK 10
 --- NODE:  8   IS BUSY AT CLOCK 10
 --- NODE   8   ADDED TO THE QUEUE FOR CYCLE 11
---- NODE:  1   IS BUSY AT CLOCK 10
---- NODE   1   ADDED TO THE QUEUE FOR CYCLE 11
-    NODE:   7   CLOCK:  10    FROM:  12
---- NODE:  1   IS BUSY AT CLOCK 10
---- NODE   1   ADDED TO THE QUEUE FOR CYCLE 11
---- NODE:  15   IS BUSY AT CLOCK 11
---- NODE:  8   IS BUSY AT CLOCK 11
---- NODE   8   ADDED TO THE QUEUE FOR CYCLE 12
-    NODE:   1   CLOCK:  11    FROM:  14
-    NODE:   8   CLOCK:  12    FROM:  12
-    NODE:   9   CLOCK:  13    FROM:   7
-    NODE:   6   CLOCK:  13    FROM:   8
---- NODE:  16   IS BUSY AT CLOCK 17
-    NODE:  13   CLOCK:  19    FROM:   9
+--- NODE:  2   IS BUSY AT CLOCK 10
+--- NODE:  15   IS BUSY AT CLOCK 10
+    NODE:   8   CLOCK:  11    FROM:  12
+    NODE:   9   CLOCK:  12    FROM:   7
+    NODE:   6   CLOCK:  12    FROM:   8
+--- NODE:  2   IS BUSY AT CLOCK 14
+--- NODE:  19   IS BUSY AT CLOCK 15
+--- NODE:  17   IS BUSY AT CLOCK 16
+    NODE:  13   CLOCK:  18    FROM:   9
 Leave RunSimulation
 
 SIMULATION RESULTS:  20 nodes received the message in 
-                     19 clock cycles.
+                     18 clock cycles.
 
 ________________________________________________________________________________
 
@@ -107,25 +93,25 @@ AFTER SIMULATION
 
 NODECOUNT:   20
    0 TIME:    0 (FROM:   -1)  LINKS:     5   16
-   1 TIME:   11 (FROM:   14)  LINKS:    16    2
+   1 TIME:    8 (FROM:   12)  LINKS:    16    2
    2 TIME:    8 (FROM:   17)  LINKS:    12    8    2
    3 TIME:    4 (FROM:    5)  LINKS:    17
    4 TIME:    2 (FROM:    5)  LINKS:     0    3   19
    5 TIME:    1 (FROM:    0)  LINKS:     4   19    3
-   6 TIME:   13 (FROM:    8)  LINKS:     2    0   10   16   15
-   7 TIME:   10 (FROM:   12)  LINKS:    15    8    9
-   8 TIME:   12 (FROM:   12)  LINKS:     6    3    2
-   9 TIME:   13 (FROM:    7)  LINKS:    16    6   19   17    0   13
-  10 TIME:    7 (FROM:   18)  LINKS:    11    3   14   15
-  11 TIME:    6 (FROM:   18)  LINKS:    15   14   16
-  12 TIME:    8 (FROM:   17)  LINKS:     1    7   11    8
-  13 TIME:   19 (FROM:    9)  LINKS:     1   18
-  14 TIME:    8 (FROM:   11)  LINKS:    15    1
-  15 TIME:    7 (FROM:   11)  LINKS:    18    2
+   6 TIME:   12 (FROM:    8)  LINKS:     2    0   10   16   15
+   7 TIME:    9 (FROM:   12)  LINKS:    15    8    9
+   8 TIME:   11 (FROM:   12)  LINKS:     6    3    2
+   9 TIME:   12 (FROM:    7)  LINKS:    16    6   19   17    0   13
+  10 TIME:    6 (FROM:   18)  LINKS:    11    3   14   15
+  11 TIME:    7 (FROM:   10)  LINKS:    15   14   16
+  12 TIME:    7 (FROM:   17)  LINKS:     1    7   11    8
+  13 TIME:   18 (FROM:    9)  LINKS:     1   18
+  14 TIME:    9 (FROM:   18)  LINKS:    15    1
+  15 TIME:    8 (FROM:   11)  LINKS:    18    2
   16 TIME:    2 (FROM:    0)  LINKS:    18    3
-  17 TIME:    5 (FROM:   18)  LINKS:     0   12    2
-  18 TIME:    3 (FROM:   16)  LINKS:    10   17   11   14   19
-  19 TIME:    5 (FROM:    5)  LINKS:     3   19
+  17 TIME:    5 (FROM:    3)  LINKS:     0   12    2
+  18 TIME:    5 (FROM:   16)  LINKS:    10   17   11   14   19
+  19 TIME:    3 (FROM:    5)  LINKS:     3   19
 
 ________________________________________________________________________________
 
@@ -133,8 +119,8 @@ ________________________________________________________________________________
 Main: Ending execution
 
 TIME***********************************************************************
-TIME CPU percent    0.00   0.00                    Wed Nov 30 00:03:06 2016
-TIME ending                0.00 u         0.00 s   Res:        2596
+TIME CPU percent    0.00   0.00                    Wed Nov 30 00:00:29 2016
+TIME ending                0.00 u         0.00 s   Res:        2568
 TIME ending                0.00 u_t       0.00 s_t
 TIME***********************************************************************
 

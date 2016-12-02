@@ -1,0 +1,956 @@
+# //  ModelSim SE-64 10.4b May 26 2015 Linux 3.16.0-41-generic
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 11:33:08 on Nov 30,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_alu.v 
+# -- Compiling module lab4_alu
+# 
+# Top level modules:
+# 	lab4_alu
+# End time: 11:33:08 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_controller.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 11:33:08 on Nov 30,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_controller.v 
+# -- Compiling module lab4_controller
+# 
+# Top level modules:
+# 	lab4_controller
+# End time: 11:33:08 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_cpu.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 11:33:08 on Nov 30,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_cpu.v 
+# -- Compiling module lab4_cpu
+# 
+# Top level modules:
+# 	lab4_cpu
+# End time: 11:33:08 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_fetch.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 11:33:08 on Nov 30,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_fetch.v 
+# -- Compiling module lab4_fetch
+# 
+# Top level modules:
+# 	lab4_fetch
+# End time: 11:33:08 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_register.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 11:33:08 on Nov 30,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_register.v 
+# -- Compiling module lab4_register
+# 
+# Top level modules:
+# 	lab4_register
+# End time: 11:33:08 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 11:33:08 on Nov 30,2016
+# vlog -reportprogress 300 -work work /acct/sagerje/Downloads/master/611work/quartus_work/lab4_testbench.v 
+# -- Compiling module lab4_testbench
+# 
+# Top level modules:
+# 	lab4_testbench
+# End time: 11:33:08 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.lab4_testbench -novopt
+# vsim work.lab4_testbench -novopt 
+# Start time: 11:52:35 on Nov 30,2016
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_testbench
+# Loading work.lab4_testbench
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_cpu
+# Loading work.lab4_cpu
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_fetch
+# Loading work.lab4_fetch
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_register
+# Loading work.lab4_register
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_controller
+# Loading work.lab4_controller
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_alu
+# Loading work.lab4_alu
+run 200
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          x
+# 	 rgstr_ra1_in   <=          x
+# 	 rgstr_ra2_in   <=          x
+# 	 ctrl_shift_in  <=          x
+# 	 ctrl_funct_in  <=          x
+# 	 alu_a_in       <=          x
+# 	 alu_b_in       <=          x
+# 	 alu_shamt_in   <=          x
+# 	 alu_op_in      <=          x
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          x
+# 	 rgsr_wd_in     <=          x
+# Write Enabled
+# 	 rgstr_wa_in    <=          x
+# 	 rgsr_wd_in     <=          x
+# Write Enabled
+# 	 rgstr_wa_in    <=          3
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          x
+# 	 rgstr_ra1_in   <=          x
+# 	 rgstr_ra2_in   <=          x
+# 	 ctrl_shift_in  <=          x
+# 	 ctrl_funct_in  <=          x
+# 	 alu_a_in       <=          x
+# 	 alu_b_in       <=          x
+# 	 alu_shamt_in   <=          X
+# 	 alu_op_in      <=          x
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          3
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          4
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          4
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          1
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         32
+# 	 alu_a_in       <=          x
+# 	 alu_b_in       <=          x
+# 	 alu_shamt_in   <=          X
+# 	 alu_op_in      <=          x
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          4
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=         11
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          2
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         33
+# 	 alu_a_in       <=         11
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          4
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=         11
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         11
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         11
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         17
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          3
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         34
+# 	 alu_a_in       <=         17
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          4
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         17
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=         17
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=         17
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         35
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          5
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          7
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          7
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          4
+# 	 rgstr_ra2_in   <=          6
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         24
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          5
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          7
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          8
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         18
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=         17
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          6
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          8
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         16
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          9
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          4
+# 	 rgstr_ra2_in   <=          6
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         25
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          9
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         10
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         18
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=         17
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          7
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         10
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         11
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         16
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         11
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         12
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         12
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         36
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         12
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         13
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         37
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         13
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         14
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         38
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          1
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         14
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         39
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          3
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <= 4294967295
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=          0
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          2
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <= 4294967295
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <= 4294967295
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <= 4294967295
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          3
+# 	 ctrl_shift_in  <=          1
+# 	 ctrl_funct_in  <=          0
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          8
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         19
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          5
+# 	 ctrl_shift_in  <=          1
+# 	 ctrl_funct_in  <=          2
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          1
+# 	 alu_op_in      <=          8
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         19
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          5
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          5
+# 	 ctrl_shift_in  <=          1
+# 	 ctrl_funct_in  <=          3
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=         11
+# 	 alu_shamt_in   <=          1
+# 	 alu_op_in      <=          9
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          5
+# Write Enabled
+# 	 rgstr_wa_in    <=         22
+# 	 rgsr_wd_in     <=          5
+vlog *.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 12:23:49 on Nov 30,2016
+# vlog -reportprogress 300 lab4_alu.v lab4_controller.v lab4_cpu.v lab4_de2_top.v lab4_decoder.v lab4_fetch.v lab4_register.v lab4_testbench.v 
+# -- Compiling module lab4_alu
+# -- Compiling module lab4_controller
+# -- Compiling module lab4_cpu
+# -- Compiling module lab4_de2_top
+# ** Error: lab4_de2_top.v(27): (vlog-2730) Undefined variable: 'r30out'.
+# -- Compiling module lab4_decoder
+# -- Compiling module lab4_fetch
+# -- Compiling module lab4_register
+# -- Compiling module lab4_testbench
+# End time: 12:23:49 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /usr/local/3rdparty/mentor/modelsim104b/modeltech/linux_x86_64/vlog failed.
+vlog *.v
+# Model Technology ModelSim SE-64 vlog 10.4b Compiler 2015.05 May 26 2015
+# Start time: 12:24:48 on Nov 30,2016
+# vlog -reportprogress 300 lab4_alu.v lab4_controller.v lab4_cpu.v lab4_de2_top.v lab4_decoder.v lab4_fetch.v lab4_register.v lab4_testbench.v 
+# -- Compiling module lab4_alu
+# -- Compiling module lab4_controller
+# -- Compiling module lab4_cpu
+# -- Compiling module lab4_decoder
+# -- Compiling module lab4_fetch
+# -- Compiling module lab4_register
+# -- Compiling module lab4_testbench
+# 
+# Top level modules:
+# 	lab4_decoder
+# 	lab4_testbench
+# End time: 12:24:48 on Nov 30,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_testbench
+# Loading work.lab4_testbench
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_cpu
+# Loading work.lab4_cpu
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_fetch
+# Loading work.lab4_fetch
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_register
+# Loading work.lab4_register
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_controller
+# Loading work.lab4_controller
+# Refreshing /acct/sagerje/Downloads/master/611work/quartus_work/work.lab4_alu
+# Loading work.lab4_alu
+run 200
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          x
+# 	 rgstr_ra1_in   <=          x
+# 	 rgstr_ra2_in   <=          x
+# 	 ctrl_shift_in  <=          x
+# 	 ctrl_funct_in  <=          x
+# 	 alu_a_in       <=          x
+# 	 alu_b_in       <=          x
+# 	 alu_shamt_in   <=          x
+# 	 alu_op_in      <=          x
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          x
+# 	 rgsr_wd_in     <=          x
+# Write Enabled
+# 	 rgstr_wa_in    <=          x
+# 	 rgsr_wd_in     <=          x
+# Write Enabled
+# 	 rgstr_wa_in    <=          3
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          x
+# 	 rgstr_ra1_in   <=          x
+# 	 rgstr_ra2_in   <=          x
+# 	 ctrl_shift_in  <=          x
+# 	 ctrl_funct_in  <=          x
+# 	 alu_a_in       <=          x
+# 	 alu_b_in       <=          x
+# 	 alu_shamt_in   <=          X
+# 	 alu_op_in      <=          x
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          3
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          4
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          4
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          1
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         32
+# 	 alu_a_in       <=          x
+# 	 alu_b_in       <=          x
+# 	 alu_shamt_in   <=          X
+# 	 alu_op_in      <=          x
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          4
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=         11
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          2
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         33
+# 	 alu_a_in       <=         11
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          4
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          5
+# 	 rgsr_wd_in     <=         11
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         11
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         11
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         17
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          3
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         34
+# 	 alu_a_in       <=         17
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          4
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          6
+# 	 rgsr_wd_in     <=         17
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=         17
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=         17
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         35
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          5
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          7
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          7
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          4
+# 	 rgstr_ra2_in   <=          6
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         24
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          5
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          7
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          8
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         18
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=         17
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          6
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          8
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         16
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          9
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          4
+# 	 rgstr_ra2_in   <=          6
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         25
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          9
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         10
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         18
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=         17
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          7
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         10
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         11
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         16
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         11
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         12
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         12
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         36
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         12
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         13
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         37
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          0
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         13
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         14
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         38
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          1
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         14
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          3
+# 	 rgstr_ra2_in   <=          4
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=         39
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          3
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=          0
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <= 4294967295
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          0
+# 	 ctrl_shift_in  <=          0
+# 	 ctrl_funct_in  <=          0
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          2
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         15
+# 	 rgsr_wd_in     <= 4294967295
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <= 4294967295
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <= 4294967295
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          3
+# 	 ctrl_shift_in  <=          1
+# 	 ctrl_funct_in  <=          0
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          0
+# 	 alu_op_in      <=          8
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         17
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         19
+# 	 rgsr_wd_in     <=          0
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          5
+# 	 ctrl_shift_in  <=          1
+# 	 ctrl_funct_in  <=          2
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=          0
+# 	 alu_shamt_in   <=          1
+# 	 alu_op_in      <=          8
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         19
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          0
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          5
+# Begin ! we
+# 	 we is false
+# 	 ctrl_opcode_in <=          0
+# 	 rgstr_ra1_in   <=          0
+# 	 rgstr_ra2_in   <=          5
+# 	 ctrl_shift_in  <=          1
+# 	 ctrl_funct_in  <=          3
+# 	 alu_a_in       <=          0
+# 	 alu_b_in       <=         11
+# 	 alu_shamt_in   <=          1
+# 	 alu_op_in      <=          9
+# 	 we is true
+# Write Enabled
+# 	 rgstr_wa_in    <=         21
+# 	 rgsr_wd_in     <=          5
+# Write Enabled
+# 	 rgstr_wa_in    <=         22
+# 	 rgsr_wd_in     <=          5
+write transcript j.txt

@@ -5,6 +5,9 @@
  * Used with permission and modified by: Jane Random Hacker
  * Date: 4 November 2016
  *
+ * Modified by:     James Sager
+ * Modified Date:   Tuesday,29 November 2016
+ *
 **/
 
 #ifndef NODE_H

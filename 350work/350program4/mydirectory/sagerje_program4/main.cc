@@ -6,6 +6,8 @@
  * Author/copyright:  Duncan Buell. All rights reserved.
  * Date: 4 November 2016
  *
+ * Modified by:     James Sager
+ * Modified Date:   Tuesday,29 November 2016
 **/
 
 static const string kTag = "Main: ";
@@ -15,22 +17,22 @@ void generate(int number);
 /*********************************************************************
 **/
 int main(int argc, char *argv[]) {
-//  double timenew = 0.0;
+  double timenew = 0.0;
   string in_filename = "";
   string timestring = "";
 
   Scanner scanner;
   Simulate simulator;
 
-//  cout << kTag << "Beginning execution\n";
+  cout << kTag << "Beginning execution\n";
 
   Utils::CheckArgs(1, argc, argv, "inputfile");
   in_filename = static_cast<string>(argv[1]);
 
-//  timestring = Utils::TimeCall("beginning", timenew);
-//  cout << timestring << endl;
+  timestring = Utils::TimeCall("beginning", timenew);
+  cout << timestring << endl;
 
-//  cout << "start the computation" << endl;
+  cout << "start the computation" << endl;
 
 // uncomment this to generate a random graph
 //  generate(20);
@@ -39,14 +41,14 @@ int main(int argc, char *argv[]) {
   scanner.OpenFile(in_filename);
   simulator = Simulate();
   simulator.ReadNetwork(scanner);
-//  cout << simulator.ToStringNetwork("BEFORE SIMULATION") << endl;
+  cout << simulator.ToStringNetwork("BEFORE SIMULATION") << endl;
   simulator.RunSimulation();
   cout << simulator.ToStringNetwork("AFTER SIMULATION") << endl;
 
   cout << kTag << "Ending execution\n";
 
-//  timestring = Utils::TimeCall("ending", timenew);
-//  cout << timestring << endl;
+  timestring = Utils::TimeCall("ending", timenew);
+  cout << timestring << endl;
 
   return 0;
 }

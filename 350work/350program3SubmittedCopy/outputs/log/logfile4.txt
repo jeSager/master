@@ -1,5 +1,0 @@
-Beginning execution
-infile  '../../inputs/graph4.txt'
-outfile '../../outputs/outfile4.txt'
-logfile '../../outputs/log/logfile4.txt'
-Ending execution

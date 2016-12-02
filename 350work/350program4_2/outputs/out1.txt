@@ -1,6 +1,0 @@
-UTILS: open the input file '../../inputs/in1.txt'
-UTILS: open succeeded for '../../inputs/in1.txt'
-Enter ReadNetwork
-Leave ReadNetwork
-Enter RunSimulation
-CLOCK:   0    NODE:   0    FROM:  -1

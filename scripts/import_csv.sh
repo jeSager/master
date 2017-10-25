@@ -20,9 +20,10 @@
 #       display your new table on the terminal screen
 #     - Any other output indicates failure
 #
-#   Note:
+#   Notes:
 #     - You cannot execute a script that doesn't have executable permissions:
 #         chmod 775 import_csv.sh
+#     - Does not allow any special chars in CSV file
 #
 #   Last Modified:  Thu Jun  1 00:25:54 EDT 2017
 ################################################################################

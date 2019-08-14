@@ -1,0 +1,1095 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Homepage for Jason D. Bakos - Computer Science and Engineering</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="ROBOTS" content="ALL" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta name="description" content="This is the homepage of Dr. Jason D. Bakos, an Assistant Professor in the Department of Computer Science and Engineering at the University of South Carolina" />
+	<meta name="keywords" content="Jason D. Bakos, Computer Science and Engineering, USC, University of South Carolina" />
+	<meta name="author" content="Jason D. Bakos | Silviu Strambu" />
+	<meta name="Copyright" content="Copyright (c) 2005 Jason D. Bakos" />	
+	<meta name="Rating" content="General" />
+	<meta name="revisit-after" content="10 Days" />
+	<meta http-equiv="MSThemeCompatible" content="Yes" />
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		@import url("/~jbakos/css/stylesheet.css");
+	</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+	<script language="JavaScript">
+		function toggle_mode () {
+			if (page_menubar.style.display == "none") {
+				page_wrapper.style.width="900px";
+				page_header.style.display="block";
+				page_menubar.style.display="block";
+				page_image.style.display="block";
+				page_right_side.style.width="615px";
+				toggletext.childNodes[0].data="[print this page]";
+			} else {
+				page_wrapper.style.width="100%";
+				page_header.style.display="none";
+				page_menubar.style.display="none";
+				page_image.style.display="none";
+				page_right_side.style.width="100%";
+				toggletext.childNodes[0].data="[page containing my mug]";
+			}
+		}
+	</script>
+
+	<div class="wrapper" id="page_wrapper">
+		<div class="header" id="page_header">
+			<img src="/~jbakos/images/header.gif" alt="Welcome to the website of Jason D. Bakos">
+		</div>
+		
+		<div class="wrapper_left" id="page_menubar">
+			<div class="left_side_top_img">
+				<img src="/~jbakos/images/header_low_left.gif" alt="Chip used as subheader">
+				
+			</div>
+			
+			<div class="left_side_right_img">
+				<img src="/~jbakos/images/header_low2_left2.gif" alt="The subheader bar continuation" align="right">
+				
+				<ul class="menu">					
+					<li><a href="/~jbakos">&nbsp;&nbsp;&nbsp;&nbsp;Home</a><br><br></li>					
+					
+					<li class="menu_category"><img src="/~jbakos/images/nav_category.gif" alt="Small dotted">&nbsp;About Me</li>
+					<!--<li><a href="/~jbakos/research.shtml">&nbsp;&nbsp;&nbsp;&nbsp;Research</a></li>-->
+					<li><a href="/~jbakos/publications.shtml">&nbsp;&nbsp;&nbsp;&nbsp;Publications</a></li>
+					<li><a href="/~jbakos/tp.shtml">&nbsp;&nbsp;&nbsp;&nbsp;Talks/Posters</a></li>
+					<li><a href="/~jbakos/software.shtml">&nbsp;&nbsp;&nbsp;&nbsp;Software</a></li>
+					<li><a href="/~jbakos/personal.shtml">&nbsp;&nbsp;&nbsp;&nbsp;Personal</a></li>
+					
+                    <!--
+					<br>
+					<li class="menu_category"><img src="/~jbakos/images/nav_category.gif" alt="Small dotted">&nbsp;Teaching Information</li>
+					<li><a href="/~jbakos/212/index.shtml">&nbsp;&nbsp;&nbsp;&nbsp;CSCE 212</a></li>
+					<li><a href="/~jbakos/491/index.shtml">&nbsp;&nbsp;&nbsp;&nbsp;CSCE 491 (Fall 2007)</a></li>
+					<li><a href="/~jbakos/613/index.shtml">&nbsp;&nbsp;&nbsp;&nbsp;CSCE 613 (Fall 2006)</a></li>
+					<li><a href="/~jbakos/612/index.shtml">&nbsp;&nbsp;&nbsp;&nbsp;CSCE 612 (Spring 2006)</a></li>
+					<li><a href="/~jbakos/713/index.shtml">&nbsp;&nbsp;&nbsp;&nbsp;CSCE 713 (Fall 2005)</a></li>
+					<li><a href="/~jbakos/past_courses.shtml">&nbsp;&nbsp;&nbsp;&nbsp;Past Course Information</a></li>
+					<br><br>
+					-->
+					
+					<br>
+					
+					<li class="menu_category"><img src="/~jbakos/images/nav_category.gif" alt="Small dotted">&nbsp;Links</li>
+					<li><a href="https://www.embeddedrelated.com/">&nbsp;&nbsp;&nbsp;&nbsp;Embedded Related</a></li>
+					<li><a href="http://www.cse.sc.edu/">&nbsp;&nbsp;&nbsp;&nbsp;Computer Sci. and Engr.</a></li>
+					
+				</ul>
+				
+				<p><a href="http://www.engr.sc.edu/" title="College of Engineering and Computing"><img src="/~jbakos/images/cec_logo_small.jpg" alt="College of Engineering and Computing Logo"></a>
+				<p><a href="http://www.sc.edu/" title="University of South Carolina"><img src="/~jbakos/images/usc_logo.gif" alt="University of South Carolina Logo"></a>
+				
+				<br><br>
+				<center><h4>This page was last modified <b>10/27/15</b>.</h4></center>
+			</div>			
+		</div>
+		
+		
+		<div class="right_side" id="page_right_side">
+		<!--
+			<img class="right_side_img" src="/~jbakos/images/header_low_right.gif" alt="Jason D. Bakos picture" align="right" id="page_image">
+		-->
+
+	
+<p style="text-align=right;">
+<a href="#" id="toggletext" onClick="toggle_mode()">[print this page]</a>
+
+
+<h1><center>MIPS Instruction Set Architecture</center></h1>
+
+<ul type="disc">
+ <li><b>Arithmetic Operations:</b> add, addi, addiu, addu, sub, subu, mult, multu</li>
+ <li><b>Logic Operations:</b> and, andi, nor, or, ori, xor, xori</li>
+ <li><b>Shift Operations:</b> sll, sra, srl</li>
+ <li><b>Miscellaneous Immediate Instructions:</b> lui</li>
+ <li><b>Comparison Instructions:</b> slt, sltu, slti </li>
+ <li><b>Load/Store Instructions:</b> lw, sw</li>
+ <li><b>Branch Instructions:</b> beq, bne, bgez</li>
+ <li><b>Jump Instructions: </b> j, jal, jr</li>
+ <li><b>Register Movement Instructions: </b> mfhi, mflo</li>
+ <li><b>Miscellaneous Instructions: </b> nop</li>
+</ul>
+
+<p><br>
+	<h1>Register Arithmetic Operations:</h1>
+
+<p><br>
+	<b>add <i>rd</i>, <i>rs</i>, <i>rt</i> :</b>
+
+<p><br>
+	Puts the sum of the integers in the register <i>rs</i> and the 
+	register <i>rt</i> into register <i>rd </i>and checks for overflow. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+
+ <tr>
+	<th><div align="center">31-26</div></td>
+	<th><div align="center">25-21</div></td>
+	<th><div align="center">20-16</div></td>
+	<th><div align="center">15-11</div></td>
+	<th><div align="center">10-6</div></td>
+	<th><div align="center">5-0</div></td>
+ </tr>
+
+ <tr>
+	<td><div align="center">000000</div>
+	<td><div align="center">rs</div>
+	<td><div align="center">rt</div>
+	<td><div align="center">rd</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">100000</div>
+ </tr>
+</table>
+</center>
+
+
+<p><br>
+	<b>addu rd, rs, rt :</b> 
+
+<p>
+	Puts the sum of the integers in the register <i>rs</i> 
+	and the register <i>rt</i> into register <i>rd </i>and 
+	does not check for overflow.
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+ 
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">100001</div>
+ </tr>
+
+</table>
+</center>
+
+
+<p><br>
+	<b>sub rd, rs, rt :</b> 
+
+<p>
+	Subtracts the integer in register <i>rt</i> from the integer 
+	in register <i>rs</i>, putting the result into register <i>rd</i> 
+	and checks for overflow. 
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+	<th><div align="center">31-26</div>
+	<th><div align="center">25-21</div>
+	<th><div align="center">20-16</div>
+	<th><div align="center">15-11</div>
+	<th><div align="center">10-6</div>
+	<th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+	<td><div align="center">000000</div>
+	<td><div align="center"><i>rs</i></div>
+	<td><div align="center"><i>rt</i></div>
+	<td><div align="center"><i>rd</i></div>
+	<td><div align="center">00000</div>
+	<td><div align="center">100010</div>
+ </tr>
+
+</table>
+</center>
+
+<p><br>
+	<b>subu rd, rs, rt :</b> 
+
+<p>
+	Subtracts the integer in register <i>rt</i> from the integer in register <i>rs</i>,
+	putting the result into register <i>rd</i> and does not check for overflow. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">100011</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>mult rs, rt :</b> 
+
+<p>
+	Multiplies the signed integers in registers <i>rs</i> and <i>rt</i>.
+	Leave the low-order word of the product in register <i>lo</i> and the high-order
+    word in register <i>hi</i>.	
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">00000</div>
+  <td><div align="center">011000</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>multu rs, rt :</b> 
+
+<p>
+	Multiplies the unsigned integers in registers <i>rs</i> and <i>rt</i>.
+	Leave the low-order word of the product in register <i>lo</i> and the high-order
+    word in register <i>hi</i>.	
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">00000</div>
+  <td><div align="center">011001</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Register Logic Operations:</h1> 
+
+<p>
+	<b>and rd, rs, rt :</b> 
+
+<p>
+	Puts the logical AND of the integers from register <i>rs</i> and <i>rt</i>
+	into register <i>rd</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">100100</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>or rd, rs, rt :</b> 
+
+<p>
+	Puts the logical OR of the integers from register <i>rs</i> and <i>rt</i>
+	into register <i>rd</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">100101</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>xor rd, rs, rt :</b> 
+
+<p>
+	Puts the logical XOR of the integers from register <i>rs</i> and <i>rt</i> into
+	register <i>rd</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">100110</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>nor rd, rs, rt :</b> 
+
+<p>
+	Puts the logical NOR of the integers from register <i>rs</i> and <i>rt</i>
+	into register <i>rd</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+ 
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">100111</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Register Shift Operations:</h1>
+
+<p>
+	<b>sll <i>rd, rt, shamt</i> :</b> 
+
+<p>
+	Performs logical shift of contents of register <i>rt</i> left by <i>shamt</i>
+	bits, putting results into register <i>rd</i>.&nbsp; Vacated bits are filled
+	with 0's.
+	 
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+<tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+
+ </tr>
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center">00000</div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center"><i>shamt</i></div>
+  <td><div align="center">000000</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>srl <i>rd, rt, shamt</i> :</b> 
+
+<p>
+	Performs logical shift of contents of register <i>rt</i> right by <i>shamt</i>
+	bits, putting results into register <i>rd</i>.&nbsp; Vacated bits are filled
+	with 0's.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+<tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center">00000</div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center"><i>shamt</i></div>
+  <td><div align="center">000010</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>sra <i>rd, rt, shamt </i>:</b> 
+
+<p>
+	Performs aritmetic shift of contents of register <i>rt</i> right by <i>shamt</i>
+	bits, putting results into register <i>rd</i>.&nbsp; Vacated bits are filled
+	with replicas of sign bit. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+<tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center">00000</div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center"><i>shamt</i></div>
+  <td><div align="center">000011</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Miscellaneous Immediate Instructions:</h1>
+
+<p>
+	<b>lui <i>rt</i>, <i>imm</i> :</b> 
+
+<p>
+	Load the immediate value <i>imm</i> into the upper half-word of 
+	register <i>rt</i>. The lower bits of the resgister are set to 0. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">001111</div>
+  <td><div align="center">00000</div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Register Comparison Operations:</h1>
+
+<p>
+	<b>slt <i>rd, rs, rt</i> :</b> 
+
+<p>
+	If the signed integer in register <i>rs</i> is less than the signed integer
+	in register <i>rt</i> then store the value 0x00000001 in register <i>rd</i>,
+	otherwise store the value 0x00000000 there.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">101010</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>sltu <i>rd, rs, rt</i> :</b> 
+
+<p>
+	If the unsigned integer in register <i>rs</i> is less than the unsigned
+	integer in register <i>rt</i> then store the value 0x00000001 in register <i>rd</i>,
+	otherwise store the value 0x00000000 there.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-11</div>
+  <th><div align="center">10-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>rd</i></div>
+  <td><div align="center">00000</div>
+  <td><div align="center">101011</div>
+ </tr>
+</table>
+</center>
+
+
+<p><br>
+<h1>Immediate Arithmetic Operations:</h1>
+
+<p>
+	<b>addi <i>rt</i>, <i>rs</i>, <i>imm </i>:</b> 
+
+<p>
+	Put the sum of the integer in register <i>rs</i> and the sign extended
+	immediate value <i>imm</i> into the register <i>rt</i> and check for overflow. 
+
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+ <tr>
+  <td><div align="center">001000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>addiu <i>rt</i>, <i>rs</i>, <i>imm </i>:</b> 
+
+<p>
+	Put the sum of the integer in register <i>rs</i> and the sign extended
+	immediate value <i>imm</i> into the register <i>rt</i> and do not check for
+	overflow. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">001001</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Immediate Logic Operations:</h1> 
+
+<p>
+	<b>andi <i>rt</i>, <i>rs</i>, <i>imm</i> :</b> 
+
+<p>
+	Put the logical AND of the value in the register <i>rs</i> and the zero
+	extended immediate value <i>imm</i> into register <i>rt</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">001100</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>ori <i>rt</i>, <i>rs</i>, <i>imm </i>:</b> 
+
+<p>
+	Put the logical OR of the value in the register <i>rs</i> and the zero
+	extended immediate value <i>imm</i> into register <i>rt</i>.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">001101</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>xori <i>rt</i>, <i>rs</i>, <i>imm </i>:</b> 
+
+<p>
+	Put the logical XOR of the value in the register <i>rs</i> and the zero
+	extended immediate value <i>imm</i> into register <i>rt</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">001110</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Immediate Comparison Operations:</h1>
+
+<p>
+	<b>slti <i>rt, rs, imm</i> :</b> 
+
+<p>
+	If the signed integer in register <i>rs</i> is less than the 
+	sign extended immediate <i>imm</i> then store the value 0x00000001 
+	in register <i>rt</i>, otherwise store the value 0x00000000 there.
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">001010</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>imm</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+<h1>Load and Store Operations:</h1> 
+
+<p><br>
+	<b>lw <i>rt</i>, <i>Offset</i>(<i>rs</i>) :</b> 
+
+<p>
+	Get word at <i>address = Offset</i>(<i>rs</i>) = <i>rs </i>+ <i>Offset</i>
+	and load it into register <i>rt</i>. The word must be aligned, meaning the
+	address must be evenly divisible by four. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">100011</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>Offset</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>sw <i>rt</i>,<i> Offset</i>(<i>rs</i>) :</b> 
+
+<p>
+	Store the word from register <i>rt</i> at <i>address = Offset</i>(<i>rs</i>)
+	= <i>rs </i>+ <i>Offset.</i>  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">101011</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>Offset</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+
+<h1>Branch Operations:</h1> 
+
+<p>
+	<b>beq <i>rs</i>, <i>rt</i>, <i>label </i>: (<i>label </i>is transated to a
+	16 bit <i>Offset</i> by the assembler)</b> 
+
+<p>
+	If the integer in register <i>rs</i> is equal to the integer in register <i>rt</i>,
+	then increment the program counter (PC) by <i>Offset</i> * 4. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000100</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>Offset</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>bne <i>rs</i>, <i>rt</i>, <i>label</i> : (<i>label </i>is transated to a
+	16 bit <i>Offset</i> by the assembler)</b> 
+
+<p>
+	If the integer in register <i>rs</i> is not equal to the integer in register
+	<i>rt</i>, then increment the program counter (PC) by <i>Offset</i> * 4.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000101</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center"><i>rt</i></div>
+  <td><div align="center"><i>Offset</i></div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>bgez <i>rs</i>, <i>label </i>: (<i>label </i>is transated to a 16 bit <i>Offset</i>
+	by	the assembler)</b> 
+
+<p>
+	If the integer in register <i>rs</i> is greater than or equal to zero, then
+	increment the PC by <i>Offset</i> * 4.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-16</div>
+  <th><div align="center">15-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000001</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center">00001</div>
+  <td><div align="center">Offset</div>
+ </tr>
+</table>
+
+<p><br>
+<h1>Jump Operations:</h1> 
+
+<p>
+<b>j <i>target </i>:</b> 
+
+<p>
+	Unconditionally jump to instruction at <i>Target</i>.
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000010</div>
+  <td><div align="center"><i>Target</i></div>
+ </tr>
+</table>
+
+<p><br>
+	<b>jal <i>target </i>:</b> 
+
+<p>
+	Save address of the next instruction in register 31 and then unconditionally
+	jump to instruction at <i>Target</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000011</div>
+  <td><div align="center"><i>Target</i></div>
+ </tr>
+</table>
+
+<p><br>
+	<b>jr <i>rs </i>:</b> 
+
+<p>
+	Unconditionally jump to instruction at address stored in <i>rs</i>.  
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+ <tr>
+  <th><div align="center">31-26</div>
+  <th><div align="center">25-21</div>
+  <th><div align="center">20-6</div>
+  <th><div align="center">5-0</div>
+ </tr>
+
+ <tr>
+  <td><div align="center">000000</div>
+  <td><div align="center"><i>rs</i></div>
+  <td><div align="center">don't care</div>
+  <td><div align="center">001000</div>
+ </tr>
+</table>
+
+<p><br>
+	<h1>Register Movement Operations:</h1>
+
+<p><br>
+	<b>mfhi <i>rd</i> :</b>
+
+<p><br>
+	Copies the contents of the hi register to register <i>rd</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+
+ <tr>
+	<th><div align="center">31-26</div></td>
+	<th><div align="center">25-21</div></td>
+	<th><div align="center">20-16</div></td>
+	<th><div align="center">15-11</div></td>
+	<th><div align="center">10-6</div></td>
+	<th><div align="center">5-0</div></td>
+ </tr>
+
+ <tr>
+	<td><div align="center">000000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">rd</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">010000</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<b>mflo <i>rd</i> :</b>
+
+<p><br>
+	Copies the contents of the lo register to register <i>rd</i>. 
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+
+ <tr>
+	<th><div align="center">31-26</div></td>
+	<th><div align="center">25-21</div></td>
+	<th><div align="center">20-16</div></td>
+	<th><div align="center">15-11</div></td>
+	<th><div align="center">10-6</div></td>
+	<th><div align="center">5-0</div></td>
+ </tr>
+
+ <tr>
+	<td><div align="center">000000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">rd</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">010010</div>
+ </tr>
+</table>
+</center>
+
+<p><br>
+	<h1>Miscellaneous Operations:</h1>
+
+<p><br>
+	<b>nop :</b>
+
+<p><br>
+	No operation.  Used to insert a stall into a pipeline.
+
+<p>
+<center>
+<table cellspacing="0" cellpading="0" border="0" width="450">
+
+ <tr>
+	<th><div align="center">31-26</div></td>
+	<th><div align="center">25-21</div></td>
+	<th><div align="center">20-16</div></td>
+	<th><div align="center">15-11</div></td>
+	<th><div align="center">10-6</div></td>
+	<th><div align="center">5-0</div></td>
+ </tr>
+
+ <tr>
+	<td><div align="center">000000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">00000</div>
+	<td><div align="center">000000</div>
+ </tr>
+</table>
+</center>
+
+</body></html>
